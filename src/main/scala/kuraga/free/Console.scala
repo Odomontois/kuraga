@@ -19,12 +19,6 @@ object Console{
       case other: F[A]   => other.run
     }
   }
-
-
-}
-
-enum Dict[name <: String, K, V, +A](action: Ref[Map[K, V]] => Free[Void, A]){
-  case Get[name <: String, K, V](k: K) extends Dict[name, K, V, Option[V]]( ref => ref.get.map(_.get(k)) )
 }
 
 

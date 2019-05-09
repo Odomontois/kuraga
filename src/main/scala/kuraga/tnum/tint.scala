@@ -2,12 +2,10 @@ package kuraga.tint
 
 type ReverseLoop[A, XS <: Tuple] <: Tuple = A match {
   case Unit => XS
-  case x *: xs => ReverseLoopRecur[xs, x *: XS]
+  case x *: xs => ReverseRecur[xs, x *: XS]
 }
 
-type ReverseLoopRecur[A, XS <: Tuple] = XS match {
-  case _ => ReverseLoop[A, XS]
-}
+type ReverseRecur[A, XS <: Tuple] = XS match { case _ => ReverseLoop[A, XS] }
 
 type Reverse[A] = ReverseLoop[A, Unit]
 

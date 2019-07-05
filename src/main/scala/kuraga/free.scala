@@ -7,7 +7,7 @@ trait Carrier{
   type T
 }
 
-type ||[F [_], G[_]] = [A] => F[A] | G[A] 
+type ||[F [_], G[_]] = [A] =>> F[A] | G[A] 
 type Void[x] = Nothing
 
 def funK[F[_], G[_]](f: (c: Carrier) => F[c.T] => G[c.T]): F ~> G = 

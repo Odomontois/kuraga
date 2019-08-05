@@ -5,8 +5,15 @@ trait Predicate[Name, T]{
   def check(t: T): Boolean
 }
 
-delegate for Predicate["Even", Int] = _ % 2 == 0
-delegate for Predicate["Small", String] = _.length < 5
+
+object Predicate{
+  type Even
+  type Small
+
+  delegate for Predicate[Even, Int] = _ % 2 == 0
+  delegate for Predicate[Small, String] = _.length < 5
+  delegate for Predicate[Small, Int] = _ < 5
+}
 
 case class Storage[T](items: List[T])
 
@@ -17,7 +24,8 @@ def filterStorage[Name, T] given (pred: Predicate[Name, T], storage: Storage[T])
   storage.items.filter(pred.check)
 
 
-object FilterStorage extends App{
-  println(filterStorage[Name = "Even"])
-  println(filterStorage[Name = "Small"])
-}
+
+// object FilterStorage extends App{
+//   println(filterStorage[Name = Predicate.Even])
+//   println(filterStorage[ Predicate.Small, Int])
+// }

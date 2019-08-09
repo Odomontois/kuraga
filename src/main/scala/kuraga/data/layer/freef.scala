@@ -1,27 +1,9 @@
 package data.layer
 import scala.annotation.tailrec
-import EvalF.{ReadF, ErrorF, WriteF, ReadEvF, WriteEvF, ExecF, StateF}
+import Effects._
+import given EvalF._
 
-trait NowF[+O[+_]]{
- def now[A](a: A): O[A]
-}
 
-trait EvalF[-I[+_], +O[+_]] extends NowF[O]{
- 
-  def defer[A](la: => I[A]): O[A]
-  def flatMap[A, B](fa: I[A], f: A => I[B]): O[B]
-}
-
-type NowFF[-I[+_], +O[+_]] = NowF[O]
-type Ev[+a] = Layer1[EvalF, a]
-type Pure[+a] = Layer1[NowFF, a]
-type ReadL[-R, +a] = Layer1[ReadF[R], a]
-type WriteL[+W, +a] = Layer1[WriteF[W], a]
-type ErrorL[+E, +a] = Layer1[ErrorF[E], a]
-type ReadEv[-R] = [+a] =>> Layer1[ReadEvF[R], a]
-type WriteEv[+W, +a] = Layer1[WriteEvF[W], a]
-type StateEv[S, +a] = Layer1[StateF[S], a]
-type ExecEv[S, E, +a] = Layer1[ExecF[S, E], a]
 
 
 type FK1 = [-i[+_], +o[+_]] =>> Any
@@ -143,7 +125,9 @@ object EvalF  {
   trait ReaderInterpreter[P <: EvalF, R](r: R) extends ReadF[R][L1[P], L1[P]]{
     def read = Done(r)
   }
+}
 
+object Effects{
   type ErrorF[-E] = [-i[+_], +o[+_]] =>> Raise[E, o] 
   type ReadF[+R] = [-i[+_], +o[+_]] =>> Read[R, o] 
   type WriteF[-W] = [-i[+_], +o[+_]] =>> Write[W, o] 
@@ -152,6 +136,8 @@ object EvalF  {
   type ErrorEvF[-E] = [-i[+_], +o[+_]] =>> EvalF[i, o] &  Raise[E, o] 
   type StateF[S] = [-i[+_], +o[+_]] =>> EvalF[i, o] & State[S, o] 
   type ExecF[S, -E] = [-i[+_], +o[+_]] =>> EvalF[i, o] & Raise[E, o] & State[S, o]
+  type SuspendF[-F[+_]] = [-i[+_], +o[+_]] =>> Suspend[F, o]
+  type FreeF[-F[+_]] = [-i[+_], +o[+_]] =>> EvalF[i, o] & Suspend[F, o]
 
   trait Raise[-E, +O[+_]]{
     def raise(e: E): O[Nothing]
@@ -165,12 +151,38 @@ object EvalF  {
     def write(w: W): O[Any]
   }
 
+  trait Suspend[-F[+_], +O[+_]]{
+    def suspend[A](f: F[A]): O[A]
+  }
+
   trait State[S, +O[+_]] extends Read[S, O] with Write[S, O]
+
+  trait NowF[+O[+_]]{
+    def now[A](a: A): O[A]
+  }
+
+  trait EvalF[-I[+_], +O[+_]] extends NowF[O]{ 
+    def defer[A](la: => I[A]): O[A]
+    def flatMap[A, B](fa: I[A], f: A => I[B]): O[B]
+  }
+
+  type NowFF[-I[+_], +O[+_]] = NowF[O]
+  type Ev[+a] = Layer1[EvalF, a]
+  type Pure[+a] = Layer1[NowFF, a]
+  type ReadL[-R, +a] = Layer1[ReadF[R], a]
+  type WriteL[+W, +a] = Layer1[WriteF[W], a]
+  type ErrorL[+E, +a] = Layer1[ErrorF[E], a]
+  type ReadEv[-R] = [+a] =>> Layer1[ReadEvF[R], a]
+  type WriteEv[+W, +a] = Layer1[WriteEvF[W], a]
+  type StateEv[S, +a] = Layer1[StateF[S], a]
+  type ExecEv[S, E, +a] = Layer1[ExecF[S, E], a]
+  type Free[+F[+_], +a] = Layer1[FreeF[F], a]
 }
 
 
 
 object EvalTest{
+
     given {
         def (xs: List[A]) foldr[A, B, P <: EvalF](f: (A, Layer1[P, B]) => Layer1[P, B])(lb: Layer1[P, B]): Layer1[P, B] = 
             xs match {

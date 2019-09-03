@@ -15,8 +15,7 @@ object TInfer extends App{
     the[(C[A] | C[B]) <:< C[A | B]]
   } 
 
-  def implem[A, B, R]: Either[A => R, B => R] => ((A, B)) => R = 
-    {
+  def implem[A, B, R]: Either[A => R, B => R] => ((A, B)) => R =    {
       case Left(f) => ab => f(ab._1)
       case Right(g) => ab => g(ab._2)
     }

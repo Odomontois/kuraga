@@ -7,8 +7,8 @@ trait Carrier{
   type T
 }
 
-type ||[F[+_], G[+_]] = [A] =>> F[A] | G[A] 
-type Void = [+x] =>> Nothing
+type ||[F[_], G[_]] = [A] =>> F[A] | G[A] 
+type Void = [x] =>> Nothing
 
 def funK[F[_], G[_]](f: (c: Carrier) => F[c.T] => G[c.T]): F ~> G = 
   new FunctionK[F, G]{
@@ -16,6 +16,5 @@ def funK[F[_], G[_]](f: (c: Carrier) => F[c.T] => G[c.T]): F ~> G =
   }
 
 class widen[G[+_], X](fa: G[X]){
-  def to[H[+x] >: G[x], Y >: X]: H[Y] = fa
-  
+  def to[H >: G <: [+A] =>> Any, Y >: X]: H[Y] = fa  
 }

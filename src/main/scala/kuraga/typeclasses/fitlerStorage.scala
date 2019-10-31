@@ -10,7 +10,7 @@ object Predicate{
   type Even
   type Small
 
-  delegate for Predicate[Even, Int] = _ % 2 == 0
+  given as Predicate[Even, Int] = _ % 2 == 0
   delegate for Predicate[Small, String] = _.length < 5
   delegate for Predicate[Small, Int] = _ < 5
 }

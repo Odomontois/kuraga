@@ -8,7 +8,7 @@ enum Procompose[P[_, _], Q[_, _], A, B]{
 }
 
 object Procompose{
-  delegate [P[_, _]: Profunctor, Q[_, _]: Profunctor] for Profunctor[P |::| Q]{
+  given [P[_, _]: Profunctor, Q[_, _]: Profunctor]: Profunctor[P |::| Q]{
     def dimap[A, B, C, D](fab: Procompose[P, Q, A, B])(f: C => A)(g: B => D): Procompose[P, Q, C, D] = 
      fab match { case Impl(pam, qmb) => Impl(pam.lmap(f), qmb.rmap(g))  }
   }

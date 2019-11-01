@@ -14,8 +14,8 @@ object Main {
   // trait A
   // trait B extends A
 
-  // the[((x : A) => Int) <:< ((x: B) => Int )]
+  // summon[((x : A) => Int) <:< ((x: B) => Int )]
 
-  def check[A,  B <: A, C] = the[(given A => C) <:< (given B => C)]
+  def check[A,  B <: A, C] = summon[((given A) => C) <:< ((given B) => C)]
 
 }

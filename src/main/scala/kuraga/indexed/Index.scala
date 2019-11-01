@@ -41,8 +41,8 @@ trait IndexedSetMut[K]{
   def (set: MSet) insertM (k: K): Unit
   def (set: MSet) removeM (k: K): Unit
   def (set: MSet) iteratorM: Iterator[K]
-  def (set: MSet) insertAllM (other: TraversableOnce[K]): Unit = other.foreach(set insertM _)
-  def (set: MSet) removeAllM (other: TraversableOnce[K]): Unit = other.foreach(set removeM _)
+  def (set: MSet) insertAllM (other: IterableOnce[K]): Unit = other.foreach(set insertM _)
+  def (set: MSet) removeAllM (other: IterableOnce[K]): Unit = other.foreach(set removeM _)
 
   def emptyMutSet(): MSet
   def makeSet(ks: TraversableOnce[K]): MSet = {

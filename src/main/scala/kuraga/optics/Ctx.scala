@@ -20,7 +20,7 @@ object Ctx{
 
   type PLens = Ctx{
     type P[a, b] <: a => b
-    type C[+x]   >: given Functor[F] => x
+    type C[+x]   >: (given Functor[F]) => x
   }
 }
 
@@ -30,9 +30,9 @@ object types{
   type Optics[S, T, A, B] = (c: Ctx) => c.C[c.P[A, c.F[B]] => c.P[S, c.F[T]]]
   type PLens[S, T, A, B] = (c: Ctx.PLens) => c.C[c.P[A, c.F[B]] => c.P[S, c.F[T]]]
 
-  the [Ctx.PLens <:< Ctx]
+  summon[Ctx.PLens <:< Ctx]
   // def xx[A] = the [((c: Ctx) => A) <:< ((c: Ctx.PLens) => A)]
 
-  // def proof[S, T, A, B] = the[Optics[S, T, A, B] <:< PLens[S, T, A, B]]
+  // def proof[S, T, A, B] = summon[Optics[S, T, A, B] <:< PLens[S, T, A, B]]
 }
 

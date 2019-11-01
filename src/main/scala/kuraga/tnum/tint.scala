@@ -69,11 +69,13 @@ object Lol extends App{
     def value: T
   }
 
-  delegate for ValueAll[Unit]{ def value = () }
-  delegate [X, XS <: Tuple] for ValueAll[X *: XS] given (x: ValueOf[X], xs: ValueAll[XS]) { def value = x.value *: xs.value }
+  given ValueAll[Unit]{ def value = () }
+  given [X, XS <: Tuple]  (given x: ValueOf[X], xs: ValueAll[XS]) : ValueAll[X *: XS]  { 
+    def value = x.value *: xs.value
+  }
 
-  def valueAll[T <: Tuple] given (v: ValueAll[T]) : T = v.value
-  def printAll[T <: Tuple] given ValueAll[T] = println(valueAll[T])
+  def valueAll[T <: Tuple] (given v: ValueAll[T]) : T = v.value
+  def printAll[T <: Tuple] (given ValueAll[T]) = println(valueAll[T])
 
 
 
@@ -87,11 +89,11 @@ object Lol extends App{
 
   type Q = Plus[(true, true, true), (true, true)]
 
-  // the[Q =:= (true, false, true)]
+  // summon[Q =:= (true, false, true)]
   // println(valueAll[Q])
 
 
   
 
-  // println(the[ValueOf[R]].value)
+  // println(summon[ValueOf[R]].value)
 }

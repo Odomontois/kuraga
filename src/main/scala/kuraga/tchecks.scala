@@ -6,13 +6,13 @@ object TInfer extends App{
   println(foo(1, x => x + 1))
 
   def check[C[-_], A, B] = {
-    the[(C[A] & C[B]) =:= C[A | B]]
-    the[(C[A] | C[B]) <:< C[A & B]]
+    summon[(C[A] & C[B]) =:= C[A | B]]
+    summon[(C[A] | C[B]) <:< C[A & B]]
   } 
 
   def check2[C[+_], A, B] = {
-    the[(C[A] & C[B]) =:= C[A & B]]
-    the[(C[A] | C[B]) <:< C[A | B]]
+    summon[(C[A] & C[B]) =:= C[A & B]]
+    summon[(C[A] | C[B]) <:< C[A | B]]
   } 
 
   def implem[A, B, R]: Either[A => R, B => R] => ((A, B)) => R =    {

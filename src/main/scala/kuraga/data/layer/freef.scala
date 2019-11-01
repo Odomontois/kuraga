@@ -1,7 +1,7 @@
 package data.layer
 import scala.annotation.tailrec
 import Effects._
-import given EvalF._
+import EvalF.given
 
 
 

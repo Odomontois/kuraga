@@ -13,7 +13,7 @@ object Lolk{
   }
 
   object Num {
-    given as Num[Int]{
+    given Num[Int]{
       def (x: Int) + (y: Int) = x + y
       def (x: Int) * (y: Int) = x * y
       def fromInt(x: Int) = x

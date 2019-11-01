@@ -1,4 +1,4 @@
-package kuraga
+package playground
 
 object TInfer extends App{
   def foo[T](x: T, f: T => T): T = f(x)

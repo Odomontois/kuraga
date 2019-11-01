@@ -1,4 +1,4 @@
-package kuraga.free
+package playground.free
 import cats._
 import scala.annotation.tailrec
 
@@ -24,20 +24,20 @@ object Free{
   
   given {
     @tailrec
-    def (free: Free[F, A]) go[F[+_], A] (f: F[Free[F, A]] => Free[F, A]) (given F: Functor[F]): A = 
+    def [F[+_], A] (free: Free[F, A]) go (f: F[Free[F, A]] => Free[F, A]) (given F: Functor[F]): A = 
      free match {
        case Pure(a) => a
        case Bind(fa, k) => f(F.map(fa)(k)) go f
      }
 
     
-    def (free: Free[F, A]) runTailRec[F[_], A] (given F: Monad[F]): F[A] = 
+    def [F[_], A] (free: Free[F, A]) runTailRec(given F: Monad[F]): F[A] = 
       F.tailRecM[Free[F, A], A](free){
         case Pure(a) => F.pure(Right(a))
         case Bind(fb, k) => F.map(fb)(a => Left(k(a)))
       }
 
-    def (free: Free[F, A]) foldRun[F[_], G[_], A] (f: F ~> G) (given G: Monad[G]): G[A] = 
+    def [F[_], G[_], A](free: Free[F, A]) foldRun (f: F ~> G) (given G: Monad[G]): G[A] = 
       G.tailRecM(free){
         case Pure(a)     => G.pure(Right(a))
         case Bind(fb, k) => G.map(f(fb))(a => Left(k(a)))
@@ -46,24 +46,24 @@ object Free{
 }
 
 trait Run[F[_]]{ self =>
-  def (layer: F[A]) run[A] : Free[F, A]
+  def [A] (layer: F[A]) run : Free[F, A]
 
-  def (layer: F[Free[F, A]]) step[A]: Free[F, A] = layer.run flatMap identity
+  def [A] (layer: F[Free[F, A]]) step: Free[F, A] = layer.run flatMap identity
 
   def ||[G[_]: RunOr]: Run[F || G] = new Run[F || G]{
     given Run[F] = self
-    def (layer: F[A] | G[A]) run[A]: Free[F || G, A] = layer.runOr[F, A]
+    def [A] (layer: F[A] | G[A]) run: Free[F || G, A] = layer.runOr[F, A]
   }
 }
 
 object Run {
   given Run[Void]{
-    def (layer: Nothing) run[A]: Free[Void, A] = Free.suspend(layer)
+    def [A] (layer: Nothing) run: Free[Void, A] = Free.suspend(layer)
   }
 }
 
 trait RunOr[F[_]] extends Run[F]{
-  def (layer: F[A] | G[A]) runOr[G[_], A] (given Run[G]): Free[F || G, A]
+  def [G[_], A] (layer: F[A] | G[A]) runOr(given Run[G]): Free[F || G, A]
   
-  override def (layer: F[A]) run[A]: Free[F, A] = layer.runOr[Void, A]
+  override def [A] (layer: F[A]) run: Free[F, A] = layer.runOr[Void, A]
 }

@@ -1,2 +1,2 @@
-package kuraga.free
+package playground.free
 

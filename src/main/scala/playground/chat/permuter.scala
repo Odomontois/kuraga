@@ -1,6 +1,6 @@
-package kuraga.permuter
+package playground.permuter
 
-object Permuter:
+object Permuter 
     def permute(n: Int, a: Array[Char]): Unit = 
         if(n == 0) println(a.mkString)
         else for (i <- 1 to n) do 

@@ -1,4 +1,4 @@
-package kuraga
+package playground
 package free
 import cats._
 import cats.effect._
@@ -14,7 +14,7 @@ object Console{
   val getLine: Free[Console, String]            = Free.suspend(GetLine)
   def putLine(s: String): Free[Console, Unit]   = Free.suspend(PutLine(s))
   given RunOr[Console]{
-    def (c: Console[A] | F[A]) runOr[F[_], A] (given Run[F]): Free[Console || F, A] = c match {
+    def[F[_], A]  (c: Console[A] | F[A]) runOr(given Run[F]): Free[Console || F, A] = c match {
       case c: Console[A] => Free(c.act())
       case other: F[A]   => other.run
     }

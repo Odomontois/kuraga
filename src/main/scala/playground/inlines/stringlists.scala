@@ -1,4 +1,4 @@
-package kuraga.inlines
+package playground.inlines
 
 
 inline def foo(ls: List[String]) <: Any = {

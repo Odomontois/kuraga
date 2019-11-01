@@ -1,4 +1,4 @@
-package kuraga
+package playground
 
 type Lol = [a, b <: a] =>> b
 

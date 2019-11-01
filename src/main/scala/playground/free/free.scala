@@ -1,4 +1,4 @@
-package kuraga.free
+package playground.free
 import cats._
 import cats.arrow.FunctionK
 import cats.evidence.As

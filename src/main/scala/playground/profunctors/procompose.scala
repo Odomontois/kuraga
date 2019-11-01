@@ -1,4 +1,4 @@
-package kuraga.profunctors
+package playground.profunctors
 import cats.arrow.Profunctor
 import cats.syntax.profunctor._
 import scala.language.implicitConversions

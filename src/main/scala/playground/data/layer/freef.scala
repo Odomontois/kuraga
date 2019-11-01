@@ -1,10 +1,8 @@
-package data.layer
+package playground.data.layer
+
 import scala.annotation.tailrec
 import Effects._
 import EvalF.given
-
-
-
 
 type FK1 = [-i[+_], +o[+_]] =>> Any
 
@@ -48,13 +46,14 @@ object EvalF  {
   }
   
   private given {
-    def (k: K[A, P, B]) interpret[P <: EvalF, A, B](step: P[L1[P], L1[P]] ): Layer1[P, B] = k.fa.unpack(step) match {
+    def [P <: EvalF, A, B] (k: K[A, P, B]) interpret(step: P[L1[P], L1[P]] ): Layer1[P, B] = k.fa.unpack(step) match {
           case Done(b)  => k.cont(b)
           case K(fx, f) => fx.flatMap(x => f(x).flatMap(k.cont))
           case ev       => ev.flatMap(k.cont)
         }
 
-  def (k : K[A, P, B]) interpretErr[P <: ErrorEvF[E], A, B, E](step: P[L1[P], L1[P]]): Layer1[P, B] = k.fa.unpack(step) match {
+    def [P <: ErrorEvF[E], A, B, E] (k : K[A, P, B]) interpretErr(step: P[L1[P], L1[P]]): Layer1[P, B] = 
+      k.fa.unpack(step) match {
         case Done(b)     => k.cont(b)
         case e@Raised(_) => e
         case K(fx, f)    => fx.flatMap(x => f(x).flatMap(k.cont))
@@ -63,17 +62,17 @@ object EvalF  {
   }
 
   given {    
-    def (self: Layer1[P, A]) flatMap[A, B, P <: EvalF ] (f: A => Layer1[P, B]) = new Layer1[P, B]{
+    def [A, B, P <: EvalF ] (self: Layer1[P, A]) flatMap (f: A => Layer1[P, B]) = new Layer1[P, B]{
       def unpack[R[+_]](p: P[L1[P], R]): R[B] = p.flatMap(self, f)
     }
 
-    def (self: Layer1[P, A]) map[A, B, P <: EvalF](f: A => B): Layer1[P, B] = self.flatMap(a => EvalF.now(f(a)))
+    def [A, B, P <: EvalF] (self: Layer1[P, A]) map(f: A => B): Layer1[P, B] = self.flatMap(a => EvalF.now(f(a)))
     
-    def (self: => Layer1[P, A]) defer[A, P <: EvalF]: Layer1[P, A] = new Layer1[P, A]{
+    def [A, P <: EvalF] (self: => Layer1[P, A]) defer: Layer1[P, A] = new Layer1[P, A]{
       def unpack[R[+_]](p: P[L1[P], R]): R[A] = p.defer(self)
     }
 
-    def (self: Layer1[P, X]) run[P <: EvalF, X](step: P[L1[P], L1[P]]): X = {
+    def [P <: EvalF, X] (self: Layer1[P, X]) run(step: P[L1[P], L1[P]]): X = {
         @tailrec def go(cur: Layer1[P, X]): X = cur.unpack(step) match{
             case Done(res)       => res    
             case k: K[_, P, X]   => go(k.interpret(step))        
@@ -83,7 +82,7 @@ object EvalF  {
         go(self)
     }
 
-    def (self: Layer1[P, X]) exec[P <: ErrorEvF[E], S, E, X](step: P[L1[P], L1[P]] & HasState[S]): (S, Either[E, X]) = {
+    def [P <: ErrorEvF[E], S, E, X](self: Layer1[P, X]) exec(step: P[L1[P], L1[P]] & HasState[S]): (S, Either[E, X]) = {
         @tailrec def go(cur: Layer1[P, X]): (S, Either[E, X]) = cur.unpack(step) match{
             case Done(res)       => (step.state, Right(res))
             case Raised(err)     => (step.state, Left(err))  
@@ -94,11 +93,11 @@ object EvalF  {
         go(self)
     }
 
-    def (self: Ev[X]) value[X]: X = self.run[EvalF, X](EvalInterpreter[EvalF]())
-    def (self: ReadEv[R][X]) runReader[R, X](r: R): X = self.run[ReadEvF[R], X](
+    def [X] (self: Ev[X]) value: X = self.run[EvalF, X](EvalInterpreter[EvalF]())
+    def [R, X] (self: ReadEv[R][X]) runReader(r: R): X = self.run[ReadEvF[R], X](
       new EvalInterpreter[ReadEvF[R]] with ReaderInterpreter[ReadEvF[R], R](r))   
 
-    def (self: ExecEv[S, E, X]) runStateE[S, E, X](init: S) : (S, Either[E, X]) = self.exec[ExecF[S, E], S, E, X](
+    def [S, E, X] (self: ExecEv[S, E, X]) runStateE(init: S) : (S, Either[E, X]) = self.exec[ExecF[S, E], S, E, X](
       new ExecInterpreter[S, E, ExecF[S, E]](init)
     )
   }  
@@ -184,7 +183,7 @@ object Effects{
 object EvalTest{
 
     given {
-        def (xs: List[A]) foldr[A, B, P <: EvalF](f: (A, Layer1[P, B]) => Layer1[P, B])(lb: Layer1[P, B]): Layer1[P, B] = 
+        def [A, B, P <: EvalF] (xs: List[A]) foldr(f: (A, Layer1[P, B]) => Layer1[P, B])(lb: Layer1[P, B]): Layer1[P, B] = 
             xs match {
                 case Nil => lb
                 case head :: tail => f(head, foldr(tail)(f)(lb)).defer

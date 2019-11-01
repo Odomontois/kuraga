@@ -1,4 +1,4 @@
-package kuraga.typeclasses
+package playground.typeclasses
 
 object Lolk{
   trait Num[N] {

@@ -9,7 +9,7 @@ trait Applicative[F[_]] extends Functor[F]{
     def [A, B, C] (fa: F[A]) map2 (fb: F[B])(f: (A, B) => C) : F[C]
 
     def unit: F[Unit] = ().pure
-    def [A, B] (ff: F[A => B]) ap(fa: F[A]): F[B] = ff.map2(fa)(_(_))
+    def [A, B] (ff: F[A => B]) ap (fa: F[A]): F[B] = ff.map2(fa)(_(_))
 
     override def [A, B] (fa: F[A]) fmap(f: A => B): F[B] = fa.map2(unit)((a, _) => f(a))
 }

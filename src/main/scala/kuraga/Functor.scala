@@ -11,6 +11,11 @@ trait Pure[+F[_]]
 trait Apply[F[_]] extends Functor[F]
     def [A, B, C] (fa: F[A]) map2 (fb: F[B])(f: (A, B) => C): F[C]
 
+    def [A, B, C] (fa: Eval[F[A]]) map2Lz(fb: Eval[F[B]]) (f: (A, B) => Eval[C]): Eval[F[C]] = 
+        for fae <- fa
+            fbr <- fb
+        yield fae.map2(fbr)((a, b) => f(a, b).value)
+
 trait Applicative[F[_]] extends Pure[F] with Apply[F]
     override def [A, B] (fa: F[A]) map(f: A => B): F[B] = 
         fa.map2(unit)((a, _) => f(a))

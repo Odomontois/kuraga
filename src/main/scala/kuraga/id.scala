@@ -17,7 +17,8 @@ object Id
             f(a) match
                 case Left(a1) => a.tailRecM(f)
                 case Right(b) => b
-
+    given Reducible[Id]
+        def [A, B] (c: Id[A]) reduceMap (f: A => Eval[B])(given Semigroup[B]): Eval[B] = f(c.get)
 
 
 

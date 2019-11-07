@@ -11,14 +11,24 @@ trait Fold[C, A]
     def [B] (c: C) foldl (b: B)(f: (B, A) => B): B = c.foldMapE(a => EndoE[B](f(_, a))).run(b)
 
 trait Foldable[C[_]] extends Forall[[A] =>> Fold[C[A], A]]
+    self =>
+    def [A, B] (c: C[A]) foldMap (f: A => Eval[B])(given Monoid[B]): Eval[B]
+
+    def of[A] = new {
+        def [B] (c: C[A]) foldMap (f: A => Eval[B])(given Monoid[B]): Eval[B] = self.foldMap(c)(f)
+    }
+
 
 trait Reduce[C, A] extends Fold[C, A]
     def [B] (c: C) reduceMap(f: A => Eval[B])(given Semigroup[B]): Eval[B]
     def [B] (c: C) foldMap(f: A => Eval[B])(given Monoid[B]): Eval[B] = c.reduceMap(f)
 
-trait Reducible[C[_]] extends Forall[[A] =>> Reduce[C[A], A]]
-
-object Reduce
-    given [A] : Reduce[Id[A], A]
-        def [B] (c: Id[A]) foldMap (f: A => Eval[B])(given Semigroup[B]): Eval[B] = f(c.get)
+trait Reducible[C[_]] extends Forall[[A] =>> Reduce[C[A], A]] with Foldable[C]  
+    self =>
+    def [A, B] (c: C[A]) reduceMap (f: A => Eval[B])(given Semigroup[B]): Eval[B]
+    def [A, B] (c: C[A]) foldMap (f: A => Eval[B])(given Monoid[B]): Eval[B] = c.reduceMap(f)
+ 
+    override def of[A] = new {
+        def [B] (c: C[A]) reduceMap (f: A => Eval[B])(given Semigroup[B]): Eval[B] = self.reduceMap(c)(f)
+    }
 

@@ -43,12 +43,13 @@ object DropRed
         
         go(Vector(), catDogs)
 
-    val x = Cat.of("lilly", "red", 
-            Cat.of("anya", "red", 
-            Cat.of("boris", "black", 
-            Dog.of("mashka", 3,
-            Cat.of("manya", "red",     
-              End())))))
+    val x = 
+        Cat.of("lilly" , "red"  , 
+        Cat.of("anya"  , "red"  , 
+        Cat.of("boris" , "black", 
+        Dog.of("mashka", 3      ,
+        Cat.of("manya" , "red"  ,     
+        End())))))
 
         
     val y = null.asInstanceOf[Fix[Cat |@ Dog |@ End.f]].value

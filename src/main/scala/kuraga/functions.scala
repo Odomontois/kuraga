@@ -4,11 +4,14 @@ import Eval.defer
 
 
 opaque type Endo[A] = Eval[A] => Eval[A]
+
 object Endo
     def apply[A](f: Eval[A] => Eval[A]): Endo[A] = f
-    given: {
-        def [A](endo: Endo[A]) apply (ea: Eval[A]) : Eval[A] = endo(ea)
-    }
+
+    given [A](endo: Endo[A]) extended with 
+       def apply (ea: Eval[A]) : Eval[A] = endo(ea)
+    
+    
     given [A] : Monoid[Endo[A]]
         def default = x => x
         def (x: Endo[A]) combine (y: Endo[A]) = e => x(y(e)).defer
@@ -32,9 +35,10 @@ case class Compose[A, B, C](f: A => B, g: B => C) extends (A => C)
 opaque type EndoE[A] = A => A
 object EndoE
     def apply[A](f: A => A): EndoE[A] = f
-    given:{
-        def [A](endo: EndoE[A]) run : A => A = endo
-    }
+
+    given [A] (endo: EndoE[A]) extended with 
+        def run : A => A = endo
+    
     
     given [A] : Monoid[EndoE[A]]
         def default = x => x

@@ -6,9 +6,9 @@ opaque type Id[+A] = A
 
 object Id
     def apply[A](x: A): Id[A] = x
-    given: {
-        def [A] (i: Id[A]) get: A = i
-    }
+    given [A] (i: Id[A]) extended with
+        def  get: A = i
+    
 
     given Monad[Id]
         def [A] (a: A) pure = a

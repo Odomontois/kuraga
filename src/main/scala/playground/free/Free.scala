@@ -22,9 +22,8 @@ object Free{
   def apply[A](a: => A): Free[Void, A] = unit flatMap (_ => Pure(a))
   def suspend[F[_], A](fa: F[A]): Free[F, A] = Bind(fa, x => Pure(x))
   
-  given {
-    @tailrec
-    def [F[+_], A] (free: Free[F, A]) go (f: F[Free[F, A]] => Free[F, A]) (given F: Functor[F]): A = 
+  given freeOps : AnyRef {
+    @tailrec def [F[_], A] (free: Free[F, A]) go (f: F[Free[F, A]] => Free[F, A]) (given F: Functor[F]): A = 
      free match {
        case Pure(a) => a
        case Bind(fa, k) => f(F.map(fa)(k)) go f

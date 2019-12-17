@@ -19,3 +19,14 @@ trait EitherImpl[F[_], E] (given F: Monad[F]) extends Monad[[A] =>> F[Either[E, 
 
 object Kek extends EitherImpl[Id, String]
 
+
+val zoneId = tryToGetSome(
+  fromRequest = Some({x => x.length}),
+  default = 0
+)
+
+private def tryToGetSome[A](fromRequest: Option[String => A] = None,
+                            default: A): A = {
+  default
+}
+

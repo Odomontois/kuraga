@@ -24,7 +24,7 @@ trait Monad[F[_]] extends Applicative[F] {
 trait Traverse[F[_]] extends Functor[F] {
     def[G[_], A, B] (fa: F[A]) traverse (f: A => G[B]) (given Applicative[G]) : G[F[B]]
 
-    def (fa: F[G[A]]) sequence[G[_], A] (given Applicative[G]) : G[F[A]] = fa.traverse(identity)
+    def[G[_], A] (fa: F[G[A]]) sequence (given Applicative[G]) : G[F[A]] = fa.traverse(identity)
 
     override def [A, B] (fa: F[A]) fmap(f: A => B): F[B] = fa.traverse[Identity, A, B](f)
 }
@@ -60,7 +60,7 @@ def foo2[A, B, F[_]](x: F[A], f: A => B) (given Monad[F], Traverse[F]) : F[B] = 
     x.fmap(f) 
 }
 
-given intOps : (i: Int) {
+given (i: Int) extended with {
     def lol = i * 2 + 3
 }
 

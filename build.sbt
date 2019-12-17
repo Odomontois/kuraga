@@ -1,4 +1,4 @@
-val dottyVersion = "0.20.0-RC1"
+val dottyVersion = "0.21.0-bin-20191213-3130729-NIGHTLY"
 
 
 name := "dotty-simple"

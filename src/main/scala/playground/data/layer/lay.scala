@@ -70,13 +70,13 @@ object DropRed
     
     given Lens2[CatOrDogs, Cat]
        def get[A, B](p: CatOrDogs[A, B]): Cat[A, B] = p
-       def set[A, B](p: CatOrDogs[A, B], q: Cat[A, B]): CatOrDogs[A, B] = new {
+       def set[A, B](p: CatOrDogs[A, B])(q: Cat[A, B]): CatOrDogs[A, B] = new {
            export q.cat
            export p.{dog, end}
        }
 
 
-    def (catDogs: Layer[CatOrDogs]) toVector: CatDogVector  = 
+    def (catDogs: Layer[CatOrDogs]) toCatDogVector: CatDogVector  = 
         @tailrec def go(catDogs: Layer[CatOrDogs], acc: CatDogVector = Vector()) : CatDogVector =
             val (continue, next, res) = catDogs.peel[(Boolean, Layer[CatOrDogs], CatDogVector)](new {
                 def cat(name: String, fur: String, rest: Layer[CatOrDogs]) =                     
@@ -99,5 +99,5 @@ object DropRed
 
         
     def main(args: Array[String]) = 
-        println(x.toVector.show)
-        println(dropRedCats(x).toVector.show)
+        println(x.toCatDogVector.show)
+        println(dropRedCats[CatOrDogs](x).toCatDogVector.show)

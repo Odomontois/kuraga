@@ -1,12 +1,7 @@
 package playground.typeclasses
 
-trait Foo
-trait Bar
+// trait Eq[A]
+//     def eqs(a: A, b: A): Boolean
 
-object Or {
-    def ponv (given Bar | Foo) = 1
-
-    def lol (given Bar) = ponv
-
-    def kek(given Foo) = ponv
-}
+// object Eq
+//     given listEqs[A]: Eq[A] => Eq[List[A]]

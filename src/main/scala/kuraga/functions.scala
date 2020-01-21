@@ -2,13 +2,14 @@ package kuraga
 import scala.annotation.tailrec
 import Eval.defer
 
+type ~>[F[_], G[_]] = [A] => F[A] => G[A]
 
 opaque type Endo[A] = Eval[A] => Eval[A]
 
 object Endo
     def apply[A](f: Eval[A] => Eval[A]): Endo[A] = f
 
-    given [A](endo: Endo[A]) extended with 
+    given endoOps: [A](endo: Endo[A]) extended with 
        def apply (ea: Eval[A]) : Eval[A] = endo(ea)
     
     

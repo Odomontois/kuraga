@@ -2,7 +2,7 @@ package playground
 package free.fix
 import scala.annotation.tailrec
 
-type |@[F[+_], G[+_]] = [+a] =>> F[a] | G[a]
+type |@[F[+_], G[+_]] = [a] =>> F[a] | G[a]
 
 final case class Cat[+R](name: String, fur: String, rest: R)
 object Cat
@@ -21,7 +21,7 @@ case object End{
 opaque type Fix[+F[+_]] = AnyRef
 
 object Fix
-    given [F[+_]](ff: Fix[F]) extended with     
+    extension on [F[+_]](ff: Fix[F])     
         def value: F[Fix[F]] = ff.asInstanceOf
     def apply[F[+_]](fff: F[Fix[F]]): Fix[F] = fff.asInstanceOf
 

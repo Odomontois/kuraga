@@ -41,7 +41,7 @@ object Dog
 trait End[+O]
     def end: O
 
-object End extends Layer[[-i, o] =>> End[o]]
+object End extends Layer[[i, o] =>> End[o]]
     def peel[R](cont: End[R]): R = cont.end
 
 trait Constant[P[-_, _]]

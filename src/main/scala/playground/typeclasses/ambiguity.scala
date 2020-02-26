@@ -60,7 +60,7 @@ def foo2[A, B, F[_]](x: F[A], f: A => B) (given Monad[F], Traverse[F]) : F[B] = 
     x.fmap(f) 
 }
 
-given (i: Int) extended with {
+extension on (i: Int) {
     def lol = i * 2 + 3
 }
 

@@ -36,3 +36,12 @@ trait StackSafeMonad[F[_]] extends Monad[F]
             case Left(a)  => a.tailRecM(f)
             case Right(b) => b.pure
         }
+
+trait Extract[F[_]]
+    def [A](fa: F[A]) extract: A
+
+trait CoFlatMap[F[_]] extends Functor[F]
+    def [A, B] (fa: F[A]) coflatMap(f: F[A] => B) : F[B]
+
+trait Comonad[F[_]] extends CoFlatMap[F] with Extract[F]
+    def [A, B] (fa: F[A]) map (f: A => B) : F[B] = fa.coflatMap(fa1 => f(fa1.extract))

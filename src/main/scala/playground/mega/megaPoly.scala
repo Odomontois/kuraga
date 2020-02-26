@@ -12,10 +12,10 @@ type BiT = [_ <: Result | Error] =>> Any
 type ProT = [_ <: Result | Context] =>> Any
 type ReaT = [_ <: Result | Error | Context] =>> Any
 
-type Mono = [+T <: MonoT] =>> Any
-type Bi = [+T <: BiT] =>> Any
-type Pro = [+T <: ProT] =>> Any
-type Rea = [+T <: ReaT] =>> Any
+type Mono = [T <: MonoT] =>> Any
+type Bi = [T <: BiT] =>> Any
+type Pro = [T <: ProT] =>> Any
+type Rea = [T <: ReaT] =>> Any
 
 type M[F <: Mono, A] = F[[T <: Result] =>> T match {
     case Result => A

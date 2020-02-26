@@ -9,7 +9,7 @@ opaque type Endo[A] = Eval[A] => Eval[A]
 object Endo
     def apply[A](f: Eval[A] => Eval[A]): Endo[A] = f
 
-    given endoOps: [A](endo: Endo[A]) extended with 
+    extension on[A](endo: Endo[A])
        def apply (ea: Eval[A]) : Eval[A] = endo(ea)
     
     
@@ -37,7 +37,7 @@ opaque type EndoE[A] = A => A
 object EndoE
     def apply[A](f: A => A): EndoE[A] = f
 
-    given [A] (endo: EndoE[A]) extended with 
+    extension on [A] (endo: EndoE[A]) 
         def run : A => A = endo
     
     

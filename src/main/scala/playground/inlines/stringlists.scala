@@ -26,11 +26,11 @@ type Not[b <: Boolean] <: Boolean = b match {
     case true => false
 }
 
-sealed trait Lst[+A]{
+sealed trait Lst[+A]:
     type IsEmpty <: Boolean    
     def isEmpty: IsEmpty
     def notEmpty : Not[IsEmpty] 
-}
+
 
 object Lst{
     case object Nil extends Lst[Nothing]{

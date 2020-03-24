@@ -22,21 +22,21 @@ object Free{
   def apply[A](a: => A): Free[Void, A] = unit flatMap (_ => Pure(a))
   def suspend[F[_], A](fa: F[A]): Free[F, A] = Bind(fa, x => Pure(x))
   
-  given freeOps : AnyRef {
-    @tailrec def [F[_], A] (free: Free[F, A]) go (f: F[Free[F, A]] => Free[F, A]) (given F: Functor[F]): A = 
+  extension freeOps {
+    @tailrec def [F[_], A] (free: Free[F, A]) go (f: F[Free[F, A]] => Free[F, A]) (using F: Functor[F]): A = 
      free match {
        case Pure(a) => a
        case Bind(fa, k) => f(F.map(fa)(k)) go f
      }
 
     
-    def [F[_], A] (free: Free[F, A]) runTailRec(given F: Monad[F]): F[A] = 
+    def [F[_], A] (free: Free[F, A]) runTailRec(using F: Monad[F]): F[A] = 
       F.tailRecM[Free[F, A], A](free){
         case Pure(a) => F.pure(Right(a))
         case Bind(fb, k) => F.map(fb)(a => Left(k(a)))
       }
 
-    def [F[_], G[_], A](free: Free[F, A]) foldRun (f: F ~> G) (given G: Monad[G]): G[A] = 
+    def [F[_], G[_], A](free: Free[F, A]) foldRun (f: F ~> G) (using G: Monad[G]): G[A] = 
       G.tailRecM(free){
         case Pure(a)     => G.pure(Right(a))
         case Bind(fb, k) => G.map(f(fb))(a => Left(k(a)))
@@ -61,8 +61,7 @@ object Run {
   }
 }
 
-trait RunOr[F[_]] extends Run[F]{
-  def [G[_], A] (layer: F[A] | G[A]) runOr(given Run[G]): Free[F || G, A]
+trait RunOr[F[_]] extends Run[F]:
+  def [G[_], A] (layer: F[A] | G[A]) runOr(using Run[G]): Free[F || G, A]
   
   override def [A] (layer: F[A]) run: Free[F, A] = layer.runOr[Void, A]
-}

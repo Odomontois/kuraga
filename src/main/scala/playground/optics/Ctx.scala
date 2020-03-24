@@ -1,11 +1,11 @@
 package optics
 import cats.Functor
 
-trait Ctx {
+trait Ctx :
   type P[_, _]
   type F[_]
   type C[+_]
-}
+
 
 
 object Ctx{
@@ -18,9 +18,9 @@ object Ctx{
 
   def ctx[UP[_, _], UF[_], UC[+_]]: Ctx{ type P <: UP ; type F <: UF; type C[+x] <: UC[x] } = CtxObj
 
-  type PLens = Ctx{
+  type PLens = Ctx {
     type P[a, b] <: a => b
-    type C[+x]   >: (given Functor[F]) => x
+    type C[+x]   >: Functor[F] ?=> x
   }
 }
 

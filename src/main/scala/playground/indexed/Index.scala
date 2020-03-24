@@ -1,6 +1,6 @@
 package playground.indexed
 
-trait IndexedSet[K]{
+trait IndexedSet[K]:
   type ISet
 
   def (set: ISet) setMember(k: K): Boolean
@@ -11,9 +11,9 @@ trait IndexedSet[K]{
   def (set: ISet) diff (other: ISet): ISet = other.iterator.foldLeft(set)(_ remove _)
   def (set: ISet) intersect (other: ISet): ISet = set diff (other diff set)
   def emptySet: ISet
-}
 
-trait IndexedMap[K]{
+
+trait IndexedMap[K]:
   type IMap[+A]
 
   def [A] (map: IMap[A]) mapMember(k: K): Boolean
@@ -25,16 +25,15 @@ trait IndexedMap[K]{
   def [A] (map: IMap[A]) putAll (other: IMap[A]): IMap[A] = other.items.foldLeft(map){ case (m, (k, v)) => m put (k, v) }
 
   def emptyMap[A]: IMap[A]
-}
 
 
 
-trait IndexedIm[K] extends IndexedSet[K] with IndexedMap[K] {
+trait IndexedIm[K] extends IndexedSet[K] with IndexedMap[K] :
   def [A] (map: IMap[A]) keySet: ISet
   def [A] (map: IMap[A]) deleteAll (set: ISet) : IMap[A] = set.iterator.foldLeft(map)(_ delete _)
-}
 
-trait IndexedSetMut[K]{
+
+trait IndexedSetMut[K]:
   type MSet
 
   def (set: MSet) setMemberM(k: K): Boolean
@@ -45,14 +44,14 @@ trait IndexedSetMut[K]{
   def (set: MSet) removeAllM (other: IterableOnce[K]): Unit = other.iterator.foreach(set removeM _)
 
   def emptyMutSet(): MSet
-  def makeSet(ks: TraversableOnce[K]): MSet = {
+  def makeSet(ks: TraversableOnce[K]): MSet = 
     val s = emptyMutSet()
     ks.iterator.foreach(s insertM _)
     s
-  }
-}
+  
 
-trait IndexedMapMut[K]{
+
+trait IndexedMapMut[K]:
   type MMap[A]
 
   def [A] (map: MMap[A]) mapMemberM(k: K): Boolean
@@ -71,7 +70,7 @@ trait IndexedMapMut[K]{
     ks.iterator.foreach{ case (k, v) => s putM (k, v) }
     s
   }
-}
+
 
 trait IndexedMut[K] extends IndexedSetMut[K] with IndexedMapMut[K]
 

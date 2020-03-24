@@ -5,28 +5,29 @@ import scala.annotation.tailrec
 type |@[F[+_], G[+_]] = [a] =>> F[a] | G[a]
 
 final case class Cat[+R](name: String, fur: String, rest: R)
-object Cat
+
+object Cat:
     def of[R, F[+_]](name: String, fur: String, rest: Fix[F]): Fix[F |@ Cat] = Fix(new Cat(name, fur, rest))
 
 final case class Dog[+R](name: String, size: Long, rest: R)
-object Dog
+object Dog:
     def of[R, F[+_]](name: String, size: Long, rest: Fix[F]): Fix[F |@ Dog] = Fix(new Dog(name, size, rest))
 
-case object End{
+case object End:
     type f[+a] = End.type
     def apply() = Fix[f](End)
-}
+
 
 
 opaque type Fix[+F[+_]] = AnyRef
 
-object Fix
-    extension on [F[+_]](ff: Fix[F])     
+object Fix:
+    extension on [F[+_]](ff: Fix[F]) :
         def value: F[Fix[F]] = ff.asInstanceOf
     def apply[F[+_]](fff: F[Fix[F]]): Fix[F] = fff.asInstanceOf
 
 
-object DropRed
+object DropRed:
     @tailrec def dropRedCats[F[+a] >: Cat[a]](cats: Fix[F]): Fix[F] = 
         cats.value match 
             case Cat(_, "red", rest) => dropRedCats(rest)

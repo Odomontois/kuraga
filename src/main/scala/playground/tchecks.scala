@@ -28,9 +28,9 @@ object TInfer extends App{
 }
 
 
-trait PolyLol{
+trait PolyLol:
   def kek[A](x: A, y: A): List[A]
-}
+
 
 object PolyLol{
 

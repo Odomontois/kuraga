@@ -70,12 +70,12 @@ object Lol extends App{
   }
 
   given ValueAll[Unit]{ def value = () }
-  given [X, XS <: Tuple]  (given x: ValueOf[X], xs: ValueAll[XS]) : ValueAll[X *: XS]  { 
+  given [X, XS <: Tuple]  (using x: ValueOf[X], xs: ValueAll[XS]) as ValueAll[X *: XS]  { 
     def value = x.value *: xs.value
   }
 
-  def valueAll[T <: Tuple] (given v: ValueAll[T]) : T = v.value
-  def printAll[T <: Tuple] (given ValueAll[T]) = println(valueAll[T])
+  def valueAll[T <: Tuple] (using v: ValueAll[T]) : T = v.value
+  def printAll[T <: Tuple] (using ValueAll[T]) = println(valueAll[T])
 
 
 

@@ -2,7 +2,7 @@ package playground.traits
 
 import kuraga.{Monad, Id}
 
-trait EitherImpl[F[_], E] (given F: Monad[F]) extends Monad[[A] =>> F[Either[E, A]]]
+trait EitherImpl[F[_], E] (using F: Monad[F]) extends Monad[[A] =>> F[Either[E, A]]]:
     def [A](a: A) pure: F[Either[E, A]] = F.pure(Right(a)) 
     def [A, B](fa: F[Either[E, A]]) flatMap (f: A => F[Either[E, B]]): F[Either[E, B]] = 
         F.flatMap(fa) {

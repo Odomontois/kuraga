@@ -41,15 +41,15 @@ type EitherR[T <: BiT] = Either[T[Error], T[Result]]
 type FunctionR[T <: ProT] = T[Context] => T[Result]
 
 
-trait Monad[F <: Mono]
+trait Monad[F <: Mono]:
     def [A](a: A) pure: M[F, A]
     def [A, B](fa: M[F, A]) flatMap (f: A => M[F, B]): M[F, B]
 
-trait BIOError[F <: Bi]
+trait BIOError[F <: Bi]:
     def [E, A] (e: E) raise: BiA[F, E, A]
     def [E, A](fa: BiA[F, E, A]) handleWith(f: E => BiA[F, Nothing, A]) : BiA[F, Nothing, A]
 
-trait ProLocal[F <: Pro]
+trait ProLocal[F <: Pro]:
     def ask[R] : ProA[F, R, R]
     def[R, R1, A](fa: ProA[F, R1, A]) local (f: R => R1): ProA[F, R, A]
 
@@ -57,7 +57,7 @@ final case class ApplicationContext()
 
 
 
-// def mapThree[F <: Rea](fs: Reap[F, ApplicationContext, Throwable, String]) (given BIOError[F], ProLocal[F], Monad[F]): Reap[F, Any, Nothing, String] = 
+// def mapThree[F <: Rea](fs: Reap[F, ApplicationContext, Throwable, String]) (using BIOError[F], ProLocal[F], Monad[F]): Reap[F, Any, Nothing, String] = 
 //     summon[ProLocal[F]].local[A = String](fs)(_ => ApplicationContext()).handleWith(es => es.pure)
 
 

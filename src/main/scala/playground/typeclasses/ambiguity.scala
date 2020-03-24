@@ -22,9 +22,9 @@ trait Monad[F[_]] extends Applicative[F] {
 }
 
 trait Traverse[F[_]] extends Functor[F] {
-    def[G[_], A, B] (fa: F[A]) traverse (f: A => G[B]) (given Applicative[G]) : G[F[B]]
+    def[G[_], A, B] (fa: F[A]) traverse (f: A => G[B]) (using Applicative[G]) : G[F[B]]
 
-    def[G[_], A] (fa: F[G[A]]) sequence (given Applicative[G]) : G[F[A]] = fa.traverse(identity)
+    def[G[_], A] (fa: F[G[A]]) sequence (using Applicative[G]) : G[F[A]] = fa.traverse(identity)
 
     override def [A, B] (fa: F[A]) fmap(f: A => B): F[B] = fa.traverse[Identity, A, B](f)
 }
@@ -32,17 +32,17 @@ trait Traverse[F[_]] extends Functor[F] {
 trait MonadWithTraverse[F[_]] extends Monad[F] with Traverse[F]
 type Identity[A] = A
 
-given idInstance: MonadWithTraverse[Identity] {
+given idInstance as MonadWithTraverse[Identity] {
     override def [A, B] (fa: A) flatMap (f: A => B) = f(fa)
     override def [A] (a: A) pure = a
-    override def [G[_], A, B](a: A) traverse(f: A => G[B]) (given G: Applicative[G]) : G[B] = f(a)
+    override def [G[_], A, B](a: A) traverse(f: A => G[B]) (using G: Applicative[G]) : G[B] = f(a)
 }
 
 
-given optionInstance: MonadWithTraverse[Option] {
+given optionInstance as MonadWithTraverse[Option] {
     override def [A, B] (fa: Option[A]) flatMap (f: A => Option[B]) = fa.flatMap(f)
     override def [A] (a: A) pure = Some(a)
-    override def [G[_], A, B](a: Option[A]) traverse(f: A => G[B]) (given G: Applicative[G]) : G[Option[B]] = 
+    override def [G[_], A, B](a: Option[A]) traverse(f: A => G[B]) (using G: Applicative[G]) : G[Option[B]] = 
        a.fold(G.pure(None))(a => f(a).fmap(Some(_)))
 }
 
@@ -53,9 +53,9 @@ given optionInstance: MonadWithTraverse[Option] {
 // def foo[A, B, F[_]](x: F[A], f: A => B) given Monad[F] given Traverse[F] : F[B] = x.fmap(f) 
 
 // good
-def foo[A, B, F[_]](x: F[A], f: A => B) : (given Monad[F]) => (given Traverse[F]) => F[B] = x.fmap(f) 
+def foo[A, B, F[_]](x: F[A], f: A => B) :  Monad[F] ?=> Traverse[F] ?=> F[B] = x.fmap(f) 
 
-def foo2[A, B, F[_]](x: F[A], f: A => B) (given Monad[F], Traverse[F]) : F[B] = {
+def foo2[A, B, F[_]](x: F[A], f: A => B) (using Monad[F], Traverse[F]) : F[B] = {
     given Functor[F] = summon[Monad[F]]
     x.fmap(f) 
 }

@@ -1,6 +1,6 @@
 package kuraga
 
-trait Walk[S, T, A, B, -TC[_[_]]]
+trait Walk[S, T, A, B, -TC[_[_]]]:
     def[F[+_]: TC] (c: S) walkLz(f: A => Eval[F[B]]) : Eval[F[T]]
 
     def[F[+_]: TC] (c: S) walk(f: A => F[B]) : F[T] = 
@@ -8,7 +8,7 @@ trait Walk[S, T, A, B, -TC[_[_]]]
 
 
 
-trait Walkable[T[_], A, TC[_[_]]] extends Forall2[[A, B] =>> Walk[T[A], T[B], A, B, TC]]
+trait Walkable[T[_], A, TC[_[_]]] extends Forall2[[A, B] =>> Walk[T[A], T[B], A, B, TC]]:
     self =>
     def [F[_]: TC, A, B] (fa: T[A]) walkLz (f: A => Eval[F[B]])  : Eval[F[T[B]]]
 

@@ -11,11 +11,11 @@ object Main {
 
   def msg = "I was compiled by dotty :)"
 
-  // trait A
-  // trait B extends A
+  // trait A:
+  // trait B extends A:
 
   // summon[((x : A) => Int) <:< ((x: B) => Int )]
 
-  def check[A,  B <: A, C] = summon[((given A) => C) <:< ((given B) => C)]
+  def check[A,  B <: A, C] = summon[(A ?=> C) <:< ( B ?=> C)]
 
 }

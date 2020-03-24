@@ -3,9 +3,8 @@ import cats._
 import cats.arrow.FunctionK
 import cats.evidence.As
 
-trait Carrier{
+trait Carrier:
   type T
-}
 
 type ||[F[_], G[_]] = [A] =>> F[A] | G[A] 
 type Void = [x] =>> Nothing

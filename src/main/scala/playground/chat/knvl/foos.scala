@@ -8,7 +8,7 @@
 //   def tupleBoth(e1: E, e2: E): E
 // }
 
-// trait Reader[-C[_], +A] { A =>
+// trait Reader[-C[_], +A] { A =>:
 //   def read[E](s: String)(implicit E: C[E]): Either[E, A]
 // }
 

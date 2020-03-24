@@ -62,18 +62,18 @@ object DropRed:
     trait CatOrDogs[-i, +o] extends  Cat[i, o] with Dog[i, o] with End[o]
 
     given Constant[CatOrDogs]:
-        def const[B](b: B) = new {
+        def const[B](b: B) = new :
             def cat(name: String, fur: String, rest: Any) = b
             def dog(name: String, size: Long, rest: Any) = b
             def end = b
-        }
+        
     
     given Lens2[CatOrDogs, Cat]:
        def get[A, B](p: CatOrDogs[A, B]): Cat[A, B] = p
-       def set[A, B](p: CatOrDogs[A, B])(q: Cat[A, B]): CatOrDogs[A, B] = new {
+       def set[A, B](p: CatOrDogs[A, B])(q: Cat[A, B]): CatOrDogs[A, B] = new :
            export q.cat
            export p.{dog, end}
-       }
+       
 
 
     def (catDogs: Layer[CatOrDogs]) toCatDogVector: CatDogVector  = 

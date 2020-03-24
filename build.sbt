@@ -1,7 +1,7 @@
 val dottyVersion = "0.23.0-RC1"
 
 
-name := "dotty-simple"
+name := "kuraga"
 version := "0.1.0"
 
 scalaVersion := dottyVersion

@@ -1,11 +1,12 @@
 package playground.inlines
 
 
-inline def foo(ls: List[String]) <: Any = {
+transparent inline def foo(ls: List[String]) = {
     ls match {
         case List("number", "1") => 1
         case List("number", "2") => 2
-        case Nil => "hz"
+        case Nil                 => "hz"
+        case _                   => ()
     }
 }
 

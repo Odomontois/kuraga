@@ -9,7 +9,7 @@ type FK1 = [i[+_], o[+_]] =>> Any
 trait Layer1[-P[-i[+_], +o[+_]], +A] :
   def unpack[R[+_]](p: P[[a] =>> Layer1[P, a] , R]): R[A]
 
-object EvalF :
+object EvalF:
   val unit : Pure[Unit] = Done(())
 
   def now[A](a: A): Ev[A] = new {
@@ -67,7 +67,7 @@ object EvalF :
     def run(step: P[L1[P], L1[P]]): X = 
         @tailrec def go(cur: Layer1[P, X]): X = cur.unpack(step) match
             case Done(res)       => res    
-            case k: K[_, P, X]   => go(k.interpret(step))        
+            case k: K[_, P @unchecked, X]   => go(k.interpret(step))        
             case next            => go(next)        
 
         go(self)
@@ -77,7 +77,7 @@ object EvalF :
         @tailrec def go(cur: Layer1[P, X]): (S, Either[E, X]) = cur.unpack(step) match
             case Done(res)       => (step.state, Right(res))
             case Raised(err)     => (step.state, Left(err))  
-            case k: K[_, P, X]   => go(k.interpretErr(step))        
+            case k: K[_, P @unchecked, X]   => go(k.interpretErr(step))        
             case next            => go(next)
 
         go(self)

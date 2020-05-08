@@ -3,6 +3,7 @@ package free
 import cats._
 import cats.effect._
 import scala.io.StdIn.readLine
+import scala.annotation.unchecked.uncheckedVariance
 
 enum Console[+A](action: => A){
   case GetLine              extends Console[String](readLine())
@@ -15,8 +16,8 @@ object Console{
   def putLine(s: String): Free[Console, Unit]   = Free.suspend(PutLine(s))
   given RunOr[Console]{
     def[F[_], A]  (c: Console[A] | F[A]) runOr(using Run[F]): Free[Console || F, A] = c match {
-      case c: Console[A] => Free(c.act())
-      case other: F[A]   => other.run
+      case c: Console[A @unchecked] => Free(c.act())
+      case other: F[A] @unchecked   => other.run
     }
   }
 }

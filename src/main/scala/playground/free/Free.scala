@@ -2,7 +2,7 @@ package playground.free
 import cats._
 import scala.annotation.tailrec
 
-enum Free[+F[_], A]{
+enum Free[+F[_], A]:
   case Pure[A](a: A) extends Free[Void, A]
   case Bind[+F[_], B, A](fa: F[B], k: B => Free[F, A]) extends Free[F, A] 
 
@@ -13,10 +13,9 @@ enum Free[+F[_], A]{
   def map[B](f: A => B): Free[F, B] = flatMap(a => Free.Pure(f(a)))
 
   def semiFlatMap[B, G[x] >: F[x]](k: A => G[B]): Free[G, B] = flatMap(a => Free.suspend(k(a))) 
-}
 
 
-object Free{
+object Free:
   val unit: Free[Void, Unit]  = Pure(())
 
   def apply[A](a: => A): Free[Void, A] = unit flatMap (_ => Pure(a))
@@ -42,9 +41,9 @@ object Free{
         case Bind(fb, k) => G.map(f(fb))(a => Left(k(a)))
       }
   }
-}
 
-trait Run[F[_]]{ self =>
+trait Run[F[_]]:
+  self =>
   def [A] (layer: F[A]) run : Free[F, A]
 
   def [A] (layer: F[Free[F, A]]) step: Free[F, A] = layer.run flatMap identity
@@ -53,13 +52,10 @@ trait Run[F[_]]{ self =>
     given Run[F] = self
     def [A] (layer: F[A] | G[A]) run: Free[F || G, A] = layer.runOr[F, A]
   }
-}
 
-object Run {
-  given Run[Void]{
+object Run:
+  given Run[Void]:
     def [A] (layer: Nothing) run: Free[Void, A] = Free.suspend(layer)
-  }
-}
 
 trait RunOr[F[_]] extends Run[F]:
   def [G[_], A] (layer: F[A] | G[A]) runOr(using Run[G]): Free[F || G, A]

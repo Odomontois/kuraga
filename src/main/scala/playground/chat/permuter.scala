@@ -1,4 +1,4 @@
-package playground.permuter
+package playground.chat
 
 object Permuter:
     def permute(n: Int, a: Array[Char]): Unit = 

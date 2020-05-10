@@ -1,0 +1,25 @@
+package playground.chat.kaivessel
+import Eq.GEQ
+
+
+trait Is[k <: AnyKind, A <: k, B <: k]:
+    def substitute[F[_ <: k]](fa: F[A]): F[B]
+
+    final def reverse: Is[k, B, A] = substitute[[a <: k] =>> Is[k, a, A]](???)
+
+object Is:
+    private def refl0[k <: AnyKind, A <: k] : Is[k, A, A] = new:
+        def substitute[F[_ <: k]](fa: F[A]): F[A] = fa
+    private val reflAny : Is[Any, Any, Any] = refl0
+
+    def refl[k <: AnyKind, A <: k]: Is[k, A, A] = reflAny.asInstanceOf[Is[k, A, A]]
+
+
+// hs:GCompare
+trait Eq[k <: AnyKind, K[_ <: k]] :
+  def [A <: k, B <: k](k: K[A]) isEq (k2: K[B]): GEQ[k, K, A, B]
+
+object Eq:
+  enum GEQ[k <: AnyKind, K[_ <: k], A <: k, B <: k]:
+    case Y(res: K[A], is: Is[k, A, B])
+    case N()

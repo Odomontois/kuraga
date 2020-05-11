@@ -1,4 +1,4 @@
-// package playground.chat.kaivessel
+package playground.chat.kaivessel
 // import Eq.GEQ
 // import GEQ.{Y, N}
 
@@ -20,4 +20,7 @@
 //         case ExampleGADT.S => N[K2, ExampleGADT, A, B]()
 //         case ExampleGADT.I => Y(ExampleGADT.I)
 
-// final case class ExampleValue[c[f[_]]](get: c[Option])
+final case class ExampleValue[c <: K2](get: c[Option]) 
+
+object ExampleValue:
+    given [c[_[_]]] as Semigroup[ExampleValue[c]] = Semigroup.derived

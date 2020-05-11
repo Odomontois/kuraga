@@ -1,32 +1,27 @@
-// package playground.chat.kaivessel
-// //port of https://scastie.scala-lang.org/1QH1bFGSRcSkcGavkm0Zbw 
+package playground.chat.kaivessel
 
-// import Eq.{GEQ}
-// import GEQ.{Y, N}
-// import Vessel.Vessel
-// import MonoidalDMap.MonoidalDMap
-// import scala.deriving.Mirror
+import Eq.{GEQ}
 
 
-// trait DGet[k <: *, K <: K3, +V <: K3]:
-//   def get[A[_[_]]](k: K[A])(using Eq[K]): Option[V[A]]
+trait DGet[k <: *, K[_ <: k], +V[_ <: k]]:
+  def get[A <: k](k: K[A])(using Eq[k, K]): Option[V[A]]
 
-// trait DList[K <: K3, +V <: K3]:
-//   def toList: List[DPair[K, V]]
+trait DList[k <: *, K[_ <: k], +V[_ <: k]]:
+  def toList: List[DPair[k, K, V]]
 
-// sealed trait DMap[K <: K3, +V <: K3] extends DGet[K, V] with DList[K, V]:  
-//   def set[V1 >: V <: K3](kv: DPair[K, V1])(using Eq[K]): DMap[K, V1]
-//   // right-biased of course
-//   def ++[V1 >: V <: K3](that: DMap[K, V1])(using Eq[K]): DMap[K, V1]
-//   def --[V1 >: V <: K3](that: DMap[K, V1])(using Eq[K]): DMap[K, V]  
+sealed trait DMap[k <: *, K <: ^[k], +V <: ^[k]] extends DGet[k, K, V] with DList[k, K, V]:  
+  def set[V1 >: V <: ^[k]](kv: DPair[k, K, V1])(using Eq[k, K]): DMap[k, K, V1]
+  // right-biased of course
+  def ++[V1 >: V <: ^[k]](that: DMap[k, K, V1])(using Eq[k, K]): DMap[k, K, V1]
+  def --[V1 >: V <: ^[k]](that: DMap[k, K, V1])(using Eq[k, K]): DMap[k, K, V]  
 
-// object DMap:
-//   def empty[K <: K3, V <: K3]: DMap[K, V] = apply()
-//   def apply[K <: K3, V <: K3](elems: DPair[K, V]*): DMap[K, V] = 
-//     case class dmap[V1 >: V <: K3](elems: Seq[DPair[K, V1]]) extends DMap[K, V1] :
-//       def get[A[_[_]]](k: K[A])(using Eq[K]) = elems.collectFirst(Function.unlift((_: DPair[K, V1]).extract(k)))      
-//       def ++[V2 >: V1 <: K3](that: DMap[K, V2])(using Eq[K])  = dmap((this -- that).toList ++ that.toList)      
-//       def --[V2 >: V1 <: K3](that: DMap[K, V2])(using Eq[K])  = dmap(elems.filter(e => that.get(e.key).isEmpty))      
-//       def set[V2>: V1 <: K3](kv: DPair[K, V2])(using Eq[K])  = this ++ DMap(kv)
-//       def toList: List[DPair[K, V1]]          = elems.toList    
-//     dmap(elems)
+object DMap:
+  def empty[k <: *, K <: ^[k], V <: ^[k]]: DMap[k, K, V] = apply()
+  def apply[k <: *, K <: ^[k], V <: ^[k]](elems: DPair[k, K, V]*): DMap[k, K, V] = 
+    case class dmap[V1 >: V <: ^[k]](elems: Seq[DPair[k, K, V1]]) extends DMap[k, K, V1] :
+      def get[A <: k](k: K[A])(using Eq[k, K])                        = elems.collectFirst(Function.unlift((_: DPair[k, K, V1]).extract(k)))      
+      def ++[V2 >: V1 <: ^[k]](that: DMap[k, K, V2])(using Eq[k, K])  = dmap((this -- that).toList ++ that.toList)      
+      def --[V2 >: V1 <: ^[k]](that: DMap[k, K, V2])(using Eq[k, K])  = dmap(elems.filter(e => that.get(e.key).isEmpty))      
+      def set[V2>: V1 <: ^[k]](kv: DPair[k, K, V2])(using Eq[k, K])   = this ++ DMap(kv)
+      def toList: List[DPair[k, K, V1]]                               = elems.toList    
+    dmap(elems)

@@ -2,7 +2,7 @@ package playground.chat.kaivessel
 import Eq.GEQ
 
 
-trait Is[k <: AnyKind, A <: k, B <: k]:
+trait Is[k <: *, A <: k, B <: k]:
     def substitute[F[_ <: k]](fa: F[A]): F[B]
 
     final def reverse: Is[k, B, A] = substitute[[a <: k] =>> Is[k, a, A]](???)
@@ -17,9 +17,9 @@ object Is:
 
 // hs:GCompare
 trait Eq[k <: AnyKind, K[_ <: k]] :
-  def [A <: k, B <: k](k: K[A]) isEq (k2: K[B]): GEQ[k, K, A, B]
+  def [A <: k, B <: k](k: K[A]) isEq (k2: K[B]): [R] => GEQ[k, K, A, B, R] => R
 
 object Eq:
-  enum GEQ[k <: AnyKind, K[_ <: k], A <: k, B <: k]:
-    case Y(res: K[A], is: Is[k, A, B])
-    case N()
+  trait GEQ[k <: AnyKind, K[_ <: k], A <: k, B <: k, R]:
+    def Y(res: K[A], is: Is[k, A, B]): R
+    def N: R

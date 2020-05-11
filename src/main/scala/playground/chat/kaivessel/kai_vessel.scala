@@ -8,29 +8,6 @@
 // import scala.deriving.Mirror
 
 
-// trait DGet[K <: K3, +V <: K3]:
-//   def get[A[_[_]]](k: K[A])(using Eq[K]): Option[V[A]]
-
-// trait DList[K <: K3, +V <: K3]:
-//   def toList: List[DPair[K, V]]
-
-// sealed trait DMap[K <: K3, +V <: K3] extends DGet[K, V] with DList[K, V]:  
-//   def set[V1 >: V <: K3](kv: DPair[K, V1])(using Eq[K]): DMap[K, V1]
-//   // right-biased of course
-//   def ++[V1 >: V <: K3](that: DMap[K, V1])(using Eq[K]): DMap[K, V1]
-//   def --[V1 >: V <: K3](that: DMap[K, V1])(using Eq[K]): DMap[K, V]  
-
-// object DMap:
-//   def empty[K <: K3, V <: K3]: DMap[K, V] = apply()
-//   def apply[K <: K3, V <: K3](elems: DPair[K, V]*): DMap[K, V] = 
-//     case class dmap[V1 >: V <: K3](elems: Seq[DPair[K, V1]]) extends DMap[K, V1] :
-//       def get[A[_[_]]](k: K[A])(using Eq[K]) = elems.collectFirst(Function.unlift((_: DPair[K, V1]).extract(k)))      
-//       def ++[V2 >: V1 <: K3](that: DMap[K, V2])(using Eq[K])  = dmap((this -- that).toList ++ that.toList)      
-//       def --[V2 >: V1 <: K3](that: DMap[K, V2])(using Eq[K])  = dmap(elems.filter(e => that.get(e.key).isEmpty))      
-//       def set[V2>: V1 <: K3](kv: DPair[K, V2])(using Eq[K])  = this ++ DMap(kv)
-//       def toList: List[DPair[K, V1]]          = elems.toList    
-//     dmap(elems)
-
 // // hs:ArgDict, Has
 // trait Has[TC <: K3, GADT <: K3]:
 //   def [A[_[_]]](gadt: GADT[A]) constraintsFor: TC[A]
@@ -44,27 +21,7 @@
 // // hs:Has'
 // type Has0[TC[_], V <: K3, GADT <: K3] = Has[[A[_[_]]] =>> TC[V[A]], GADT]
 
-// trait Semigroup[A]:
-//   def combine(a: A, b: A): A
-//   def (a: A) <+> (b: A): A = combine(a, b)
 
-// object Semigroup:
-//   given Semigroup[Int]     = _ + _
-//   given Semigroup[String]  = _ + _
-//   given[A] as Semigroup[List[A]] = _ ++ _
-//   given[A] as Semigroup[Option[A]] = _ orElse _
-  
-
-//   inline def derived[T] (using m: Mirror.Of[T]): Semigroup[T] = inline m match 
-//     case p: Mirror.ProductOf[T] => productOf(p)
-//     case _ => compiletime.error("can derive only products")
-
-
-//   private inline def productOf[T](m: Mirror.ProductOf[T]): Semigroup[T] = ???
-  
-//   given [c[f[_]]](using Semigroup[c[Option]]) as Semigroup[ExampleValue[c]] = (a, b) => ExampleValue[c](a.get <+> b.get)
-//   given[F[_]](using Semigroup[List[F[Int]]]) as Semigroup[LI[F]]    = (a, b) => LI(a.l <+> b.l)
-//   given[F[_]](using Semigroup[List[F[String]]]) as  Semigroup[LS[F]] = (a, b) => LS(a.l <+> b.l)
 
 // object MonoidalDMap:
 //   opaque type MonoidalDMap[K <: K3, +V <: K3] <: DGet[K, V] with DList[K, V] = DMap[K, V]  

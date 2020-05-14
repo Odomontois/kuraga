@@ -2,6 +2,8 @@ package  playground.chat.kaivessel
 import scala.compiletime.ops.int._
 
 
+type K0 = Any
+type K1 = [A] =>> Any
 type K2 = [f[_]] =>> Any
 type K3 = [c[f[_]]] =>> Any
 type * = AnyKind

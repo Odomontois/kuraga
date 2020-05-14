@@ -23,3 +23,7 @@ object Eq:
   trait GEQ[k <: AnyKind, K[_ <: k], A <: k, B <: k, R]:
     def Y(res: K[A], is: Is[k, A, B]): R
     def N: R
+
+type Eq0[K[_]] = Eq[Any, K] 
+type Eq1[K <: K2] = Eq[K1, K] 
+type Eq2[K <: K3] = Eq[K2, K] 

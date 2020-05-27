@@ -19,29 +19,34 @@ object VSum:
       val key = k
       val value = v
 
-// object Vessel:
-//   opaque type Vessel[K <: K3, G[_]] = MonoidalDMap[K2, K, FlipAp[G]]
-//   // hs:fromListV
-//   def apply[K <: K3, G[_]](elems: VSum[K, G]*)(using Has[K2, View, K]): Vessel[K, G] = 
-//     MonoidalDMap((for vsum <- elems if !vsum.key.constraintsFor.nullV(vsum.value) yield vsum.toDPair ): _*)
+  given pair [K <: K3, V <: K2, G[_]] as Conversion[(K[V], V[G]), VSum[K, G]] = 
+    tup => apply[K, V, G](tup._1, tup._2)
+
+object Vessel:
+  opaque type Vessel[K <: K3, G[_]] = MonoidalDMap[K2, K, FlipAp[G]]
+  // hs:fromListV
+  def apply[K <: K3, G[_]](elems: VSum[K, G]*)(using Has[K2, View, K]): Vessel[K, G] = 
+    MonoidalDMap((for vsum <- elems if !vsum.key.constraintsFor.nullV(vsum.value) yield vsum.toDPair ): _*)
     
-//   private def [K <: K3, G[_]] (map: MonoidalDMap[K2, K, FlipAp[G]]) filterNullFlipAps (using view: Has[K2, View, K]): MonoidalDMap[K2, K, FlipAp[G]] =
-//     MonoidalDMap[K2, K, FlipAp[G]]((
-//       for e <- map.toList
-//           v <- (view.cts4[e.A](e.key) : View[e.A]).collapseNullV[G](e.value : e.A[G])
-//       yield DPair[K2, K, FlipAp[G], e.A](e.key,  v)
-//     ): _*)     
+  private def [K <: K3, G[_]] (map: MonoidalDMap[K2, K, FlipAp[G]]) filterNullFlipAps 
+    (using Has[K2, View, K]): MonoidalDMap[K2, K, FlipAp[G]] =
+    val items = 
+      for e <- map.asList.toList
+          v <- e.key.constraintsFor.collapseNullV[G](e.value)
+      yield DPair[K2, K, FlipAp[G], e.A](e.key,  v)
 
-//   extension on [K <: K3, G[_]](self: Vessel[K, G]):
-//     def set(vsum: VSum[K, G])(using Eq2[K], Has0[Semigroup, FlipAp[G], K], Has[K2, View, K]): Vessel[K, G] =
-//       self ++ Vessel(vsum)
-//     // hs:Semigroup (but right-biased of course)
-//     def ++(that: Vessel[K, G])(using Eq2[K], Has0[Semigroup, FlipAp[G], K], Has[K2, View, K]): Vessel[K, G] =
-//       filterNullFlipAps(MonoidalDMap.ops.++(self)(that))
-//     def toList: List[VSum[K, G]] =
-//       self.toList.map(e => VSum[K, e.A, G](e.key, e.value))
+    MonoidalDMap.apply[K2, K, FlipAp[G]](items: _*)     
 
-// //   given[K <: K3: Eq2](using Has[K2, View, K]) as View[[f[_]] =>> Vessel[K, f]]:
-// //     def nullV[F[_]](container: Vessel[K, F]) = container.toList.isEmpty 
+  extension on [K <: K3, G[_]](self: Vessel[K, G]):
+    def set(vsum: VSum[K, G])(using Eq2[K], Has0[Semigroup, FlipAp[G], K], Has[K2, View, K]): Vessel[K, G] =
+      self ++ Vessel(vsum)
+    // hs:Semigroup (but right-biased of course)
+    def ++(that: Vessel[K, G])(using Eq2[K], Has0[Semigroup, FlipAp[G], K], Has[K2, View, K]): Vessel[K, G] =
+      filterNullFlipAps(MonoidalDMap.ops.++(self)(that))
+    def toList: List[VSum[K, G]] =
+      self.asList.toList.map(e => VSum[K, e.A, G](e.key, e.value))
 
-// // type Vessel[K <: K3, G <: K1] = Vessel.Vessel[K, G]
+  given[K <: K3: Eq2](using Has[K2, View, K]) as View[[f[_]] =>> Vessel[K, f]]:
+    def nullV[F[_]](container: Vessel[K, F]) = container.toList.isEmpty 
+
+type Vessel[K <: K3, G <: K1] = Vessel.Vessel[K, G]

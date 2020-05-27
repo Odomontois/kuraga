@@ -6,7 +6,8 @@ object MonoidalDMap:
   def empty[k <: *, K <: ^[k], V <: ^[k]]: MonoidalDMap[k, K, V]                         = DMap.empty[k, K, V]
   def apply[k <: *, K <: ^[k], V <: ^[k]](elems: DPair[k, K, V]*): MonoidalDMap[k, K, V] = DMap(elems: _*)
 
-  extension on [k <: *, K[_ <: k], V <: ^[k]](self: MonoidalDMap[k, K, V]):     
+  extension on [k <: *, K[_ <: k], V <: ^[k]](self: MonoidalDMap[k, K, V]):   
+    def asList: DList[k, K, V] = self  
     def set(kv: DPair[k, K, V])(using Eq[k, K]): MonoidalDMap[k, K, V]         = self.set(kv)
     def --(that: MonoidalDMap[k, K, V])(using Eq[k, K]): MonoidalDMap[k, K, V] = self -- that  
     

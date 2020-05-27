@@ -1,3 +1,5 @@
+package playground.chat
+
 // object Wildcard:
 //   opaque type Wildcard[k <: AnyKind, F[_ <: k]] = F[Nothing]
   

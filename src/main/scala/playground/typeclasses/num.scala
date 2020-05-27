@@ -25,4 +25,5 @@ object Lolk{
   def main(args: Array[String]): Unit = {
     println(foo(1))
   }
+
 }

@@ -38,7 +38,7 @@ object Lol extends App{
     case true => Inc[A]
   }
 
-  type PlusLoop[A <: Tuple, B <: Tuple, O] <: Tuple = (A, B) match {
+  type PlusLoop[A <: Tuple, B <: Tuple, O] = (A, B) match {
     case (Unit, Unit)       => O match {
       case true => (true *: Unit)
       case false => EmptyTuple
@@ -65,7 +65,7 @@ object Lol extends App{
     case Unit   => Unit
   }
 
-  trait ValueAll[T <: Tuple]{
+  trait ValueAll[T]{
     def value: T
   }
 

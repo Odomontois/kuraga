@@ -10,7 +10,7 @@ object Lol extends App{
 
   type ReverseRecur[A, XS <: Tuple] = XS match { case _ => ReverseLoop[A, XS] }
 
-  type Reverse[A] = ReverseLoop[A, Unit]
+  type Reverse[A] = ReverseLoop[A, EmptyTuple]
 
   type PlusBit[A, B] = (A, B) match{
     case (true, true)  => (true, true)
@@ -41,7 +41,7 @@ object Lol extends App{
   type PlusLoop[A <: Tuple, B <: Tuple, O] <: Tuple = (A, B) match {
     case (Unit, Unit)       => O match {
       case true => (true *: Unit)
-      case false => Unit
+      case false => EmptyTuple
     }
     case (Unit, _) => IncT[B, O]
     case (_, Unit) => IncT[A, O]
@@ -69,7 +69,7 @@ object Lol extends App{
     def value: T
   }
 
-  given ValueAll[Unit]{ def value = () }
+  given ValueAll[EmptyTuple]{ def value = EmptyTuple }
   given [X, XS <: Tuple]  (using x: ValueOf[X], xs: ValueAll[XS]) as ValueAll[X *: XS]  { 
     def value = x.value *: xs.value
   }

@@ -5,7 +5,8 @@ trait Functor[F[_]] {
 }
 
 trait Applicative[F[_]] extends Functor[F]{
-    def [A] (a: A) pure : F[A]
+    def [A] (a: A) pure : F[A] 
+    def pure[A] (a: A)  : F[A] = a.pure
     def [A, B, C] (fa: F[A]) map2 (fb: F[B])(f: (A, B) => C) : F[C]
 
     def unit: F[Unit] = ().pure

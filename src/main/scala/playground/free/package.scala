@@ -15,5 +15,5 @@ def funK[F[_], G[_]](f: (c: Carrier) => F[c.T] => G[c.T]): F ~> G =
   }
 
 class widen[G[+_], X](fa: G[X]){
-  def to[H >: G <: [A] =>> Any, Y >: X]: H[Y] = fa  
+  def to[H[A] >: G[A], Y >: X]: H[Y] = fa  
 }

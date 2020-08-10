@@ -1,6 +1,6 @@
 package kuraga
 import scala.annotation.tailrec
-import Eval.defer
+import Eval.{defer, delay}
 
 type ~>[F[_], G[_]] = [A] => F[A] => G[A]
 
@@ -45,4 +45,4 @@ object EndoE:
         def default = x => x
         def (x: EndoE[A]) combine (y: EndoE[A]) = Compose(x, y)
         override def (lx : Eval[EndoE[A]]) combineLz (ly: Eval[EndoE[A]]) = 
-            Eval.delay(Compose(lx.value, DelayedFunc(ly.value)))
+            Compose(lx.value, DelayedFunc(ly.value)).delay

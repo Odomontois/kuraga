@@ -5,7 +5,8 @@ trait Functor[F[_]]:
 
 
 trait Pure[+F[_]]:
-    def [A] (a: A) pure : F[A]
+    def [A] (a: A) pure : F[A] 
+    def pure[A](a: A): F[A] = a.pure
     val unit: F[Unit] = ().pure
 
 trait Apply[F[_]] extends Functor[F]:
@@ -21,7 +22,8 @@ trait Applicative[F[_]] extends Pure[F] with Apply[F]:
         fa.map2(unit)((a, _) => f(a))
 
 trait FlatMap[F[_]] extends Apply[F]:
-    def [A, B] (fa: F[A]) flatMap(f: A => F[B]): F[B] 
+    def flatMap[A, B] (fa: F[A])(f: A => F[B]): F[B] = fa.flatMap(f)
+    def [A, B] (fa: F[A]) flatMap(f: A => F[B]): F[B]
 
 trait FlatMapTail[F[_]] extends FlatMap[F]:
     def [A, B] (a: A) tailRecM(f: A => F[Either[A, B]]): F[B]

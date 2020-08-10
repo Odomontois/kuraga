@@ -10,13 +10,13 @@ trait Ctx :
 
 object Ctx{
   class CtxImpl[+UP[_, _], +UF[_], +UC[+_]] extends Ctx{
-    type P <: UP
-    type F <: UF
+    type P[x, y] <: UP[x, y]
+    type F[x] <: UF[x]
     type C[+x] <: UC[x]
   }
   object CtxObj extends CtxImpl[Nothing, Nothing, Nothing]
 
-  def ctx[UP[_, _], UF[_], UC[+_]]: Ctx{ type P <: UP ; type F <: UF; type C[+x] <: UC[x] } = CtxObj
+  def ctx[UP[_, _], UF[_], UC[+_]]: Ctx{ type P[x, y] <: UP[x, y] ; type F[x] <: UF[x]; type C[+x] <: UC[x] } = CtxObj
 
   type PLens = Ctx {
     type P[a, b] <: a => b

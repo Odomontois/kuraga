@@ -1,12 +1,12 @@
 object Main {
 
-  def (s : String) double: String = s + s
+  def (s : String) .double: String = s + s
   
 
   def main(args: Array[String]): Unit = {
     println("Hello world!")
     println(msg.double)
-    println(double(msg))
+    // println(double(msg))
   }
 
   def msg = "I was compiled by dotty :)"

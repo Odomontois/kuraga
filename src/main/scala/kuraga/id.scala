@@ -18,7 +18,7 @@ object Id:
                 case Left(a1) => a.tailRecM(f)
                 case Right(b) => b
     given Reducible[Id]:
-        def [A, B] (c: Id[A]) reduceMap (f: A => Eval[B])(using Semigroup[B]): Eval[B] = f(c.get)
+        def [A, B] (c: Id[A]) reduceMapA (f: A => Eval[B])(using Semigroup[B]): Eval[B] = f(c.get)
 
 
 

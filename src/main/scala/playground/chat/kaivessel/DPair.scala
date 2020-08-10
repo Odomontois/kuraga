@@ -18,6 +18,6 @@ object DPair:
     def pair [k <: *, K[_ <: k], V[_ <: k], C <: k]: Conversion[(K[C], V[C]), DPair[k, K, V]] = 
         tup => apply[k, K, V, C](tup._1, tup._2)
 
-    given pair0[K <: K1, V <: K1, C] as Conversion[(K[C], V[C]), DPair[K0, K, V]] = pair
-    given pair1[K <: K2, V <: K2, C <: K1] as Conversion[(K[C], V[C]), DPair[K1, K, V]] = pair[k = K1]
-    given pair2[K <: K3, V <: K3, C <: K2] as Conversion[(K[C], V[C]), DPair[K2, K, V]] = pair[k = K2]
+    given pair0[K[_], V[_], C] as Conversion[(K[C], V[C]), DPair[K0, K, V]] = pair
+    given pair1[K[_[_]], V[_[_]], C[_]] as Conversion[(K[C], V[C]), DPair[K1, K, V]] = pair[k = K1]
+    given pair2[K[_[_[_]]], V[_[_[_]]], C[_[_]]] as Conversion[(K[C], V[C]), DPair[K2, K, V]] = pair[k = K2]

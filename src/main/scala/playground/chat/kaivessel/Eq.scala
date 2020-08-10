@@ -25,5 +25,5 @@ object Eq:
     def N: R
 
 type Eq0[K[_]] = Eq[Any, K] 
-type Eq1[K <: K2] = Eq[K1, K] 
-type Eq2[K <: K3] = Eq[K2, K] 
+type Eq1[K[_[_]]] = Eq[K1, K] 
+type Eq2[K[_[_[_]]]] = Eq[K2, K] 

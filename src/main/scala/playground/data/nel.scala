@@ -10,8 +10,7 @@ object NonEmptyList  :
     def head: A = self.head
     def tail: List[A] = self.tail
 
-  extension: 
-    def [A, B](self: NonEmptyList[A]) map (f: A => B): NonEmptyList[B] = self.map(f)
+  extension [A, B](self: NonEmptyList[A]) def  map (f: A => B): NonEmptyList[B] = self.map(f)
 
 object NonEmptyListMain:
   def main(args: Array[String]) = 

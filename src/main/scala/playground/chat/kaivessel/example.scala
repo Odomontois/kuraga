@@ -29,7 +29,7 @@ object ExampleGADT:
                 case ExampleGADT.S => eq.N
                 case ExampleGADT.I => eq.Y(ExampleGADT.I, Is.refl[K2, A])
                 
-    given [TC <: K3](using tcInt: TC[LI], tcString: TC[LS]) as Has[K2, TC, ExampleGADT]:
+    given [TC[_[_[_]]]](using tcInt: TC[LI], tcString: TC[LS]) as Has[K2, TC, ExampleGADT]:
         def [A[_[_]]](gadt: ExampleGADT[A]) constraintsFor: TC[A] = gadt match
             case ExampleGADT.S => tcString
             case ExampleGADT.I => tcInt

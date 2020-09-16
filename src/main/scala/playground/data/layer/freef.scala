@@ -18,6 +18,49 @@ trait Layer1[-P[-i[+_], +o[+_]], +A] :
 
   def map[B](f: A => B): Layer1[[i[+_], o[+_]] =>> P[i,o]&EvalF[i,o], B] = self.flatMap(a => EvalF.now(f(a)))
 
+object Layer1:
+  import EvalF.{Done, Raised, K, HasState}
+
+  type L1[P[-i[+_], +o[+_]]] = [a] =>> Layer1[P, a]
+  
+
+  extension [A, B, P[-i[+_], +o[+_]] <: EvalF[i, o]] (self: => Layer1[P, A])     :
+    def defer: Layer1[P, A] = new Layer1[P, A]{
+      def unpack[R[+_]](p: P[L1[P], R]): R[A] = p.defer(self)
+    }
+
+
+  extension [P[-i[+_], +o[+_]] <: EvalF[i, o], X] (self: Layer1[P, X]) :
+    def run(step: P[L1[P], L1[P]]): X = 
+        @tailrec def go(cur: Layer1[P, X]): X = cur.unpack(step) match
+            case Done(res)       => res    
+            case k: K[_, P @unchecked, X]   => go(EvalF.interpret(k)(step))        
+            case next            => go(next)        
+
+        go(self)
+
+  extension [P[-i[+_], +o[+_]] <: ErrorEvF[E][i, o], S, E, X](self: Layer1[P, X]) :
+    def exec(step: P[L1[P], L1[P]] & HasState[S]): (S, Either[E, X]) = 
+        @tailrec def go(cur: Layer1[P, X]): (S, Either[E, X]) = cur.unpack(step) match
+            case Done(res)       => (step.state, Right(res))
+            case Raised(err)     => (step.state, Left(err))  
+            case k: K[_, P, X]   => go(EvalF.interpretErr(k)(step))        
+            case next            => go(next)
+
+        go(self)
+
+  extension [X](self: Ev[X]):
+    def value: X = self.run[EvalF, X](EvalF.EvalInterpreter[EvalF]())
+
+  extension [R, X] (self: ReadEv[R][X]):
+    def runReader(r: R): X = self.run[ReadEvF[R], X](
+      new EvalF.EvalInterpreter[ReadEvF[R]] with EvalF.ReaderInterpreter[ReadEvF[R], R](r))   
+
+
+  extension [S, E, X] (self: ExecEv[S, E, X]):
+    def runStateE(init: S) : (S, Either[E, X]) = self.exec[ExecF[S, E], S, E, X](
+      new EvalF.ExecInterpreter[S, E, ExecF[S, E]](init)
+    )    
 
 object EvalF:
   val unit : Pure[Unit] = Done(())
@@ -44,61 +87,23 @@ object EvalF:
 
   type L1[P[-i[+_], +o[+_]]] = [a] =>> Layer1[P, a]
 
+
   final case class K[A,  -P[-i[+_], +o[+_]] <: EvalF[i, o], +B](fa : Layer1[P, A], cont: A => Layer1[P, B]) extends Layer1[P, B]  :
     def unpack[X[+_]](p: P[L1[P], X]): X[B] = p.flatMap[A, B](fa, cont)
-  
-  
-  private def [P[-i[+_], +o[+_]] <: EvalF[i, o], A, B] (k: K[A, P, B]) interpret(step: P[L1[P], L1[P]] ): Layer1[P, B] = k.fa.unpack(step) match 
+
+  def interpret [P[-i[+_], +o[+_]] <: EvalF[i, o], A, B] (k: K[A, P, B])(step: P[L1[P], L1[P]] ): Layer1[P, B] = k.fa.unpack(step) match 
         case Done(b)  => k.cont(b)
         case K(fx, f) => fx.flatMap(x => f(x).flatMap(k.cont))
         case ev       => ev.flatMap(k.cont)
 
-  private def [P[-i[+_], +o[+_]] <: ErrorEvF[E][i, o], A, B, E] (k : K[A, P, B]) interpretErr(step: P[L1[P], L1[P]]): Layer1[P, B] = 
+  def  interpretErr[P[-i[+_], +o[+_]] <: ErrorEvF[E][i, o], A, B, E](k : K[A, P, B]) (step: P[L1[P], L1[P]]): Layer1[P, B] = 
     k.fa.unpack(step) match 
       case Done(b)     => k.cont(b)
       case e@Raised(_) => e
       case K(fx, f)    => fx.flatMap(x => f(x).flatMap(k.cont))
       case ev          => ev.flatMap(k.cont)  
 
-  
-  extension  on [A, B, P[-i[+_], +o[+_]] <: EvalF[i, o]] (self: => Layer1[P, A])     :
-    def defer: Layer1[P, A] = new Layer1[P, A]{
-      def unpack[R[+_]](p: P[L1[P], R]): R[A] = p.defer(self)
-    }
 
-
-  extension  on [P[-i[+_], +o[+_]] <: EvalF[i, o], X] (self: Layer1[P, X]) :
-    def run(step: P[L1[P], L1[P]]): X = 
-        @tailrec def go(cur: Layer1[P, X]): X = cur.unpack(step) match
-            case Done(res)       => res    
-            case k: K[_, P @unchecked, X]   => go(k.interpret(step))        
-            case next            => go(next)        
-
-        go(self)
-  
-  extension  on [P[-i[+_], +o[+_]] <: ErrorEvF[E][i, o], S, E, X](self: Layer1[P, X]) :
-    def exec(step: P[L1[P], L1[P]] & HasState[S]): (S, Either[E, X]) = 
-        @tailrec def go(cur: Layer1[P, X]): (S, Either[E, X]) = cur.unpack(step) match
-            case Done(res)       => (step.state, Right(res))
-            case Raised(err)     => (step.state, Left(err))  
-            case k: K[_, P, X]   => go(k.interpretErr(step))        
-            case next            => go(next)
-
-        go(self)
-
-  extension  on [X](self: Ev[X]):
-    def value: X = self.run[EvalF, X](EvalInterpreter[EvalF]())
-
-  extension  on [R, X] (self: ReadEv[R][X]):
-    def runReader(r: R): X = self.run[ReadEvF[R], X](
-      new EvalInterpreter[ReadEvF[R]] with ReaderInterpreter[ReadEvF[R], R](r))   
-
-  
-  extension  on [S, E, X] (self: ExecEv[S, E, X]):
-    def runStateE(init: S) : (S, Either[E, X]) = self.exec[ExecF[S, E], S, E, X](
-      new ExecInterpreter[S, E, ExecF[S, E]](init)
-    )
-    
 
   class EvalInterpreter[P[-i[+_], +o[+_]] <: EvalF[i, o]] extends EvalF[L1[P], L1[P]]:
     def now[A](a: A) = Done(a)

@@ -25,7 +25,7 @@ object Fix:
 
   def apply[F[+_]](f: F[Fix[F]]): T[F] = ApplyFix(f)
 
-  extension on [F[+_]](fix: T[F]):
+  extension [F[+_]](fix: T[F]):
     def unwrap: F[Fix[F]] = ApplyFix.unwrap(fix)
 
   object ApplyFix:

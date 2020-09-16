@@ -6,7 +6,7 @@ opaque type Id[+A] = A
 
 object Id:
     def apply[A](x: A): Id[A] = x
-    extension  on[A] (i: Id[A]):
+    extension [A] (i: Id[A]):
         def  get: A = i
     
 

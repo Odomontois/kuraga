@@ -37,7 +37,7 @@ object Vessel:
 
     MonoidalDMap.apply[K2, K, FlipAp[G]](items: _*)     
 
-  extension on [K[_[_[_]]], G[_]](self: Vessel[K, G]):
+  extension [K[_[_[_]]], G[_]](self: Vessel[K, G]):
     def set(vsum: VSum[K, G])(using Eq2[K], Has0[Semigroup, FlipAp[G], K], Has[K2, View, K]): Vessel[K, G] =
       self ++ Vessel(vsum)
     // hs:Semigroup (but right-biased of course)

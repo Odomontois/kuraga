@@ -38,7 +38,7 @@ object Day extends DayImplicits:
 
     def right[F[_], G[_], A](ga: G[A]) (using F: InvariantMonoidal[F]): Day[F, G, A] = Day.combine(F.unit, ga)((_, a) => a)
 
-    extension on [F[_], G[_], A](dfg: Day[CofreeF[F], CofreeF[G], A]):
+    extension [F[_], G[_], A](dfg: Day[CofreeF[F], CofreeF[G], A]):
       def zip: Cofree[DayF[F, G], A] = Cofree(
         dfg.comb(dfg.fx.head, dfg.gy.head).value,
         (dfg.fx.tail, dfg.gy.tail).mapN((fx, gy) => Day(fx, gy)((x, y) => Eval.later(Day(x, y)(dfg.comb).zip)))

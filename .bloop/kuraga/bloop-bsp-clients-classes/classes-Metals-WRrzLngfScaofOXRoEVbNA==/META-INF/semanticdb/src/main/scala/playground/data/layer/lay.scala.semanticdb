@@ -1,0 +1,671 @@
+
+ù×.src/main/scala/playground/data/layer/lay.scala**
+playground/data/layer/Layer#*Layer€*9
+'playground/data/layer/Layer#`<init>`(). €@*<init>€*,
+playground/data/layer/Layer#[P]	 €*P€*2
+#playground/data/layer/Layer#peel(). *peel€*0
+&playground/data/layer/Layer#peel().[R]	*R€*6
+)playground/data/layer/Layer#peel().(cont)*cont€*(
+playground/data/layer/Data#*Data€*8
+&playground/data/layer/Data#`<init>`(). €@*<init>€*+
+playground/data/layer/Data#[P]	 €*P€*1
+"playground/data/layer/Data#read(). *read€*/
+%playground/data/layer/Data#read().[R]	*R€*5
+(playground/data/layer/Data#read().(cont)*cont€*&
+playground/data/layer/Cat#*Cat€*7
+%playground/data/layer/Cat#`<init>`(). €@*<init>€**
+playground/data/layer/Cat#[I]	 €*I€**
+playground/data/layer/Cat#[O]	 €*O€*.
+ playground/data/layer/Cat#cat(). *cat€*3
+&playground/data/layer/Cat#cat().(name)*name€*1
+%playground/data/layer/Cat#cat().(fur)*fur€*3
+&playground/data/layer/Cat#cat().(rest)*rest€*(
+playground/data/layer/Cat.
+ *Cat€*0
+"playground/data/layer/Cat.apply().*apply€*/
+%playground/data/layer/Cat.apply().[P]	*P€*5
+(playground/data/layer/Cat.apply().(name)*name€*3
+'playground/data/layer/Cat.apply().(fur)*fur€*5
+(playground/data/layer/Cat.apply().(rest)*rest€*
+local0 *$anon€*
+local1*peel€*
+local2	*R€*
+local3*cont€**
+playground/data/layer/Cat.of().*of€*2
+%playground/data/layer/Cat.of().(name)*name€*0
+$playground/data/layer/Cat.of().(fur)*fur€*
+local4 *$anon€*
+local5*read€*
+local6	*R€*
+local7*cont€*E
+*playground/data/layer/Cat.given_Show_Data. è*given_Show_Data€*
+local8*name€*
+local9*fur€*&
+playground/data/layer/Dog#*Dog€*7
+%playground/data/layer/Dog#`<init>`(). €@*<init>€**
+playground/data/layer/Dog#[I]	 €*I€**
+playground/data/layer/Dog#[O]	 €*O€*.
+ playground/data/layer/Dog#dog(). *dog€*3
+&playground/data/layer/Dog#dog().(name)*name€*3
+&playground/data/layer/Dog#dog().(size)*size€*3
+&playground/data/layer/Dog#dog().(rest)*rest€*(
+playground/data/layer/Dog.
+ *Dog€*0
+"playground/data/layer/Dog.apply().*apply€*/
+%playground/data/layer/Dog.apply().[P]	*P€*5
+(playground/data/layer/Dog.apply().(name)*name€*5
+(playground/data/layer/Dog.apply().(size)*size€*5
+(playground/data/layer/Dog.apply().(rest)*rest€*
+local10 *$anon€*
+local11*peel€*
+local12	*R€*
+local13*cont€**
+playground/data/layer/Dog.of().*of€*2
+%playground/data/layer/Dog.of().(name)*name€*2
+%playground/data/layer/Dog.of().(size)*size€*
+local14 *$anon€*
+local15*read€*
+local16	*R€*
+local17*cont€*E
+*playground/data/layer/Dog.given_Show_Data. è*given_Show_Data€*
+local18*name€*
+local19*size€*&
+playground/data/layer/End#*End€*7
+%playground/data/layer/End#`<init>`(). €@*<init>€**
+playground/data/layer/End#[O]	 €*O€*.
+ playground/data/layer/End#end(). *end€*(
+playground/data/layer/End.
+ *End€*2
+(playground/data/layer/End.`<init>`().[i]	*i€*2
+(playground/data/layer/End.`<init>`().[o]	*o€*.
+!playground/data/layer/End.peel().*peel€*.
+$playground/data/layer/End.peel().[R]	*R€*4
+'playground/data/layer/End.peel().(cont)*cont€*0
+playground/data/layer/Constant#*Constant€*<
+*playground/data/layer/Constant#`<init>`(). €@*<init>€*,
+"playground/data/layer/Constant#[P]	*P€*7
+'playground/data/layer/Constant#const(). *const€*4
+*playground/data/layer/Constant#const().[B]	*B€*4
+*playground/data/layer/Constant#const().(b)*b€**
+playground/data/layer/Lens2#*Lens2€*9
+'playground/data/layer/Lens2#`<init>`(). €@*<init>€*)
+playground/data/layer/Lens2#[P]	*P€*)
+playground/data/layer/Lens2#[Q]	*Q€*0
+"playground/data/layer/Lens2#get(). *get€*/
+%playground/data/layer/Lens2#get().[A]	*A€*/
+%playground/data/layer/Lens2#get().[B]	*B€*/
+%playground/data/layer/Lens2#get().(p)*p€*0
+"playground/data/layer/Lens2#set(). *set€*/
+%playground/data/layer/Lens2#set().[A]	*A€*/
+%playground/data/layer/Lens2#set().[B]	*B€*/
+%playground/data/layer/Lens2#set().(p)*p€*/
+%playground/data/layer/Lens2#set().(q)*q€*0
+playground/data/layer/DropRed.
+ *DropRed€*@
+,playground/data/layer/DropRed.dropRedCats().*dropRedCats€*9
+/playground/data/layer/DropRed.dropRedCats().[P]	*P€*?
+2playground/data/layer/DropRed.dropRedCats().(cats)*cats€*;
+/playground/data/layer/DropRed.dropRedCats().(P)  *P€*=
+0playground/data/layer/DropRed.dropRedCats().(pc)  *pc€*
+local20*name€*
+local21*fur€*
+local22*rest€*
+local23 €*cont€*
+local24 €*res€*@
++playground/data/layer/DropRed.CatDogVector#*CatDogVector€*:
+(playground/data/layer/DropRed.CatOrDogs#*	CatOrDogs€*E
+3playground/data/layer/DropRed.CatOrDogs#`<init>`(). €@*<init>€*8
++playground/data/layer/DropRed.CatOrDogs#[i]	 €*i€*8
++playground/data/layer/DropRed.CatOrDogs#[o]	 €*o€*Z
+7playground/data/layer/DropRed.given_Constant_CatOrDogs.
+ (*given_Constant_CatOrDogs€*M
+?playground/data/layer/DropRed.given_Constant_CatOrDogs.const().*const€*L
+Bplayground/data/layer/DropRed.given_Constant_CatOrDogs.const().[B]	*B€*L
+Bplayground/data/layer/DropRed.given_Constant_CatOrDogs.const().(b)*b€*
+local25 *$anon€*
+local26*cat€*
+local27*name€*
+local28*fur€*
+local29*rest€*
+local30*dog€*
+local31*name€*
+local32*size€*
+local33*rest€*
+local34*end€*\
+8playground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.
+ (*given_Lens2_CatOrDogs_Cat€*J
+>playground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.get().*get€*K
+Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.get().[A]	*A€*K
+Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.get().[B]	*B€*K
+Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.get().(p)*p€*J
+>playground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.set().*set€*K
+Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.set().[A]	*A€*K
+Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.set().[B]	*B€*K
+Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.set().(p)*p€*K
+Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.set().(q)*q€*
+local35 *$anon€*
+local36 *cat€*
+local37*name€*
+local38*fur€*
+local39*rest€*
+local40 *dog€*
+local41*name€*
+local42*size€*
+local43*rest€*
+local44 *end€*F
+/playground/data/layer/DropRed.toCatDogVector().*toCatDogVector€*H
+8playground/data/layer/DropRed.toCatDogVector().(catDogs)*catDogs€*
+local45*go€*
+local46*catDogs€*
+local47*acc€*
+local48 *$anon€*
+local49*cat€*
+local50*name€*
+local51*fur€*
+local52*rest€*
+local53*dog€*
+local54*name€*
+local55*size€*
+local56*rest€*
+local57*end€*
+local58 €*continue€*
+local59 €*next€*
+local60 €*res€*
+local61*go$default$2€*-
+ playground/data/layer/DropRed.x. €*x€*2
+%playground/data/layer/DropRed.main().*main€*8
++playground/data/layer/DropRed.main().(args)*args€2
+ playground/2$
+ playground/data/layer/2
+ playground/data/2'
+ scala/annotation/tailrec#2
+ scala/annotation/2
+ scala/2
+ 
+cats/Show.2
+ 
+cats/Show#2
+ cats/2'
+ cats/syntax/package.show.2
+ cats/syntax/2
+ cats/2,
+ cats/instances/package.vector.2
+ cats/instances/2
+ cats/2,
+ cats/instances/package.either.2
+ cats/instances/2
+ cats/2#
+ tofu/optics/Contains.2
+ tofu/optics/2
+ tofu/2*
+		 playground/data/layer/Layer#25
+		 'playground/data/layer/Layer#`<init>`().2-
+		 playground/data/layer/Layer#[P]21
+
+
+ #playground/data/layer/Layer#peel().24
+
+
+ &playground/data/layer/Layer#peel().[R]27
+
+
+ )playground/data/layer/Layer#peel().(cont)2-
+
+
+ playground/data/layer/Layer#[P]2*
+
+
+ playground/data/layer/Layer#2-
+
+
+ playground/data/layer/Layer#[P]24
+
+"
+ #&playground/data/layer/Layer#peel().[R]24
+
+(
+ )&playground/data/layer/Layer#peel().[R]2)
+ 
+playground/data/layer/Data#24
+
+ 
+&playground/data/layer/Data#`<init>`().2,
+ playground/data/layer/Data#[P]20
+ "playground/data/layer/Data#read().23
+ %playground/data/layer/Data#read().[R]26
+ (playground/data/layer/Data#read().(cont)2,
+ playground/data/layer/Data#[P]2
+ 
+scala/Any#23
+ %playground/data/layer/Data#read().[R]23
+" #%playground/data/layer/Data#read().[R]2(
+ 	playground/data/layer/Cat#23
+	 	%playground/data/layer/Cat#`<init>`().2+
+ playground/data/layer/Cat#[I]2+
+ playground/data/layer/Cat#[O]2.
+  playground/data/layer/Cat#cat().24
+ &playground/data/layer/Cat#cat().(name)2"
+ scala/Predef.String#23
+ %playground/data/layer/Cat#cat().(fur)2"
+ %scala/Predef.String#24
+' +&playground/data/layer/Cat#cat().(rest)2+
+- .playground/data/layer/Cat#[I]2+
+1 2playground/data/layer/Cat#[O]2(
+ 
+playground/data/layer/Cat.20
+ "playground/data/layer/Cat.apply().23
+ %playground/data/layer/Cat.apply().[P]26
+% )(playground/data/layer/Cat.apply().(name)2"
++ 1scala/Predef.String#25
+3 6'playground/data/layer/Cat.apply().(fur)2"
+8 >scala/Predef.String#26
+@ D(playground/data/layer/Cat.apply().(rest)2*
+F Kplayground/data/layer/Layer#23
+L M%playground/data/layer/Cat.apply().[P]2*
+Q Vplayground/data/layer/Layer#23
+W X%playground/data/layer/Cat.apply().[P]2
+ local12
+ local22
+ local323
+  !%playground/data/layer/Cat.apply().[P]2*
+" 'playground/data/layer/Layer#23
+( )%playground/data/layer/Cat.apply().[P]2
+, -local22
+1 2local22.
+: = playground/data/layer/Cat#cat().2
+5 9local326
+> B(playground/data/layer/Cat.apply().(name)25
+D G'playground/data/layer/Cat.apply().(fur)26
+I M(playground/data/layer/Cat.apply().(rest)2-
+ 
+playground/data/layer/Cat.of().23
+ %playground/data/layer/Cat.of().(name)2"
+ scala/Predef.String#22
+ $playground/data/layer/Cat.of().(fur)2"
+ $scala/Predef.String#2)
+' +playground/data/layer/Data#2
+ local52
+ local62
+ local72(
+  #playground/data/layer/Cat#2
+$ '
+scala/Any#2
+) *local62.
+4 7 playground/data/layer/Cat#cat().2
+/ 3local723
+8 <%playground/data/layer/Cat.of().(name)22
+> A$playground/data/layer/Cat.of().(fur)28
+
+ *playground/data/layer/Cat.given_Show_Data.2
+
+ 
+cats/Show#2)
+ playground/data/layer/Data#20
+ ""playground/data/layer/Data#read().2
+$ (local82
+* -local92&
+P Qscala/StringContext#s().2*
+7 7scala/StringContext.apply().2
+A Elocal82
+L Olocal92(
+ 	playground/data/layer/Dog#23
+	 	%playground/data/layer/Dog#`<init>`().2+
+ playground/data/layer/Dog#[I]2+
+ playground/data/layer/Dog#[O]2.
+  playground/data/layer/Dog#dog().24
+ &playground/data/layer/Dog#dog().(name)2"
+ scala/Predef.String#24
+ &playground/data/layer/Dog#dog().(size)2
+  $scala/Long#24
+& *&playground/data/layer/Dog#dog().(rest)2+
+, -playground/data/layer/Dog#[I]2+
+0 1playground/data/layer/Dog#[O]2(
+ 
+playground/data/layer/Dog.20
+ "playground/data/layer/Dog.apply().23
+ %playground/data/layer/Dog.apply().[P]26
+% )(playground/data/layer/Dog.apply().(name)2"
++ 1scala/Predef.String#26
+3 7(playground/data/layer/Dog.apply().(size)2
+9 =scala/Long#26
+? C(playground/data/layer/Dog.apply().(rest)2*
+E Jplayground/data/layer/Layer#23
+K L%playground/data/layer/Dog.apply().[P]2*
+P Uplayground/data/layer/Layer#23
+V W%playground/data/layer/Dog.apply().[P]2
+   local112
+   local122
+   local1323
+    !%playground/data/layer/Dog.apply().[P]2*
+ "  'playground/data/layer/Layer#23
+ (  )%playground/data/layer/Dog.apply().[P]2
+ ,  -local122
+ 1  2local122.
+ :  = playground/data/layer/Dog#dog().2
+ 5  9local1326
+ >  B(playground/data/layer/Dog.apply().(name)26
+ D  H(playground/data/layer/Dog.apply().(size)26
+ J  N(playground/data/layer/Dog.apply().(rest)2-
+"" 
+playground/data/layer/Dog.of().23
+"" %playground/data/layer/Dog.of().(name)2"
+"" scala/Predef.String#23
+"" %playground/data/layer/Dog.of().(size)2
+"" #scala/Long#2)
+"&" *playground/data/layer/Data#2
+## local152
+## local162
+## local172(
+# # #playground/data/layer/Dog#2
+#$# '
+scala/Any#2
+#)# *local162.
+#4# 7 playground/data/layer/Dog#dog().2
+#/# 3local1723
+#8# <%playground/data/layer/Dog.of().(name)23
+#># B%playground/data/layer/Dog.of().(size)28
+%
+% *playground/data/layer/Dog.given_Show_Data.2
+%
+% 
+cats/Show#2)
+%% playground/data/layer/Data#20
+%% ""playground/data/layer/Data#read().2
+%$% (local182
+%*% .local192&
+%S% Tscala/StringContext#s().2*
+%8% 8scala/StringContext.apply().2
+%B% Flocal182
+%N% Rlocal192(
+(( 	playground/data/layer/End#23
+(	( 	%playground/data/layer/End#`<init>`().2+
+(( playground/data/layer/End#[O]2.
+))  playground/data/layer/End#end().2+
+)) playground/data/layer/End#[O]2(
+++ 
+playground/data/layer/End.2*
+++ playground/data/layer/Layer#26
+++ (playground/data/layer/End.`<init>`().[i]26
+++ (playground/data/layer/End.`<init>`().[o]2(
++$+ 'playground/data/layer/End#2/
+,, !playground/data/layer/End.peel().22
+,, $playground/data/layer/End.peel().[R]25
+,, 'playground/data/layer/End.peel().(cont)2(
+,, playground/data/layer/End#22
+,, $playground/data/layer/End.peel().[R]22
+,,  $playground/data/layer/End.peel().[R]2.
+,(, + playground/data/layer/End#end().25
+,#, ''playground/data/layer/End.peel().(cont)2-
+.. playground/data/layer/Constant#28
+.. *playground/data/layer/Constant#`<init>`().20
+.. "playground/data/layer/Constant#[P]25
+// 'playground/data/layer/Constant#const().28
+// *playground/data/layer/Constant#const().[B]28
+// *playground/data/layer/Constant#const().(b)28
+// *playground/data/layer/Constant#const().[B]20
+// "playground/data/layer/Constant#[P]2
+// 
+scala/Any#28
+/!/ "*playground/data/layer/Constant#const().[B]2*
+11 playground/data/layer/Lens2#25
+11 'playground/data/layer/Lens2#`<init>`().2-
+11 playground/data/layer/Lens2#[P]2-
+11 playground/data/layer/Lens2#[Q]20
+22 "playground/data/layer/Lens2#get().23
+22 %playground/data/layer/Lens2#get().[A]23
+22 %playground/data/layer/Lens2#get().[B]23
+22 %playground/data/layer/Lens2#get().(p)2-
+22 playground/data/layer/Lens2#[P]23
+22 %playground/data/layer/Lens2#get().[A]23
+22 %playground/data/layer/Lens2#get().[B]2-
+2 2 !playground/data/layer/Lens2#[Q]23
+2"2 #%playground/data/layer/Lens2#get().[A]23
+2%2 &%playground/data/layer/Lens2#get().[B]20
+33 "playground/data/layer/Lens2#set().23
+33 %playground/data/layer/Lens2#set().[A]23
+33 %playground/data/layer/Lens2#set().[B]23
+33 %playground/data/layer/Lens2#set().(p)2-
+33 playground/data/layer/Lens2#[P]23
+33 %playground/data/layer/Lens2#set().[A]23
+33 %playground/data/layer/Lens2#set().[B]23
+33 %playground/data/layer/Lens2#set().(q)2-
+3!3 "playground/data/layer/Lens2#[Q]23
+3#3 $%playground/data/layer/Lens2#set().[A]23
+3&3 '%playground/data/layer/Lens2#set().[B]2-
+3+3 ,playground/data/layer/Lens2#[P]23
+3-3 .%playground/data/layer/Lens2#set().[A]23
+303 1%playground/data/layer/Lens2#set().[B]2,
+55 playground/data/layer/DropRed.2:
+66 ,playground/data/layer/DropRed.dropRedCats().2=
+66 /playground/data/layer/DropRed.dropRedCats().[P]2@
+66 "2playground/data/layer/DropRed.dropRedCats().(cats)2*
+6$6 )playground/data/layer/Layer#2=
+6*6 +/playground/data/layer/DropRed.dropRedCats().[P]2=
+646 5/playground/data/layer/DropRed.dropRedCats().(P)2-
+676 ?playground/data/layer/Constant#2=
+6@6 A/playground/data/layer/DropRed.dropRedCats().[P]2>
+6D6 F0playground/data/layer/DropRed.dropRedCats().(pc)2*
+6H6 Mplayground/data/layer/Lens2#2=
+6N6 O/playground/data/layer/DropRed.dropRedCats().[P]2*
+6X6 ]playground/data/layer/Layer#2=
+6^6 _/playground/data/layer/DropRed.dropRedCats().[P]21
+7 7 $#playground/data/layer/Layer#peel().2@
+77 2playground/data/layer/DropRed.dropRedCats().(cats)20
+88 "playground/data/layer/Lens2#set().2>
+88 0playground/data/layer/DropRed.dropRedCats().(pc)25
+88 'playground/data/layer/Constant#const().2=
+88 /playground/data/layer/DropRed.dropRedCats().(P)2#
+88 scala/Tuple2.apply().2@
+8#8 '2playground/data/layer/DropRed.dropRedCats().(cats)2
+8,8 0local202
+828 5local212
+878 ;local222
+8G8 Iscala/Any#`==`().2
+8C8 Flocal212#
+8V8 Vscala/Tuple2.apply().2
+8]8 alocal222#
+8j8 jscala/Tuple2.apply().2@
+8q8 u2playground/data/layer/DropRed.dropRedCats().(cats)2%
+77 scala/Tuple2.unapply().2
+77 local232
+77 local242
+:: local232:
+::  ,playground/data/layer/DropRed.dropRedCats().2
+:!: $local242=
+:%: %/playground/data/layer/DropRed.dropRedCats().(P)2>
+:%: %0playground/data/layer/DropRed.dropRedCats().(pc)2
+:+: .local2429
+<	< +playground/data/layer/DropRed.CatDogVector#2#
+<< scala/package.Vector#2#
+<< %scala/package.Either#2)
+<&< *playground/data/layer/Data#2)
+<1< 5playground/data/layer/Data#26
+=
+= (playground/data/layer/DropRed.CatOrDogs#2A
+== 3playground/data/layer/DropRed.CatOrDogs#`<init>`().2(
+=%= (playground/data/layer/Cat#29
+=)= *+playground/data/layer/DropRed.CatOrDogs#[i]29
+=,= -+playground/data/layer/DropRed.CatOrDogs#[o]2(
+=4= 7playground/data/layer/Dog#29
+=8= 9+playground/data/layer/DropRed.CatOrDogs#[i]29
+=;= <+playground/data/layer/DropRed.CatOrDogs#[o]2(
+=C= Fplayground/data/layer/End#29
+=G= H+playground/data/layer/DropRed.CatOrDogs#[o]29
+== +playground/data/layer/DropRed.CatOrDogs#[i]29
+== +playground/data/layer/DropRed.CatOrDogs#[o]2E
+?
+? "7playground/data/layer/DropRed.given_Constant_CatOrDogs.2-
+?
+? playground/data/layer/Constant#2M
+@@ ?playground/data/layer/DropRed.given_Constant_CatOrDogs.const().2P
+@@ Bplayground/data/layer/DropRed.given_Constant_CatOrDogs.const().[B]2P
+@@ Bplayground/data/layer/DropRed.given_Constant_CatOrDogs.const().(b)2P
+@@ Bplayground/data/layer/DropRed.given_Constant_CatOrDogs.const().[B]2
+AA local262
+AA local272"
+AA  scala/Predef.String#2
+A"A %local282"
+A'A -scala/Predef.String#2
+A/A 3local292
+A5A 8
+scala/Any#2P
+A<A =Bplayground/data/layer/DropRed.given_Constant_CatOrDogs.const().(b)2
+BB local302
+BB local312"
+BB  scala/Predef.String#2
+B"B &local322
+B(B ,scala/Long#2
+B.B 2local332
+B4B 7
+scala/Any#2P
+B;B <Bplayground/data/layer/DropRed.given_Constant_CatOrDogs.const().(b)2
+CC local342P
+CC Bplayground/data/layer/DropRed.given_Constant_CatOrDogs.const().(b)2F
+F
+F #8playground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.2*
+F
+F playground/data/layer/Lens2#2L
+GG >playground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.get().2O
+GG Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.get().[A]2O
+GG Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.get().[B]2O
+GG Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.get().(p)26
+GG !(playground/data/layer/DropRed.CatOrDogs#2O
+G"G #Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.get().[A]2O
+G%G &Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.get().[B]2(
+G*G -playground/data/layer/Cat#2O
+G.G /Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.get().[A]2O
+G1G 2Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.get().[B]2O
+G6G 7Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.get().(p)2L
+HH >playground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.set().2O
+HH Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.set().[A]2O
+HH Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.set().[B]2O
+HH Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.set().(p)26
+HH !(playground/data/layer/DropRed.CatOrDogs#2O
+H"H #Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.set().[A]2O
+H%H &Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.set().[B]2O
+H)H *Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.set().(q)2(
+H,H /playground/data/layer/Cat#2O
+H0H 1Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.set().[A]2O
+H3H 4Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.set().[B]26
+H8H A(playground/data/layer/DropRed.CatOrDogs#2O
+HBH CAplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.set().[A]2O
+HEH FAplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.set().[B]2O
+II Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.set().(q)2
+II local362.
+II  playground/data/layer/Cat#cat().2
+II local372
+II local382
+II local392O
+JJ Aplayground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.set().(p)2
+JJ local402.
+JJ  playground/data/layer/Dog#dog().2
+JJ local412
+JJ local422
+JJ local432
+JJ local442.
+JJ  playground/data/layer/End#end().2=
+N.N </playground/data/layer/DropRed.toCatDogVector().2F
+NN 8playground/data/layer/DropRed.toCatDogVector().(catDogs)2*
+NN playground/data/layer/Layer#29
+N>N J+playground/data/layer/DropRed.CatDogVector#2'
+O	O scala/annotation/tailrec#2
+OO local452
+OO local462*
+O!O &playground/data/layer/Layer#2
+O3O 6local4729
+O8O D+playground/data/layer/DropRed.CatDogVector#29
+OSO _+playground/data/layer/DropRed.CatDogVector#21
+P0P 4#playground/data/layer/Layer#peel().2
+P(P /local462
+P6P =scala/Boolean#2*
+P?P Dplayground/data/layer/Layer#29
+PQP ]+playground/data/layer/DropRed.CatDogVector#2
+QQ local492
+QQ local502"
+QQ $scala/Predef.String#2
+Q&Q )local512"
+Q+Q 1scala/Predef.String#2
+Q3Q 7local522*
+Q9Q >playground/data/layer/Layer#2#
+RR scala/Tuple3.apply().2
+RR local522-
+R%R 'scala/collection/SeqOps#`:+`().2
+R!R $local472&
+R,R ,scala/util/Left.apply().2!
+R(R ,scala/package.Left.2-
+R1R 3playground/data/layer/Cat.of().2(
+R-R 0playground/data/layer/Cat.2
+R4R 8local502
+R:R =local512
+SS local532
+SS local542"
+SS $scala/Predef.String#2
+S&S *local552
+S,S 0scala/Long#2
+S2S 6local562*
+S8S =playground/data/layer/Layer#2#
+TT scala/Tuple3.apply().2
+TT local562-
+T%T 'scala/collection/SeqOps#`:+`().2
+T!T $local472'
+T-T -scala/util/Right.apply().2"
+T(T -scala/package.Right.2-
+T2T 4playground/data/layer/Dog.of().2(
+T.T 1playground/data/layer/Dog.2
+T5T 9local542
+T;T ?local552
+UU local572#
+UU scala/Tuple3.apply().2
+U"U )local462
+U+U .local472%
+PP scala/Tuple3.unapply().2
+PP local582
+PP local592
+P!P $local602
+WW local582
+WW local452
+W W $local592
+W&W )local602
+W0W 3local6027
+OMO M)scala/collection/IterableFactory#apply().2#
+OGO Mscala/package.Vector.2
+YY 
+local452F
+YY 8playground/data/layer/DropRed.toCatDogVector().(catDogs)2.
+[[ 	 playground/data/layer/DropRed.x.20
+\\ "playground/data/layer/Cat.apply().2(
+\\ playground/data/layer/Cat.20
+]] "playground/data/layer/Cat.apply().2(
+]] playground/data/layer/Cat.20
+^^ "playground/data/layer/Cat.apply().2(
+^^ playground/data/layer/Cat.20
+__ "playground/data/layer/Dog.apply().2(
+__ playground/data/layer/Dog.20
+`` "playground/data/layer/Cat.apply().2(
+`` playground/data/layer/Cat.2(
+aa playground/data/layer/End.23
+dd %playground/data/layer/DropRed.main().29
+dd +playground/data/layer/DropRed.main().(args)2
+dd scala/Array#2"
+dd scala/Predef.String#2'
+ee scala/Predef.println(+1).2#
+e!e %cats/Show.Ops#show().2+
+ee cats/Show.ToShowOps#toShow().2=
+ee /playground/data/layer/DropRed.toCatDogVector().2.
+ee  playground/data/layer/DropRed.x.2D
+e e  6cats/instances/VectorInstances#catsStdShowForVector().2D
+e e  6cats/instances/EitherInstances#catsStdShowForEither().28
+e e  *playground/data/layer/Cat.given_Show_Data.28
+e e  *playground/data/layer/Dog.given_Show_Data.2'
+ff scala/Predef.println(+1).2#
+f9f =cats/Show.Ops#show().2+
+ff cats/Show.ToShowOps#toShow().2=
+ff /playground/data/layer/DropRed.toCatDogVector().2:
+ff ,playground/data/layer/DropRed.dropRedCats().2.
+f'f ( playground/data/layer/DropRed.x.2E
+f)f )7playground/data/layer/DropRed.given_Constant_CatOrDogs.2F
+f)f )8playground/data/layer/DropRed.given_Lens2_CatOrDogs_Cat.2D
+f8f 86cats/instances/VectorInstances#catsStdShowForVector().2D
+f8f 86cats/instances/EitherInstances#catsStdShowForEither().28
+f8f 8*playground/data/layer/Cat.given_Show_Data.28
+f8f 8*playground/data/layer/Dog.given_Show_Data.PZ B8EEA707BF310A254C475E7EE40C5B83

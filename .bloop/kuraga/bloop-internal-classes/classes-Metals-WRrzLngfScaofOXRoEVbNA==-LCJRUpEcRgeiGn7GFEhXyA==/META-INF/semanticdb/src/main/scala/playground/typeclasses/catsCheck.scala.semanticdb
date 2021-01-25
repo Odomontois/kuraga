@@ -1,0 +1,34 @@
+
+È	5src/main/scala/playground/typeclasses/catsCheck.scala*)
+playground/typeclasses/Foo.
+ *Foo€*7
+-playground/typeclasses/Foo.`<local Foo$>`.[A]	*A€2!
+ playground/typeclasses/2
+ playground/2
+ cats/Parallel.2
+ cats/Parallel#2
+ cats/2 
+ cats/data/EitherT.2 
+ cats/data/EitherT#2
+ 
+cats/data/2
+ cats/2,
+ cats/instances/package.string.2
+ cats/instances/2
+ cats/2*
+ cats/instances/package.list.2
+ cats/instances/2
+ cats/2)
+ 
+playground/typeclasses/Foo.2$
+ 
+scala/Predef.summon().2
+ cats/Parallel#2;
+ -playground/typeclasses/Foo.`<local Foo$>`.[A]2 
+ #cats/data/EitherT#2!
+$ (scala/package.List#2"
+* 0scala/Predef.String#2;
+2 3-playground/typeclasses/Foo.`<local Foo$>`.[A]2[
+6 6Mcats/data/EitherTInstances1#catsDataParallelForEitherTWithSequentialEffect().2C
+6 65cats/instances/ListInstances#catsStdInstancesForList.2Q
+6 6Ccats/kernel/instances/StringInstances#catsKernelStdMonoidForString.PZ 52C2D108F2DB737683DEF979ED2BA31B

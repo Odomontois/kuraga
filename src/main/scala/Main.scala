@@ -1,6 +1,6 @@
 object Main {
 
-  def (s : String) .double: String = s + s
+  extension (s : String) def  double: String = s + s
   
 
   def main(args: Array[String]): Unit = {

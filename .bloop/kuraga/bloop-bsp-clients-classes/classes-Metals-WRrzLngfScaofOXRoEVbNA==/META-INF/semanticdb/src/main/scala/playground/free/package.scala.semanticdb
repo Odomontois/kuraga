@@ -1,0 +1,108 @@
+
+Â!,src/main/scala/playground/free/package.scala*(
+playground/free/Carrier#*Carrier€*5
+#playground/free/Carrier#`<init>`(). €@*<init>€*$
+playground/free/Carrier#T#*T€*$
+playground/free/widen#*widen€*3
+!playground/free/widen#`<init>`(). €@*<init>€*0
+%playground/free/widen#`<init>`().(fa)*fa€*#
+playground/free/widen#[G]	*G€*#
+playground/free/widen#[X]	*X€*'
+playground/free/widen#fa. €*fa€*&
+playground/free/widen#to().*to€*(
+playground/free/widen#to().[H]	*H€*(
+playground/free/widen#to().[Y]	*Y€*/
+ playground/free/package$package. *free€*0
+%playground/free/package$package.`||`#*||€*2
+(playground/free/package$package.`||`#[F]	*F€*2
+(playground/free/package$package.`||`#[G]	*G€*2
+(playground/free/package$package.`||`#[A]	*A€*2
+%playground/free/package$package.Void#*Void€*2
+(playground/free/package$package.Void#[x]	*x€*4
+'playground/free/package$package.funK().*funK€*4
+*playground/free/package$package.funK().[F]	*F€*4
+*playground/free/package$package.funK().[G]	*G€*4
+*playground/free/package$package.funK().(f)*f€*
+local0 *apply€*
+local1*c€*
+local2 *$anon€*
+local3*apply€*
+local4	*A€*
+local5*fa€*
+local6 *$anon€*
+local7*T€2
+ playground/free/2
+ playground/2
+ cats/2#
+ cats/arrow/FunctionK.2#
+ cats/arrow/FunctionK#2
+ cats/arrow/2
+ cats/2
+ cats/evidence/As.2
+ cats/evidence/As#2
+ cats/evidence/2
+ cats/2&
+ playground/free/Carrier#21
+ #playground/free/Carrier#`<init>`().2(
+ playground/free/Carrier#T#2$
+ playground/free/widen#2/
+ !playground/free/widen#`<init>`().2'
+ playground/free/widen#[G]2'
+ playground/free/widen#[X]2'
+ playground/free/widen#[G]2'
+ playground/free/widen#[X]2'
+ playground/free/widen#fa.2)
+ playground/free/widen#to().2,
+	 
+playground/free/widen#to().[H]2,
+ playground/free/widen#to().[Y]2'
+ playground/free/widen#[X]2,
+  !playground/free/widen#to().[H]2,
+" #playground/free/widen#to().[Y]2'
+' )playground/free/widen#fa.2*
+ playground/free/package$package.23
+ %playground/free/package$package.`||`#26
+ 	(playground/free/package$package.`||`#[F]26
+ (playground/free/package$package.`||`#[G]26
+ (playground/free/package$package.`||`#[A]2
+# $
+scala/`|`#26
+ (playground/free/package$package.`||`#[F]26
+  !(playground/free/package$package.`||`#[A]26
+% &(playground/free/package$package.`||`#[G]26
+' ((playground/free/package$package.`||`#[A]23
+		 	%playground/free/package$package.Void#26
+		 (playground/free/package$package.Void#[x]2
+		 scala/Nothing#25
+ 'playground/free/package$package.funK().28
+	 
+*playground/free/package$package.funK().[F]28
+ *playground/free/package$package.funK().[G]28
+ *playground/free/package$package.funK().(f)2&
+ #playground/free/Carrier#2
+% *local02
+ local128
+( )*playground/free/package$package.funK().[F]2(
+, -playground/free/Carrier#T#2
+* +local128
+2 3*playground/free/package$package.funK().[G]2(
+6 7playground/free/Carrier#T#2
+4 5local12 
+= ?cats/package.`~>`#28
+; <*playground/free/package$package.funK().[F]28
+@ A*playground/free/package$package.funK().[G]2#
+ cats/arrow/FunctionK#28
+ *playground/free/package$package.funK().[F]28
+ *playground/free/package$package.funK().[G]2
+ local32
+ local42
+ local528
+ *playground/free/package$package.funK().[F]2
+ local42&
+7 7scala/Function1#apply().2&
+ scala/Function1#apply().28
+ *playground/free/package$package.funK().(f)2&
+# *playground/free/Carrier#2
+0 1local72
+4 5local42
+8 :local5PZ D347B6EE49B29DCBC84F61A7E450E5F3

@@ -1,0 +1,113 @@
+
+°-(src/main/scala/playground/data/nel.scala*<
+!playground/data/NonEmptyListMain.
+ *NonEmptyListMain€*5
+(playground/data/NonEmptyListMain.main().*main€*;
+.playground/data/NonEmptyListMain.main().(args)*args€*
+local0 €*a€*+
+playground/data/nel$package. *data€*>
+)playground/data/nel$package.NonEmptyList#*NonEmptyList€*9
+,playground/data/nel$package.NonEmptyList#[A]	 €*A€*@
+)playground/data/nel$package.NonEmptyList.
+ *NonEmptyList€*?
+1playground/data/nel$package.NonEmptyList.apply().*apply€*>
+4playground/data/nel$package.NonEmptyList.apply().[A]	*A€*>
+4playground/data/nel$package.NonEmptyList.apply().(a)*a€*@
+5playground/data/nel$package.NonEmptyList.apply().(as)*as€*A
+2playground/data/nel$package.NonEmptyList.toList().*toList€*?
+5playground/data/nel$package.NonEmptyList.toList().[A]	*A€*E
+8playground/data/nel$package.NonEmptyList.toList().(self)*self€*=
+0playground/data/nel$package.NonEmptyList.head().*head€*=
+3playground/data/nel$package.NonEmptyList.head().[A]	*A€*C
+6playground/data/nel$package.NonEmptyList.head().(self)*self€*=
+0playground/data/nel$package.NonEmptyList.tail().*tail€*=
+3playground/data/nel$package.NonEmptyList.tail().[A]	*A€*C
+6playground/data/nel$package.NonEmptyList.tail().(self)*self€*;
+/playground/data/nel$package.NonEmptyList.map().*map€*<
+2playground/data/nel$package.NonEmptyList.map().[A]	*A€*<
+2playground/data/nel$package.NonEmptyList.map().[B]	*B€*B
+5playground/data/nel$package.NonEmptyList.map().(self)*self€*<
+2playground/data/nel$package.NonEmptyList.map().(f)*f€2
+ playground/data/2
+ playground/2/
+ !playground/data/NonEmptyListMain.26
+ 
+(playground/data/NonEmptyListMain.main().2<
+ .playground/data/NonEmptyListMain.main().(args)2
+ scala/Array#2"
+ scala/Predef.String#2
+ 	local02?
+ 1playground/data/nel$package.NonEmptyList.apply().27
+ )playground/data/nel$package.NonEmptyList.2'
+ scala/Predef.println(+1).2
+ local02'
+ scala/Predef.println(+1).2=
+ /playground/data/nel$package.NonEmptyList.map().2
+ local02 
+ scala/Int#`+`(+4).2&
+playground/data/nel$package.27
+ )playground/data/nel$package.NonEmptyList#2:
+ ,playground/data/nel$package.NonEmptyList#[A]2!
+ #scala/package.List#2:
+$ %,playground/data/nel$package.NonEmptyList#[A]27
+ )playground/data/nel$package.NonEmptyList.2?
+ 1playground/data/nel$package.NonEmptyList.apply().2B
+ 4playground/data/nel$package.NonEmptyList.apply().[A]2B
+ 4playground/data/nel$package.NonEmptyList.apply().(a)2B
+ 4playground/data/nel$package.NonEmptyList.apply().[A]2C
+ 5playground/data/nel$package.NonEmptyList.apply().(as)2B
+ 4playground/data/nel$package.NonEmptyList.apply().[A]27
+ +)playground/data/nel$package.NonEmptyList#2B
+, -4playground/data/nel$package.NonEmptyList.apply().[A]25
+C C'scala/collection/immutable/List#`::`().27
+; ;)scala/collection/IterableFactory#apply().2!
+7 ;scala/package.List.2C
+< >5playground/data/nel$package.NonEmptyList.apply().(as)2B
+2 34playground/data/nel$package.NonEmptyList.apply().(a)2@
+ 2playground/data/nel$package.NonEmptyList.toList().2C
+ 5playground/data/nel$package.NonEmptyList.toList().[A]2F
+ 8playground/data/nel$package.NonEmptyList.toList().(self)27
+ ")playground/data/nel$package.NonEmptyList#2C
+# $5playground/data/nel$package.NonEmptyList.toList().[A]2!
+ scala/package.List#2C
+ 5playground/data/nel$package.NonEmptyList.toList().[A]2F
+ 8playground/data/nel$package.NonEmptyList.toList().(self)2>
+		 0playground/data/nel$package.NonEmptyList.head().2A
+ 3playground/data/nel$package.NonEmptyList.head().[A]2D
+ 6playground/data/nel$package.NonEmptyList.head().(self)2A
+# $3playground/data/nel$package.NonEmptyList.head().[A]2A
+		 3playground/data/nel$package.NonEmptyList.head().[A]22
+		 $scala/collection/IterableOps#head().2D
+		 6playground/data/nel$package.NonEmptyList.head().(self)2>
+
+
+ 0playground/data/nel$package.NonEmptyList.tail().2A
+ 3playground/data/nel$package.NonEmptyList.tail().[A]2D
+ 6playground/data/nel$package.NonEmptyList.tail().(self)2A
+# $3playground/data/nel$package.NonEmptyList.tail().[A]2!
+
+
+ scala/package.List#2A
+
+
+ 3playground/data/nel$package.NonEmptyList.tail().[A]22
+
+
+ !$scala/collection/IterableOps#tail().2D
+
+
+ 6playground/data/nel$package.NonEmptyList.tail().(self)2=
+/ 2/playground/data/nel$package.NonEmptyList.map().2@
+ 2playground/data/nel$package.NonEmptyList.map().[A]2@
+ 2playground/data/nel$package.NonEmptyList.map().[B]2C
+ 5playground/data/nel$package.NonEmptyList.map().(self)27
+ %)playground/data/nel$package.NonEmptyList#2@
+& '2playground/data/nel$package.NonEmptyList.map().[A]2@
+4 52playground/data/nel$package.NonEmptyList.map().(f)2@
+7 82playground/data/nel$package.NonEmptyList.map().[A]2@
+< =2playground/data/nel$package.NonEmptyList.map().[B]27
+@ L)playground/data/nel$package.NonEmptyList#2@
+M N2playground/data/nel$package.NonEmptyList.map().[B]24
+W Z&scala/collection/immutable/List#map().2C
+R V5playground/data/nel$package.NonEmptyList.map().(self)2@
+[ \2playground/data/nel$package.NonEmptyList.map().(f)PZ E6BD5A65D84F49973966C0B1B61A04EA

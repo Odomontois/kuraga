@@ -42,16 +42,16 @@ type FunctionR[T[_ <: Context | Result]] = T[Context] => T[Result]
 
 
 trait Monad[F[_[_ <: Result]]]:
-    def [A](a: A) pure: M[F, A]
-    def [A, B](fa: M[F, A]) flatMap (f: A => M[F, B]): M[F, B]
+    def pure[A](a: A) : M[F, A]
+    def flatMap[A, B](fa: M[F, A])  (f: A => M[F, B]): M[F, B]
 
 trait BIOError[F[_[_ <: Error | Result]]]:
-    def [E, A] (e: E) raise: BiA[F, E, A]
-    def [E, A](fa: BiA[F, E, A]) handleWith(f: E => BiA[F, Nothing, A]) : BiA[F, Nothing, A]
+    def raise[E, A] (e: E) : BiA[F, E, A]
+    def handleWith[E, A](fa: BiA[F, E, A])(f: E => BiA[F, Nothing, A]) : BiA[F, Nothing, A]
 
 trait ProLocal[F[_[_ <: Context | Result]]]:
     def ask[R] : ProA[F, R, R]
-    def[R, R1, A](fa: ProA[F, R1, A]) local (f: R => R1): ProA[F, R, A]
+    def local[R, R1, A](fa: ProA[F, R1, A])(f: R => R1): ProA[F, R, A]
 
 final case class ApplicationContext()
 

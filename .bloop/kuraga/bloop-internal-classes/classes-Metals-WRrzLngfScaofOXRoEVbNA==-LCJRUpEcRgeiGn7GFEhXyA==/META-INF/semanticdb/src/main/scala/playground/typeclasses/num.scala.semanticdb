@@ -1,0 +1,140 @@
+
+’1/src/main/scala/playground/typeclasses/num.scala*+
+playground/typeclasses/Lolk.
+ *Lolk€*,
+ playground/typeclasses/Lolk.Num#*Num€*=
++playground/typeclasses/Lolk.Num#`<init>`(). €@*<init>€*-
+#playground/typeclasses/Lolk.Num#[N]	*N€*2
+&playground/typeclasses/Lolk.Num#`+`(). *+€*3
+)playground/typeclasses/Lolk.Num#`+`().(x)*x€*3
+)playground/typeclasses/Lolk.Num#`+`().(y)*y€*2
+&playground/typeclasses/Lolk.Num#`*`(). **€*3
+)playground/typeclasses/Lolk.Num#`*`().(x)*x€*3
+)playground/typeclasses/Lolk.Num#`*`().(y)*y€*0
+&playground/typeclasses/Lolk.Num#`-`().*-€*3
+)playground/typeclasses/Lolk.Num#`-`().(x)*x€*3
+)playground/typeclasses/Lolk.Num#`-`().(y)*y€*<
+*playground/typeclasses/Lolk.Num#fromInt(). *fromInt€*7
+-playground/typeclasses/Lolk.Num#fromInt().(x)*x€*2
+&playground/typeclasses/Lolk.Num#one().*one€*4
+'playground/typeclasses/Lolk.Num#zero().*zero€*<
+,playground/typeclasses/Lolk.Num#`unary_-`().*unary_-€*9
+/playground/typeclasses/Lolk.Num#`unary_-`().(x)*x€*.
+ playground/typeclasses/Lolk.Num.
+ *Num€*F
+.playground/typeclasses/Lolk.Num.given_Num_Int.
+ (*given_Num_Int€*>
+4playground/typeclasses/Lolk.Num.given_Num_Int.`+`().*+€*A
+7playground/typeclasses/Lolk.Num.given_Num_Int.`+`().(x)*x€*A
+7playground/typeclasses/Lolk.Num.given_Num_Int.`+`().(y)*y€*>
+4playground/typeclasses/Lolk.Num.given_Num_Int.`*`().**€*A
+7playground/typeclasses/Lolk.Num.given_Num_Int.`*`().(x)*x€*A
+7playground/typeclasses/Lolk.Num.given_Num_Int.`*`().(y)*y€*H
+8playground/typeclasses/Lolk.Num.given_Num_Int.fromInt().*fromInt€*E
+;playground/typeclasses/Lolk.Num.given_Num_Int.fromInt().(x)*x€*.
+"playground/typeclasses/Lolk.foo().*foo€*/
+%playground/typeclasses/Lolk.foo().[N]	*N€*/
+%playground/typeclasses/Lolk.foo().(x)*x€*0
+#playground/typeclasses/Lolk.main().*main€*6
+)playground/typeclasses/Lolk.main().(args)*args€2!
+ playground/typeclasses/2
+ playground/2*
+ playground/typeclasses/Lolk.2.
+  playground/typeclasses/Lolk.Num#29
+ +playground/typeclasses/Lolk.Num#`<init>`().21
+ #playground/typeclasses/Lolk.Num#[N]24
+
+ &playground/typeclasses/Lolk.Num#`+`().27
+ )playground/typeclasses/Lolk.Num#`+`().(x)21
+ #playground/typeclasses/Lolk.Num#[N]27
+ )playground/typeclasses/Lolk.Num#`+`().(y)21
+ #playground/typeclasses/Lolk.Num#[N]21
+ #playground/typeclasses/Lolk.Num#[N]24
+
+ &playground/typeclasses/Lolk.Num#`*`().27
+ )playground/typeclasses/Lolk.Num#`*`().(x)27
+ )playground/typeclasses/Lolk.Num#`*`().(y)21
+ #playground/typeclasses/Lolk.Num#[N]21
+ #playground/typeclasses/Lolk.Num#[N]24
+
+ &playground/typeclasses/Lolk.Num#`-`().27
+ )playground/typeclasses/Lolk.Num#`-`().(x)27
+ )playground/typeclasses/Lolk.Num#`-`().(y)21
+ #playground/typeclasses/Lolk.Num#[N]24
+ &playground/typeclasses/Lolk.Num#`+`().27
+ )playground/typeclasses/Lolk.Num#`-`().(x)2:
+ ,playground/typeclasses/Lolk.Num#`unary_-`().27
+ )playground/typeclasses/Lolk.Num#`-`().(y)28
+ *playground/typeclasses/Lolk.Num#fromInt().2;
+ -playground/typeclasses/Lolk.Num#fromInt().(x)2
+ 
+scala/Int#21
+ #playground/typeclasses/Lolk.Num#[N]24
+
+
+ &playground/typeclasses/Lolk.Num#one().21
+
+
+ #playground/typeclasses/Lolk.Num#[N]28
+
+
+ %*playground/typeclasses/Lolk.Num#fromInt().25
+ 'playground/typeclasses/Lolk.Num#zero().21
+ #playground/typeclasses/Lolk.Num#[N]28
+ %*playground/typeclasses/Lolk.Num#fromInt().2:
+ !,playground/typeclasses/Lolk.Num#`unary_-`().2=
+ /playground/typeclasses/Lolk.Num#`unary_-`().(x)21
+ #playground/typeclasses/Lolk.Num#[N]21
+$ %#playground/typeclasses/Lolk.Num#[N]24
+( (&playground/typeclasses/Lolk.Num#`*`().2=
+( )/playground/typeclasses/Lolk.Num#`unary_-`().(x)28
+- 4*playground/typeclasses/Lolk.Num#fromInt().2.
+	  playground/typeclasses/Lolk.Num.2<
+
+ .playground/typeclasses/Lolk.Num.given_Num_Int.2.
+
+  playground/typeclasses/Lolk.Num#2
+ 
+scala/Int#2B
+ 4playground/typeclasses/Lolk.Num.given_Num_Int.`+`().2E
+ 7playground/typeclasses/Lolk.Num.given_Num_Int.`+`().(x)2
+ 
+scala/Int#2E
+ 7playground/typeclasses/Lolk.Num.given_Num_Int.`+`().(y)2
+ 
+scala/Int#2 
+ scala/Int#`+`(+4).2E
+ 7playground/typeclasses/Lolk.Num.given_Num_Int.`+`().(x)2E
+ 7playground/typeclasses/Lolk.Num.given_Num_Int.`+`().(y)2B
+ 4playground/typeclasses/Lolk.Num.given_Num_Int.`*`().2E
+ 7playground/typeclasses/Lolk.Num.given_Num_Int.`*`().(x)2E
+ 7playground/typeclasses/Lolk.Num.given_Num_Int.`*`().(y)2
+ 
+scala/Int#2 
+ scala/Int#`*`(+3).2E
+ 7playground/typeclasses/Lolk.Num.given_Num_Int.`*`().(x)2E
+ 7playground/typeclasses/Lolk.Num.given_Num_Int.`*`().(y)2F
+
+ 8playground/typeclasses/Lolk.Num.given_Num_Int.fromInt().2I
+ ;playground/typeclasses/Lolk.Num.given_Num_Int.fromInt().(x)2
+ 
+scala/Int#2I
+ ;playground/typeclasses/Lolk.Num.given_Num_Int.fromInt().(x)20
+ 	"playground/typeclasses/Lolk.foo().23
+
+ %playground/typeclasses/Lolk.foo().[N]23
+ %playground/typeclasses/Lolk.foo().(x)23
+ %playground/typeclasses/Lolk.foo().[N]2.
+  playground/typeclasses/Lolk.Num#23
+ %playground/typeclasses/Lolk.foo().[N]23
+ %playground/typeclasses/Lolk.foo().(x)23
+  %playground/typeclasses/Lolk.foo().(x)21
+ 
+#playground/typeclasses/Lolk.main().27
+ )playground/typeclasses/Lolk.main().(args)2
+ scala/Array#2"
+ scala/Predef.String#2
+! %scala/Unit#2'
+ scala/Predef.println(+1).20
+ "playground/typeclasses/Lolk.foo().2<
+ .playground/typeclasses/Lolk.Num.given_Num_Int.PZ 3956581592FC4BC9FC32A1F4CCA28CC8

@@ -17,7 +17,7 @@ object Is:
 
 // hs:GCompare
 trait Eq[k <: AnyKind, K[_ <: k]] :
-  def [A <: k, B <: k](k: K[A]) isEq (k2: K[B]): [R] => GEQ[k, K, A, B, R] => R
+  extension [A <: k, B <: k](k: K[A]) def isEq  (k2: K[B]): [R] => GEQ[k, K, A, B, R] => R
 
 object Eq:
   trait GEQ[k <: AnyKind, K[_ <: k], A <: k, B <: k, R]:

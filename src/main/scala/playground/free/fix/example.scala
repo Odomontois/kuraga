@@ -45,7 +45,7 @@
 //     type CatDogVector = Vector[Either[Cat[Unit], Dog[Unit]]]
 //     type CatOrDogs[+a] =  Cat[a] | Dog[a] | End.type
 
-//     def (catDogs: Fix[CatOrDogs]) toVector : CatDogVector  = 
+//     extension (catDogs: Fix[CatOrDogs]) def toVector : CatDogVector  = 
 //         @tailrec def go(acc: CatDogVector, catDogs: Fix[CatOrDogs]) : CatDogVector = catDogs.value match
 //             case Cat(name, fur, rest) =>  go(acc :+ Left(Cat(name, fur, ())), rest)
 //             case Dog(name, size, rest) => go(acc :+ Right(Dog(name, size, ())), rest)

@@ -1,7 +1,7 @@
 trait Functya[F[_]]:
     def [A, B] (fa: F[A]) map (f: A => B) : F[B]
 
-given Functya[List]: 
+given Functya[List] with
     def [A, B] (fa: List[A]) map (f: A => B) : List[B] = 
         fa.map(f)
 

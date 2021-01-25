@@ -1,0 +1,43 @@
+
+àsrc/main/scala/Main.scala*
+_empty_/Main.
+ *Main€*%
+_empty_/Main.double().*double€*#
+_empty_/Main.double().(s)*s€*!
+_empty_/Main.main().*main€*'
+_empty_/Main.main().(args)*args€*
+_empty_/Main.msg().*msg€*#
+_empty_/Main.check().*check€*"
+_empty_/Main.check().[A]	*A€*"
+_empty_/Main.check().[B]	*B€*"
+_empty_/Main.check().[C]	*C€2
+ _empty_/Main.2$
+ $_empty_/Main.double().2'
+ _empty_/Main.double().(s)2"
+ scala/Predef.String#2"
+& ,scala/Predef.String#2%
+1 2java/lang/String#`+`().2'
+/ 0_empty_/Main.double().(s)2'
+3 4_empty_/Main.double().(s)2"
+ 
+_empty_/Main.main().2(
+ _empty_/Main.main().(args)2
+ scala/Array#2"
+ scala/Predef.String#2
+! %scala/Unit#2'
+ scala/Predef.println(+1).2'
+ scala/Predef.println(+1).2$
+ _empty_/Main.double().2!
+ _empty_/Main.msg().2!
+ 	_empty_/Main.msg().2#
+ _empty_/Main.check().2&
+ _empty_/Main.check().[A]2&
+ _empty_/Main.check().[B]2&
+ _empty_/Main.check().[A]2&
+ _empty_/Main.check().[C]2$
+ #scala/Predef.summon().2
+. 1scala/`<:<`#2&
+% &_empty_/Main.check().[A]2&
++ ,_empty_/Main.check().[C]2&
+4 5_empty_/Main.check().[B]2&
+: ;_empty_/Main.check().[C]PZ 3B23C7D74611791B83ADA907DCCC5813

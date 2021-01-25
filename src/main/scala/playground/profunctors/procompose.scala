@@ -7,14 +7,12 @@ enum Procompose[P[_, _], Q[_, _], A, B]{
   case Impl[P[_, _], Q[_, _], A, M, B](pam: P[A, M], qmb: Q[M, B]) extends Procompose[P, Q, A, B]
 }
 
-object Procompose{
-  given [P[_, _]: Profunctor, Q[_, _]: Profunctor] as Profunctor[P |::| Q]{
+object Procompose:
+  given [P[_, _]: Profunctor, Q[_, _]: Profunctor] :  Profunctor[P |::| Q] with
     def dimap[A, B, C, D](fab: Procompose[P, Q, A, B])(f: C => A)(g: B => D): Procompose[P, Q, C, D] = 
      fab match { case Impl(pam, qmb) => Impl(pam.lmap(f), qmb.rmap(g))  }
-  }
-}
 
-type |::|[P[_, _], Q[_, _]] = [A, B] =>> Procompose[P, Q, A, B]
+type |::| [P[_, _], Q[_, _]] = [A, B] =>> Procompose[P, Q, A, B]
 
 trait ~~>[P[_, _], Q[_, _]]{ pt => 
   def apply[A, B](pab: P[A, B]): Q[A, B]

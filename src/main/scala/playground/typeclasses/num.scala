@@ -2,20 +2,22 @@ package playground.typeclasses
 
 object Lolk{
   trait Num[N] {
-    def (x: N) + (y: N): N
-    def (x: N) * (y: N): N
+    extension (x: N)
+      def + (y: N): N
+      def * (y: N): N
+      def - (y: N)   = x + (- y)
     def fromInt(x: Int): N
 
     def one: N              = fromInt(1)
     def zero: N             = fromInt(0)
-    def (x : N) unary_- : N = x *  fromInt(-1)
-    def (x: N) - (y: N)   = x + (- y)
+    extension (x : N) def unary_- : N = x *  fromInt(-1)
   }
 
   object Num {
-    given Num[Int]{
-      def (x: Int) + (y: Int) = x + y
-      def (x: Int) * (y: Int) = x * y
+    given Num[Int] with {
+      extension (x: Int)
+        def + (y: Int) = x + y
+        def * (y: Int) = x * y
       def fromInt(x: Int) = x
     }
   }

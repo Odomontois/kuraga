@@ -69,10 +69,11 @@ object Lol extends App{
     def value: T
   }
 
-  given ValueAll[EmptyTuple]{ def value = EmptyTuple }
-  given [X, XS <: Tuple]  (using x: ValueOf[X], xs: ValueAll[XS]) as ValueAll[X *: XS]  { 
+  given ValueAll[EmptyTuple] with 
+    def value = EmptyTuple
+  given [X, XS <: Tuple]  (using x: ValueOf[X], xs: ValueAll[XS]) :  ValueAll[X *: XS] with 
     def value = x.value *: xs.value
-  }
+  
 
   def valueAll[T <: Tuple] (using v: ValueAll[T]) : T = v.value
   def printAll[T <: Tuple] (using ValueAll[T]) = println(valueAll[T])

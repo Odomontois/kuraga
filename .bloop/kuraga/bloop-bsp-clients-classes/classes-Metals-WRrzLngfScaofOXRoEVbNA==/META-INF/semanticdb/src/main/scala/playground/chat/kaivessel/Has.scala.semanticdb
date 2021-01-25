@@ -1,0 +1,70 @@
+
+¢2src/main/scala/playground/chat/kaivessel/Has.scala**
+playground/chat/kaivessel/Has#*Has€*;
+)playground/chat/kaivessel/Has#`<init>`(). €@*<init>€*+
+!playground/chat/kaivessel/Has#[k]	*k€*-
+"playground/chat/kaivessel/Has#[TC]	*TC€*1
+$playground/chat/kaivessel/Has#[GADT]	*GADT€*2
+%playground/chat/kaivessel/Has#cts4().*cts4€*2
+(playground/chat/kaivessel/Has#cts4().[A]	*A€*8
++playground/chat/kaivessel/Has#cts4().(gadt)*gadt€*H
+/playground/chat/kaivessel/Has#constraintsFor(). *constraintsFor€*<
+2playground/chat/kaivessel/Has#constraintsFor().[A]	*A€*B
+5playground/chat/kaivessel/Has#constraintsFor().(gadt)*gadt€*:
+&playground/chat/kaivessel/Has$package. *	kaivessel€*6
+*playground/chat/kaivessel/Has$package.TC1#*TC1€*9
+.playground/chat/kaivessel/Has$package.TC1#[TC]	*TC€*7
+-playground/chat/kaivessel/Has$package.TC1#[V]	*V€*7
+-playground/chat/kaivessel/Has$package.TC1#[A]	*A€*8
++playground/chat/kaivessel/Has$package.Has0#*Has0€*:
+/playground/chat/kaivessel/Has$package.Has0#[TC]	*TC€*8
+.playground/chat/kaivessel/Has$package.Has0#[V]	*V€*>
+1playground/chat/kaivessel/Has$package.Has0#[GADT]	*GADT€2$
+ !playground/chat/kaivessel/2
+ playground/chat/2
+ playground/2,
+ 	playground/chat/kaivessel/Has#27
+	 	)playground/chat/kaivessel/Has#`<init>`().2/
+
+ !playground/chat/kaivessel/Has#[k]20
+ "playground/chat/kaivessel/Has#[TC]22
+ "$playground/chat/kaivessel/Has#[GADT]23
+ 
+%playground/chat/kaivessel/Has#cts4().26
+ (playground/chat/kaivessel/Has#cts4().[A]2/
+ !playground/chat/kaivessel/Has#[k]29
+ +playground/chat/kaivessel/Has#cts4().(gadt)22
+ $playground/chat/kaivessel/Has#[GADT]26
+ (playground/chat/kaivessel/Has#cts4().[A]20
+# %"playground/chat/kaivessel/Has#[TC]26
+& '(playground/chat/kaivessel/Has#cts4().[A]2=
++ +/playground/chat/kaivessel/Has#constraintsFor().26
+? @(playground/chat/kaivessel/Has#cts4().[A]29
++ /+playground/chat/kaivessel/Has#cts4().(gadt)2=
+ /playground/chat/kaivessel/Has#constraintsFor().2@
+ 2playground/chat/kaivessel/Has#constraintsFor().[A]2/
+ !playground/chat/kaivessel/Has#[k]2C
+ 5playground/chat/kaivessel/Has#constraintsFor().(gadt)22
+ $playground/chat/kaivessel/Has#[GADT]2@
+  !2playground/chat/kaivessel/Has#constraintsFor().[A]20
+ "playground/chat/kaivessel/Has#[TC]2@
+ 2playground/chat/kaivessel/Has#constraintsFor().[A]20
+&playground/chat/kaivessel/Has$package.28
+ *playground/chat/kaivessel/Has$package.TC1#2<
+	 .playground/chat/kaivessel/Has$package.TC1#[TC]2;
+ -playground/chat/kaivessel/Has$package.TC1#[V]2;
+  -playground/chat/kaivessel/Has$package.TC1#[A]2<
+, ..playground/chat/kaivessel/Has$package.TC1#[TC]2;
+/ 0-playground/chat/kaivessel/Has$package.TC1#[V]2;
+1 2-playground/chat/kaivessel/Has$package.TC1#[A]29
+ 	+playground/chat/kaivessel/Has$package.Has0#2=
+
+ /playground/chat/kaivessel/Has$package.Has0#[TC]2<
+ .playground/chat/kaivessel/Has$package.Has0#[V]2?
+ !1playground/chat/kaivessel/Has$package.Has0#[GADT]2,
+. 1playground/chat/kaivessel/Has#2;
+2 4-playground/chat/kaivessel/package$package.K2#28
+6 9*playground/chat/kaivessel/Has$package.TC1#2=
+: </playground/chat/kaivessel/Has$package.Has0#[TC]2<
+> ?.playground/chat/kaivessel/Has$package.Has0#[V]2?
+B F1playground/chat/kaivessel/Has$package.Has0#[GADT]PZ 72A72006A31FAC386AD14E78FE685DCA

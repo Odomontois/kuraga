@@ -1,4 +1,4 @@
-import playground.chat.whatType
+import playground.chat.Kek
 
 
 class BuznesErar
@@ -15,7 +15,7 @@ val x : BiDyrka[ServesErar | BuznesErar, Int] =
     int2 <- serves(str2)
     yield int + int2
 
-@main def bydyrka = println(whatType(x))
+// @main def bydyrka = println(Kek.whatType(x))
 
 enum BiDyrka[+E, +A]:
     case impl

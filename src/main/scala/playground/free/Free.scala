@@ -20,7 +20,7 @@ object Free:
   def apply[A](a: => A): Free[Void, A] = unit flatMap (_ => Pure(a))
   def suspend[F[_], A](fa: F[A]): Free[F, A] = Bind(fa, x => Pure(x))
   
-  extension [F[_], A] (free: Free[F, A]) :
+  extension [F[_], A] (free: Free[F, A]) 
     def go (f: F[Free[F, A]] => Free[F, A]) (using F: Functor[F]): A = 
      free match
        case Pure(a) => a
@@ -32,7 +32,7 @@ object Free:
         case Bind(fb, k) => F.map(fb)(a => Left(k(a)))
       }
   
-  extension [F[_], G[_], A] (free: Free[F, A]) :
+  extension [F[_], G[_], A] (free: Free[F, A]) 
     def foldRun(f: F ~> G) (using G: Monad[G]): G[A] = 
       G.tailRecM(free){
         case Pure(a)     => G.pure(Right(a))
@@ -41,20 +41,20 @@ object Free:
 
 trait Run[F[_]]:
   self =>
-  def [A] (layer: F[A]) run : Free[F, A]
+  extension [A] (layer: F[A])  def run : Free[F, A]
 
-  def [A] (layer: F[Free[F, A]]) step: Free[F, A] = layer.run flatMap identity
+  extension [A] (layer: F[Free[F, A]]) def step: Free[F, A] = layer.run flatMap identity
 
   def ||[G[_]: RunOr]: Run[F || G] = new Run[F || G]{
     given Run[F] = self
-    def [A] (layer: F[A] | G[A]) run: Free[F || G, A] = layer.runOr[F, A]
+    extension [A] (layer: F[A] | G[A]) def run : Free[F || G, A] = layer.runOr[F, A]
   }
 
 object Run:
-  given Run[Void]:
-    def [A] (layer: Nothing) run: Free[Void, A] = Free.suspend(layer)
+  given Run[Void] with
+    extension [A] (layer: Nothing) def  run: Free[Void, A] = Free.suspend(layer)
 
 trait RunOr[F[_]] extends Run[F]:
-  def [G[_], A] (layer: F[A] | G[A]) runOr(using Run[G]): Free[F || G, A]
+  extension [G[_], A] (layer: F[A] | G[A]) def runOr(using Run[G]): Free[F || G, A]
   
-  override def [A] (layer: F[A]) run: Free[F, A] = layer.runOr[Void, A]
+  extension [A] (layer: F[A])  override def run: Free[F, A] = layer.runOr[Void, A]

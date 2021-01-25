@@ -1,0 +1,1917 @@
+
+⁄‘0src/main/scala/playground/data/layer/freef.scala*,
+playground/data/layer/Layer1#*Layer1Ä*:
+(playground/data/layer/Layer1#`<init>`(). Ä@*<init>Ä*
+local0*selfÄ*-
+ playground/data/layer/Layer1#[P]	 Ä*PÄ*-
+ playground/data/layer/Layer1#[A]	 Ä*AÄ*7
+&playground/data/layer/Layer1#unpack(). *unpackÄ*3
+)playground/data/layer/Layer1#unpack().[R]	*RÄ*3
+)playground/data/layer/Layer1#unpack().(p)*pÄ*6
+,playground/data/layer/Layer1#unpack().(p)[a]	*aÄ*7
+'playground/data/layer/Layer1#flatMap().*flatMapÄ*4
+*playground/data/layer/Layer1#flatMap().[Q]	*QÄ*4
+*playground/data/layer/Layer1#flatMap().[B]	*BÄ*4
+*playground/data/layer/Layer1#flatMap().(f)*fÄ*4
+*playground/data/layer/Layer1#flatMap().[i]	*iÄ*4
+*playground/data/layer/Layer1#flatMap().[o]	*oÄ*
+local1 *$anonÄ*
+local2*unpackÄ*
+local3	*RÄ*
+local4*pÄ*/
+#playground/data/layer/Layer1#map().*mapÄ*0
+&playground/data/layer/Layer1#map().[B]	*BÄ*0
+&playground/data/layer/Layer1#map().(f)*fÄ*0
+&playground/data/layer/Layer1#map().[i]	*iÄ*0
+&playground/data/layer/Layer1#map().[o]	*oÄ*
+local5*aÄ*.
+playground/data/layer/Layer1.
+ *Layer1Ä*+
+ playground/data/layer/Layer1.L1#*L1Ä*-
+#playground/data/layer/Layer1.L1#[P]	*PÄ*-
+#playground/data/layer/Layer1.L1#[a]	*aÄ*3
+%playground/data/layer/Layer1.defer().*deferÄ*2
+(playground/data/layer/Layer1.defer().[A]	*AÄ*2
+(playground/data/layer/Layer1.defer().[B]	*BÄ*2
+(playground/data/layer/Layer1.defer().[P]	*PÄ*8
++playground/data/layer/Layer1.defer().(self)*selfÄ*
+local6 *$anonÄ*
+local7*unpackÄ*
+local8	*RÄ*
+local9*pÄ*/
+#playground/data/layer/Layer1.run().*runÄ*0
+&playground/data/layer/Layer1.run().[P]	*PÄ*0
+&playground/data/layer/Layer1.run().[X]	*XÄ*6
+)playground/data/layer/Layer1.run().(self)*selfÄ*6
+)playground/data/layer/Layer1.run().(step)*stepÄ*
+local10*goÄ*
+local11*curÄ*
+local12 Ä*resÄ*
+local13 Ä*kÄ*
+local14 Ä*nextÄ*1
+$playground/data/layer/Layer1.exec().*execÄ*1
+'playground/data/layer/Layer1.exec().[P]	*PÄ*1
+'playground/data/layer/Layer1.exec().[S]	*SÄ*1
+'playground/data/layer/Layer1.exec().[E]	*EÄ*1
+'playground/data/layer/Layer1.exec().[X]	*XÄ*7
+*playground/data/layer/Layer1.exec().(self)*selfÄ*7
+*playground/data/layer/Layer1.exec().(step)*stepÄ*
+local15*goÄ*
+local16*curÄ*
+local17 Ä*resÄ*
+local18 Ä*errÄ*
+local19 Ä*kÄ*
+local20 Ä*nextÄ*3
+%playground/data/layer/Layer1.value().*valueÄ*2
+(playground/data/layer/Layer1.value().[X]	*XÄ*8
++playground/data/layer/Layer1.value().(self)*selfÄ*;
+)playground/data/layer/Layer1.runReader().*	runReaderÄ*6
+,playground/data/layer/Layer1.runReader().[R]	*RÄ*6
+,playground/data/layer/Layer1.runReader().[X]	*XÄ*<
+/playground/data/layer/Layer1.runReader().(self)*selfÄ*6
+,playground/data/layer/Layer1.runReader().(r)*rÄ*
+local21 *$anonÄ*;
+)playground/data/layer/Layer1.runStateE().*	runStateEÄ*6
+,playground/data/layer/Layer1.runStateE().[S]	*SÄ*6
+,playground/data/layer/Layer1.runStateE().[E]	*EÄ*6
+,playground/data/layer/Layer1.runStateE().[X]	*XÄ*<
+/playground/data/layer/Layer1.runStateE().(self)*selfÄ*<
+/playground/data/layer/Layer1.runStateE().(init)*initÄ*,
+playground/data/layer/EvalF.
+ *EvalFÄ*1
+!playground/data/layer/EvalF.unit. Ä*unitÄ*.
+"playground/data/layer/EvalF.now().*nowÄ*/
+%playground/data/layer/EvalF.now().[A]	*AÄ*/
+%playground/data/layer/EvalF.now().(a)*aÄ*
+local22 *$anonÄ*
+local23*unpackÄ*
+local24	*RÄ*
+local25*pÄ*2
+$playground/data/layer/EvalF.delay().*delayÄ*1
+'playground/data/layer/EvalF.delay().[A]	*AÄ*3
+(playground/data/layer/EvalF.delay().(la)*laÄ*0
+#playground/data/layer/EvalF.read().*readÄ*0
+&playground/data/layer/EvalF.read().[R]	*RÄ*0
+&playground/data/layer/EvalF.read().[i]	*iÄ*0
+&playground/data/layer/EvalF.read().[o]	*oÄ*
+local26 *$anonÄ*
+local27*unpackÄ*
+local28	*XÄ*
+local29*pÄ*2
+$playground/data/layer/EvalF.write().*writeÄ*1
+'playground/data/layer/EvalF.write().[W]	*WÄ*1
+'playground/data/layer/EvalF.write().(w)*wÄ*1
+'playground/data/layer/EvalF.write().[i]	*iÄ*1
+'playground/data/layer/EvalF.write().[o]	*oÄ*
+local30 *$anonÄ*
+local31*unpackÄ*
+local32	*XÄ*
+local33*pÄ*1
+!playground/data/layer/EvalF.Done# à*DoneÄ*>
+,playground/data/layer/EvalF.Done#`<init>`(). Ä@*<init>Ä*<
+/playground/data/layer/EvalF.Done#`<init>`().(a) Ä*aÄ*1
+$playground/data/layer/EvalF.Done#[A]	 Ä*AÄ*0
+#playground/data/layer/EvalF.Done#a. Ä*aÄ*9
+*playground/data/layer/EvalF.Done#unpack().*unpackÄ*7
+-playground/data/layer/EvalF.Done#unpack().[X]	*XÄ*7
+-playground/data/layer/EvalF.Done#unpack().(p)*pÄ*5
+(playground/data/layer/EvalF.Done#copy().*copyÄ*5
++playground/data/layer/EvalF.Done#copy().[A]	*AÄ*5
++playground/data/layer/EvalF.Done#copy().(a)*aÄ*I
+2playground/data/layer/EvalF.Done#copy$default$1().*copy$default$1Ä*?
+5playground/data/layer/EvalF.Done#copy$default$1().[A]	*AÄ*1
+&playground/data/layer/EvalF.Done#_1().*_1Ä*0
+!playground/data/layer/EvalF.Done.
+ *DoneÄ*7
+)playground/data/layer/EvalF.Done.apply().*applyÄ*6
+,playground/data/layer/EvalF.Done.apply().[A]	*AÄ*6
+,playground/data/layer/EvalF.Done.apply().(a)*aÄ*;
++playground/data/layer/EvalF.Done.unapply().*unapplyÄ*8
+.playground/data/layer/EvalF.Done.unapply().[A]	*AÄ*<
+0playground/data/layer/EvalF.Done.unapply().(x$1)*x$1Ä*=
+,playground/data/layer/EvalF.Done.toString().*toStringÄ*5
+#playground/data/layer/EvalF.Raised# à*RaisedÄ*@
+.playground/data/layer/EvalF.Raised#`<init>`(). Ä@*<init>Ä*>
+1playground/data/layer/EvalF.Raised#`<init>`().(e) Ä*eÄ*3
+&playground/data/layer/EvalF.Raised#[E]	 Ä*EÄ*2
+%playground/data/layer/EvalF.Raised#e. Ä*eÄ*;
+,playground/data/layer/EvalF.Raised#unpack().*unpackÄ*9
+/playground/data/layer/EvalF.Raised#unpack().[X]	*XÄ*9
+/playground/data/layer/EvalF.Raised#unpack().(p)*pÄ*7
+*playground/data/layer/EvalF.Raised#copy().*copyÄ*7
+-playground/data/layer/EvalF.Raised#copy().[E]	*EÄ*7
+-playground/data/layer/EvalF.Raised#copy().(e)*eÄ*K
+4playground/data/layer/EvalF.Raised#copy$default$1().*copy$default$1Ä*A
+7playground/data/layer/EvalF.Raised#copy$default$1().[E]	*EÄ*3
+(playground/data/layer/EvalF.Raised#_1().*_1Ä*4
+#playground/data/layer/EvalF.Raised.
+ *RaisedÄ*9
++playground/data/layer/EvalF.Raised.apply().*applyÄ*8
+.playground/data/layer/EvalF.Raised.apply().[E]	*EÄ*8
+.playground/data/layer/EvalF.Raised.apply().(e)*eÄ*=
+-playground/data/layer/EvalF.Raised.unapply().*unapplyÄ*:
+0playground/data/layer/EvalF.Raised.unapply().[E]	*EÄ*>
+2playground/data/layer/EvalF.Raised.unapply().(x$1)*x$1Ä*?
+.playground/data/layer/EvalF.Raised.toString().*toStringÄ**
+playground/data/layer/EvalF.L1#*L1Ä*,
+"playground/data/layer/EvalF.L1#[P]	*PÄ*,
+"playground/data/layer/EvalF.L1#[a]	*aÄ*+
+playground/data/layer/EvalF.K# à*KÄ*;
+)playground/data/layer/EvalF.K#`<init>`(). Ä@*<init>Ä*;
+-playground/data/layer/EvalF.K#`<init>`().(fa) Ä*faÄ*?
+/playground/data/layer/EvalF.K#`<init>`().(cont) Ä*contÄ*+
+!playground/data/layer/EvalF.K#[A]	*AÄ*.
+!playground/data/layer/EvalF.K#[P]	 Ä*PÄ*.
+!playground/data/layer/EvalF.K#[B]	 Ä*BÄ*/
+!playground/data/layer/EvalF.K#fa. Ä*faÄ*3
+#playground/data/layer/EvalF.K#cont. Ä*contÄ*6
+'playground/data/layer/EvalF.K#unpack().*unpackÄ*4
+*playground/data/layer/EvalF.K#unpack().[X]	*XÄ*4
+*playground/data/layer/EvalF.K#unpack().(p)*pÄ*2
+%playground/data/layer/EvalF.K#copy().*copyÄ*2
+(playground/data/layer/EvalF.K#copy().[A]	*AÄ*2
+(playground/data/layer/EvalF.K#copy().[P]	*PÄ*2
+(playground/data/layer/EvalF.K#copy().[B]	*BÄ*4
+)playground/data/layer/EvalF.K#copy().(fa)*faÄ*8
++playground/data/layer/EvalF.K#copy().(cont)*contÄ*F
+/playground/data/layer/EvalF.K#copy$default$1().*copy$default$1Ä*<
+2playground/data/layer/EvalF.K#copy$default$1().[A]	*AÄ*<
+2playground/data/layer/EvalF.K#copy$default$1().[P]	*PÄ*<
+2playground/data/layer/EvalF.K#copy$default$1().[B]	*BÄ*F
+/playground/data/layer/EvalF.K#copy$default$2().*copy$default$2Ä*<
+2playground/data/layer/EvalF.K#copy$default$2().[A]	*AÄ*<
+2playground/data/layer/EvalF.K#copy$default$2().[P]	*PÄ*<
+2playground/data/layer/EvalF.K#copy$default$2().[B]	*BÄ*.
+#playground/data/layer/EvalF.K#_1().*_1Ä*.
+#playground/data/layer/EvalF.K#_2().*_2Ä**
+playground/data/layer/EvalF.K.
+ *KÄ*4
+&playground/data/layer/EvalF.K.apply().*applyÄ*3
+)playground/data/layer/EvalF.K.apply().[A]	*AÄ*3
+)playground/data/layer/EvalF.K.apply().[P]	*PÄ*3
+)playground/data/layer/EvalF.K.apply().[B]	*BÄ*5
+*playground/data/layer/EvalF.K.apply().(fa)*faÄ*9
+,playground/data/layer/EvalF.K.apply().(cont)*contÄ*8
+(playground/data/layer/EvalF.K.unapply().*unapplyÄ*5
++playground/data/layer/EvalF.K.unapply().[A]	*AÄ*5
++playground/data/layer/EvalF.K.unapply().[P]	*PÄ*5
++playground/data/layer/EvalF.K.unapply().[B]	*BÄ*9
+-playground/data/layer/EvalF.K.unapply().(x$1)*x$1Ä*:
+)playground/data/layer/EvalF.K.toString().*toStringÄ*:
+(playground/data/layer/EvalF.interpret().*	interpretÄ*5
++playground/data/layer/EvalF.interpret().[P]	*PÄ*5
++playground/data/layer/EvalF.interpret().[A]	*AÄ*5
++playground/data/layer/EvalF.interpret().[B]	*BÄ*5
++playground/data/layer/EvalF.interpret().(k)*kÄ*;
+.playground/data/layer/EvalF.interpret().(step)*stepÄ*
+local34 Ä*bÄ*
+local35 Ä	*A$1Ä*
+local36 Ä*fxÄ*
+local37 Ä*fÄ*
+local38*xÄ*
+local39 Ä*evÄ*@
++playground/data/layer/EvalF.interpretErr().*interpretErrÄ*8
+.playground/data/layer/EvalF.interpretErr().[P]	*PÄ*8
+.playground/data/layer/EvalF.interpretErr().[A]	*AÄ*8
+.playground/data/layer/EvalF.interpretErr().[B]	*BÄ*8
+.playground/data/layer/EvalF.interpretErr().[E]	*EÄ*8
+.playground/data/layer/EvalF.interpretErr().(k)*kÄ*>
+1playground/data/layer/EvalF.interpretErr().(step)*stepÄ*
+local40 Ä*bÄ*
+local41 Ä*eÄ*
+local42 Ä	*A$2Ä*
+local43 Ä*fxÄ*
+local44 Ä*fÄ*
+local45*xÄ*
+local46 Ä*evÄ*D
+,playground/data/layer/EvalF.EvalInterpreter#*EvalInterpreterÄ*I
+7playground/data/layer/EvalF.EvalInterpreter#`<init>`(). Ä@*<init>Ä*9
+/playground/data/layer/EvalF.EvalInterpreter#[P]	*PÄ*>
+2playground/data/layer/EvalF.EvalInterpreter#now().*nowÄ*?
+5playground/data/layer/EvalF.EvalInterpreter#now().[A]	*AÄ*?
+5playground/data/layer/EvalF.EvalInterpreter#now().(a)*aÄ*B
+4playground/data/layer/EvalF.EvalInterpreter#defer().*deferÄ*A
+7playground/data/layer/EvalF.EvalInterpreter#defer().[A]	*AÄ*C
+8playground/data/layer/EvalF.EvalInterpreter#defer().(la)*laÄ*F
+6playground/data/layer/EvalF.EvalInterpreter#flatMap().*flatMapÄ*C
+9playground/data/layer/EvalF.EvalInterpreter#flatMap().[A]	*AÄ*C
+9playground/data/layer/EvalF.EvalInterpreter#flatMap().[B]	*BÄ*E
+:playground/data/layer/EvalF.EvalInterpreter#flatMap().(fa)*faÄ*C
+9playground/data/layer/EvalF.EvalInterpreter#flatMap().(f)*fÄ*6
+%playground/data/layer/EvalF.HasState#*HasStateÄ*B
+0playground/data/layer/EvalF.HasState#`<init>`(). Ä@*<init>Ä*2
+(playground/data/layer/EvalF.HasState#[S]	*SÄ*=
+-playground/data/layer/EvalF.HasState#state(). *stateÄ*D
+,playground/data/layer/EvalF.ExecInterpreter#*ExecInterpreterÄ*I
+7playground/data/layer/EvalF.ExecInterpreter#`<init>`(). Ä@*<init>Ä*O
+>playground/data/layer/EvalF.ExecInterpreter#`<init>`().(state) Ä*stateÄ*9
+/playground/data/layer/EvalF.ExecInterpreter#[S]	*SÄ*<
+/playground/data/layer/EvalF.ExecInterpreter#[E]	 Ä*EÄ*9
+/playground/data/layer/EvalF.ExecInterpreter#[P]	*PÄ*E
+4playground/data/layer/EvalF.ExecInterpreter#state(). Ä*stateÄ*K
+8playground/data/layer/EvalF.ExecInterpreter#`state_=`(). Ä*state_=Ä*I
+=playground/data/layer/EvalF.ExecInterpreter#`state_=`().(x$1)*x$1Ä*B
+4playground/data/layer/EvalF.ExecInterpreter#raise().*raiseÄ*A
+7playground/data/layer/EvalF.ExecInterpreter#raise().(e)*eÄ*@
+3playground/data/layer/EvalF.ExecInterpreter#read().*readÄ*B
+4playground/data/layer/EvalF.ExecInterpreter#write().*writeÄ*A
+7playground/data/layer/EvalF.ExecInterpreter#write().(s)*sÄ*H
+.playground/data/layer/EvalF.ReaderInterpreter#*ReaderInterpreterÄ*K
+9playground/data/layer/EvalF.ReaderInterpreter#`<init>`(). Ä@*<init>Ä*F
+<playground/data/layer/EvalF.ReaderInterpreter#`<init>`().(r)*rÄ*;
+1playground/data/layer/EvalF.ReaderInterpreter#[P]	*PÄ*;
+1playground/data/layer/EvalF.ReaderInterpreter#[R]	*RÄ*=
+0playground/data/layer/EvalF.ReaderInterpreter#r. Ä*rÄ*B
+5playground/data/layer/EvalF.ReaderInterpreter#read().*readÄ*0
+playground/data/layer/Effects.
+ *EffectsÄ*4
+%playground/data/layer/Effects.ErrorF#*ErrorFÄ*5
+(playground/data/layer/Effects.ErrorF#[E]	 Ä*EÄ*2
+(playground/data/layer/Effects.ErrorF#[i]	*iÄ*2
+(playground/data/layer/Effects.ErrorF#[o]	*oÄ*2
+$playground/data/layer/Effects.ReadF#*ReadFÄ*4
+'playground/data/layer/Effects.ReadF#[R]	 Ä*RÄ*1
+'playground/data/layer/Effects.ReadF#[i]	*iÄ*1
+'playground/data/layer/Effects.ReadF#[o]	*oÄ*4
+%playground/data/layer/Effects.WriteF#*WriteFÄ*5
+(playground/data/layer/Effects.WriteF#[W]	 Ä*WÄ*2
+(playground/data/layer/Effects.WriteF#[i]	*iÄ*2
+(playground/data/layer/Effects.WriteF#[o]	*oÄ*6
+&playground/data/layer/Effects.ReadEvF#*ReadEvFÄ*6
+)playground/data/layer/Effects.ReadEvF#[R]	 Ä*RÄ*3
+)playground/data/layer/Effects.ReadEvF#[i]	*iÄ*3
+)playground/data/layer/Effects.ReadEvF#[o]	*oÄ*8
+'playground/data/layer/Effects.WriteEvF#*WriteEvFÄ*7
+*playground/data/layer/Effects.WriteEvF#[W]	 Ä*WÄ*4
+*playground/data/layer/Effects.WriteEvF#[i]	*iÄ*4
+*playground/data/layer/Effects.WriteEvF#[o]	*oÄ*8
+'playground/data/layer/Effects.ErrorEvF#*ErrorEvFÄ*7
+*playground/data/layer/Effects.ErrorEvF#[E]	 Ä*EÄ*4
+*playground/data/layer/Effects.ErrorEvF#[i]	*iÄ*4
+*playground/data/layer/Effects.ErrorEvF#[o]	*oÄ*4
+%playground/data/layer/Effects.StateF#*StateFÄ*2
+(playground/data/layer/Effects.StateF#[S]	*SÄ*2
+(playground/data/layer/Effects.StateF#[i]	*iÄ*2
+(playground/data/layer/Effects.StateF#[o]	*oÄ*2
+$playground/data/layer/Effects.ExecF#*ExecFÄ*1
+'playground/data/layer/Effects.ExecF#[S]	*SÄ*4
+'playground/data/layer/Effects.ExecF#[E]	 Ä*EÄ*1
+'playground/data/layer/Effects.ExecF#[i]	*iÄ*1
+'playground/data/layer/Effects.ExecF#[o]	*oÄ*8
+'playground/data/layer/Effects.SuspendF#*SuspendFÄ*7
+*playground/data/layer/Effects.SuspendF#[F]	 Ä*FÄ*4
+*playground/data/layer/Effects.SuspendF#[i]	*iÄ*4
+*playground/data/layer/Effects.SuspendF#[o]	*oÄ*2
+$playground/data/layer/Effects.FreeF#*FreeFÄ*4
+'playground/data/layer/Effects.FreeF#[F]	 Ä*FÄ*1
+'playground/data/layer/Effects.FreeF#[i]	*iÄ*1
+'playground/data/layer/Effects.FreeF#[o]	*oÄ*2
+$playground/data/layer/Effects.Raise#*RaiseÄ*A
+/playground/data/layer/Effects.Raise#`<init>`(). Ä@*<init>Ä*4
+'playground/data/layer/Effects.Raise#[E]	 Ä*EÄ*4
+'playground/data/layer/Effects.Raise#[O]	 Ä*OÄ*<
+,playground/data/layer/Effects.Raise#raise(). *raiseÄ*9
+/playground/data/layer/Effects.Raise#raise().(e)*eÄ*0
+#playground/data/layer/Effects.Read#*ReadÄ*@
+.playground/data/layer/Effects.Read#`<init>`(). Ä@*<init>Ä*3
+&playground/data/layer/Effects.Read#[R]	 Ä*RÄ*3
+&playground/data/layer/Effects.Read#[O]	 Ä*OÄ*9
+*playground/data/layer/Effects.Read#read(). *readÄ*2
+$playground/data/layer/Effects.Write#*WriteÄ*A
+/playground/data/layer/Effects.Write#`<init>`(). Ä@*<init>Ä*4
+'playground/data/layer/Effects.Write#[W]	 Ä*WÄ*4
+'playground/data/layer/Effects.Write#[O]	 Ä*OÄ*<
+,playground/data/layer/Effects.Write#write(). *writeÄ*9
+/playground/data/layer/Effects.Write#write().(w)*wÄ*6
+&playground/data/layer/Effects.Suspend#*SuspendÄ*C
+1playground/data/layer/Effects.Suspend#`<init>`(). Ä@*<init>Ä*6
+)playground/data/layer/Effects.Suspend#[F]	 Ä*FÄ*6
+)playground/data/layer/Effects.Suspend#[O]	 Ä*OÄ*B
+0playground/data/layer/Effects.Suspend#suspend(). *suspendÄ*=
+3playground/data/layer/Effects.Suspend#suspend().[A]	*AÄ*=
+3playground/data/layer/Effects.Suspend#suspend().(f)*fÄ*2
+$playground/data/layer/Effects.State#*StateÄ*A
+/playground/data/layer/Effects.State#`<init>`(). Ä@*<init>Ä*1
+'playground/data/layer/Effects.State#[S]	*SÄ*4
+'playground/data/layer/Effects.State#[O]	 Ä*OÄ*0
+#playground/data/layer/Effects.NowF#*NowFÄ*@
+.playground/data/layer/Effects.NowF#`<init>`(). Ä@*<init>Ä*3
+&playground/data/layer/Effects.NowF#[O]	 Ä*OÄ*7
+)playground/data/layer/Effects.NowF#now(). *nowÄ*6
+,playground/data/layer/Effects.NowF#now().[A]	*AÄ*6
+,playground/data/layer/Effects.NowF#now().(a)*aÄ*2
+$playground/data/layer/Effects.EvalF#*EvalFÄ*A
+/playground/data/layer/Effects.EvalF#`<init>`(). Ä@*<init>Ä*4
+'playground/data/layer/Effects.EvalF#[I]	 Ä*IÄ*4
+'playground/data/layer/Effects.EvalF#[O]	 Ä*OÄ*<
+,playground/data/layer/Effects.EvalF#defer(). *deferÄ*9
+/playground/data/layer/Effects.EvalF#defer().[A]	*AÄ*;
+0playground/data/layer/Effects.EvalF#defer().(la)*laÄ*@
+.playground/data/layer/Effects.EvalF#flatMap(). *flatMapÄ*;
+1playground/data/layer/Effects.EvalF#flatMap().[A]	*AÄ*;
+1playground/data/layer/Effects.EvalF#flatMap().[B]	*BÄ*=
+2playground/data/layer/Effects.EvalF#flatMap().(fa)*faÄ*;
+1playground/data/layer/Effects.EvalF#flatMap().(f)*fÄ*2
+$playground/data/layer/Effects.NowFF#*NowFFÄ*4
+'playground/data/layer/Effects.NowFF#[I]	 Ä*IÄ*4
+'playground/data/layer/Effects.NowFF#[O]	 Ä*OÄ*,
+!playground/data/layer/Effects.Ev#*EvÄ*1
+$playground/data/layer/Effects.Ev#[a]	 Ä*aÄ*0
+#playground/data/layer/Effects.Pure#*PureÄ*3
+&playground/data/layer/Effects.Pure#[a]	 Ä*aÄ*2
+$playground/data/layer/Effects.ReadL#*ReadLÄ*4
+'playground/data/layer/Effects.ReadL#[R]	 Ä*RÄ*4
+'playground/data/layer/Effects.ReadL#[a]	 Ä*aÄ*4
+%playground/data/layer/Effects.WriteL#*WriteLÄ*5
+(playground/data/layer/Effects.WriteL#[W]	 Ä*WÄ*5
+(playground/data/layer/Effects.WriteL#[a]	 Ä*aÄ*4
+%playground/data/layer/Effects.ErrorL#*ErrorLÄ*5
+(playground/data/layer/Effects.ErrorL#[E]	 Ä*EÄ*5
+(playground/data/layer/Effects.ErrorL#[a]	 Ä*aÄ*4
+%playground/data/layer/Effects.ReadEv#*ReadEvÄ*5
+(playground/data/layer/Effects.ReadEv#[R]	 Ä*RÄ*2
+(playground/data/layer/Effects.ReadEv#[a]	*aÄ*6
+&playground/data/layer/Effects.WriteEv#*WriteEvÄ*6
+)playground/data/layer/Effects.WriteEv#[W]	 Ä*WÄ*6
+)playground/data/layer/Effects.WriteEv#[a]	 Ä*aÄ*6
+&playground/data/layer/Effects.StateEv#*StateEvÄ*3
+)playground/data/layer/Effects.StateEv#[S]	*SÄ*6
+)playground/data/layer/Effects.StateEv#[a]	 Ä*aÄ*4
+%playground/data/layer/Effects.ExecEv#*ExecEvÄ*2
+(playground/data/layer/Effects.ExecEv#[S]	*SÄ*2
+(playground/data/layer/Effects.ExecEv#[E]	*EÄ*5
+(playground/data/layer/Effects.ExecEv#[a]	 Ä*aÄ*0
+#playground/data/layer/Effects.Free#*FreeÄ*3
+&playground/data/layer/Effects.Free#[F]	 Ä*FÄ*3
+&playground/data/layer/Effects.Free#[a]	 Ä*aÄ*2
+playground/data/layer/EvalTest.
+ *EvalTestÄ*5
+'playground/data/layer/EvalTest.foldr().*foldrÄ*4
+*playground/data/layer/EvalTest.foldr().[A]	*AÄ*4
+*playground/data/layer/EvalTest.foldr().[B]	*BÄ*4
+*playground/data/layer/EvalTest.foldr().[P]	*PÄ*6
++playground/data/layer/EvalTest.foldr().(xs)*xsÄ*4
+*playground/data/layer/EvalTest.foldr().(f)*fÄ*6
++playground/data/layer/EvalTest.foldr().(lb)*lbÄ*
+local47 Ä*headÄ*
+local48 Ä*tailÄ*3
+&playground/data/layer/EvalTest.lsum().*lsumÄ*5
+*playground/data/layer/EvalTest.lsum().(xs)*xsÄ*
+local49*xÄ*
+local50*iÄ*5
+'playground/data/layer/EvalTest.lsump().*lsumpÄ*6
++playground/data/layer/EvalTest.lsump().(xs)*xsÄ*
+local51*xÄ*
+local52*iÄ*
+local53*sÄ*
+local54*pÄ*C
+.playground/data/layer/EvalTest.lsumAndCount().*lsumAndCountÄ*=
+2playground/data/layer/EvalTest.lsumAndCount().(xs)*xsÄ*
+local55*xÄ*
+local56*iÄ*
+local57*sÄ*
+local58*qÄ*
+local59*x$1Ä*3
+&playground/data/layer/EvalTest.main().*mainÄ*9
+,playground/data/layer/EvalTest.main().(args)*argsÄ*
+local60 Ä*lstÄ*4
+$playground/data/layer/freef$package. *layerÄ*4
+(playground/data/layer/freef$package.FK1#*FK1Ä*5
++playground/data/layer/freef$package.FK1#[i]	*iÄ*5
++playground/data/layer/freef$package.FK1#[o]	*oÄ*6
+*playground/data/layer/freef$package.`&@&`#*&@&Ä*:
+-playground/data/layer/freef$package.`&@&`#[P]	 Ä*PÄ*:
+-playground/data/layer/freef$package.`&@&`#[Q]	 Ä*QÄ*7
+-playground/data/layer/freef$package.`&@&`#[i]	*iÄ*7
+-playground/data/layer/freef$package.`&@&`#[o]	*oÄ2 
+ playground/data/layer/2
+ playground/data/2
+ playground/2'
+ scala/annotation/tailrec#2
+ scala/annotation/2
+ scala/2,
+ playground/data/layer/Effects.2*
+ playground/data/layer/EvalF.2+
+		 playground/data/layer/Layer1#26
+		 (playground/data/layer/Layer1#`<init>`().2
+
+
+ local02.
+		  playground/data/layer/Layer1#[P]2.
+	"	 # playground/data/layer/Layer1#[A]2*
+	 playground/data/layer/EvalF.24
+ &playground/data/layer/Layer1#unpack().27
+ )playground/data/layer/Layer1#unpack().[R]27
+ )playground/data/layer/Layer1#unpack().(p)2.
+  playground/data/layer/Layer1#[P]2:
+ ,playground/data/layer/Layer1#unpack().(p)[a]2+
+! 'playground/data/layer/Layer1#2.
+( ) playground/data/layer/Layer1#[P]2:
++ ,,playground/data/layer/Layer1#unpack().(p)[a]27
+0 1)playground/data/layer/Layer1#unpack().[R]27
+5 6)playground/data/layer/Layer1#unpack().[R]2.
+7 8 playground/data/layer/Layer1#[A]25
+ 'playground/data/layer/Layer1#flatMap().28
+ *playground/data/layer/Layer1#flatMap().[Q]28
+! "*playground/data/layer/Layer1#flatMap().[B]28
+% &*playground/data/layer/Layer1#flatMap().(f)2.
+( ) playground/data/layer/Layer1#[A]2+
+- 3playground/data/layer/Layer1#28
+4 5*playground/data/layer/Layer1#flatMap().[Q]28
+7 8*playground/data/layer/Layer1#flatMap().[B]2+
+= Cplayground/data/layer/Layer1#28
+E F*playground/data/layer/Layer1#flatMap().[i]28
+L M*playground/data/layer/Layer1#flatMap().[o]2
+d e
+scala/`&`#2
+] ^
+scala/`&`#28
+W X*playground/data/layer/Layer1#flatMap().[Q]28
+Y Z*playground/data/layer/Layer1#flatMap().[i]28
+[ \*playground/data/layer/Layer1#flatMap().[o]2.
+^ _ playground/data/layer/Layer1#[P]28
+` a*playground/data/layer/Layer1#flatMap().[i]28
+b c*playground/data/layer/Layer1#flatMap().[o]22
+e j$playground/data/layer/Effects.EvalF#28
+k l*playground/data/layer/Layer1#flatMap().[i]28
+m n*playground/data/layer/Layer1#flatMap().[o]28
+q r*playground/data/layer/Layer1#flatMap().[B]2
+
+ local22
+ local32
+ local428
+$ '*playground/data/layer/freef$package.`&@&`#28
+ !*playground/data/layer/freef$package.`&@&`#2.
+  playground/data/layer/Layer1#[P]28
+" #*playground/data/layer/Layer1#flatMap().[Q]2-
+/ 1playground/data/layer/EvalF.L1#28
+: =*playground/data/layer/freef$package.`&@&`#28
+4 7*playground/data/layer/freef$package.`&@&`#2.
+2 3 playground/data/layer/Layer1#[P]28
+8 9*playground/data/layer/Layer1#flatMap().[Q]2
+F Glocal32
+K Llocal328
+M N*playground/data/layer/Layer1#flatMap().[B]2<
+T [.playground/data/layer/Effects.EvalF#flatMap().2
+R Slocal42+
+\ `playground/data/layer/Layer1#28
+b c*playground/data/layer/Layer1#flatMap().(f)21
+ 	#playground/data/layer/Layer1#map().24
+
+ &playground/data/layer/Layer1#map().[B]24
+ &playground/data/layer/Layer1#map().(f)2.
+  playground/data/layer/Layer1#[A]24
+ &playground/data/layer/Layer1#map().[B]2+
+ playground/data/layer/Layer1#24
+! "&playground/data/layer/Layer1#map().[i]24
+( )&playground/data/layer/Layer1#map().[o]2
+9 :
+scala/`&`#2.
+3 4 playground/data/layer/Layer1#[P]24
+5 6&playground/data/layer/Layer1#map().[i]24
+7 8&playground/data/layer/Layer1#map().[o]22
+: ?$playground/data/layer/Effects.EvalF#24
+@ A&playground/data/layer/Layer1#map().[i]24
+B C&playground/data/layer/Layer1#map().[o]24
+F G&playground/data/layer/Layer1#map().[B]25
+P W'playground/data/layer/Layer1#flatMap().2+
+K Oplayground/data/layer/Layer1#2
+X Ylocal520
+c f"playground/data/layer/EvalF.now().2*
+] bplayground/data/layer/EvalF.2&
+h hscala/Function1#apply().24
+g h&playground/data/layer/Layer1#map().(f)2
+i jlocal52+
+ playground/data/layer/Layer1.2/
+ !playground/data/layer/EvalF.Done.2/
+ !playground/data/layer/EvalF.Done#21
+ #playground/data/layer/EvalF.Raised.21
+ #playground/data/layer/EvalF.Raised#2,
+ playground/data/layer/EvalF.K.2,
+ playground/data/layer/EvalF.K#2*
+	 playground/data/layer/EvalF.2.
+ 	 playground/data/layer/Layer1.L1#21
+
+ #playground/data/layer/Layer1.L1#[P]21
+  !#playground/data/layer/Layer1.L1#[a]2+
+' -playground/data/layer/Layer1#21
+. /#playground/data/layer/Layer1.L1#[P]21
+1 2#playground/data/layer/Layer1.L1#[a]23
+ %playground/data/layer/Layer1.defer().26
+ (playground/data/layer/Layer1.defer().[A]26
+ (playground/data/layer/Layer1.defer().[B]26
+ (playground/data/layer/Layer1.defer().[P]29
+6 :+playground/data/layer/Layer1.defer().(self)2+
+? Eplayground/data/layer/Layer1#26
+F G(playground/data/layer/Layer1.defer().[P]26
+I J(playground/data/layer/Layer1.defer().[A]2+
+ playground/data/layer/Layer1#26
+ (playground/data/layer/Layer1.defer().[P]26
+ (playground/data/layer/Layer1.defer().[A]2+
+" (playground/data/layer/Layer1#26
+) *(playground/data/layer/Layer1.defer().[P]26
+, -(playground/data/layer/Layer1.defer().[A]2
+
+ local72
+ local82
+ local926
+ (playground/data/layer/Layer1.defer().[P]2.
+  playground/data/layer/Layer1.L1#26
+  !(playground/data/layer/Layer1.defer().[P]2
+$ %local82
+) *local826
++ ,(playground/data/layer/Layer1.defer().[A]2:
+2 7,playground/data/layer/Effects.EvalF#defer().2
+0 1local929
+8 <+playground/data/layer/Layer1.defer().(self)21
+!! #playground/data/layer/Layer1.run().24
+   &playground/data/layer/Layer1.run().[P]24
+ /  0&playground/data/layer/Layer1.run().[X]27
+ 3  7)playground/data/layer/Layer1.run().(self)2+
+ 9  ?playground/data/layer/Layer1#24
+ @  A&playground/data/layer/Layer1.run().[P]24
+ C  D&playground/data/layer/Layer1.run().[X]27
+!! )playground/data/layer/Layer1.run().(step)24
+!! &playground/data/layer/Layer1.run().[P]2.
+!!  playground/data/layer/Layer1.L1#24
+!! &playground/data/layer/Layer1.run().[P]2.
+!!  playground/data/layer/Layer1.L1#24
+!! &playground/data/layer/Layer1.run().[P]24
+!$! %&playground/data/layer/Layer1.run().[X]2'
+"	" scala/annotation/tailrec#2
+"" local102
+"" local112+
+"" #playground/data/layer/Layer1#24
+"$" %&playground/data/layer/Layer1.run().[P]24
+"'" (&playground/data/layer/Layer1.run().[X]24
+"," -&playground/data/layer/Layer1.run().[X]24
+"4" :&playground/data/layer/Layer1#unpack().2
+"0" 3local1127
+";" ?)playground/data/layer/Layer1.run().(step)29
+## +playground/data/layer/EvalF.Done.unapply().2/
+## !playground/data/layer/EvalF.Done.2
+## local122
+#$# 'local122
+$$ local132,
+$$ playground/data/layer/EvalF.K#24
+$$ &playground/data/layer/Layer1.run().[P]2
+$$ %scala/unchecked#24
+$'$ (&playground/data/layer/Layer1.run().[X]2
+$/$ 1local1026
+$8$ A(playground/data/layer/EvalF.interpret().2*
+$2$ 7playground/data/layer/EvalF.2
+$B$ Clocal1327
+$E$ I)playground/data/layer/Layer1.run().(step)2
+%% local142
+%$% &local102
+%'% +local142
+'' 
+local1027
+'' )playground/data/layer/Layer1.run().(self)22
+** $playground/data/layer/Layer1.exec().25
+)) 'playground/data/layer/Layer1.exec().[P]25
+)5) 6'playground/data/layer/Layer1.exec().[S]25
+)8) 9'playground/data/layer/Layer1.exec().[E]25
+);) <'playground/data/layer/Layer1.exec().[X]28
+)>) B*playground/data/layer/Layer1.exec().(self)2+
+)D) Jplayground/data/layer/Layer1#25
+)K) L'playground/data/layer/Layer1.exec().[P]25
+)N) O'playground/data/layer/Layer1.exec().[X]28
+** *playground/data/layer/Layer1.exec().(step)2
+*#* $
+scala/`&`#25
+** 'playground/data/layer/Layer1.exec().[P]2.
+**  playground/data/layer/Layer1.L1#25
+** 'playground/data/layer/Layer1.exec().[P]2.
+**  playground/data/layer/Layer1.L1#25
+**  'playground/data/layer/Layer1.exec().[P]23
+*%* -%playground/data/layer/EvalF.HasState#25
+*.* /'playground/data/layer/Layer1.exec().[S]25
+*4* 5'playground/data/layer/Layer1.exec().[S]2#
+*7* =scala/package.Either#25
+*>* ?'playground/data/layer/Layer1.exec().[E]25
+*A* B'playground/data/layer/Layer1.exec().[X]2'
++	+ scala/annotation/tailrec#2
+++ local152
+++ local162+
+++ #playground/data/layer/Layer1#25
++$+ %'playground/data/layer/Layer1.exec().[P]25
++'+ ('playground/data/layer/Layer1.exec().[X]25
++-+ .'playground/data/layer/Layer1.exec().[S]2#
++0+ 6scala/package.Either#25
++7+ 8'playground/data/layer/Layer1.exec().[E]25
++:+ ;'playground/data/layer/Layer1.exec().[X]24
++D+ J&playground/data/layer/Layer1#unpack().2
++@+ Clocal1628
++K+ O*playground/data/layer/Layer1.exec().(step)29
+,, +playground/data/layer/EvalF.Done.unapply().2/
+,, !playground/data/layer/EvalF.Done.2
+,, local172#
+,%, %scala/Tuple2.apply().2;
+,*, /-playground/data/layer/EvalF.HasState#state().28
+,%, )*playground/data/layer/Layer1.exec().(step)2'
+,6, 6scala/util/Right.apply().2"
+,1, 6scala/package.Right.2
+,7, :local172;
+-- -playground/data/layer/EvalF.Raised.unapply().21
+-- #playground/data/layer/EvalF.Raised.2
+-- local182#
+-%- %scala/Tuple2.apply().2;
+-*- /-playground/data/layer/EvalF.HasState#state().28
+-%- )*playground/data/layer/Layer1.exec().(step)2&
+-5- 5scala/util/Left.apply().2!
+-1- 5scala/package.Left.2
+-6- 9local182
+.. local192,
+.. playground/data/layer/EvalF.K#25
+.. 'playground/data/layer/Layer1.exec().[P]25
+.. 'playground/data/layer/Layer1.exec().[X]2
+.$. &local1529
+.-. 9+playground/data/layer/EvalF.interpretErr().2*
+.'. ,playground/data/layer/EvalF.2
+.:. ;local1928
+.=. A*playground/data/layer/Layer1.exec().(step)2
+// local202
+/$/ &local152
+/'/ +local202
+11 
+local1528
+11 *playground/data/layer/Layer1.exec().(self)23
+44 %playground/data/layer/Layer1.value().26
+33 (playground/data/layer/Layer1.value().[X]29
+33 +playground/data/layer/Layer1.value().(self)2/
+33 !playground/data/layer/Effects.Ev#26
+33 (playground/data/layer/Layer1.value().[X]26
+44 (playground/data/layer/Layer1.value().[X]21
+44 #playground/data/layer/Layer1.run().26
+4#4 $(playground/data/layer/Layer1.value().[X]29
+44 +playground/data/layer/Layer1.value().(self)2E
+4A4 A7playground/data/layer/EvalF.EvalInterpreter#`<init>`().2:
+4,4 ;,playground/data/layer/EvalF.EvalInterpreter#2*
+4&4 +playground/data/layer/EvalF.27
+77 )playground/data/layer/Layer1.runReader().2:
+66 ,playground/data/layer/Layer1.runReader().[R]2:
+66 ,playground/data/layer/Layer1.runReader().[X]2=
+66 /playground/data/layer/Layer1.runReader().(self)23
+66  %playground/data/layer/Effects.ReadEv#2:
+6!6 ",playground/data/layer/Layer1.runReader().[R]2:
+6$6 %,playground/data/layer/Layer1.runReader().[X]2:
+77 ,playground/data/layer/Layer1.runReader().(r)2:
+77 ,playground/data/layer/Layer1.runReader().[R]2:
+77 ,playground/data/layer/Layer1.runReader().[X]21
+77 #playground/data/layer/Layer1.run().24
+7&7 -&playground/data/layer/Effects.ReadEvF#2:
+7.7 /,playground/data/layer/Layer1.runReader().[R]2:
+727 3,playground/data/layer/Layer1.runReader().[X]2=
+77 !/playground/data/layer/Layer1.runReader().(self)2E
+8+8 +7playground/data/layer/EvalF.EvalInterpreter#`<init>`().2:
+88 ,playground/data/layer/EvalF.EvalInterpreter#2*
+8
+8 playground/data/layer/EvalF.24
+8 8 '&playground/data/layer/Effects.ReadEvF#2:
+8(8 ),playground/data/layer/Layer1.runReader().[R]2G
+8W8 W9playground/data/layer/EvalF.ReaderInterpreter#`<init>`().2<
+878 H.playground/data/layer/EvalF.ReaderInterpreter#2*
+818 6playground/data/layer/EvalF.24
+8I8 P&playground/data/layer/Effects.ReadEvF#2:
+8Q8 R,playground/data/layer/Layer1.runReader().[R]2:
+8U8 V,playground/data/layer/Layer1.runReader().[R]2:
+8X8 Y,playground/data/layer/Layer1.runReader().(r)27
+<< )playground/data/layer/Layer1.runStateE().2:
+;; ,playground/data/layer/Layer1.runStateE().[S]2:
+;; ,playground/data/layer/Layer1.runStateE().[E]2:
+;; ,playground/data/layer/Layer1.runStateE().[X]2=
+;; /playground/data/layer/Layer1.runStateE().(self)23
+;; #%playground/data/layer/Effects.ExecEv#2:
+;$; %,playground/data/layer/Layer1.runStateE().[S]2:
+;'; (,playground/data/layer/Layer1.runStateE().[E]2:
+;*; +,playground/data/layer/Layer1.runStateE().[X]2=
+<< /playground/data/layer/Layer1.runStateE().(init)2:
+<< ,playground/data/layer/Layer1.runStateE().[S]2:
+<< ,playground/data/layer/Layer1.runStateE().[S]2#
+<!< 'scala/package.Either#2:
+<(< ),playground/data/layer/Layer1.runStateE().[E]2:
+<+< ,,playground/data/layer/Layer1.runStateE().[X]22
+<1< 1$playground/data/layer/Layer1.exec().22
+<;< @$playground/data/layer/Effects.ExecF#2:
+<A< B,playground/data/layer/Layer1.runStateE().[S]2:
+<D< E,playground/data/layer/Layer1.runStateE().[E]2:
+<H< I,playground/data/layer/Layer1.runStateE().[S]2:
+<K< L,playground/data/layer/Layer1.runStateE().[E]2:
+<N< O,playground/data/layer/Layer1.runStateE().[X]2=
+<1< 5/playground/data/layer/Layer1.runStateE().(self)2E
+=2= 27playground/data/layer/EvalF.ExecInterpreter#`<init>`().2:
+== ,playground/data/layer/EvalF.ExecInterpreter#2*
+=
+= playground/data/layer/EvalF.2:
+= = !,playground/data/layer/Layer1.runStateE().[S]2:
+=#= $,playground/data/layer/Layer1.runStateE().[E]22
+=&= +$playground/data/layer/Effects.ExecF#2:
+=,= -,playground/data/layer/Layer1.runStateE().[S]2:
+=/= 0,playground/data/layer/Layer1.runStateE().[E]2=
+=3= 7/playground/data/layer/Layer1.runStateE().(init)2*
+@@ playground/data/layer/EvalF.2/
+AA 
+!playground/data/layer/EvalF.unit.21
+AA #playground/data/layer/Effects.Pure#2
+AA scala/Unit#27
+AA )playground/data/layer/EvalF.Done.apply().2/
+AA !playground/data/layer/EvalF.Done.20
+CC 	"playground/data/layer/EvalF.now().23
+C
+C %playground/data/layer/EvalF.now().[A]23
+CC %playground/data/layer/EvalF.now().(a)23
+CC %playground/data/layer/EvalF.now().[A]2/
+CC !playground/data/layer/Effects.Ev#23
+CC %playground/data/layer/EvalF.now().[A]2
+DD local232
+DD local242
+DD local2522
+DD $playground/data/layer/Effects.EvalF#2/
+DD !!playground/data/layer/Effects.Ev#2
+D#D $local242
+D(D )local2423
+D*D +%playground/data/layer/EvalF.now().[A]27
+D1D 4)playground/data/layer/Effects.NowF#now().2
+D/D 0local2523
+D5D 6%playground/data/layer/EvalF.now().(a)22
+GG $playground/data/layer/EvalF.delay().25
+GG 'playground/data/layer/EvalF.delay().[A]26
+GG (playground/data/layer/EvalF.delay().(la)25
+GG 'playground/data/layer/EvalF.delay().[A]2/
+GG !playground/data/layer/Effects.Ev#25
+GG 'playground/data/layer/EvalF.delay().[A]23
+G"G "%playground/data/layer/Layer1.defer().20
+G"G %"playground/data/layer/EvalF.now().26
+G&G ((playground/data/layer/EvalF.delay().(la)21
+II 
+#playground/data/layer/EvalF.read().24
+II &playground/data/layer/EvalF.read().[R]2+
+II playground/data/layer/Layer1#24
+II &playground/data/layer/EvalF.read().[i]24
+II &playground/data/layer/EvalF.read().[o]21
+I)I -#playground/data/layer/Effects.Read#24
+I.I /&playground/data/layer/EvalF.read().[R]24
+I1I 2&playground/data/layer/EvalF.read().[o]24
+I5I 6&playground/data/layer/EvalF.read().[R]2
+JJ local272
+JJ local282
+JJ local2922
+JJ $playground/data/layer/Effects.ReadF#24
+JJ  &playground/data/layer/EvalF.read().[R]2-
+J"J $playground/data/layer/EvalF.L1#22
+J%J *$playground/data/layer/Effects.ReadF#24
+J+J ,&playground/data/layer/EvalF.read().[R]2
+J0J 1local2828
+J8J <*playground/data/layer/Effects.Read#read().2
+J6J 7local2922
+MM $playground/data/layer/EvalF.write().25
+MM 'playground/data/layer/EvalF.write().[W]25
+MM 'playground/data/layer/EvalF.write().(w)25
+MM 'playground/data/layer/EvalF.write().[W]2+
+MM playground/data/layer/Layer1#25
+MM 'playground/data/layer/EvalF.write().[i]25
+M%M &'playground/data/layer/EvalF.write().[o]22
+M0M 5$playground/data/layer/Effects.Write#25
+M6M 7'playground/data/layer/EvalF.write().[W]25
+M9M :'playground/data/layer/EvalF.write().[o]2
+M=M @
+scala/Any#2
+NN local312
+NN local322
+NN local3323
+NN %playground/data/layer/Effects.WriteF#25
+N N !'playground/data/layer/EvalF.write().[W]2-
+N#N %playground/data/layer/EvalF.L1#23
+N&N ,%playground/data/layer/Effects.WriteF#25
+N-N .'playground/data/layer/EvalF.write().[W]2
+N2N 3local322
+N7N 8local322
+N9N <
+scala/Any#2:
+NBN G,playground/data/layer/Effects.Write#write().2
+N@N Alocal3325
+NHN I'playground/data/layer/EvalF.write().(w)2/
+QQ !playground/data/layer/EvalF.Done#2:
+QQ ,playground/data/layer/EvalF.Done#`<init>`().22
+QQ  $playground/data/layer/EvalF.Done#[A]21
+Q*Q .#playground/data/layer/Effects.Pure#22
+Q/Q 0$playground/data/layer/EvalF.Done#[A]22
+QQ $playground/data/layer/EvalF.Done#[A]21
+QQ #playground/data/layer/EvalF.Done#a.28
+RR *playground/data/layer/EvalF.Done#unpack().2;
+RR -playground/data/layer/EvalF.Done#unpack().[X]2;
+RR -playground/data/layer/EvalF.Done#unpack().(p)21
+RR #playground/data/layer/Effects.NowF#2;
+RR -playground/data/layer/EvalF.Done#unpack().[X]2;
+R#R $-playground/data/layer/EvalF.Done#unpack().[X]22
+R%R &$playground/data/layer/EvalF.Done#[A]27
+R,R /)playground/data/layer/Effects.NowF#now().2;
+R*R +-playground/data/layer/EvalF.Done#unpack().(p)21
+R0R 1#playground/data/layer/EvalF.Done#a.21
+TT #playground/data/layer/EvalF.Raised#2<
+TT .playground/data/layer/EvalF.Raised#`<init>`().24
+T!T "&playground/data/layer/EvalF.Raised#[E]23
+T,T 2%playground/data/layer/Effects.ErrorL#24
+T3T 4&playground/data/layer/EvalF.Raised#[E]2
+T6T =scala/Nothing#24
+TT &playground/data/layer/EvalF.Raised#[E]23
+TT %playground/data/layer/EvalF.Raised#e.2:
+UU ,playground/data/layer/EvalF.Raised#unpack().2=
+UU /playground/data/layer/EvalF.Raised#unpack().[X]2=
+UU /playground/data/layer/EvalF.Raised#unpack().(p)22
+UU $playground/data/layer/Effects.Raise#24
+UU  &playground/data/layer/EvalF.Raised#[E]2=
+U"U #/playground/data/layer/EvalF.Raised#unpack().[X]2=
+U'U (/playground/data/layer/EvalF.Raised#unpack().[X]2
+U)U 0scala/Nothing#2:
+U6U ;,playground/data/layer/Effects.Raise#raise().2=
+U4U 5/playground/data/layer/EvalF.Raised#unpack().(p)23
+U<U =%playground/data/layer/EvalF.Raised#e.2-
+WW 	playground/data/layer/EvalF.L1#20
+W
+W "playground/data/layer/EvalF.L1#[P]20
+W W !"playground/data/layer/EvalF.L1#[a]2+
+W'W -playground/data/layer/Layer1#20
+W.W /"playground/data/layer/EvalF.L1#[P]20
+W1W 2"playground/data/layer/EvalF.L1#[a]2,
+ZZ playground/data/layer/EvalF.K#27
+ZZ )playground/data/layer/EvalF.K#`<init>`().2+
+ZEZ Kplayground/data/layer/Layer1#2/
+ZLZ M!playground/data/layer/EvalF.K#[P]2/
+ZOZ P!playground/data/layer/EvalF.K#[A]2/
+ZYZ Z!playground/data/layer/EvalF.K#[A]2+
+Z^Z dplayground/data/layer/Layer1#2/
+ZeZ f!playground/data/layer/EvalF.K#[P]2/
+ZhZ i!playground/data/layer/EvalF.K#[B]2+
+ZtZ zplayground/data/layer/Layer1#2/
+Z{Z |!playground/data/layer/EvalF.K#[P]2/
+Z~Z !playground/data/layer/EvalF.K#[B]2/
+ZZ !playground/data/layer/EvalF.K#[A]2/
+ZZ !playground/data/layer/EvalF.K#[P]2/
+Z=Z >!playground/data/layer/EvalF.K#[B]2/
+Z@Z B!playground/data/layer/EvalF.K#fa.21
+ZSZ W#playground/data/layer/EvalF.K#cont.25
+[[ 'playground/data/layer/EvalF.K#unpack().28
+[[ *playground/data/layer/EvalF.K#unpack().[X]28
+[[ *playground/data/layer/EvalF.K#unpack().(p)2/
+[[ !playground/data/layer/EvalF.K#[P]2-
+[[ playground/data/layer/EvalF.L1#2/
+[[ !playground/data/layer/EvalF.K#[P]28
+["[ #*playground/data/layer/EvalF.K#unpack().[X]28
+['[ (*playground/data/layer/EvalF.K#unpack().[X]2/
+[)[ *!playground/data/layer/EvalF.K#[B]2<
+[0[ 7.playground/data/layer/Effects.EvalF#flatMap().28
+[.[ /*playground/data/layer/EvalF.K#unpack().(p)2/
+[8[ 9!playground/data/layer/EvalF.K#[A]2/
+[;[ <!playground/data/layer/EvalF.K#[B]2/
+[>[ @!playground/data/layer/EvalF.K#fa.21
+[B[ F#playground/data/layer/EvalF.K#cont.26
+]] (playground/data/layer/EvalF.interpret().29
+]] +playground/data/layer/EvalF.interpret().[P]29
+]3] 4+playground/data/layer/EvalF.interpret().[A]29
+]6] 7+playground/data/layer/EvalF.interpret().[B]29
+]:] ;+playground/data/layer/EvalF.interpret().(k)2,
+]=] >playground/data/layer/EvalF.K#29
+]?] @+playground/data/layer/EvalF.interpret().[A]29
+]B] C+playground/data/layer/EvalF.interpret().[P]29
+]E] F+playground/data/layer/EvalF.interpret().[B]2<
+]I] M.playground/data/layer/EvalF.interpret().(step)29
+]O] P+playground/data/layer/EvalF.interpret().[P]2-
+]Q] Splayground/data/layer/EvalF.L1#29
+]T] U+playground/data/layer/EvalF.interpret().[P]2-
+]X] Zplayground/data/layer/EvalF.L1#29
+][] \+playground/data/layer/EvalF.interpret().[P]2+
+]b] hplayground/data/layer/Layer1#29
+]i] j+playground/data/layer/EvalF.interpret().[P]29
+]l] m+playground/data/layer/EvalF.interpret().[B]24
+]v] |&playground/data/layer/Layer1#unpack().2/
+]s] u!playground/data/layer/EvalF.K#fa.29
+]q] r+playground/data/layer/EvalF.interpret().(k)2=
+	]}] Å.playground/data/layer/EvalF.interpret().(step)29
+^^ +playground/data/layer/EvalF.Done.unapply().2/
+^^ !playground/data/layer/EvalF.Done.2
+^^ local342&
+^^ scala/Function1#apply().21
+^^ #playground/data/layer/EvalF.K#cont.29
+^^ +playground/data/layer/EvalF.interpret().(k)2
+^ ^ !local3426
+__ (playground/data/layer/EvalF.K.unapply().2,
+__ playground/data/layer/EvalF.K.2
+__ local352
+__ local362
+__ local3725
+__ #'playground/data/layer/Layer1#flatMap().2
+__ local362
+_$_ %local3825
+_._ 5'playground/data/layer/Layer1#flatMap().2&
+_*_ *scala/Function1#apply().2
+_)_ *local372
+_+_ ,local3821
+_8_ <#playground/data/layer/EvalF.K#cont.29
+_6_ 7+playground/data/layer/EvalF.interpret().(k)2
+`` local3925
+`` #'playground/data/layer/Layer1#flatMap().2
+`` local3921
+`&` *#playground/data/layer/EvalF.K#cont.29
+`$` %+playground/data/layer/EvalF.interpret().(k)29
+bb +playground/data/layer/EvalF.interpretErr().2<
+bb .playground/data/layer/EvalF.interpretErr().[P]2<
+b<b =.playground/data/layer/EvalF.interpretErr().[A]2<
+b?b @.playground/data/layer/EvalF.interpretErr().[B]2<
+bBb C.playground/data/layer/EvalF.interpretErr().[E]2<
+bEb F.playground/data/layer/EvalF.interpretErr().(k)2,
+bIb Jplayground/data/layer/EvalF.K#2<
+bKb L.playground/data/layer/EvalF.interpretErr().[A]2<
+bNb O.playground/data/layer/EvalF.interpretErr().[P]2<
+bQb R.playground/data/layer/EvalF.interpretErr().[B]2?
+bVb Z1playground/data/layer/EvalF.interpretErr().(step)2<
+b\b ].playground/data/layer/EvalF.interpretErr().[P]2-
+b^b `playground/data/layer/EvalF.L1#2<
+bab b.playground/data/layer/EvalF.interpretErr().[P]2-
+beb gplayground/data/layer/EvalF.L1#2<
+bhb i.playground/data/layer/EvalF.interpretErr().[P]2+
+bnb tplayground/data/layer/Layer1#2<
+bub v.playground/data/layer/EvalF.interpretErr().[P]2<
+bxb y.playground/data/layer/EvalF.interpretErr().[B]24
+c	c &playground/data/layer/Layer1#unpack().2/
+cc !playground/data/layer/EvalF.K#fa.2<
+cc .playground/data/layer/EvalF.interpretErr().(k)2?
+cc 1playground/data/layer/EvalF.interpretErr().(step)29
+dd +playground/data/layer/EvalF.Done.unapply().2/
+dd !playground/data/layer/EvalF.Done.2
+dd local402&
+d d  scala/Function1#apply().21
+dd  #playground/data/layer/EvalF.K#cont.2<
+dd .playground/data/layer/EvalF.interpretErr().(k)2
+d!d "local402
+ee local412;
+ee -playground/data/layer/EvalF.Raised.unapply().21
+ee #playground/data/layer/EvalF.Raised.2
+ee local4126
+ff (playground/data/layer/EvalF.K.unapply().2,
+ff playground/data/layer/EvalF.K.2
+ff local422
+ff local432
+ff local4425
+ff $'playground/data/layer/Layer1#flatMap().2
+ff local432
+f%f &local4525
+f/f 6'playground/data/layer/Layer1#flatMap().2&
+f+f +scala/Function1#apply().2
+f*f +local442
+f,f -local4521
+f9f =#playground/data/layer/EvalF.K#cont.2<
+f7f 8.playground/data/layer/EvalF.interpretErr().(k)2
+gg local4625
+gg $'playground/data/layer/Layer1#flatMap().2
+gg local4621
+g'g +#playground/data/layer/EvalF.K#cont.2<
+g%g &.playground/data/layer/EvalF.interpretErr().(k)2:
+kk ,playground/data/layer/EvalF.EvalInterpreter#2E
+kk 7playground/data/layer/EvalF.EvalInterpreter#`<init>`().22
+kBk G$playground/data/layer/Effects.EvalF#2-
+kHk Jplayground/data/layer/EvalF.L1#2=
+kKk L/playground/data/layer/EvalF.EvalInterpreter#[P]2-
+kOk Qplayground/data/layer/EvalF.L1#2=
+kRk S/playground/data/layer/EvalF.EvalInterpreter#[P]2=
+kk /playground/data/layer/EvalF.EvalInterpreter#[P]2@
+ll 2playground/data/layer/EvalF.EvalInterpreter#now().2C
+ll 5playground/data/layer/EvalF.EvalInterpreter#now().[A]2C
+ll 5playground/data/layer/EvalF.EvalInterpreter#now().(a)2C
+ll 5playground/data/layer/EvalF.EvalInterpreter#now().[A]27
+ll )playground/data/layer/EvalF.Done.apply().2/
+ll !playground/data/layer/EvalF.Done.2C
+ll 5playground/data/layer/EvalF.EvalInterpreter#now().(a)2B
+mm 4playground/data/layer/EvalF.EvalInterpreter#defer().2E
+mm 7playground/data/layer/EvalF.EvalInterpreter#defer().[A]2F
+mm 8playground/data/layer/EvalF.EvalInterpreter#defer().(la)2+
+mm playground/data/layer/Layer1#2=
+mm  /playground/data/layer/EvalF.EvalInterpreter#[P]2E
+m"m #7playground/data/layer/EvalF.EvalInterpreter#defer().[A]2F
+m(m *8playground/data/layer/EvalF.EvalInterpreter#defer().(la)2D
+nn 6playground/data/layer/EvalF.EvalInterpreter#flatMap().2G
+nn 9playground/data/layer/EvalF.EvalInterpreter#flatMap().[A]2G
+nn 9playground/data/layer/EvalF.EvalInterpreter#flatMap().[B]2H
+nn :playground/data/layer/EvalF.EvalInterpreter#flatMap().(fa)2+
+nn  playground/data/layer/Layer1#2=
+n!n "/playground/data/layer/EvalF.EvalInterpreter#[P]2G
+n$n %9playground/data/layer/EvalF.EvalInterpreter#flatMap().[A]2G
+n(n )9playground/data/layer/EvalF.EvalInterpreter#flatMap().(f)2G
+n+n ,9playground/data/layer/EvalF.EvalInterpreter#flatMap().[A]2+
+n0n 6playground/data/layer/Layer1#2=
+n7n 8/playground/data/layer/EvalF.EvalInterpreter#[P]2G
+n:n ;9playground/data/layer/EvalF.EvalInterpreter#flatMap().[B]24
+nAn A&playground/data/layer/EvalF.K.apply().2,
+n@n Aplayground/data/layer/EvalF.K.2H
+nBn D:playground/data/layer/EvalF.EvalInterpreter#flatMap().(fa)2G
+nFn G9playground/data/layer/EvalF.EvalInterpreter#flatMap().(f)23
+pp %playground/data/layer/EvalF.HasState#2>
+pp 0playground/data/layer/EvalF.HasState#`<init>`().26
+pp (playground/data/layer/EvalF.HasState#[S]2;
+qq -playground/data/layer/EvalF.HasState#state().26
+qq (playground/data/layer/EvalF.HasState#[S]2:
+ss ,playground/data/layer/EvalF.ExecInterpreter#2E
+ss 7playground/data/layer/EvalF.ExecInterpreter#`<init>`().2=
+sSs T/playground/data/layer/EvalF.ExecInterpreter#[S]2E
+tt 7playground/data/layer/EvalF.EvalInterpreter#`<init>`().2:
+tt ,playground/data/layer/EvalF.EvalInterpreter#2=
+tt /playground/data/layer/EvalF.ExecInterpreter#[P]22
+t$t )$playground/data/layer/Effects.Raise#2=
+t*t +/playground/data/layer/EvalF.ExecInterpreter#[E]2-
+t-t /playground/data/layer/EvalF.L1#2=
+t0t 1/playground/data/layer/EvalF.ExecInterpreter#[P]22
+t9t >$playground/data/layer/Effects.State#2=
+t?t @/playground/data/layer/EvalF.ExecInterpreter#[S]2-
+tBt Dplayground/data/layer/EvalF.L1#2=
+tEt F/playground/data/layer/EvalF.ExecInterpreter#[P]23
+tNt V%playground/data/layer/EvalF.HasState#2=
+tWt X/playground/data/layer/EvalF.ExecInterpreter#[S]2=
+ss /playground/data/layer/EvalF.ExecInterpreter#[S]2=
+ss /playground/data/layer/EvalF.ExecInterpreter#[E]2=
+ss  /playground/data/layer/EvalF.ExecInterpreter#[P]2B
+sKs P4playground/data/layer/EvalF.ExecInterpreter#state().2B
+uu 4playground/data/layer/EvalF.ExecInterpreter#raise().2E
+uu 7playground/data/layer/EvalF.ExecInterpreter#raise().(e)2=
+uu /playground/data/layer/EvalF.ExecInterpreter#[E]29
+uu +playground/data/layer/EvalF.Raised.apply().21
+uu #playground/data/layer/EvalF.Raised.2E
+uu 7playground/data/layer/EvalF.ExecInterpreter#raise().(e)2A
+vv 3playground/data/layer/EvalF.ExecInterpreter#read().27
+vv )playground/data/layer/EvalF.Done.apply().2/
+vv !playground/data/layer/EvalF.Done.2B
+vv 4playground/data/layer/EvalF.ExecInterpreter#state().2B
+ww 4playground/data/layer/EvalF.ExecInterpreter#write().2E
+ww 7playground/data/layer/EvalF.ExecInterpreter#write().(s)2=
+ww /playground/data/layer/EvalF.ExecInterpreter#[S]2F
+xx 8playground/data/layer/EvalF.ExecInterpreter#`state_=`().2E
+xx 7playground/data/layer/EvalF.ExecInterpreter#write().(s)2/
+yy 
+!playground/data/layer/EvalF.unit.2<
+{{ .playground/data/layer/EvalF.ReaderInterpreter#2G
+{{ 9playground/data/layer/EvalF.ReaderInterpreter#`<init>`().2?
+{B{ C1playground/data/layer/EvalF.ReaderInterpreter#[R]22
+{M{ R$playground/data/layer/Effects.ReadF#2?
+{S{ T1playground/data/layer/EvalF.ReaderInterpreter#[R]2-
+{V{ Xplayground/data/layer/EvalF.L1#2?
+{Y{ Z1playground/data/layer/EvalF.ReaderInterpreter#[P]2-
+{]{ _playground/data/layer/EvalF.L1#2?
+{`{ a1playground/data/layer/EvalF.ReaderInterpreter#[P]2?
+{{ 1playground/data/layer/EvalF.ReaderInterpreter#[P]2?
+{<{ =1playground/data/layer/EvalF.ReaderInterpreter#[R]2>
+{?{ @0playground/data/layer/EvalF.ReaderInterpreter#r.2C
+|| 5playground/data/layer/EvalF.ReaderInterpreter#read().27
+|| )playground/data/layer/EvalF.Done.apply().2/
+|| !playground/data/layer/EvalF.Done.2>
+|| 0playground/data/layer/EvalF.ReaderInterpreter#r.2,
+~~ playground/data/layer/Effects.23
+ %playground/data/layer/Effects.ErrorF#26
+ (playground/data/layer/Effects.ErrorF#[E]26
+ (playground/data/layer/Effects.ErrorF#[i]26
+ (playground/data/layer/Effects.ErrorF#[o]22
+' ,$playground/data/layer/Effects.Raise#26
+- .(playground/data/layer/Effects.ErrorF#[E]26
+0 1(playground/data/layer/Effects.ErrorF#[o]24
+
+ÄÄ $playground/data/layer/Effects.ReadF#27
+
+ÄÄ 'playground/data/layer/Effects.ReadF#[R]27
+
+ÄÄ 'playground/data/layer/Effects.ReadF#[i]27
+
+ÄÄ 'playground/data/layer/Effects.ReadF#[o]23
+
+Ä&Ä *#playground/data/layer/Effects.Read#27
+
+Ä+Ä ,'playground/data/layer/Effects.ReadF#[R]27
+
+Ä.Ä /'playground/data/layer/Effects.ReadF#[o]25
+
+ÅÅ %playground/data/layer/Effects.WriteF#28
+
+ÅÅ (playground/data/layer/Effects.WriteF#[W]28
+
+ÅÅ (playground/data/layer/Effects.WriteF#[i]28
+
+ÅÅ (playground/data/layer/Effects.WriteF#[o]24
+
+Å'Å ,$playground/data/layer/Effects.Write#28
+
+Å-Å .(playground/data/layer/Effects.WriteF#[W]28
+
+Å0Å 1(playground/data/layer/Effects.WriteF#[o]26
+
+ÇÇ &playground/data/layer/Effects.ReadEvF#29
+
+ÇÇ )playground/data/layer/Effects.ReadEvF#[R]29
+
+ÇÇ )playground/data/layer/Effects.ReadEvF#[i]29
+
+ÇÇ )playground/data/layer/Effects.ReadEvF#[o]2
+
+Ç4Ç 5
+scala/`&`#24
+
+Ç(Ç -$playground/data/layer/Effects.EvalF#29
+
+Ç.Ç /)playground/data/layer/Effects.ReadEvF#[i]29
+
+Ç1Ç 2)playground/data/layer/Effects.ReadEvF#[o]23
+
+Ç6Ç :#playground/data/layer/Effects.Read#29
+
+Ç;Ç <)playground/data/layer/Effects.ReadEvF#[R]29
+
+Ç>Ç ?)playground/data/layer/Effects.ReadEvF#[o]27
+
+ÉÉ 'playground/data/layer/Effects.WriteEvF#2:
+
+ÉÉ *playground/data/layer/Effects.WriteEvF#[W]2:
+
+ÉÉ *playground/data/layer/Effects.WriteEvF#[i]2:
+
+ÉÉ *playground/data/layer/Effects.WriteEvF#[o]2
+
+É5É 6
+scala/`&`#24
+
+É)É .$playground/data/layer/Effects.EvalF#2:
+
+É/É 0*playground/data/layer/Effects.WriteEvF#[i]2:
+
+É2É 3*playground/data/layer/Effects.WriteEvF#[o]24
+
+É7É <$playground/data/layer/Effects.Write#2:
+
+É=É >*playground/data/layer/Effects.WriteEvF#[W]2:
+
+É@É A*playground/data/layer/Effects.WriteEvF#[o]27
+
+ÑÑ 'playground/data/layer/Effects.ErrorEvF#2:
+
+ÑÑ *playground/data/layer/Effects.ErrorEvF#[E]2:
+
+ÑÑ *playground/data/layer/Effects.ErrorEvF#[i]2:
+
+ÑÑ *playground/data/layer/Effects.ErrorEvF#[o]2
+
+Ñ5Ñ 6
+scala/`&`#24
+
+Ñ)Ñ .$playground/data/layer/Effects.EvalF#2:
+
+Ñ/Ñ 0*playground/data/layer/Effects.ErrorEvF#[i]2:
+
+Ñ2Ñ 3*playground/data/layer/Effects.ErrorEvF#[o]24
+
+Ñ8Ñ =$playground/data/layer/Effects.Raise#2:
+
+Ñ>Ñ ?*playground/data/layer/Effects.ErrorEvF#[E]2:
+
+ÑAÑ B*playground/data/layer/Effects.ErrorEvF#[o]25
+
+ÖÖ %playground/data/layer/Effects.StateF#28
+
+ÖÖ (playground/data/layer/Effects.StateF#[S]28
+
+ÖÖ (playground/data/layer/Effects.StateF#[i]28
+
+ÖÖ (playground/data/layer/Effects.StateF#[o]2
+
+Ö2Ö 3
+scala/`&`#24
+
+Ö&Ö +$playground/data/layer/Effects.EvalF#28
+
+Ö,Ö -(playground/data/layer/Effects.StateF#[i]28
+
+Ö/Ö 0(playground/data/layer/Effects.StateF#[o]24
+
+Ö4Ö 9$playground/data/layer/Effects.State#28
+
+Ö:Ö ;(playground/data/layer/Effects.StateF#[S]28
+
+Ö=Ö >(playground/data/layer/Effects.StateF#[o]24
+
+ÜÜ $playground/data/layer/Effects.ExecF#27
+
+ÜÜ 'playground/data/layer/Effects.ExecF#[S]27
+
+ÜÜ 'playground/data/layer/Effects.ExecF#[E]27
+
+ÜÜ 'playground/data/layer/Effects.ExecF#[i]27
+
+ÜÜ 'playground/data/layer/Effects.ExecF#[o]2
+
+ÜCÜ D
+scala/`&`#2
+
+Ü5Ü 6
+scala/`&`#24
+
+Ü)Ü .$playground/data/layer/Effects.EvalF#27
+
+Ü/Ü 0'playground/data/layer/Effects.ExecF#[i]27
+
+Ü2Ü 3'playground/data/layer/Effects.ExecF#[o]24
+
+Ü7Ü <$playground/data/layer/Effects.Raise#27
+
+Ü=Ü >'playground/data/layer/Effects.ExecF#[E]27
+
+Ü@Ü A'playground/data/layer/Effects.ExecF#[o]24
+
+ÜEÜ J$playground/data/layer/Effects.State#27
+
+ÜKÜ L'playground/data/layer/Effects.ExecF#[S]27
+
+ÜNÜ O'playground/data/layer/Effects.ExecF#[o]27
+
+áá 'playground/data/layer/Effects.SuspendF#2:
+
+áá *playground/data/layer/Effects.SuspendF#[F]2:
+
+áá *playground/data/layer/Effects.SuspendF#[i]2:
+
+á"á #*playground/data/layer/Effects.SuspendF#[o]26
+
+á-á 4&playground/data/layer/Effects.Suspend#2:
+
+á5á 6*playground/data/layer/Effects.SuspendF#[F]2:
+
+á8á 9*playground/data/layer/Effects.SuspendF#[o]24
+
+àà $playground/data/layer/Effects.FreeF#27
+
+àà 'playground/data/layer/Effects.FreeF#[F]27
+
+àà 'playground/data/layer/Effects.FreeF#[i]27
+
+àà  'playground/data/layer/Effects.FreeF#[o]2
+
+à6à 7
+scala/`&`#24
+
+à*à /$playground/data/layer/Effects.EvalF#27
+
+à0à 1'playground/data/layer/Effects.FreeF#[i]27
+
+à3à 4'playground/data/layer/Effects.FreeF#[o]26
+
+à8à ?&playground/data/layer/Effects.Suspend#27
+
+à@à A'playground/data/layer/Effects.FreeF#[F]27
+
+àCà D'playground/data/layer/Effects.FreeF#[o]24
+
+ää $playground/data/layer/Effects.Raise#2?
+
+ää /playground/data/layer/Effects.Raise#`<init>`().27
+
+ää 'playground/data/layer/Effects.Raise#[E]27
+
+ää 'playground/data/layer/Effects.Raise#[O]2<
+
+ãã ,playground/data/layer/Effects.Raise#raise().2?
+
+ãã /playground/data/layer/Effects.Raise#raise().(e)27
+
+ãã 'playground/data/layer/Effects.Raise#[E]27
+
+ãã 'playground/data/layer/Effects.Raise#[O]2
+
+ãã scala/Nothing#23
+
+çç #playground/data/layer/Effects.Read#2>
+
+çç .playground/data/layer/Effects.Read#`<init>`().26
+
+çç &playground/data/layer/Effects.Read#[R]26
+
+çç &playground/data/layer/Effects.Read#[O]2:
+
+éé *playground/data/layer/Effects.Read#read().26
+
+éé &playground/data/layer/Effects.Read#[O]26
+
+éé &playground/data/layer/Effects.Read#[R]24
+
+êê $playground/data/layer/Effects.Write#2?
+
+êê /playground/data/layer/Effects.Write#`<init>`().27
+
+êê 'playground/data/layer/Effects.Write#[W]27
+
+êê 'playground/data/layer/Effects.Write#[O]2<
+
+ëë ,playground/data/layer/Effects.Write#write().2?
+
+ëë /playground/data/layer/Effects.Write#write().(w)27
+
+ëë 'playground/data/layer/Effects.Write#[W]27
+
+ëë 'playground/data/layer/Effects.Write#[O]2
+
+ëë 
+scala/Any#26
+
+ìì &playground/data/layer/Effects.Suspend#2A
+
+ìì 1playground/data/layer/Effects.Suspend#`<init>`().29
+
+ìì )playground/data/layer/Effects.Suspend#[F]29
+
+ìì )playground/data/layer/Effects.Suspend#[O]2@
+
+îî 0playground/data/layer/Effects.Suspend#suspend().2C
+
+îî 3playground/data/layer/Effects.Suspend#suspend().[A]2C
+
+îî 3playground/data/layer/Effects.Suspend#suspend().(f)29
+
+îî )playground/data/layer/Effects.Suspend#[F]2C
+
+îî 3playground/data/layer/Effects.Suspend#suspend().[A]29
+
+îî )playground/data/layer/Effects.Suspend#[O]2C
+
+îî  3playground/data/layer/Effects.Suspend#suspend().[A]24
+
+óó $playground/data/layer/Effects.State#2?
+
+óó /playground/data/layer/Effects.State#`<init>`().23
+
+ó!ó %#playground/data/layer/Effects.Read#27
+
+ó&ó ''playground/data/layer/Effects.State#[S]27
+
+ó)ó *'playground/data/layer/Effects.State#[O]24
+
+ó1ó 6$playground/data/layer/Effects.Write#27
+
+ó7ó 8'playground/data/layer/Effects.State#[S]27
+
+ó:ó ;'playground/data/layer/Effects.State#[O]27
+
+óó 'playground/data/layer/Effects.State#[S]27
+
+óó 'playground/data/layer/Effects.State#[O]23
+
+ôô #playground/data/layer/Effects.NowF#2>
+
+ôô .playground/data/layer/Effects.NowF#`<init>`().26
+
+ôô &playground/data/layer/Effects.NowF#[O]29
+
+öö )playground/data/layer/Effects.NowF#now().2<
+
+öö ,playground/data/layer/Effects.NowF#now().[A]2<
+
+öö ,playground/data/layer/Effects.NowF#now().(a)2<
+
+öö ,playground/data/layer/Effects.NowF#now().[A]26
+
+öö &playground/data/layer/Effects.NowF#[O]2<
+
+öö ,playground/data/layer/Effects.NowF#now().[A]24
+
+ùù $playground/data/layer/Effects.EvalF#2?
+
+ùù /playground/data/layer/Effects.EvalF#`<init>`().23
+
+ù&ù *#playground/data/layer/Effects.NowF#27
+
+ù+ù ,'playground/data/layer/Effects.EvalF#[O]27
+
+ùù 'playground/data/layer/Effects.EvalF#[I]27
+
+ùù 'playground/data/layer/Effects.EvalF#[O]2<
+
+ûû ,playground/data/layer/Effects.EvalF#defer().2?
+
+ûû /playground/data/layer/Effects.EvalF#defer().[A]2@
+
+ûû 0playground/data/layer/Effects.EvalF#defer().(la)27
+
+ûû 'playground/data/layer/Effects.EvalF#[I]2?
+
+ûû /playground/data/layer/Effects.EvalF#defer().[A]27
+
+ûû  'playground/data/layer/Effects.EvalF#[O]2?
+
+û!û "/playground/data/layer/Effects.EvalF#defer().[A]2>
+
+üü .playground/data/layer/Effects.EvalF#flatMap().2A
+
+üü 1playground/data/layer/Effects.EvalF#flatMap().[A]2A
+
+üü 1playground/data/layer/Effects.EvalF#flatMap().[B]2B
+
+üü 2playground/data/layer/Effects.EvalF#flatMap().(fa)27
+
+üü 'playground/data/layer/Effects.EvalF#[I]2A
+
+üü 1playground/data/layer/Effects.EvalF#flatMap().[A]2A
+
+ü ü !1playground/data/layer/Effects.EvalF#flatMap().(f)2A
+
+ü#ü $1playground/data/layer/Effects.EvalF#flatMap().[A]27
+
+ü(ü )'playground/data/layer/Effects.EvalF#[I]2A
+
+ü*ü +1playground/data/layer/Effects.EvalF#flatMap().[B]27
+
+ü/ü 0'playground/data/layer/Effects.EvalF#[O]2A
+
+ü1ü 21playground/data/layer/Effects.EvalF#flatMap().[B]24
+
+°° $playground/data/layer/Effects.NowFF#27
+
+°° 'playground/data/layer/Effects.NowFF#[I]27
+
+°° 'playground/data/layer/Effects.NowFF#[O]23
+
+°° ##playground/data/layer/Effects.NowF#27
+
+°$° %'playground/data/layer/Effects.NowFF#[O]21
+
+¢¢ 	!playground/data/layer/Effects.Ev#24
+
+¢¢ $playground/data/layer/Effects.Ev#[a]2-
+
+¢¢ playground/data/layer/Layer1#24
+
+¢¢ $playground/data/layer/Effects.Ev#[a]23
+
+££ #playground/data/layer/Effects.Pure#26
+
+££ &playground/data/layer/Effects.Pure#[a]2-
+
+££ playground/data/layer/Layer1#26
+
+£ £ !&playground/data/layer/Effects.Pure#[a]24
+
+§§ $playground/data/layer/Effects.ReadL#27
+
+§§ 'playground/data/layer/Effects.ReadL#[R]27
+
+§§ 'playground/data/layer/Effects.ReadL#[a]2-
+
+§§ playground/data/layer/Layer1#24
+
+§§ #$playground/data/layer/Effects.ReadF#27
+
+§$§ %'playground/data/layer/Effects.ReadL#[R]27
+
+§(§ )'playground/data/layer/Effects.ReadL#[a]25
+
+•• %playground/data/layer/Effects.WriteL#28
+
+•• (playground/data/layer/Effects.WriteL#[W]28
+
+•• (playground/data/layer/Effects.WriteL#[a]2-
+
+•• playground/data/layer/Layer1#25
+
+•• %%playground/data/layer/Effects.WriteF#28
+
+•&• '(playground/data/layer/Effects.WriteL#[W]28
+
+•*• +(playground/data/layer/Effects.WriteL#[a]25
+
+¶¶ %playground/data/layer/Effects.ErrorL#28
+
+¶¶ (playground/data/layer/Effects.ErrorL#[E]28
+
+¶¶ (playground/data/layer/Effects.ErrorL#[a]2-
+
+¶¶ playground/data/layer/Layer1#25
+
+¶¶ %%playground/data/layer/Effects.ErrorF#28
+
+¶&¶ '(playground/data/layer/Effects.ErrorL#[E]28
+
+¶*¶ +(playground/data/layer/Effects.ErrorL#[a]25
+
+ßß %playground/data/layer/Effects.ReadEv#28
+
+ßß (playground/data/layer/Effects.ReadEv#[R]28
+
+ßß (playground/data/layer/Effects.ReadEv#[a]2-
+
+ßß "playground/data/layer/Layer1#26
+
+ß#ß *&playground/data/layer/Effects.ReadEvF#28
+
+ß+ß ,(playground/data/layer/Effects.ReadEv#[R]28
+
+ß/ß 0(playground/data/layer/Effects.ReadEv#[a]26
+
+®® &playground/data/layer/Effects.WriteEv#29
+
+®® )playground/data/layer/Effects.WriteEv#[W]29
+
+®® )playground/data/layer/Effects.WriteEv#[a]2-
+
+®® playground/data/layer/Layer1#27
+
+® ® ('playground/data/layer/Effects.WriteEvF#29
+
+®)® *)playground/data/layer/Effects.WriteEv#[W]29
+
+®-® .)playground/data/layer/Effects.WriteEv#[a]26
+
+©© &playground/data/layer/Effects.StateEv#29
+
+©© )playground/data/layer/Effects.StateEv#[S]29
+
+©© )playground/data/layer/Effects.StateEv#[a]2-
+
+©© playground/data/layer/Layer1#25
+
+©© %%playground/data/layer/Effects.StateF#29
+
+©&© ')playground/data/layer/Effects.StateEv#[S]29
+
+©*© +)playground/data/layer/Effects.StateEv#[a]25
+
+™™ %playground/data/layer/Effects.ExecEv#28
+
+™™ (playground/data/layer/Effects.ExecEv#[S]28
+
+™™ (playground/data/layer/Effects.ExecEv#[E]28
+
+™™ (playground/data/layer/Effects.ExecEv#[a]2-
+
+™™  playground/data/layer/Layer1#24
+
+™!™ &$playground/data/layer/Effects.ExecF#28
+
+™'™ ((playground/data/layer/Effects.ExecEv#[S]28
+
+™*™ +(playground/data/layer/Effects.ExecEv#[E]28
+
+™.™ /(playground/data/layer/Effects.ExecEv#[a]23
+
+´´ #playground/data/layer/Effects.Free#26
+
+´´ &playground/data/layer/Effects.Free#[F]26
+
+´´ &playground/data/layer/Effects.Free#[a]2-
+
+´´  playground/data/layer/Layer1#24
+
+´!´ &$playground/data/layer/Effects.FreeF#26
+
+´'´ (&playground/data/layer/Effects.Free#[F]26
+
+´+´ ,&playground/data/layer/Effects.Free#[a]2/
+
+≠≠ playground/data/layer/EvalTest.27
+
+ÆJÆ O'playground/data/layer/EvalTest.foldr().2:
+
+ÆÆ *playground/data/layer/EvalTest.foldr().[A]2:
+
+ÆÆ *playground/data/layer/EvalTest.foldr().[B]2:
+
+ÆÆ *playground/data/layer/EvalTest.foldr().[P]2;
+
+Æ8Æ :+playground/data/layer/EvalTest.foldr().(xs)2#
+
+Æ<Æ @scala/package.List#2:
+
+ÆAÆ B*playground/data/layer/EvalTest.foldr().[A]2:
+
+ÆPÆ Q*playground/data/layer/EvalTest.foldr().(f)2:
+
+ÆTÆ U*playground/data/layer/EvalTest.foldr().[A]2-
+
+ÆWÆ ]playground/data/layer/Layer1#2:
+
+Æ^Æ _*playground/data/layer/EvalTest.foldr().[P]2:
+
+ÆaÆ b*playground/data/layer/EvalTest.foldr().[B]2-
+
+ÆhÆ nplayground/data/layer/Layer1#2:
+
+ÆoÆ p*playground/data/layer/EvalTest.foldr().[P]2:
+
+ÆrÆ s*playground/data/layer/EvalTest.foldr().[B]2;
+
+ÆvÆ x+playground/data/layer/EvalTest.foldr().(lb)2.
+ÆzÆ Äplayground/data/layer/Layer1#2<
+ÆÅÆ Ç*playground/data/layer/EvalTest.foldr().[P]2<
+ÆÑÆ Ö*playground/data/layer/EvalTest.foldr().[B]2/
+ÆâÆ èplayground/data/layer/Layer1#2<
+ÆêÆ ë*playground/data/layer/EvalTest.foldr().[P]2<
+ÆìÆ î*playground/data/layer/EvalTest.foldr().[B]2;
+
+ØØ 
++playground/data/layer/EvalTest.foldr().(xs)2"
+
+∞∞ scala/package.Nil.2;
+
+∞∞ +playground/data/layer/EvalTest.foldr().(lb)2:
+
+±± *scala/collection/immutable/`::`.unapply().2#
+
+±± scala/package.`::`.2
+
+±± local472
+
+±± local4825
+
+±!± !%playground/data/layer/Layer1.defer().2(
+
+±"± "scala/Function2#apply().2:
+
+±!± "*playground/data/layer/EvalTest.foldr().(f)2
+
+±#± 'local4727
+
+±)± )'playground/data/layer/EvalTest.foldr().2
+
+±)± -local482:
+
+±4± 5*playground/data/layer/EvalTest.foldr().(f)2;
+
+±7± 9+playground/data/layer/EvalTest.foldr().(lb)26
+
+¥#¥ '&playground/data/layer/EvalTest.lsum().2:
+
+¥¥ *playground/data/layer/EvalTest.lsum().(xs)2#
+
+¥¥ scala/package.List#2
+
+¥¥ scala/Long#21
+
+¥)¥ +!playground/data/layer/Effects.Ev#2
+
+¥,¥ 0scala/Long#27
+
+¥4¥ 4'playground/data/layer/EvalTest.foldr().2
+
+¥=¥ Ascala/Long#2
+
+¥C¥ Gscala/Long#2:
+
+¥4¥ 6*playground/data/layer/EvalTest.lsum().(xs)2
+
+¥Q¥ Rlocal492
+
+¥T¥ Ulocal5023
+
+¥\¥ _#playground/data/layer/Layer1#map().2
+
+¥Z¥ [local502#
+
+¥b¥ cscala/Long#`+`(+5).2
+
+¥d¥ elocal4922
+
+¥n¥ q"playground/data/layer/EvalF.now().2,
+
+¥h¥ mplayground/data/layer/EvalF.27
+
+µ#µ ('playground/data/layer/EvalTest.lsump().2;
+
+µµ +playground/data/layer/EvalTest.lsump().(xs)2#
+
+µµ scala/package.List#2
+
+µµ scala/Long#25
+
+µ*µ 0%playground/data/layer/Effects.ReadEv#2
+
+µ1µ 5scala/Long#2
+
+µ7µ ;scala/Long#27
+
+∂∂ 'playground/data/layer/EvalTest.foldr().2
+
+∂∂ scala/Long#2
+
+∂∂ scala/Long#26
+
+∂∂ "&playground/data/layer/Effects.ReadEvF#2
+
+∂#∂ 'scala/Long#2;
+
+∂∂ +playground/data/layer/EvalTest.lsump().(xs)2
+
+∂+∂ ,local512
+
+∂.∂ /local5227
+
+∑
+∑ 'playground/data/layer/Layer1#flatMap().2
+
+∑∑ 	local522
+
+∑∑ local5323
+
+∑(∑ +#playground/data/layer/Layer1#map().23
+
+∑∑ !#playground/data/layer/EvalF.read().2,
+
+∑∑ playground/data/layer/EvalF.2
+
+∑"∑ &scala/Long#2
+
+∑-∑ .local542#
+
+∑4∑ 5scala/Long#`+`(+5).2
+
+∑2∑ 3local532#
+
+∑8∑ 9scala/Long#`*`(+4).2
+
+∑6∑ 7local512
+
+∑:∑ ;local5422
+
+∏∏ "playground/data/layer/EvalF.now().2,
+
+∏∏ playground/data/layer/EvalF.2>
+
+∫#∫ /.playground/data/layer/EvalTest.lsumAndCount().2B
+
+∫∫ 2playground/data/layer/EvalTest.lsumAndCount().(xs)2#
+
+∫∫ scala/package.List#2
+
+∫∫ scala/Long#26
+
+∫1∫ 8&playground/data/layer/Effects.StateEv#2
+
+∫9∫ =scala/Long#2
+
+∫?∫ Cscala/Long#27
+
+ªª 'playground/data/layer/EvalTest.foldr().2
+
+ªª scala/Long#2
+
+ªª scala/Long#25
+
+ªª !%playground/data/layer/Effects.StateF#2
+
+ª"ª &scala/Long#2B
+
+ªª 2playground/data/layer/EvalTest.lsumAndCount().(xs)2
+
+ª*ª +local552
+
+ª-ª .local5627
+
+ΩΩ 'playground/data/layer/Layer1#flatMap().2
+
+ΩΩ local562
+
+Ω
+Ω local5727
+
+ææ 'playground/data/layer/Layer1#flatMap().23
+
+ææ #playground/data/layer/EvalF.read().2,
+
+ææ playground/data/layer/EvalF.2
+
+ææ scala/Long#2
+
+æ
+æ local5823
+
+ø!ø !#playground/data/layer/Layer1#map().24
+
+øø $playground/data/layer/EvalF.write().2,
+
+øø playground/data/layer/EvalF.2#
+
+øø scala/Long#`+`(+4).2
+
+øø local582
+
+ø
+ø 
+local592#
+
+¿¿ scala/Long#`+`(+5).2
+
+¿¿ local572
+
+¿¿ local5522
+
+¡¡ "playground/data/layer/EvalF.now().2,
+
+¡¡ playground/data/layer/EvalF.26
+
+√√ &playground/data/layer/EvalTest.main().2<
+
+√√ ,playground/data/layer/EvalTest.main().(args)2
+
+√√ scala/Array#2$
+
+√√ scala/Predef.String#2
+
+√#√ 'scala/Unit#2
+
+ƒ
+ƒ local6029
+
+ƒƒ )scala/collection/IterableFactory#range().2#
+
+ƒƒ scala/package.List.22
+
+ƒ'ƒ '"scala/math/Numeric.LongIsIntegral.2)
+
+≈≈ scala/Predef.println(+1).25
+
+≈≈ %playground/data/layer/Layer1.value().26
+
+≈≈ &playground/data/layer/EvalTest.lsum().2
+
+≈≈ local602)
+
+∆∆ scala/Predef.println(+1).29
+
+∆∆ )playground/data/layer/Layer1.runReader().27
+
+∆∆ 'playground/data/layer/EvalTest.lsump().2
+
+∆∆ local602)
+
+«« scala/Predef.println(+1).29
+
+«« )playground/data/layer/Layer1.runStateE().2
+
+«+« /scala/Long#2
+
+«1« 8scala/Nothing#2
+
+«:« >scala/Long#2>
+
+«« .playground/data/layer/EvalTest.lsumAndCount().2
+
+«« local602.
+$playground/data/layer/freef$package.26
+ (playground/data/layer/freef$package.FK1#29
+ +playground/data/layer/freef$package.FK1#[i]29
+ +playground/data/layer/freef$package.FK1#[o]2
+ !
+scala/Any#28
+ *playground/data/layer/freef$package.`&@&`#2;
+
+ -playground/data/layer/freef$package.`&@&`#[P]2;
+ -playground/data/layer/freef$package.`&@&`#[Q]2;
+4 5-playground/data/layer/freef$package.`&@&`#[i]2;
+; <-playground/data/layer/freef$package.`&@&`#[o]2
+N O
+scala/`&`#2;
+F G-playground/data/layer/freef$package.`&@&`#[P]2;
+H I-playground/data/layer/freef$package.`&@&`#[i]2;
+K L-playground/data/layer/freef$package.`&@&`#[o]2;
+P Q-playground/data/layer/freef$package.`&@&`#[Q]2;
+R S-playground/data/layer/freef$package.`&@&`#[i]2;
+U V-playground/data/layer/freef$package.`&@&`#[o]PZ 253080B1C8B1BF650ACAE2A5236C55D7

@@ -16,10 +16,13 @@ enum Eval[+A]:
 object Eval:
     val unit: Eval[Unit] =  Pure(())
     def now[A](a: A): Eval[A] = Pure(a)
+    def later[A](a: => A): Eval[A] =  FlatMap(unit, _ => Pure(a))
+
+    extension[A] (a: => A) def delay : Eval[A]  = later(a)
     
-    def[A] (a: => A) delay: Eval[A]       = FlatMap(unit, _ => a.pure)
-    def[A] (a: => Eval[A]) defer: Eval[A] = FlatMap(unit, _ => a)
     
-    given StackSafeMonad[Eval]:
-        def[A] (a: A) pure : Eval[A] = Pure(a)
-        def[A, B] (a: Eval[A]) flatMap (f: A => Eval[B]): Eval[B] = FlatMap(a, f)
+    extension[A](a: => Eval[A]) def defer: Eval[A] = FlatMap(unit, _ => a) 
+    
+    given StackSafeMonad[Eval] with
+        extension [A] (a: A) def pure : Eval[A] = Pure(a)
+        extension [A, B] (a: Eval[A]) def flatMap(f: A => Eval[B]): Eval[B] = FlatMap(a, f)

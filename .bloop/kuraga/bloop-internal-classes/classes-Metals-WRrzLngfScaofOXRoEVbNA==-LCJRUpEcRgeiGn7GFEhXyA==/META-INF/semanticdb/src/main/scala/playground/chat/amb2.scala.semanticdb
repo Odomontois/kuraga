@@ -1,0 +1,74 @@
+
+ß)src/main/scala/playground/chat/amb2.scala*,
+playground/chat/amb2$package. *chat€*1
+$playground/chat/amb2$package.boom().*boom€*1
+'playground/chat/amb2$package.boom().[F]	*F€*1
+'playground/chat/amb2$package.boom().[A]	*A€*1
+'playground/chat/amb2$package.boom().[B]	*B€*3
+(playground/chat/amb2$package.boom().(fa)*fa€*1
+'playground/chat/amb2$package.boom().(f)*f€*
+local0*a€*3
+%playground/chat/amb2$package.check().*check€*
+local1*i€*&
+playground/chat/check# *check€*3
+!playground/chat/check#`<init>`(). €@*<init>€*-
+playground/chat/check#main(). € *main€*0
+#playground/chat/check#main().(args)*args€*
+local2 €*error€2
+ playground/chat/2
+ playground/2
+ cats/2
+ cats/implicits.2
+ cats/2'
+playground/chat/amb2$package.22
+- 1$playground/chat/amb2$package.boom().25
+ 'playground/chat/amb2$package.boom().[F]25
+ 'playground/chat/amb2$package.boom().[A]25
+ 'playground/chat/amb2$package.boom().[B]26
+ !(playground/chat/amb2$package.boom().(fa)25
+# $'playground/chat/amb2$package.boom().[F]25
+% &'playground/chat/amb2$package.boom().[A]25
+3 4'playground/chat/amb2$package.boom().(f)25
+6 7'playground/chat/amb2$package.boom().[A]2!
+; ?scala/package.List#25
+@ A'playground/chat/amb2$package.boom().[F]25
+B C'playground/chat/amb2$package.boom().[B]2
+ cats/Monad#25
+ 'playground/chat/amb2$package.boom().[F]2
+H Scats/Alternative#25
+T U'playground/chat/amb2$package.boom().[F]25
+[ \'playground/chat/amb2$package.boom().[F]2
+] ascala/Unit#2)
+ cats/FlatMap.Ops#flatMap().27
+ )cats/FlatMap.ToFlatMapOps#toFlatMapOps().26
+ (playground/chat/amb2$package.boom().(fa)2
+ local02&
+ #cats/Functor.Ops#void().27
+ )cats/Functor.ToFunctorOps#toFunctorOps().24
+ &cats/syntax/NestedFoldableOps#foldK().2D
+ 6cats/syntax/FoldableSyntax#catsSyntaxNestedFoldable().2&
+ scala/Function1#apply().25
+ 'playground/chat/amb2$package.boom().(f)2
+ local02C
+ 5cats/instances/ListInstances#catsStdInstancesForList.2C
+ 5cats/instances/ListInstances#catsStdInstancesForList.2
+ scala/main#23
+
+ %playground/chat/amb2$package.check().2-
+A Ascala/ContextFunction1#apply().22
+ $playground/chat/amb2$package.boom().27
+ )scala/collection/IterableFactory#apply().2#
+ scala/package.Vector.2
+" #local127
++ +)scala/collection/IterableFactory#apply().2!
+' +scala/package.List.27
+2 2)scala/collection/IterableFactory#apply().2#
+, 2scala/package.Vector.27
+= =)scala/collection/IterableFactory#apply().2#
+7 =scala/package.Vector.2G
+A A9cats/instances/VectorInstances#catsStdInstancesForVector.2 
+playground/chat/check#2+
+!playground/chat/check#`<init>`().2/
+%playground/chat/amb2$package.check().23
+)scala/util/CommandLineParser.showError().2
+local2PZ 42F667A63E5A515498D247E7FA3222C2

@@ -2,7 +2,7 @@ package playground.data.layer
 
 import scala.annotation.tailrec
 import Effects._
-import EvalF.{given _}
+import EvalF.given
 
 type FK1 = [i[+_], o[+_]] =>> Any
 type &@&[+P[-i[+_], +o[+_]], +Q[-i[+_], +o[+_]]] = [i[+_], o[+_]] =>> P[i, o] & Q[i, o]
@@ -24,13 +24,13 @@ object Layer1:
   type L1[P[-i[+_], +o[+_]]] = [a] =>> Layer1[P, a]
   
 
-  extension [A, B, P[-i[+_], +o[+_]] <: EvalF[i, o]] (self: => Layer1[P, A])     :
+  extension [A, B, P[-i[+_], +o[+_]] <: EvalF[i, o]] (self: => Layer1[P, A]) 
     def defer: Layer1[P, A] = new Layer1[P, A]{
       def unpack[R[+_]](p: P[L1[P], R]): R[A] = p.defer(self)
     }
 
 
-  extension [P[-i[+_], +o[+_]] <: EvalF[i, o], X] (self: Layer1[P, X]) :
+  extension [P[-i[+_], +o[+_]] <: EvalF[i, o], X] (self: Layer1[P, X])
     def run(step: P[L1[P], L1[P]]): X = 
         @tailrec def go(cur: Layer1[P, X]): X = cur.unpack(step) match
             case Done(res)       => res    
@@ -39,7 +39,7 @@ object Layer1:
 
         go(self)
 
-  extension [P[-i[+_], +o[+_]] <: ErrorEvF[E][i, o], S, E, X](self: Layer1[P, X]) :
+  extension [P[-i[+_], +o[+_]] <: ErrorEvF[E][i, o], S, E, X](self: Layer1[P, X])
     def exec(step: P[L1[P], L1[P]] & HasState[S]): (S, Either[E, X]) = 
         @tailrec def go(cur: Layer1[P, X]): (S, Either[E, X]) = cur.unpack(step) match
             case Done(res)       => (step.state, Right(res))
@@ -49,15 +49,15 @@ object Layer1:
 
         go(self)
 
-  extension [X](self: Ev[X]):
+  extension [X](self: Ev[X])
     def value: X = self.run[EvalF, X](EvalF.EvalInterpreter[EvalF]())
 
-  extension [R, X] (self: ReadEv[R][X]):
+  extension [R, X] (self: ReadEv[R][X])
     def runReader(r: R): X = self.run[ReadEvF[R], X](
       new EvalF.EvalInterpreter[ReadEvF[R]] with EvalF.ReaderInterpreter[ReadEvF[R], R](r))   
 
 
-  extension [S, E, X] (self: ExecEv[S, E, X]):
+  extension [S, E, X] (self: ExecEv[S, E, X])
     def runStateE(init: S) : (S, Either[E, X]) = self.exec[ExecF[S, E], S, E, X](
       new EvalF.ExecInterpreter[S, E, ExecF[S, E]](init)
     )    
@@ -172,19 +172,19 @@ object Effects:
   type Free[+F[+_], +a] = Layer1[FreeF[F], a]
 
 object EvalTest:
-    def [A, B, P[-i[+_], +o[+_]] <: EvalF[i, o]] (xs: List[A]) foldr(f: (A, Layer1[P, B]) => Layer1[P, B])(lb: Layer1[P, B]): Layer1[P, B] = 
+    extension [A, B, P[-i[+_], +o[+_]] <: EvalF[i, o]] (xs: List[A])  def foldr(f: (A, Layer1[P, B]) => Layer1[P, B])(lb: Layer1[P, B]): Layer1[P, B] = 
         xs match 
             case Nil => lb
             case head :: tail => f(head, tail.foldr(f)(lb)).defer
     
 
-    def (xs: List[Long]) lsum: Ev[Long] = xs.foldr[Long, Long, EvalF]((x, i) => i.map(_ + x))(EvalF.now(0L))
-    def (xs: List[Long]) lsump: ReadEv[Long][Long] = 
+    extension (xs: List[Long]) def lsum: Ev[Long] = xs.foldr[Long, Long, EvalF]((x, i) => i.map(_ + x))(EvalF.now(0L))
+    extension (xs: List[Long]) def lsump: ReadEv[Long][Long] = 
       xs.foldr[Long, Long, ReadEvF[Long]]{(x, i) =>
         i.flatMap(s => EvalF.read[Long].map( p => s + x * p))
     }(EvalF.now(0L))
 
-    def (xs: List[Long]) lsumAndCount: StateEv[Long, Long] = 
+    extension (xs: List[Long]) def lsumAndCount: StateEv[Long, Long] = 
       xs.foldr[Long, Long, StateF[Long]]((x, i) => 
         for{
           s <- i

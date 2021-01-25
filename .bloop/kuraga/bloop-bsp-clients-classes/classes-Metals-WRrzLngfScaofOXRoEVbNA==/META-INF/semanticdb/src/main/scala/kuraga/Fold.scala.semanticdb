@@ -1,0 +1,287 @@
+
+ÕP src/main/scala/kuraga/Fold.scala*
+kuraga/Fold#*Fold€*)
+kuraga/Fold#`<init>`(). €@*<init>€*
+kuraga/Fold#[C]	*C€*
+kuraga/Fold#[A]	*A€*(
+kuraga/Fold#foldMap(). *foldMap€*#
+kuraga/Fold#foldMap().[B]	*B€*#
+kuraga/Fold#foldMap().(c)*c€*#
+kuraga/Fold#foldMap().(f)*f€*)
+kuraga/Fold#foldMap().(x$2)  *x$2€*(
+kuraga/Fold#foldMapE().*foldMapE€*$
+kuraga/Fold#foldMapE().[B]	*B€*$
+kuraga/Fold#foldMapE().(c)*c€*$
+kuraga/Fold#foldMapE().(f)*f€**
+kuraga/Fold#foldMapE().(x$2)  *x$2€*
+local0*a€*"
+kuraga/Fold#foldr().*foldr€*!
+kuraga/Fold#foldr().[B]	*B€*!
+kuraga/Fold#foldr().(c)*c€*#
+kuraga/Fold#foldr().(lb)*lb€*!
+kuraga/Fold#foldr().(f)*f€*"
+kuraga/Fold#foldl().*foldl€*!
+kuraga/Fold#foldl().[B]	*B€*!
+kuraga/Fold#foldl().(c)*c€*!
+kuraga/Fold#foldl().(b)*b€*!
+kuraga/Fold#foldl().(f)*f€*
+local1*a€*!
+kuraga/Foldable#*Foldable€*-
+kuraga/Foldable#`<init>`(). €@*<init>€*(
+kuraga/Foldable#`<init>`().[A]	*A€*
+local2*self€*
+kuraga/Foldable#[C]	*C€*.
+kuraga/Foldable#foldMapA(). *foldMapA€*(
+kuraga/Foldable#foldMapA().[A]	*A€*(
+kuraga/Foldable#foldMapA().[B]	*B€*(
+kuraga/Foldable#foldMapA().(c)*c€*(
+kuraga/Foldable#foldMapA().(f)*f€*.
+ kuraga/Foldable#foldMapA().(x$2)  *x$2€* 
+kuraga/Foldable#of().*of€*"
+kuraga/Foldable#of().[A]	*A€*
+local3 *$anon€*
+local4*foldMap€*
+local5	*B€*
+local6*c€*
+local7*f€*
+local8  *x$2€*
+kuraga/Reduce#*Reduce€*+
+kuraga/Reduce#`<init>`(). €@*<init>€*
+kuraga/Reduce#[C]	*C€*
+kuraga/Reduce#[A]	*A€*.
+kuraga/Reduce#reduceMap(). *	reduceMap€*'
+kuraga/Reduce#reduceMap().[B]	*B€*'
+kuraga/Reduce#reduceMap().(c)*c€*'
+kuraga/Reduce#reduceMap().(f)*f€*-
+kuraga/Reduce#reduceMap().(x$2)  *x$2€*(
+kuraga/Reduce#foldMap().*foldMap€*%
+kuraga/Reduce#foldMap().[B]	*B€*%
+kuraga/Reduce#foldMap().(c)*c€*%
+kuraga/Reduce#foldMap().(f)*f€*+
+kuraga/Reduce#foldMap().(x$2)  *x$2€*#
+kuraga/Reducible#*	Reducible€*.
+kuraga/Reducible#`<init>`(). €@*<init>€*)
+kuraga/Reducible#`<init>`().[A]	*A€*
+local9*self€*
+kuraga/Reducible#[C]	*C€*3
+kuraga/Reducible#reduceMapA(). *
+reduceMapA€*+
+!kuraga/Reducible#reduceMapA().[A]	*A€*+
+!kuraga/Reducible#reduceMapA().[B]	*B€*+
+!kuraga/Reducible#reduceMapA().(c)*c€*+
+!kuraga/Reducible#reduceMapA().(f)*f€*1
+#kuraga/Reducible#reduceMapA().(x$2)  *x$2€*-
+kuraga/Reducible#foldMapA().*foldMapA€*)
+kuraga/Reducible#foldMapA().[A]	*A€*)
+kuraga/Reducible#foldMapA().[B]	*B€*)
+kuraga/Reducible#foldMapA().(c)*c€*)
+kuraga/Reducible#foldMapA().(f)*f€*/
+!kuraga/Reducible#foldMapA().(x$2)  *x$2€*!
+kuraga/Reducible#of().*of€*#
+kuraga/Reducible#of().[A]	*A€*
+local10 *$anon€*
+local11*	reduceMap€*
+local12	*B€*
+local13*c€*
+local14*f€*
+local15  *x$2€2
+ kuraga/2"
+ kuraga/Eval.delay().2
+ kuraga/Eval.2
+ 
+kuraga/Fold#2%
+
+ 
+kuraga/Fold#`<init>`().2
+ kuraga/Fold#[C]2
+ kuraga/Fold#[A]2$
+ kuraga/Fold#foldMap().2'
+ kuraga/Fold#foldMap().[B]2'
+ kuraga/Fold#foldMap().(c)2
+ kuraga/Fold#[C]2'
+ kuraga/Fold#foldMap().(f)2
+ kuraga/Fold#[A]2
+ !kuraga/Eval#2'
+" #kuraga/Fold#foldMap().[B]2
+8 <kuraga/Eval#2'
+= >kuraga/Fold#foldMap().[B]2%
+ kuraga/Fold#foldMapE().2(
+ kuraga/Fold#foldMapE().[B]2(
+ kuraga/Fold#foldMapE().(c)2(
+ kuraga/Fold#foldMapE().(f)2
+ kuraga/Fold#[A]2(
+ kuraga/Fold#foldMapE().[B]2(
+3 4kuraga/Fold#foldMapE().[B]2"
+Y ^kuraga/Eval#value().2$
+8 8kuraga/Fold#foldMap().2(
+8 9kuraga/Fold#foldMapE().(c)2
+B Clocal02"
+L Qkuraga/Eval.later().2
+G Kkuraga/Eval.2&
+S Sscala/Function1#apply().2(
+R Skuraga/Fold#foldMapE().(f)2
+T Ulocal02*
+X Xkuraga/Fold#foldMapE().(x$2)2"
+ kuraga/Fold#foldr().2%
+ kuraga/Fold#foldr().[B]2%
+ kuraga/Fold#foldr().(c)2&
+ kuraga/Fold#foldr().(lb)2
+ kuraga/Eval#2%
+ kuraga/Fold#foldr().[B]2%
+  !kuraga/Fold#foldr().(f)2
+$ %kuraga/Fold#[A]2
+' +kuraga/Eval#2%
+, -kuraga/Fold#foldr().[B]2
+3 7kuraga/Eval#2%
+8 9kuraga/Fold#foldr().[B]2
+= Akuraga/Eval#2%
+B Ckuraga/Fold#foldr().[B]2"
+ kuraga/Fold#foldr().2%
+ kuraga/Fold#foldr().(c)2&
+ kuraga/Fold#foldr().(lb)2%
+ kuraga/Fold#foldr().(f)2"
+		 kuraga/Fold#foldl().2%
+ kuraga/Fold#foldl().[B]2%
+ kuraga/Fold#foldl().(c)2%
+		 kuraga/Fold#foldl().(b)2%
+		 kuraga/Fold#foldl().[B]2%
+		 kuraga/Fold#foldl().(f)2%
+		 kuraga/Fold#foldl().[B]2
+	 	 !kuraga/Fold#[A]2%
+	&	 'kuraga/Fold#foldl().[B]2%
+	*	 +kuraga/Fold#foldl().[B]2&
+	T	 Tscala/Function1#apply().23
+	.	 .%kuraga/functions$package.EndoE.run().2%
+	.	 .kuraga/Fold#foldMapE().2%
+	.	 /kuraga/Fold#foldl().(c)2
+	9	 :local125
+	C	 C'kuraga/functions$package.EndoE.apply().2-
+	>	 Ckuraga/functions$package.EndoE.2%
+	D	 Ekuraga/Fold#foldl().[B]2&
+	H	 Hscala/Function2#apply().2%
+	G	 Hkuraga/Fold#foldl().(f)2
+	L	 Mlocal12B
+	P	 P4kuraga/functions$package.EndoE.given_Monoid_EndoE().2%
+	U	 Vkuraga/Fold#foldl().(b)2
+ kuraga/Foldable#2)
+ kuraga/Foldable#`<init>`().2
+ #kuraga/Forall#2,
+% &kuraga/Foldable#`<init>`().[A]2
+, 0kuraga/Fold#2!
+1 2kuraga/Foldable#[C]2
+ local22!
+ kuraga/Foldable#[C]2)
+ kuraga/Foldable#foldMapA().2,
+ kuraga/Foldable#foldMapA().[A]2,
+ kuraga/Foldable#foldMapA().[B]2,
+ kuraga/Foldable#foldMapA().(c)2!
+ kuraga/Foldable#[C]2,
+ kuraga/Foldable#foldMapA().[A]2,
+ kuraga/Foldable#foldMapA().(f)2,
+ kuraga/Foldable#foldMapA().[A]2
+ "kuraga/Eval#2,
+# $kuraga/Foldable#foldMapA().[B]2
+9 =kuraga/Eval#2,
+> ?kuraga/Foldable#foldMapA().[B]2#
+ 
+kuraga/Foldable#of().2&
+ kuraga/Foldable#of().[A]2
+$ +local42
+ local52
+ local62!
+ kuraga/Foldable#[C]2&
+ kuraga/Foldable#of().[A]2
+, -local72&
+/ 0kuraga/Foldable#of().[A]2
+4 8kuraga/Eval#2
+9 :local52
+O Skuraga/Eval#2
+T Ulocal52)
+Y Ykuraga/Foldable#foldMapA().2
+Y Zlocal62
+d elocal72
+f flocal82
+ kuraga/Reduce#2'
+ kuraga/Reduce#`<init>`().2
+ kuraga/Fold#2
+  !kuraga/Reduce#[C]2
+# $kuraga/Reduce#[A]2
+ kuraga/Reduce#[C]2
+ kuraga/Reduce#[A]2(
+ kuraga/Reduce#reduceMap().2+
+ kuraga/Reduce#reduceMap().[B]2+
+ kuraga/Reduce#reduceMap().(c)2
+ kuraga/Reduce#[C]2+
+ kuraga/Reduce#reduceMap().(f)2
+ kuraga/Reduce#[A]2
+ "kuraga/Eval#2+
+# $kuraga/Reduce#reduceMap().[B]2
+< @kuraga/Eval#2+
+A Bkuraga/Reduce#reduceMap().[B]2&
+ kuraga/Reduce#foldMap().2)
+ kuraga/Reduce#foldMap().[B]2)
+ kuraga/Reduce#foldMap().(c)2)
+ kuraga/Reduce#foldMap().(f)2
+ kuraga/Reduce#[A]2
+  kuraga/Eval#2)
+! "kuraga/Reduce#foldMap().[B]2
+7 ;kuraga/Eval#2)
+< =kuraga/Reduce#foldMap().[B]2(
+F Okuraga/Reduce#reduceMap().2)
+P Qkuraga/Reduce#foldMap().(c)2)
+S Tkuraga/Reduce#foldMap().(f)2+
+U Ukuraga/Reduce#foldMap().(x$2)2
+ kuraga/Reducible#2*
+ kuraga/Reducible#`<init>`().2
+ $kuraga/Forall#2-
+& 'kuraga/Reducible#`<init>`().[A]2
+- 3kuraga/Reduce#2"
+4 5kuraga/Reducible#[C]2
+C Kkuraga/Foldable#2"
+L Mkuraga/Reducible#[C]2
+ local92"
+ kuraga/Reducible#[C]2,
+ kuraga/Reducible#reduceMapA().2/
+ !kuraga/Reducible#reduceMapA().[A]2/
+ !kuraga/Reducible#reduceMapA().[B]2/
+ !kuraga/Reducible#reduceMapA().(c)2"
+ kuraga/Reducible#[C]2/
+ !kuraga/Reducible#reduceMapA().[A]2/
+ !kuraga/Reducible#reduceMapA().(f)2/
+ !kuraga/Reducible#reduceMapA().[A]2
+  $kuraga/Eval#2/
+% &!kuraga/Reducible#reduceMapA().[B]2
+> Bkuraga/Eval#2/
+C D!kuraga/Reducible#reduceMapA().[B]2*
+ kuraga/Reducible#foldMapA().2-
+ kuraga/Reducible#foldMapA().[A]2-
+ kuraga/Reducible#foldMapA().[B]2-
+ kuraga/Reducible#foldMapA().(c)2-
+ kuraga/Reducible#foldMapA().[A]2-
+ kuraga/Reducible#foldMapA().(f)2-
+ kuraga/Reducible#foldMapA().[A]2
+ "kuraga/Eval#2-
+# $kuraga/Reducible#foldMapA().[B]2
+9 =kuraga/Eval#2-
+> ?kuraga/Reducible#foldMapA().[B]2,
+H Rkuraga/Reducible#reduceMapA().2-
+S Tkuraga/Reducible#foldMapA().(c)2-
+V Wkuraga/Reducible#foldMapA().(f)2/
+X X!kuraga/Reducible#foldMapA().(x$2)2$
+   kuraga/Reducible#of().2'
+   kuraga/Reducible#of().[A]2
+!$! -local112
+!! local122
+!! local132"
+!! kuraga/Reducible#[C]2'
+!! kuraga/Reducible#of().[A]2
+!/! 0local142'
+!2! 3kuraga/Reducible#of().[A]2
+!7! ;kuraga/Eval#2
+!<! =local122
+!U! Ykuraga/Eval#2
+!Z! [local122,
+!_! _kuraga/Reducible#reduceMapA().2
+!_! `local132
+!l! mlocal142
+!n! nlocal15PZ 4543975209FC6F3622CE7D2730A96F04

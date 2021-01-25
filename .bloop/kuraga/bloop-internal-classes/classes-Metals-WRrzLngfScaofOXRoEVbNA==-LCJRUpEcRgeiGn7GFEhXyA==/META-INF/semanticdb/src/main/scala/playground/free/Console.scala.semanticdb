@@ -1,0 +1,176 @@
+
+€;,src/main/scala/playground/free/Console.scala*,
+playground/free/Console# îÄ*ConsoleÄ*5
+#playground/free/Console#`<init>`(). Ä@*<init>Ä*:
++playground/free/Console#`<init>`().(action)*actionÄ*(
+playground/free/Console#[A]	 Ä*AÄ*1
+playground/free/Console#action. Ä*actionÄ**
+playground/free/Console#act().*actÄ**
+playground/free/Console.
+ *ConsoleÄ*4
+ playground/free/Console.GetLine. Ä©*GetLineÄ*4
+ playground/free/Console.PutLine# àÅ*PutLineÄ*=
++playground/free/Console.PutLine#`<init>`(). Ä@*<init>Ä*;
+.playground/free/Console.PutLine#`<init>`().(s) Ä*sÄ*/
+"playground/free/Console.PutLine#s. Ä*sÄ*4
+'playground/free/Console.PutLine#copy().*copyÄ*4
+*playground/free/Console.PutLine#copy().(s)*sÄ*H
+1playground/free/Console.PutLine#copy$default$1().*copy$default$1Ä*:
+*playground/free/Console.PutLine#ordinal().*ordinalÄ*0
+%playground/free/Console.PutLine#_1().*_1Ä*2
+ playground/free/Console.PutLine.
+ *PutLineÄ*6
+(playground/free/Console.PutLine.apply().*applyÄ*5
++playground/free/Console.PutLine.apply().(s)*sÄ*:
+*playground/free/Console.PutLine.unapply().*unapplyÄ*;
+/playground/free/Console.PutLine.unapply().(x$1)*x$1Ä*<
++playground/free/Console.PutLine.toString().*toStringÄ*:
+&playground/free/Console.fromOrdinal().*fromOrdinalÄ*?
+/playground/free/Console.fromOrdinal().(ordinal)*ordinalÄ*3
+ playground/free/Console.getLine. Ä*getLineÄ*2
+"playground/free/Console.putLine().*putLineÄ*/
+%playground/free/Console.putLine().(s)*sÄ*J
+,playground/free/Console.given_RunOr_Console.
+ (*given_RunOr_ConsoleÄ*B
+4playground/free/Console.given_RunOr_Console.runOr().*runOrÄ*A
+7playground/free/Console.given_RunOr_Console.runOr().[F]	*FÄ*A
+7playground/free/Console.given_RunOr_Console.runOr().[A]	*AÄ*A
+7playground/free/Console.given_RunOr_Console.runOr().(c)*cÄ*G
+9playground/free/Console.given_RunOr_Console.runOr().(x$1)  *x$1Ä*
+local0 Ä*cÄ*
+local1 Ä*otherÄ* 
+playground/free/Ref#*RefÄ*1
+playground/free/Ref#`<init>`(). Ä@*<init>Ä*,
+"playground/free/Ref#`<init>`().(v)*vÄ*!
+playground/free/Ref#[A]	*AÄ*%
+playground/free/Ref#v(). Ä*vÄ*&
+playground/free/Ref#get().*getÄ*&
+playground/free/Ref#set().*setÄ*'
+playground/free/Ref#set().(a)*aÄ*,
+playground/free/Ref#modify().*modifyÄ**
+ playground/free/Ref#modify().(f)*fÄ2
+ playground/2
+ playground/free/2
+ cats/2
+ cats/effect/2
+ cats/2*
+ scala/io/StdIn#readLine(+1).2(
+ scala/io/StdIn#readLine().2
+ scala/io/StdIn.2
+ 	scala/io/2
+ scala/2;
+" 3-scala/annotation/unchecked/uncheckedVariance#2)
+ !scala/annotation/unchecked/2
+ scala/annotation/2
+ scala/2&
+ playground/free/Console#21
+ #playground/free/Console#`<init>`().2)
+ playground/free/Console#[A]2)
+ playground/free/Console#[A]2-
+ playground/free/Console#action.2,
+
+
+ 	playground/free/Console#act().2-
+
+
+ playground/free/Console#action.2&
+ playground/free/Console.2.
+  playground/free/Console.GetLine.21
+3 3#playground/free/Console#`<init>`().2&
+$ +playground/free/Console#2"
+, 2scala/Predef.String#2(
+4 <scala/io/StdIn#readLine().2&
+? ?scala/runtime/EnumValue#2.
+		  playground/free/Console.PutLine#29
+		 +playground/free/Console.PutLine#`<init>`().2"
+		 scala/Predef.String#21
+	1	 1#playground/free/Console#`<init>`().2&
+	$	 +playground/free/Console#2
+	,	 0scala/Unit#2'
+	2	 9scala/Predef.println(+1).20
+	:	 ;"playground/free/Console.PutLine#s.20
+		 "playground/free/Console.PutLine#s.2.
+  playground/free/Console.getLine.2#
+ playground/free/Free#2"
+ #scala/Predef.String#2-
+7 >playground/free/Free.suspend().2#
+2 6playground/free/Free.2.
+? F playground/free/Console.GetLine.20
+ "playground/free/Console.putLine().23
+ %playground/free/Console.putLine().(s)2"
+ scala/Predef.String#2#
+ playground/free/Free#2
+( ,scala/Unit#2-
+7 >playground/free/Free.suspend().2#
+2 6playground/free/Free.26
+F F(playground/free/Console.PutLine.apply().2.
+? F playground/free/Console.PutLine.23
+G H%playground/free/Console.putLine().(s)2:
+ ,playground/free/Console.given_RunOr_Console.2$
+ playground/free/RunOr#2B
+4 94playground/free/Console.given_RunOr_Console.runOr().2E
+ 7playground/free/Console.given_RunOr_Console.runOr().[F]2E
+ 7playground/free/Console.given_RunOr_Console.runOr().[A]2E
+ 7playground/free/Console.given_RunOr_Console.runOr().(c)2
+( )
+scala/`|`#2&
+ $playground/free/Console#2E
+% &7playground/free/Console.given_RunOr_Console.runOr().[A]2E
+* +7playground/free/Console.given_RunOr_Console.runOr().[F]2E
+, -7playground/free/Console.given_RunOr_Console.runOr().[A]2#
+J Nplayground/free/Free#23
+W Y%playground/free/package$package.`||`#2E
+Z [7playground/free/Console.given_RunOr_Console.runOr().[F]2E
+] ^7playground/free/Console.given_RunOr_Console.runOr().[A]2E
+b c7playground/free/Console.given_RunOr_Console.runOr().(c)2
+ local02&
+ playground/free/Console#2E
+ 7playground/free/Console.given_RunOr_Console.runOr().[A]2
+ "scala/unchecked#2+
++ +playground/free/Free.apply().2#
+' +playground/free/Free.2,
+. 1playground/free/Console#act().2
+, -local02
+ local12E
+ 7playground/free/Console.given_RunOr_Console.runOr().[F]2E
+ 7playground/free/Console.given_RunOr_Console.runOr().[A]2
+ !scala/unchecked#2(
+' 'playground/free/Run#run().2
+' ,local12"
+ 	playground/free/Ref#2-
+	 	playground/free/Ref#`<init>`().2%
+ playground/free/Ref#[A]2%
+
+ playground/free/Ref#[A]2&
+ playground/free/Ref#v().2(
+ 	playground/free/Ref#get().2#
+ playground/free/Free#23
+ %playground/free/package$package.Void#2%
+ playground/free/Ref#[A]2+
+ playground/free/Free.apply().2#
+ playground/free/Free.2&
+  !playground/free/Ref#v().2(
+ 	playground/free/Ref#set().2+
+
+ playground/free/Ref#set().(a)2%
+ playground/free/Ref#[A]2#
+ playground/free/Free#23
+ %playground/free/package$package.Void#2
+  scala/Unit#2+
+( (playground/free/Free.apply().2#
+$ (playground/free/Free.2&
+) *playground/free/Ref#v().2+
+- .playground/free/Ref#set().(a)2+
+ playground/free/Ref#modify().2.
+  playground/free/Ref#modify().(f)2%
+ playground/free/Ref#[A]2%
+ playground/free/Ref#[A]2#
+ playground/free/Free#23
+ "%playground/free/package$package.Void#2
+$ (scala/Unit#2+
+0 0playground/free/Free.apply().2#
+, 0playground/free/Free.2&
+1 2playground/free/Ref#v().2&
+6 6scala/Function1#apply().2.
+5 6 playground/free/Ref#modify().(f)2&
+7 8playground/free/Ref#v().PZ 845213AB1E49AF2016A2F848F58D0D87

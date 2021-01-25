@@ -36,4 +36,4 @@
 // final case class ExampleValue[c[_[_]]](get: c[Option]) 
 
 // object ExampleValue:
-//     given [c[_[_]]] as Semigroup[ExampleValue[c]] = Semigroup.derived
+//     given [c[_[_]]] :  Semigroup[ExampleValue[c]] = Semigroup.derived

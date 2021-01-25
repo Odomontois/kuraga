@@ -1,0 +1,42 @@
+
+ê.src/main/scala/playground/chat/whichType.scala*"
+playground/chat/Kek.
+ *Kek€*2
+ playground/chat/Kek.printType().*	printType€*-
+#playground/chat/Kek.printType().[T]	*T€*3
+%playground/chat/Kek.printType().(x$1)  *x$1€*
+local0 €*t€*0
+playground/chat/Kek.whatType().*whatType€*,
+"playground/chat/Kek.whatType().[T]	*T€*,
+"playground/chat/Kek.whatType().(x)*x€2
+ playground/chat/2
+ playground/2
+ scala/quoted/2
+ scala/2"
+ 
+playground/chat/Kek.2.
+  playground/chat/Kek.printType().21
+ #playground/chat/Kek.printType().[T]2 
+ scala/quoted/Type#21
+ #playground/chat/Kek.printType().[T]2 
++ /scala/quoted/Expr#2"
+0 6scala/Predef.String#2
+ local02#
+  (scala/Any#toString().2$
+ scala/Predef.summon().2 
+ scala/quoted/Type#21
+ #playground/chat/Kek.printType().[T]2(
+ scala/quoted/Expr.apply().2 
+ scala/quoted/Expr.2
+ local021
+ #scala/quoted/ToExpr.StringToExpr().23
+ %playground/chat/Kek.printType().(x$1)2-
+		 playground/chat/Kek.whatType().20
+		 "playground/chat/Kek.whatType().[T]20
+		 "playground/chat/Kek.whatType().(x)20
+		  "playground/chat/Kek.whatType().[T]2"
+	#	 )scala/Predef.String#21
+	/	 /#scala/quoted/runtime/Expr.splice().2.
+	/	 8 playground/chat/Kek.printType().20
+	9	 :"playground/chat/Kek.whatType().[T]2-
+	;	 ;scala/ContextFunction1#apply().PZ 185108D3BA6AB99F123A83F5CD1C2256

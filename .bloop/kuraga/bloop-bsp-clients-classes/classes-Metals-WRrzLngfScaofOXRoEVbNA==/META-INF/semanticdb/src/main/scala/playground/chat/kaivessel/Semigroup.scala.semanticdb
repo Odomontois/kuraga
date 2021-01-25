@@ -1,0 +1,193 @@
+
+ƒ<8src/main/scala/playground/chat/kaivessel/Semigroup.scala*6
+$playground/chat/kaivessel/Semigroup#*	Semigroup€*A
+/playground/chat/kaivessel/Semigroup#`<init>`(). €@*<init>€*1
+'playground/chat/kaivessel/Semigroup#[A]	*A€*@
+.playground/chat/kaivessel/Semigroup#combine(). *combine€*;
+1playground/chat/kaivessel/Semigroup#combine().(a)*a€*;
+1playground/chat/kaivessel/Semigroup#combine().(b)*b€*:
+,playground/chat/kaivessel/Semigroup#`<+>`(). *<+>€*9
+/playground/chat/kaivessel/Semigroup#`<+>`().(a)*a€*9
+/playground/chat/kaivessel/Semigroup#`<+>`().(b)*b€*8
+$playground/chat/kaivessel/Semigroup.
+ *	Semigroup€*W
+8playground/chat/kaivessel/Semigroup.given_Semigroup_Int. è*given_Semigroup_Int€*]
+;playground/chat/kaivessel/Semigroup.given_Semigroup_String. è*given_Semigroup_String€*Z
+;playground/chat/kaivessel/Semigroup.given_Semigroup_List(). (*given_Semigroup_List€*H
+>playground/chat/kaivessel/Semigroup.given_Semigroup_List().[A]	*A€*^
+=playground/chat/kaivessel/Semigroup.given_Semigroup_Option(). (*given_Semigroup_Option€*J
+@playground/chat/kaivessel/Semigroup.given_Semigroup_Option().[A]	*A€*>
+.playground/chat/kaivessel/Semigroup.derived().*derived€*;
+1playground/chat/kaivessel/Semigroup.derived().[A]	*A€*=
+1playground/chat/kaivessel/Semigroup.derived().(m)  *m€*
+local0 *$anon€*
+local1 €*	instances€*
+local2*combine€*
+local3*a€*
+local4*b€*
+local5 *$anon€*
+local6 €*ap€*
+local7 €*bp€*
+local8*productArity€*
+local9*productElement€*
+local10*i€*
+local11*canEqual€*
+local12*that€*@
+,playground/chat/kaivessel/Semigroup$package. *	kaivessel€*J
+8playground/chat/kaivessel/Semigroup$package.summonAll().*	summonAll€*E
+;playground/chat/kaivessel/Semigroup$package.summonAll().[T]	*T€*G
+<playground/chat/kaivessel/Semigroup$package.summonAll().[TC]	*TC€*
+local13 €	*t€*
+local14 €	*ts€*
+local15 €*elem$1€2$
+ !playground/chat/kaivessel/2
+ playground/chat/2
+ playground/26
+ %(scala/compiletime/package.erasedValue().27
+' 3)scala/compiletime/package.summonInline().2 
+ scala/compiletime/2
+ scala/2$
+ scala/deriving/Mirror.2$
+ scala/deriving/Mirror#2
+ scala/deriving/2
+ scala/22
+ $playground/chat/kaivessel/Semigroup#2=
+ /playground/chat/kaivessel/Semigroup#`<init>`().25
+ 'playground/chat/kaivessel/Semigroup#[A]2<
+		 .playground/chat/kaivessel/Semigroup#combine().2?
+		 1playground/chat/kaivessel/Semigroup#combine().(a)25
+		 'playground/chat/kaivessel/Semigroup#[A]2?
+		 1playground/chat/kaivessel/Semigroup#combine().(b)25
+		 'playground/chat/kaivessel/Semigroup#[A]25
+		 'playground/chat/kaivessel/Semigroup#[A]2:
+
+
+  ,playground/chat/kaivessel/Semigroup#`<+>`().2=
+
+
+ /playground/chat/kaivessel/Semigroup#`<+>`().(a)25
+
+
+ 'playground/chat/kaivessel/Semigroup#[A]2=
+
+"
+ #/playground/chat/kaivessel/Semigroup#`<+>`().(b)25
+
+%
+ &'playground/chat/kaivessel/Semigroup#[A]25
+
+)
+ *'playground/chat/kaivessel/Semigroup#[A]2<
+
+-
+ 4.playground/chat/kaivessel/Semigroup#combine().2=
+
+5
+ 6/playground/chat/kaivessel/Semigroup#`<+>`().(a)2=
+
+8
+ 9/playground/chat/kaivessel/Semigroup#`<+>`().(b)22
+ $playground/chat/kaivessel/Semigroup.2F
+ 8playground/chat/kaivessel/Semigroup.given_Semigroup_Int.22
+ $playground/chat/kaivessel/Semigroup#2
+ 
+scala/Int#2 
+  scala/Int#`+`(+4).2I
+ ;playground/chat/kaivessel/Semigroup.given_Semigroup_String.22
+ $playground/chat/kaivessel/Semigroup#2"
+ scala/Predef.String#2%
+  java/lang/String#`+`().2I
+ ;playground/chat/kaivessel/Semigroup.given_Semigroup_List().2L
+ 	>playground/chat/kaivessel/Semigroup.given_Semigroup_List().[A]22
+ $playground/chat/kaivessel/Semigroup#2!
+ scala/package.List#2L
+ >playground/chat/kaivessel/Semigroup.given_Semigroup_List().[A]22
+# %$scala/collection/IterableOps#`++`().2K
+ =playground/chat/kaivessel/Semigroup.given_Semigroup_Option().2N
+ 	@playground/chat/kaivessel/Semigroup.given_Semigroup_Option().[A]22
+ $playground/chat/kaivessel/Semigroup#2
+ scala/Option#2N
+ @playground/chat/kaivessel/Semigroup.given_Semigroup_Option().[A]2$
+% +scala/Option#orElse().2<
+ .playground/chat/kaivessel/Semigroup.derived().2?
+ 1playground/chat/kaivessel/Semigroup.derived().[A]2?
+  1playground/chat/kaivessel/Semigroup.derived().(m)2.
+) 2 scala/deriving/Mirror.ProductOf#2$
+" (scala/deriving/Mirror.2?
+3 41playground/chat/kaivessel/Semigroup.derived().[A]22
+8 A$playground/chat/kaivessel/Semigroup#2?
+B C1playground/chat/kaivessel/Semigroup.derived().[A]2
+ local122
+ $scala/IArray$package.IArray.apply().2*
+ scala/IArray$package.IArray.2F
+ $8playground/chat/kaivessel/Semigroup$package.summonAll().2?
+% &1playground/chat/kaivessel/Semigroup.derived().(m)2-
+I Iscala/reflect/ClassTag.apply().2
+ local22
+ local32?
+ 1playground/chat/kaivessel/Semigroup.derived().[A]2
+ local42?
+ 1playground/chat/kaivessel/Semigroup.derived().[A]2:
+  +,scala/deriving/Mirror.Product#fromProduct().2?
+ 1playground/chat/kaivessel/Semigroup.derived().(m)2
+
+ local62'
+ scala/Any#asInstanceOf().2
+ local32
+ %scala/Product#2
+
+ local72'
+ scala/Any#asInstanceOf().2
+ local42
+ %scala/Product#2
+
+ local82+
+ (scala/Product#productArity().2
+ local62
+
+ local92
+ local102
+ 
+scala/Int#2<
+M T.playground/chat/kaivessel/Semigroup#combine().2'
+0 <scala/Any#asInstanceOf().2/
+# #!scala/opaques.arrayOps.apply(+7).2
+# ,local12
+- .local1022
+= F$playground/chat/kaivessel/Semigroup#2
+G J
+scala/Any#2-
+X fscala/Product#productElement().2
+U Wlocal62
+g hlocal102-
+n |scala/Product#productElement().2
+k mlocal72
+} ~local102
+
+ local112
+ local122
+ 
+scala/Any#26
+,playground/chat/kaivessel/Semigroup$package.2F
+ 8playground/chat/kaivessel/Semigroup$package.summonAll().2I
+ ;playground/chat/kaivessel/Semigroup$package.summonAll().[T]2
+ scala/Tuple#2J
+! #<playground/chat/kaivessel/Semigroup$package.summonAll().[TC]2!
+) -scala/package.List#2J
+. 0<playground/chat/kaivessel/Semigroup$package.summonAll().[TC]2
+1 4
+scala/Any#26
+L W(scala/compiletime/package.erasedValue().2 
+@ Kscala/compiletime/2I
+X Y;playground/chat/kaivessel/Semigroup$package.summonAll().[T]2
+
+ scala/Unit#2 
+ scala/package.Nil.2
+ scala/`*:`#2
+ local132
+ local1425
+U U'scala/collection/immutable/List#`::`().2F
+D M8playground/chat/kaivessel/Semigroup$package.summonAll().2
+N Plocal142J
+R T<playground/chat/kaivessel/Semigroup$package.summonAll().[TC]2
+7 7local15PZ F3F5D652B888F0CEC3F88EBC8987B7C4

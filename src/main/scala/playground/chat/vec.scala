@@ -1,5 +1,4 @@
 package playground.chat.vec
-import language.experimental.dependent
 import scala.compiletime.ops.int._
 
 enum Nat:
@@ -15,8 +14,8 @@ import Nat.{S, Z}
 enum <=[N <: Nat, M <: Nat]:
     case LZ[N <: Nat]() extends (Z <= N)
     case LS[N <: Nat, M <: Nat](le: N <= M) extends (S[N] <= S[M])
-    given [N <: Nat] as (Z <= N) = LZ()
-    given [N <: Nat, M <: Nat](using N <= M) as (S[N] <= S[M]) = LS(summon)
+    given [N <: Nat] :  (Z <= N) = LZ()
+    given [N <: Nat, M <: Nat](using N <= M) :  (S[N] <= S[M]) = LS(summon)
 
 enum Vec[N <: Nat, +A]:
     type Len = N

@@ -7,7 +7,7 @@ object Permuter:
             permute(n - 1, a)
             a.swap(i * (n % 2), n)   
             
-    def (a: Array[Char]) swap (i: Int, j: Int): Unit = 
+    extension (a: Array[Char]) def swap (i: Int, j: Int): Unit = 
         val r = a(i)
         a(i) = a(j)
         a(j) = r

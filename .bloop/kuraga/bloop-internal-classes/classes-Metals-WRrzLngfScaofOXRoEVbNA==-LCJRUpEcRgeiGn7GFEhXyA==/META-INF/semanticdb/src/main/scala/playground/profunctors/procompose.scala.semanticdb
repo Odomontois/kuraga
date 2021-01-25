@@ -1,0 +1,339 @@
+
+ÉÉ6src/main/scala/playground/profunctors/procompose.scala*9
+"playground/profunctors/Procompose# îÄ*
+ProcomposeÄ*?
+-playground/profunctors/Procompose#`<init>`(). Ä@*<init>Ä*/
+%playground/profunctors/Procompose#[P]	*PÄ*/
+%playground/profunctors/Procompose#[Q]	*QÄ*/
+%playground/profunctors/Procompose#[A]	*AÄ*/
+%playground/profunctors/Procompose#[B]	*BÄ*7
+"playground/profunctors/Procompose.
+ *
+ProcomposeÄ*8
+'playground/profunctors/Procompose.Impl# àÅ*ImplÄ*D
+2playground/profunctors/Procompose.Impl#`<init>`(). Ä@*<init>Ä*F
+7playground/profunctors/Procompose.Impl#`<init>`().(pam) Ä*pamÄ*F
+7playground/profunctors/Procompose.Impl#`<init>`().(qmb) Ä*qmbÄ*4
+*playground/profunctors/Procompose.Impl#[P]	*PÄ*4
+*playground/profunctors/Procompose.Impl#[Q]	*QÄ*4
+*playground/profunctors/Procompose.Impl#[A]	*AÄ*4
+*playground/profunctors/Procompose.Impl#[M]	*MÄ*4
+*playground/profunctors/Procompose.Impl#[B]	*BÄ*:
++playground/profunctors/Procompose.Impl#pam. Ä*pamÄ*:
++playground/profunctors/Procompose.Impl#qmb. Ä*qmbÄ*;
+.playground/profunctors/Procompose.Impl#copy().*copyÄ*;
+1playground/profunctors/Procompose.Impl#copy().[P]	*PÄ*;
+1playground/profunctors/Procompose.Impl#copy().[Q]	*QÄ*;
+1playground/profunctors/Procompose.Impl#copy().[A]	*AÄ*;
+1playground/profunctors/Procompose.Impl#copy().[M]	*MÄ*;
+1playground/profunctors/Procompose.Impl#copy().[B]	*BÄ*?
+3playground/profunctors/Procompose.Impl#copy().(pam)*pamÄ*?
+3playground/profunctors/Procompose.Impl#copy().(qmb)*qmbÄ*O
+8playground/profunctors/Procompose.Impl#copy$default$1().*copy$default$1Ä*E
+;playground/profunctors/Procompose.Impl#copy$default$1().[P]	*PÄ*E
+;playground/profunctors/Procompose.Impl#copy$default$1().[Q]	*QÄ*E
+;playground/profunctors/Procompose.Impl#copy$default$1().[A]	*AÄ*E
+;playground/profunctors/Procompose.Impl#copy$default$1().[M]	*MÄ*E
+;playground/profunctors/Procompose.Impl#copy$default$1().[B]	*BÄ*O
+8playground/profunctors/Procompose.Impl#copy$default$2().*copy$default$2Ä*E
+;playground/profunctors/Procompose.Impl#copy$default$2().[P]	*PÄ*E
+;playground/profunctors/Procompose.Impl#copy$default$2().[Q]	*QÄ*E
+;playground/profunctors/Procompose.Impl#copy$default$2().[A]	*AÄ*E
+;playground/profunctors/Procompose.Impl#copy$default$2().[M]	*MÄ*E
+;playground/profunctors/Procompose.Impl#copy$default$2().[B]	*BÄ*A
+1playground/profunctors/Procompose.Impl#ordinal().*ordinalÄ*7
+,playground/profunctors/Procompose.Impl#_1().*_1Ä*7
+,playground/profunctors/Procompose.Impl#_2().*_2Ä*6
+'playground/profunctors/Procompose.Impl.
+ *ImplÄ*=
+/playground/profunctors/Procompose.Impl.apply().*applyÄ*<
+2playground/profunctors/Procompose.Impl.apply().[P]	*PÄ*<
+2playground/profunctors/Procompose.Impl.apply().[Q]	*QÄ*<
+2playground/profunctors/Procompose.Impl.apply().[A]	*AÄ*<
+2playground/profunctors/Procompose.Impl.apply().[M]	*MÄ*<
+2playground/profunctors/Procompose.Impl.apply().[B]	*BÄ*@
+4playground/profunctors/Procompose.Impl.apply().(pam)*pamÄ*@
+4playground/profunctors/Procompose.Impl.apply().(qmb)*qmbÄ*A
+1playground/profunctors/Procompose.Impl.unapply().*unapplyÄ*>
+4playground/profunctors/Procompose.Impl.unapply().[P]	*PÄ*>
+4playground/profunctors/Procompose.Impl.unapply().[Q]	*QÄ*>
+4playground/profunctors/Procompose.Impl.unapply().[A]	*AÄ*>
+4playground/profunctors/Procompose.Impl.unapply().[M]	*MÄ*>
+4playground/profunctors/Procompose.Impl.unapply().[B]	*BÄ*B
+6playground/profunctors/Procompose.Impl.unapply().(x$1)*x$1Ä*C
+2playground/profunctors/Procompose.Impl.toString().*toStringÄ*D
+0playground/profunctors/Procompose.fromOrdinal().*fromOrdinalÄ*I
+9playground/profunctors/Procompose.fromOrdinal().(ordinal)*ordinalÄ*P
+5playground/profunctors/Procompose.given_Profunctor_P#*given_Profunctor_PÄ*R
+@playground/profunctors/Procompose.given_Profunctor_P#`<init>`(). Ä@*<init>Ä*B
+8playground/profunctors/Procompose.given_Profunctor_P#[P]	*PÄ*B
+8playground/profunctors/Procompose.given_Profunctor_P#[Q]	*QÄ*K
+=playground/profunctors/Procompose.given_Profunctor_P#dimap().*dimapÄ*J
+@playground/profunctors/Procompose.given_Profunctor_P#dimap().[A]	*AÄ*J
+@playground/profunctors/Procompose.given_Profunctor_P#dimap().[B]	*BÄ*J
+@playground/profunctors/Procompose.given_Profunctor_P#dimap().[C]	*CÄ*J
+@playground/profunctors/Procompose.given_Profunctor_P#dimap().[D]	*DÄ*N
+Bplayground/profunctors/Procompose.given_Profunctor_P#dimap().(fab)*fabÄ*J
+@playground/profunctors/Procompose.given_Profunctor_P#dimap().(f)*fÄ*J
+@playground/profunctors/Procompose.given_Profunctor_P#dimap().(g)*gÄ*
+local0 Ä	*M$1Ä*
+local1 Ä*pamÄ*
+local2 Ä*qmbÄ*T
+7playground/profunctors/Procompose.given_Profunctor_P(). (*given_Profunctor_PÄ*D
+:playground/profunctors/Procompose.given_Profunctor_P().[P]	*PÄ*D
+:playground/profunctors/Procompose.given_Profunctor_P().[Q]	*QÄ*X
+Cplayground/profunctors/Procompose.given_Profunctor_P().(evidence$1)  *
+evidence$1Ä*X
+Cplayground/profunctors/Procompose.given_Profunctor_P().(evidence$2)  *
+evidence$2Ä*)
+playground/profunctors/`~~>`#*~~>Ä*:
+(playground/profunctors/`~~>`#`<init>`(). Ä@*<init>Ä*
+local3*ptÄ**
+ playground/profunctors/`~~>`#[P]	*PÄ**
+ playground/profunctors/`~~>`#[Q]	*QÄ*5
+%playground/profunctors/`~~>`#apply(). *applyÄ*2
+(playground/profunctors/`~~>`#apply().[A]	*AÄ*2
+(playground/profunctors/`~~>`#apply().[B]	*BÄ*6
+*playground/profunctors/`~~>`#apply().(pab)*pabÄ*7
+'playground/profunctors/`~~>`#compose().*composeÄ*4
+*playground/profunctors/`~~>`#compose().[T]	*TÄ*4
+*playground/profunctors/`~~>`#compose().(t)*tÄ*
+local4 *$anonÄ*
+local5*applyÄ*
+local6	*AÄ*
+local7	*BÄ*
+local8*pabÄ*3
+%playground/profunctors/`~~>`#hcomp().*hcompÄ*2
+(playground/profunctors/`~~>`#hcomp().[S]	*SÄ*2
+(playground/profunctors/`~~>`#hcomp().[T]	*TÄ*2
+(playground/profunctors/`~~>`#hcomp().(t)*tÄ*
+local9 *$anonÄ*
+local10*applyÄ*
+local11	*AÄ*
+local12	*BÄ*
+local13*pabÄ*
+local14 Ä	*M$2Ä*
+local15 Ä*pamÄ*
+local16 Ä*qmbÄ*@
+*playground/profunctors/procompose$package. *profunctorsÄ*>
+1playground/profunctors/procompose$package.`|::|`#*|::|Ä*>
+4playground/profunctors/procompose$package.`|::|`#[P]	*PÄ*>
+4playground/profunctors/procompose$package.`|::|`#[Q]	*QÄ*>
+4playground/profunctors/procompose$package.`|::|`#[A]	*AÄ*>
+4playground/profunctors/procompose$package.`|::|`#[B]	*BÄ2!
+ playground/profunctors/2
+ playground/2$
+ cats/arrow/Profunctor.2$
+ cats/arrow/Profunctor#2
+ cats/arrow/2
+ cats/2-
+ cats/syntax/package.profunctor.2
+ cats/syntax/2
+ cats/21
+ )#scala/language.implicitConversions.2
+ scala/language.2
+ scala/20
+ "playground/profunctors/Procompose#2;
+ -playground/profunctors/Procompose#`<init>`().23
+ %playground/profunctors/Procompose#[P]23
+ %playground/profunctors/Procompose#[Q]23
+" #%playground/profunctors/Procompose#[A]23
+% &%playground/profunctors/Procompose#[B]20
+		 "playground/profunctors/Procompose.25
+ 'playground/profunctors/Procompose.Impl#2@
+ 2playground/profunctors/Procompose.Impl#`<init>`().28
+, -*playground/profunctors/Procompose.Impl#[P]28
+. /*playground/profunctors/Procompose.Impl#[A]28
+1 2*playground/profunctors/Procompose.Impl#[M]28
+: ;*playground/profunctors/Procompose.Impl#[Q]28
+< =*playground/profunctors/Procompose.Impl#[M]28
+? @*playground/profunctors/Procompose.Impl#[B]2;
+a a-playground/profunctors/Procompose#`<init>`().20
+K U"playground/profunctors/Procompose#28
+V W*playground/profunctors/Procompose.Impl#[P]28
+Y Z*playground/profunctors/Procompose.Impl#[Q]28
+\ ]*playground/profunctors/Procompose.Impl#[A]28
+_ `*playground/profunctors/Procompose.Impl#[B]28
+ *playground/profunctors/Procompose.Impl#[P]28
+ *playground/profunctors/Procompose.Impl#[Q]28
+ *playground/profunctors/Procompose.Impl#[A]28
+! "*playground/profunctors/Procompose.Impl#[M]28
+$ %*playground/profunctors/Procompose.Impl#[B]29
+' *+playground/profunctors/Procompose.Impl#pam.29
+5 8+playground/profunctors/Procompose.Impl#qmb.2N
+
+	
+ 	@playground/profunctors/Procompose.given_Profunctor_P#`<init>`().2$
+
+
+ cats/arrow/Profunctor#2F
+
+
+ 8playground/profunctors/Procompose.given_Profunctor_P#[P]2$
+
+'
+ 1cats/arrow/Profunctor#2F
+
+1
+ 18playground/profunctors/Procompose.given_Profunctor_P#[Q]2$
+
+6
+ @cats/arrow/Profunctor#2?
+
+C
+ G1playground/profunctors/procompose$package.`|::|`#2F
+
+A
+ B8playground/profunctors/Procompose.given_Profunctor_P#[P]2F
+
+H
+ I8playground/profunctors/Procompose.given_Profunctor_P#[Q]2F
+
+	
+ 
+8playground/profunctors/Procompose.given_Profunctor_P#[P]2F
+
+
+ 8playground/profunctors/Procompose.given_Profunctor_P#[Q]2K
+ =playground/profunctors/Procompose.given_Profunctor_P#dimap().2N
+ @playground/profunctors/Procompose.given_Profunctor_P#dimap().[A]2N
+ @playground/profunctors/Procompose.given_Profunctor_P#dimap().[B]2N
+ @playground/profunctors/Procompose.given_Profunctor_P#dimap().[C]2N
+ @playground/profunctors/Procompose.given_Profunctor_P#dimap().[D]2P
+ Bplayground/profunctors/Procompose.given_Profunctor_P#dimap().(fab)20
+ )"playground/profunctors/Procompose#2F
+* +8playground/profunctors/Procompose.given_Profunctor_P#[P]2F
+- .8playground/profunctors/Procompose.given_Profunctor_P#[Q]2N
+0 1@playground/profunctors/Procompose.given_Profunctor_P#dimap().[A]2N
+3 4@playground/profunctors/Procompose.given_Profunctor_P#dimap().[B]2N
+7 8@playground/profunctors/Procompose.given_Profunctor_P#dimap().(f)2N
+: ;@playground/profunctors/Procompose.given_Profunctor_P#dimap().[C]2N
+? @@playground/profunctors/Procompose.given_Profunctor_P#dimap().[A]2N
+B C@playground/profunctors/Procompose.given_Profunctor_P#dimap().(g)2N
+E F@playground/profunctors/Procompose.given_Profunctor_P#dimap().[B]2N
+J K@playground/profunctors/Procompose.given_Profunctor_P#dimap().[D]20
+N X"playground/profunctors/Procompose#2F
+Y Z8playground/profunctors/Procompose.given_Profunctor_P#[P]2F
+\ ]8playground/profunctors/Procompose.given_Profunctor_P#[Q]2N
+_ `@playground/profunctors/Procompose.given_Profunctor_P#dimap().[C]2N
+b c@playground/profunctors/Procompose.given_Profunctor_P#dimap().[D]2P
+ Bplayground/profunctors/Procompose.given_Profunctor_P#dimap().(fab)2?
+ 1playground/profunctors/Procompose.Impl.unapply().25
+ 'playground/profunctors/Procompose.Impl.2
+ local02
+ local12
+  #local22=
+, ,/playground/profunctors/Procompose.Impl.apply().25
+( ,'playground/profunctors/Procompose.Impl.2/
+1 5!cats/arrow/Profunctor.Ops#lmap().2F
+- -8cats/arrow/Profunctor.ToProfunctorOps#toProfunctorOps().2
+- 0local12N
+6 7@playground/profunctors/Procompose.given_Profunctor_P#dimap().(f)2/
+> B!cats/arrow/Profunctor.Ops#rmap().2F
+: :8cats/arrow/Profunctor.ToProfunctorOps#toProfunctorOps().2
+: =local22N
+C D@playground/profunctors/Procompose.given_Profunctor_P#dimap().(g)2+
+ 	playground/profunctors/`~~>`#26
+	 	(playground/profunctors/`~~>`#`<init>`().2
+ local32.
+
+  playground/profunctors/`~~>`#[P]2.
+  playground/profunctors/`~~>`#[Q]23
+ %playground/profunctors/`~~>`#apply().26
+ (playground/profunctors/`~~>`#apply().[A]26
+ (playground/profunctors/`~~>`#apply().[B]28
+ *playground/profunctors/`~~>`#apply().(pab)2.
+  playground/profunctors/`~~>`#[P]26
+ (playground/profunctors/`~~>`#apply().[A]26
+ (playground/profunctors/`~~>`#apply().[B]2.
+! " playground/profunctors/`~~>`#[Q]26
+# $(playground/profunctors/`~~>`#apply().[A]26
+& '(playground/profunctors/`~~>`#apply().[B]25
+ 'playground/profunctors/`~~>`#compose().28
+ *playground/profunctors/`~~>`#compose().[T]28
+ *playground/profunctors/`~~>`#compose().(t)2+
+ playground/profunctors/`~~>`#28
+ *playground/profunctors/`~~>`#compose().[T]2.
+  ! playground/profunctors/`~~>`#[P]2+
+& )playground/profunctors/`~~>`#28
+$ %*playground/profunctors/`~~>`#compose().[T]2.
+* + playground/profunctors/`~~>`#[Q]2+
+5 8playground/profunctors/`~~>`#28
+3 4*playground/profunctors/`~~>`#compose().[T]2.
+9 : playground/profunctors/`~~>`#[Q]2
+ local52
+ local62
+ local72
+ local828
+ *playground/profunctors/`~~>`#compose().[T]2
+ local62
+ local723
+& &%playground/profunctors/`~~>`#apply().2+
+$ &playground/profunctors/`~~>`#23
+( (%playground/profunctors/`~~>`#apply().28
+' (*playground/profunctors/`~~>`#compose().(t)2
+) ,local823
+ %playground/profunctors/`~~>`#hcomp().26
+ (playground/profunctors/`~~>`#hcomp().[S]26
+ (playground/profunctors/`~~>`#hcomp().[T]26
+ (playground/profunctors/`~~>`#hcomp().(t)2+
+# &playground/profunctors/`~~>`#26
+! "(playground/profunctors/`~~>`#hcomp().[S]26
+' ((playground/profunctors/`~~>`#hcomp().[T]2+
+7 :playground/profunctors/`~~>`#2?
+/ 31playground/profunctors/procompose$package.`|::|`#2.
+- . playground/profunctors/`~~>`#[P]26
+4 5(playground/profunctors/`~~>`#hcomp().[S]2?
+> B1playground/profunctors/procompose$package.`|::|`#2.
+< = playground/profunctors/`~~>`#[Q]26
+C D(playground/profunctors/`~~>`#hcomp().[T]2+
+ playground/profunctors/`~~>`#2?
+ 1playground/profunctors/procompose$package.`|::|`#2.
+
+  playground/profunctors/`~~>`#[P]26
+ (playground/profunctors/`~~>`#hcomp().[S]2?
+ 1playground/profunctors/procompose$package.`|::|`#2.
+  playground/profunctors/`~~>`#[Q]26
+  !(playground/profunctors/`~~>`#hcomp().[T]2
+
+ local102
+ local112
+ local122
+ local1320
+ %"playground/profunctors/Procompose#2.
+& ' playground/profunctors/`~~>`#[P]26
+) *(playground/profunctors/`~~>`#hcomp().[S]2
+, -local112
+/ 0local1220
+4 >"playground/profunctors/Procompose#2.
+? @ playground/profunctors/`~~>`#[Q]26
+B C(playground/profunctors/`~~>`#hcomp().[T]2
+E Flocal112
+H Ilocal122
+ local132?
+( (1playground/profunctors/Procompose.Impl.unapply().25
+$ ('playground/profunctors/Procompose.Impl.20
+ #"playground/profunctors/Procompose.2
+( (local142
+) ,local152
+. 1local162=
+E E/playground/profunctors/Procompose.Impl.apply().25
+A E'playground/profunctors/Procompose.Impl.20
+6 @"playground/profunctors/Procompose.23
+H H%playground/profunctors/`~~>`#apply().2+
+F Hplayground/profunctors/`~~>`#2
+I Llocal1523
+P P%playground/profunctors/`~~>`#apply().26
+O P(playground/profunctors/`~~>`#hcomp().(t)2
+Q Tlocal1624
+*playground/profunctors/procompose$package.2?
+ 	1playground/profunctors/procompose$package.`|::|`#2B
+ 4playground/profunctors/procompose$package.`|::|`#[P]2B
+ 4playground/profunctors/procompose$package.`|::|`#[Q]2B
+  !4playground/profunctors/procompose$package.`|::|`#[A]2B
+# $4playground/profunctors/procompose$package.`|::|`#[B]20
+* 4"playground/profunctors/Procompose#2B
+5 64playground/profunctors/procompose$package.`|::|`#[P]2B
+8 94playground/profunctors/procompose$package.`|::|`#[Q]2B
+; <4playground/profunctors/procompose$package.`|::|`#[A]2B
+> ?4playground/profunctors/procompose$package.`|::|`#[B]PZ 5962BF4297B79E18A761F66384005A95

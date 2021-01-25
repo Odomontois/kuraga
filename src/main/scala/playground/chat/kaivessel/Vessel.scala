@@ -19,7 +19,7 @@ object VSum:
       val key = k
       val value = v
 
-  given pair [K[_[_[_]]], V[_[_]], G[_]] as Conversion[(K[V], V[G]), VSum[K, G]] = 
+  given pair [K[_[_[_]]], V[_[_]], G[_]] :  Conversion[(K[V], V[G]), VSum[K, G]] = 
     tup => apply[K, V, G](tup._1, tup._2)
 
 object Vessel:
@@ -28,7 +28,7 @@ object Vessel:
   def apply[K[_[_[_]]], G[_]](elems: VSum[K, G]*)(using Has[K2, View, K]): Vessel[K, G] = 
     MonoidalDMap((for vsum <- elems if !vsum.key.constraintsFor.nullV(vsum.value) yield vsum.toDPair ): _*)
     
-  private def [K[_[_[_]]], G[_]] (map: MonoidalDMap[K2, K, FlipAp[G]]) filterNullFlipAps 
+  extension [K[_[_[_]]], G[_]] (map: MonoidalDMap[K2, K, FlipAp[G]]) private def filterNullFlipAps 
     (using Has[K2, View, K]): MonoidalDMap[K2, K, FlipAp[G]] =
     val items = 
       for e <- map.asList.toList
@@ -37,7 +37,7 @@ object Vessel:
 
     MonoidalDMap.apply[K2, K, FlipAp[G]](items: _*)     
 
-  extension [K[_[_[_]]], G[_]](self: Vessel[K, G]):
+  extension [K[_[_[_]]], G[_]](self: Vessel[K, G])
     def set(vsum: VSum[K, G])(using Eq2[K], Has0[Semigroup, FlipAp[G], K], Has[K2, View, K]): Vessel[K, G] =
       self ++ Vessel(vsum)
     // hs:Semigroup (but right-biased of course)
@@ -46,7 +46,7 @@ object Vessel:
     def toList: List[VSum[K, G]] =
       self.asList.toList.map(e => VSum[K, e.A, G](e.key, e.value))
 
-  given[K[_[_[_]]]: Eq2](using Has[K2, View, K]) as View[[f[_]] =>> Vessel[K, f]]:
+  given [K[_[_[_]]]: Eq2](using Has[K2, View, K]): View[[f[_]] =>> Vessel[K, f]] with
     def nullV[F[_]](container: Vessel[K, F]) = container.toList.isEmpty 
 
 type Vessel[K[_[_[_]]], G[_]] = Vessel.Vessel[K, G]

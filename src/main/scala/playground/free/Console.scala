@@ -11,16 +11,16 @@ enum Console[+A](action: => A){
   def act() = action
 }
 
-object Console{
+object Console:
   val getLine: Free[Console, String]            = Free.suspend(GetLine)
   def putLine(s: String): Free[Console, Unit]   = Free.suspend(PutLine(s))
-  given RunOr[Console]{
-    def[F[_], A]  (c: Console[A] | F[A]) runOr(using Run[F]): Free[Console || F, A] = c match {
+  given RunOr[Console] with
+    extension [F[_], A]  (c: Console[A] | F[A]) def runOr (using Run[F]): Free[Console || F, A] = c match {
       case c: Console[A @unchecked] => Free(c.act())
       case other: F[A] @unchecked   => other.run
     }
-  }
-}
+
+
 
 
 class Ref[A](private var v: A){

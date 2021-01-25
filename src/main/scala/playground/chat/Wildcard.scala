@@ -7,7 +7,7 @@ package playground.chat
 
 // type Wildcard[k <: AnyKind, F[_ <: k]] = Wildcard.Wildcard[k, F]
   
-// def [k <: AnyKind, F[ _ <: k], R](w: Wildcard[k, F]) wildFold (f: [a <: k] => F[a] => R): R = 
+// extension [k <: AnyKind, F[ _ <: k], R] (w: Wildcard[k, F]) def wildFold (f: [a <: k] => F[a] => R): R = 
 //     f[Any](w.asInstanceOf[F[Any]])
 
 
@@ -25,7 +25,7 @@ object Fix:
 
   def apply[F[+_]](f: F[Fix[F]]): T[F] = ApplyFix(f)
 
-  extension [F[+_]](fix: T[F]):
+  extension [F[+_]](fix: T[F])
     def unwrap: F[Fix[F]] = ApplyFix.unwrap(fix)
 
   object ApplyFix:

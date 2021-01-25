@@ -2,9 +2,9 @@ package playground
 package data.layer
 import scala.annotation.tailrec
 import cats.Show
-import cats.syntax.show.{given _}
-import cats.instances.vector.{given _}
-import cats.instances.either.{given _}
+import cats.syntax.show.given
+import cats.instances.vector.given
+import cats.instances.either.given
 import tofu.optics.Contains
 
 trait Layer[-P[-_, _]]:
@@ -61,14 +61,14 @@ object DropRed:
     type CatDogVector = Vector[Either[Data[Cat], Data[Dog]]]
     trait CatOrDogs[-i, +o] extends  Cat[i, o] with Dog[i, o] with End[o]
 
-    given Constant[CatOrDogs]:
+    given Constant[CatOrDogs] with
         def const[B](b: B) = new :
             def cat(name: String, fur: String, rest: Any) = b
             def dog(name: String, size: Long, rest: Any) = b
             def end = b
         
     
-    given Lens2[CatOrDogs, Cat]:
+    given Lens2[CatOrDogs, Cat] with
        def get[A, B](p: CatOrDogs[A, B]): Cat[A, B] = p
        def set[A, B](p: CatOrDogs[A, B])(q: Cat[A, B]): CatOrDogs[A, B] = new :
            export q.cat
@@ -76,7 +76,7 @@ object DropRed:
        
 
 
-    def (catDogs: Layer[CatOrDogs]) toCatDogVector: CatDogVector  = 
+    extension (catDogs: Layer[CatOrDogs]) def toCatDogVector: CatDogVector  = 
         @tailrec def go(catDogs: Layer[CatOrDogs], acc: CatDogVector = Vector()) : CatDogVector =
             val (continue, next, res) = catDogs.peel[(Boolean, Layer[CatOrDogs], CatDogVector)](new {
                 def cat(name: String, fur: String, rest: Layer[CatOrDogs]) =                     

@@ -17,8 +17,8 @@ object Predicate{
 
 case class Storage[T](items: List[T])
 
-given as Storage[Int] = Storage(List(2, 4, 5, 1))
-given as Storage[String] = Storage(List("lol", "kek", "cheburek"))
+given Storage[Int] = Storage(List(2, 4, 5, 1))
+given Storage[String] = Storage(List("lol", "kek", "cheburek"))
 
 def filterStorage[Name, T] (using pred: Predicate[Name, T], storage: Storage[T]): List[T] = 
   storage.items.filter(pred.check)

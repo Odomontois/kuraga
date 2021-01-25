@@ -1,0 +1,119 @@
+
+ü19src/main/scala/playground/typeclasses/fitlerStorage.scala*3
+!playground/typeclasses/Predicate#*	Predicate€*>
+,playground/typeclasses/Predicate#`<init>`(). €@*<init>€*4
+'playground/typeclasses/Predicate#[Name]	*Name€*.
+$playground/typeclasses/Predicate#[T]	*T€*9
+)playground/typeclasses/Predicate#check(). *check€*6
+,playground/typeclasses/Predicate#check().(t)*t€*5
+!playground/typeclasses/Predicate.
+ *	Predicate€*3
+&playground/typeclasses/Predicate.Even#*Even€*5
+'playground/typeclasses/Predicate.Small#*Small€*^
+:playground/typeclasses/Predicate.given_Predicate_Even_Int. è*given_Predicate_Even_Int€*f
+>playground/typeclasses/Predicate.given_Predicate_Small_String. è*given_Predicate_Small_String€*`
+;playground/typeclasses/Predicate.given_Predicate_Small_Int. è*given_Predicate_Small_Int€*2
+playground/typeclasses/Storage# €*Storage€*<
+*playground/typeclasses/Storage#`<init>`(). €@*<init>€*B
+1playground/typeclasses/Storage#`<init>`().(items) €*items€*,
+"playground/typeclasses/Storage#[T]	*T€*6
+%playground/typeclasses/Storage#items. €*items€*3
+&playground/typeclasses/Storage#copy().*copy€*3
+)playground/typeclasses/Storage#copy().[T]	*T€*;
+-playground/typeclasses/Storage#copy().(items)*items€*G
+0playground/typeclasses/Storage#copy$default$1().*copy$default$1€*=
+3playground/typeclasses/Storage#copy$default$1().[T]	*T€*/
+$playground/typeclasses/Storage#_1().*_1€*1
+playground/typeclasses/Storage.
+ *Storage€*5
+'playground/typeclasses/Storage.apply().*apply€*4
+*playground/typeclasses/Storage.apply().[T]	*T€*<
+.playground/typeclasses/Storage.apply().(items)*items€*9
+)playground/typeclasses/Storage.unapply().*unapply€*6
+,playground/typeclasses/Storage.unapply().[T]	*T€*:
+.playground/typeclasses/Storage.unapply().(x$1)*x$1€*;
+*playground/typeclasses/Storage.toString().*toString€*C
+-playground/typeclasses/fitlerStorage$package. *typeclasses€*\
+?playground/typeclasses/fitlerStorage$package.given_Storage_Int. è*given_Storage_Int€*b
+Bplayground/typeclasses/fitlerStorage$package.given_Storage_String. è*given_Storage_String€*S
+=playground/typeclasses/fitlerStorage$package.filterStorage().*filterStorage€*P
+Cplayground/typeclasses/fitlerStorage$package.filterStorage().[Name]	*Name€*J
+@playground/typeclasses/fitlerStorage$package.filterStorage().[T]	*T€*R
+Cplayground/typeclasses/fitlerStorage$package.filterStorage().(pred)  *pred€*X
+Fplayground/typeclasses/fitlerStorage$package.filterStorage().(storage)  *storage€*
+local0*t€2!
+ playground/typeclasses/2
+ playground/2/
+ !playground/typeclasses/Predicate#2:
+ ,playground/typeclasses/Predicate#`<init>`().25
+ 'playground/typeclasses/Predicate#[Name]22
+ $playground/typeclasses/Predicate#[T]27
+ )playground/typeclasses/Predicate#check().2:
+ ,playground/typeclasses/Predicate#check().(t)22
+ $playground/typeclasses/Predicate#[T]2
+ scala/Boolean#2/
+ !playground/typeclasses/Predicate.24
+		 &playground/typeclasses/Predicate.Even#25
+
+
+ 'playground/typeclasses/Predicate.Small#2H
+  :playground/typeclasses/Predicate.given_Predicate_Even_Int.2/
+ !playground/typeclasses/Predicate#24
+ &playground/typeclasses/Predicate.Even#2
+ 
+scala/Int#2!
+% 'scala/Int#`==`(+3).2 
+! "scala/Int#`%`(+3).2L
+ $>playground/typeclasses/Predicate.given_Predicate_Small_String.2/
+ !playground/typeclasses/Predicate#25
+ 'playground/typeclasses/Predicate.Small#2"
+ scala/Predef.String#2 
+, -scala/Int#`<`(+3).2(
+% +java/lang/String#length().2I
+ !;playground/typeclasses/Predicate.given_Predicate_Small_Int.2/
+ !playground/typeclasses/Predicate#25
+ 'playground/typeclasses/Predicate.Small#2
+ 
+scala/Int#2 
+" #scala/Int#`<`(+3).2-
+ playground/typeclasses/Storage#28
+ *playground/typeclasses/Storage#`<init>`().2!
+ !scala/package.List#20
+" #"playground/typeclasses/Storage#[T]20
+ "playground/typeclasses/Storage#[T]23
+ %playground/typeclasses/Storage#items.27
+-playground/typeclasses/fitlerStorage$package.2M
+ ?playground/typeclasses/fitlerStorage$package.given_Storage_Int.2-
+ playground/typeclasses/Storage#2
+ 
+scala/Int#25
+ 'playground/typeclasses/Storage.apply().2-
+ playground/typeclasses/Storage.27
+! !)scala/collection/IterableFactory#apply().2!
+ !scala/package.List.2P
+ Bplayground/typeclasses/fitlerStorage$package.given_Storage_String.2-
+ playground/typeclasses/Storage#2"
+ scala/Predef.String#25
+ 'playground/typeclasses/Storage.apply().2-
+ playground/typeclasses/Storage.27
+$ $)scala/collection/IterableFactory#apply().2!
+  $scala/package.List.2K
+ =playground/typeclasses/fitlerStorage$package.filterStorage().2Q
+ Cplayground/typeclasses/fitlerStorage$package.filterStorage().[Name]2N
+ @playground/typeclasses/fitlerStorage$package.filterStorage().[T]2Q
+" &Cplayground/typeclasses/fitlerStorage$package.filterStorage().(pred)2/
+( 1!playground/typeclasses/Predicate#2Q
+2 6Cplayground/typeclasses/fitlerStorage$package.filterStorage().[Name]2N
+8 9@playground/typeclasses/fitlerStorage$package.filterStorage().[T]2T
+< CFplayground/typeclasses/fitlerStorage$package.filterStorage().(storage)2-
+E Lplayground/typeclasses/Storage#2N
+M N@playground/typeclasses/fitlerStorage$package.filterStorage().[T]2!
+R Vscala/package.List#2N
+W X@playground/typeclasses/fitlerStorage$package.filterStorage().[T]27
+ )scala/collection/immutable/List#filter().23
+
+ %playground/typeclasses/Storage#items.2T
+ 	Fplayground/typeclasses/fitlerStorage$package.filterStorage().(storage)27
+ !)playground/typeclasses/Predicate#check().2Q
+ Cplayground/typeclasses/fitlerStorage$package.filterStorage().(pred)2
+ local0PZ 7F380EA455231122DC599615A36E4716

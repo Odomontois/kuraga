@@ -1,0 +1,141 @@
+
+þ23src/main/scala/playground/inlines/stringlists.scala*5
+playground/inlines/stringlists.
+ *stringlists€*4
+$playground/inlines/stringlists.num1. €*num1€*4
+$playground/inlines/stringlists.num2. €*num2€*4
+$playground/inlines/stringlists.num3. €*num3€*%
+playground/inlines/Lst# *Lst€*4
+"playground/inlines/Lst#`<init>`(). €@*<init>€*'
+playground/inlines/Lst#[A]	 €*A€*/
+playground/inlines/Lst#IsEmpty#*IsEmpty€*3
+!playground/inlines/Lst#isEmpty(). *isEmpty€*5
+"playground/inlines/Lst#notEmpty(). *notEmpty€*%
+playground/inlines/Lst.
+ *Lst€**
+playground/inlines/Lst.Nil.
+ ˆ*Nil€*3
+#playground/inlines/Lst.Nil.IsEmpty#*IsEmpty€*5
+%playground/inlines/Lst.Nil.isEmpty().*isEmpty€*7
+&playground/inlines/Lst.Nil.notEmpty().*notEmpty€**
+playground/inlines/Lst.`::`# €*::€*9
+'playground/inlines/Lst.`::`#`<init>`(). €@*<init>€*=
+-playground/inlines/Lst.`::`#`<init>`().(head) €*head€*=
+-playground/inlines/Lst.`::`#`<init>`().(tail) €*tail€*,
+playground/inlines/Lst.`::`#[A]	 €*A€*1
+!playground/inlines/Lst.`::`#head. €*head€*1
+!playground/inlines/Lst.`::`#tail. €*tail€*4
+$playground/inlines/Lst.`::`#IsEmpty#*IsEmpty€*6
+&playground/inlines/Lst.`::`#isEmpty().*isEmpty€*8
+'playground/inlines/Lst.`::`#notEmpty().*notEmpty€*0
+#playground/inlines/Lst.`::`#copy().*copy€*0
+&playground/inlines/Lst.`::`#copy().[A]	*A€*6
+)playground/inlines/Lst.`::`#copy().(head)*head€*6
+)playground/inlines/Lst.`::`#copy().(tail)*tail€*D
+-playground/inlines/Lst.`::`#copy$default$1().*copy$default$1€*:
+0playground/inlines/Lst.`::`#copy$default$1().[A]	*A€*D
+-playground/inlines/Lst.`::`#copy$default$2().*copy$default$2€*:
+0playground/inlines/Lst.`::`#copy$default$2().[A]	*A€*,
+!playground/inlines/Lst.`::`#_1().*_1€*,
+!playground/inlines/Lst.`::`#_2().*_2€*)
+playground/inlines/Lst.`::`.
+ *::€*2
+$playground/inlines/Lst.`::`.apply().*apply€*1
+'playground/inlines/Lst.`::`.apply().[A]	*A€*7
+*playground/inlines/Lst.`::`.apply().(head)*head€*7
+*playground/inlines/Lst.`::`.apply().(tail)*tail€*6
+&playground/inlines/Lst.`::`.unapply().*unapply€*3
+)playground/inlines/Lst.`::`.unapply().[A]	*A€*7
++playground/inlines/Lst.`::`.unapply().(x$1)*x$1€*8
+'playground/inlines/Lst.`::`.toString().*toString€*9
+'playground/inlines/stringlists$package. *inlines€*9
+-playground/inlines/stringlists$package.foo().*foo€*<
+1playground/inlines/stringlists$package.foo().(ls)*ls€*7
++playground/inlines/stringlists$package.Not#*Not€*8
+.playground/inlines/stringlists$package.Not#[b]	*b€2
+ playground/inlines/2
+ playground/2-
+ playground/inlines/stringlists.2
+ 
+scala/App#22
+ $playground/inlines/stringlists.num1.2;
+ -playground/inlines/stringlists$package.foo().27
+ )scala/collection/IterableFactory#apply().2!
+ scala/package.List.22
+ $playground/inlines/stringlists.num2.2;
+ -playground/inlines/stringlists$package.foo().27
+ )scala/collection/IterableFactory#apply().2!
+ scala/package.List.22
+ $playground/inlines/stringlists.num3.2;
+ -playground/inlines/stringlists$package.foo().27
+ )scala/collection/IterableFactory#apply().2!
+ scala/package.List.2'
+ scala/Predef.println(+1).2"
++ 0scala/ValueOf#value.2(
+ scala/Predef.implicitly().2
+ scala/ValueOf#22
+ #$playground/inlines/stringlists.num1.2'
+* *scala/ValueOf#`<init>`().22
+* *$playground/inlines/stringlists.num1.2'
+ scala/Predef.println(+1).2"
++ 0scala/ValueOf#value.2(
+ scala/Predef.implicitly().2
+ scala/ValueOf#22
+ #$playground/inlines/stringlists.num2.2'
+* *scala/ValueOf#`<init>`().22
+* *$playground/inlines/stringlists.num2.2'
+ scala/Predef.println(+1).2"
++ 0scala/ValueOf#value.2(
+ scala/Predef.implicitly().2
+ scala/ValueOf#22
+ #$playground/inlines/stringlists.num3.2'
+* *scala/ValueOf#`<init>`().22
+* *$playground/inlines/stringlists.num3.2%
+ playground/inlines/Lst#20
+ "playground/inlines/Lst#`<init>`().2(
+ playground/inlines/Lst#[A]2-
+	 playground/inlines/Lst#IsEmpty#2
+ scala/Boolean#2/
+ !playground/inlines/Lst#isEmpty().2-
+ playground/inlines/Lst#IsEmpty#20
+   "playground/inlines/Lst#notEmpty().29
+   +playground/inlines/stringlists$package.Not#2-
+   playground/inlines/Lst#IsEmpty#2%
+## 
+playground/inlines/Lst.2)
+$$ playground/inlines/Lst.Nil.2%
+$$ playground/inlines/Lst#2
+$ $ 'scala/Nothing#21
+%% #playground/inlines/Lst.Nil.IsEmpty#23
+&& %playground/inlines/Lst.Nil.isEmpty().24
+'' &playground/inlines/Lst.Nil.notEmpty().2*
+)) playground/inlines/Lst.`::`#25
+)) 'playground/inlines/Lst.`::`#`<init>`().2-
+)) playground/inlines/Lst.`::`#[A]2%
+)%) (playground/inlines/Lst#2-
+))) *playground/inlines/Lst.`::`#[A]2%
+)5) 8playground/inlines/Lst#2-
+)9) :playground/inlines/Lst.`::`#[A]2-
+)) playground/inlines/Lst.`::`#[A]2/
+)) !playground/inlines/Lst.`::`#head.2/
+)) #!playground/inlines/Lst.`::`#tail.22
+** $playground/inlines/Lst.`::`#IsEmpty#24
+++ &playground/inlines/Lst.`::`#isEmpty().25
+,, 'playground/inlines/Lst.`::`#notEmpty().21
+'playground/inlines/stringlists$package.2?
+ 1playground/inlines/stringlists$package.foo().(ls)27
+ )scala/collection/SeqFactory#unapplySeq().2!
+ scala/package.List.27
+ )scala/collection/SeqFactory#unapplySeq().2!
+ scala/package.List.2 
+ scala/package.Nil.2;
+ -playground/inlines/stringlists$package.foo().2?
+ 1playground/inlines/stringlists$package.foo().(ls)2!
+ #scala/package.List#2"
+$ *scala/Predef.String#29
+ +playground/inlines/stringlists$package.Not#2<
+	 
+.playground/inlines/stringlists$package.Not#[b]2
+ scala/Boolean#2
+ !scala/Boolean#2<
+$ %.playground/inlines/stringlists$package.Not#[b]PZ CDDCA1274ED9FDBEBB9EEAAABCF3F2FB

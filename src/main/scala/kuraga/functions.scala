@@ -9,14 +9,13 @@ opaque type Endo[A] = Eval[A] => Eval[A]
 object Endo:
     def apply[A](f: Eval[A] => Eval[A]): Endo[A] = f
 
-    extension [A](endo: Endo[A]):
-       def apply (ea: Eval[A]) : Eval[A] = endo(ea)
+    extension [A](endo: Endo[A]) def apply (ea: Eval[A]) : Eval[A] = endo(ea)
     
     
-    given [A] as Monoid[Endo[A]]:
+    given [A] : Monoid[Endo[A]] with
         def default = x => x
-        def (x: Endo[A]) combine (y: Endo[A]) = e => x(y(e)).defer
-        override def (lx: Eval[Endo[A]]) combineLz (ly: Eval[Endo[A]]) = 
+        extension (x: Endo[A]) def combine (y: Endo[A]) = e => x(y(e)).defer
+        extension (lx: Eval[Endo[A]]) override def combineLz (ly: Eval[Endo[A]]) : Eval[Endo[A]] = 
             Eval.now(la => lx.flatMap(_(ly.flatMap(_(la)))))
 
 class DelayedFunc[A, B](f: => A => B) extends (A => B):
@@ -37,12 +36,12 @@ opaque type EndoE[A] = A => A
 object EndoE:
     def apply[A](f: A => A): EndoE[A] = f
 
-    extension [A] (endo: EndoE[A]) :
+    extension [A] (endo: EndoE[A])
         def run : A => A = endo
     
     
-    given [A] as Monoid[EndoE[A]]:
+    given [A] :  Monoid[EndoE[A]] with
         def default = x => x
-        def (x: EndoE[A]) combine (y: EndoE[A]) = Compose(x, y)
-        override def (lx : Eval[EndoE[A]]) combineLz (ly: Eval[EndoE[A]]) = 
+        extension (x: EndoE[A]) def combine  (y: EndoE[A]) = Compose(x, y)
+        extension (lx : Eval[EndoE[A]]) override def combineLz  (ly: Eval[EndoE[A]]) = 
             Compose(lx.value, DelayedFunc(ly.value)).delay

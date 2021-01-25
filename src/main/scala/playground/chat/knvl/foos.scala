@@ -14,7 +14,7 @@
 
 // object Reader {
 //   given ReaderOps {
-//     def (A: Reader[C, A]) zip[C[_], A, K[_], B](B: Reader[K, B]): Reader[C && K && CombinatorErrors, (A, B)] = 
+//     extension (A: Reader[C, A]) def zip[C[_], A, K[_], B](B: Reader[K, B]): Reader[C && K && CombinatorErrors, (A, B)] = 
 //       new Reader[C && K && CombinatorErrors, (A, B)] {
 //         def read[E](s: String)(implicit ev: (C && K && CombinatorErrors)[E]): Either[E, (A, B)] = 
 //           (A.read(s), B.read(s)) match {
@@ -33,7 +33,7 @@
 //     }
 //  }
 
-//   given longReader as Reader[LongErrors, Long] {
+//   given longReader :  Reader[LongErrors, Long] {
 //     def read[E](s: String)(implicit E: LongErrors[E]): Either[E, Long] =
 //         try Right(s.toLong) catch {
 //         case NonFatal(e) => Left(E.invalidLong(s))
@@ -56,7 +56,7 @@
 //   def invalidDouble(s: String): E
 // }
 
-// given doubleReader as Reader[DoubleErrors, Double] {
+// given doubleReader :  Reader[DoubleErrors, Double] {
 //   def read[E](s: String)(implicit E: DoubleErrors[E]): Either[E, Double] =
 //     try Right(s.toDouble) catch {
 //       case NonFatal(e) => Left(E.invalidDouble(s))

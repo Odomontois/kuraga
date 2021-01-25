@@ -8,13 +8,13 @@ inline def summonAll[T <: Tuple, TC[_]]: List[TC[Any]] = inline compiletime.eras
 
 trait Semigroup[A]:
   def combine(a: A, b: A): A
-  final def (a: A) <+> (b: A): A = combine(a, b)
+  extension (a: A) final def <+> (b: A): A = combine(a, b)
 
 object Semigroup:
   given Semigroup[Int]     = _ + _
   given Semigroup[String]  = _ + _
-  given[A] as Semigroup[List[A]] = _ ++ _
-  given[A] as Semigroup[Option[A]] = _ orElse _
+  given[A]: Semigroup[List[A]] = _ ++ _
+  given[A]: Semigroup[Option[A]] = _ orElse _
   
 
   inline def derived[A] (using m: Mirror.ProductOf[A]): Semigroup[A] =  new:

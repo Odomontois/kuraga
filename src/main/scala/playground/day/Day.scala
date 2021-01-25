@@ -38,7 +38,7 @@ object Day extends DayImplicits:
 
     def right[F[_], G[_], A](ga: G[A]) (using F: InvariantMonoidal[F]): Day[F, G, A] = Day.combine(F.unit, ga)((_, a) => a)
 
-    extension [F[_], G[_], A](dfg: Day[CofreeF[F], CofreeF[G], A]):
+    extension [F[_], G[_], A](dfg: Day[CofreeF[F], CofreeF[G], A])
       def zip: Cofree[DayF[F, G], A] = Cofree(
         dfg.comb(dfg.fx.head, dfg.gy.head).value,
         (dfg.fx.tail, dfg.gy.tail).mapN((fx, gy) => Day(fx, gy)((x, y) => Eval.later(Day(x, y)(dfg.comb).zip)))
@@ -67,19 +67,19 @@ object Day extends DayImplicits:
    
 
 trait DayImplicits extends DayImplicits1:
-    given [F[_]: Comonad, G[_]: Comonad, A] as Comonad[DayF[F, G]] = new DayComonad
+    given [F[_]: Comonad, G[_]: Comonad, A] :  Comonad[DayF[F, G]] = new DayComonad
 
 trait DayImplicits1 extends DayImplicits2:
-    given [F[_]: CoflatMap, G[_]: CoflatMap, A] as CoflatMap[DayF[F, G]] = new DayCoflatMap
+    given [F[_]: CoflatMap, G[_]: CoflatMap, A] :  CoflatMap[DayF[F, G]] = new DayCoflatMap
 
 trait DayImplicits2 extends DayImplicits3:
-    given[F[_]: InvariantMonoidal, G[_]: InvariantMonoidal, A] as Applicative[DayF[F, G]] = new DayApplicative 
+    given[F[_]: InvariantMonoidal, G[_]: InvariantMonoidal, A]: Applicative[DayF[F, G]] = new DayApplicative 
 
 trait DayImplicits3 extends DayImplicits4:
-    given[F[_]: Semigroupal, G[_]: Semigroupal, A] as Apply[DayF[F, G]] = new DayApply
+    given[F[_]: Semigroupal, G[_]: Semigroupal, A]: Apply[DayF[F, G]] = new DayApply
 
 trait DayImplicits4:
-    given [F[_], G[_]] as Functor[DayF[F, G]] = new DayFunctor
+    given [F[_], G[_]] :  Functor[DayF[F, G]] = new DayFunctor
 
 
 class DayFunctor[F[_], G[_]] extends Functor[DayF[F, G]] :

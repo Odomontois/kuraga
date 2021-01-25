@@ -1,0 +1,525 @@
+
+í∏(src/main/scala/playground/chat/vec.scala*(
+playground/chat/vec/Nat# îÄ*NatÄ*5
+#playground/chat/vec/Nat#`<init>`(). Ä@*<init>Ä*&
+playground/chat/vec/Nat.
+ *NatÄ*(
+playground/chat/vec/Nat.S# àÅ*SÄ*7
+%playground/chat/vec/Nat.S#`<init>`(). Ä@*<init>Ä*'
+playground/chat/vec/Nat.S#[N]	*NÄ*.
+!playground/chat/vec/Nat.S#copy().*copyÄ*.
+$playground/chat/vec/Nat.S#copy().[N]	*NÄ*4
+$playground/chat/vec/Nat.S#ordinal().*ordinalÄ*&
+playground/chat/vec/Nat.S.
+ *SÄ*0
+"playground/chat/vec/Nat.S.apply().*applyÄ*/
+%playground/chat/vec/Nat.S.apply().[N]	*NÄ*4
+$playground/chat/vec/Nat.S.unapply().*unapplyÄ*1
+'playground/chat/vec/Nat.S.unapply().[N]	*NÄ*5
+)playground/chat/vec/Nat.S.unapply().(x$1)*x$1Ä*6
+%playground/chat/vec/Nat.S.toString().*toStringÄ*(
+playground/chat/vec/Nat.Z# àÅ*ZÄ*7
+%playground/chat/vec/Nat.Z#`<init>`(). Ä@*<init>Ä*.
+!playground/chat/vec/Nat.Z#copy().*copyÄ*4
+$playground/chat/vec/Nat.Z#ordinal().*ordinalÄ*&
+playground/chat/vec/Nat.Z.
+ *ZÄ*0
+"playground/chat/vec/Nat.Z.apply().*applyÄ*4
+$playground/chat/vec/Nat.Z.unapply().*unapplyÄ*5
+)playground/chat/vec/Nat.Z.unapply().(x$1)*x$1Ä*6
+%playground/chat/vec/Nat.Z.toString().*toStringÄ*:
+&playground/chat/vec/Nat.fromOrdinal().*fromOrdinalÄ*?
+/playground/chat/vec/Nat.fromOrdinal().(ordinal)*ordinalÄ*(
+playground/chat/vec/`<=`# îÄ*<=Ä*6
+$playground/chat/vec/`<=`#`<init>`(). Ä@*<init>Ä*&
+playground/chat/vec/`<=`#[N]	*NÄ*&
+playground/chat/vec/`<=`#[M]	*MÄ*5
+#playground/chat/vec/`<=`#given_Z(). (*given_ZÄ*0
+&playground/chat/vec/`<=`#given_Z().[N]	*NÄ*9
+%playground/chat/vec/`<=`#given_S_N(). (*	given_S_NÄ*2
+(playground/chat/vec/`<=`#given_S_N().[N]	*NÄ*2
+(playground/chat/vec/`<=`#given_S_N().[M]	*MÄ*8
+*playground/chat/vec/`<=`#given_S_N().(x$1)  *x$1Ä*&
+playground/chat/vec/`<=`.
+ *<=Ä*+
+playground/chat/vec/`<=`.LZ# àÅ*LZÄ*9
+'playground/chat/vec/`<=`.LZ#`<init>`(). Ä@*<init>Ä*)
+playground/chat/vec/`<=`.LZ#[N]	*NÄ*0
+#playground/chat/vec/`<=`.LZ#copy().*copyÄ*0
+&playground/chat/vec/`<=`.LZ#copy().[N]	*NÄ*6
+&playground/chat/vec/`<=`.LZ#ordinal().*ordinalÄ*)
+playground/chat/vec/`<=`.LZ.
+ *LZÄ*2
+$playground/chat/vec/`<=`.LZ.apply().*applyÄ*1
+'playground/chat/vec/`<=`.LZ.apply().[N]	*NÄ*6
+&playground/chat/vec/`<=`.LZ.unapply().*unapplyÄ*3
+)playground/chat/vec/`<=`.LZ.unapply().[N]	*NÄ*7
++playground/chat/vec/`<=`.LZ.unapply().(x$1)*x$1Ä*8
+'playground/chat/vec/`<=`.LZ.toString().*toStringÄ*+
+playground/chat/vec/`<=`.LS# àÅ*LSÄ*9
+'playground/chat/vec/`<=`.LS#`<init>`(). Ä@*<init>Ä*9
++playground/chat/vec/`<=`.LS#`<init>`().(le) Ä*leÄ*)
+playground/chat/vec/`<=`.LS#[N]	*NÄ*)
+playground/chat/vec/`<=`.LS#[M]	*MÄ*-
+playground/chat/vec/`<=`.LS#le. Ä*leÄ*0
+#playground/chat/vec/`<=`.LS#copy().*copyÄ*0
+&playground/chat/vec/`<=`.LS#copy().[N]	*NÄ*0
+&playground/chat/vec/`<=`.LS#copy().[M]	*MÄ*2
+'playground/chat/vec/`<=`.LS#copy().(le)*leÄ*D
+-playground/chat/vec/`<=`.LS#copy$default$1().*copy$default$1Ä*:
+0playground/chat/vec/`<=`.LS#copy$default$1().[N]	*NÄ*:
+0playground/chat/vec/`<=`.LS#copy$default$1().[M]	*MÄ*6
+&playground/chat/vec/`<=`.LS#ordinal().*ordinalÄ*,
+!playground/chat/vec/`<=`.LS#_1().*_1Ä*)
+playground/chat/vec/`<=`.LS.
+ *LSÄ*2
+$playground/chat/vec/`<=`.LS.apply().*applyÄ*1
+'playground/chat/vec/`<=`.LS.apply().[N]	*NÄ*1
+'playground/chat/vec/`<=`.LS.apply().[M]	*MÄ*3
+(playground/chat/vec/`<=`.LS.apply().(le)*leÄ*6
+&playground/chat/vec/`<=`.LS.unapply().*unapplyÄ*3
+)playground/chat/vec/`<=`.LS.unapply().[N]	*NÄ*3
+)playground/chat/vec/`<=`.LS.unapply().[M]	*MÄ*7
++playground/chat/vec/`<=`.LS.unapply().(x$1)*x$1Ä*8
+'playground/chat/vec/`<=`.LS.toString().*toStringÄ*;
+'playground/chat/vec/`<=`.fromOrdinal().*fromOrdinalÄ*@
+0playground/chat/vec/`<=`.fromOrdinal().(ordinal)*ordinalÄ*(
+playground/chat/vec/Vec# îÄ*VecÄ*5
+#playground/chat/vec/Vec#`<init>`(). Ä@*<init>Ä*%
+playground/chat/vec/Vec#[N]	*NÄ*(
+playground/chat/vec/Vec#[A]	 Ä*AÄ*(
+playground/chat/vec/Vec#Len#*LenÄ**
+playground/chat/vec/Vec#`+:`().*+:Ä*.
+#playground/chat/vec/Vec#`+:`().[A1]	*A1Ä*,
+"playground/chat/vec/Vec#`+:`().(h)*hÄ*,
+ playground/chat/vec/Vec#`++:`().*++:Ä*-
+#playground/chat/vec/Vec#`++:`().[M]	*MÄ*/
+$playground/chat/vec/Vec#`++:`().[A1]	*A1Ä*-
+#playground/chat/vec/Vec#`++:`().(v)*vÄ*
+local0 Ä	*N$1Ä*
+local1 Ä*hÄ*
+local2 Ä*tÄ*-
+#playground/chat/vec/Vec#`++:`().[n]	*nÄ**
+playground/chat/vec/Vec1# îÄ*Vec1Ä*6
+$playground/chat/vec/Vec1#`<init>`(). Ä@*<init>Ä*&
+playground/chat/vec/Vec1#[N]	*NÄ*)
+playground/chat/vec/Vec1#[A]	 Ä*AÄ*/
+!playground/chat/vec/Vec1#apply().*applyÄ*.
+$playground/chat/vec/Vec1#apply().[i]	*iÄ*.
+$playground/chat/vec/Vec1#apply().(i)*iÄ*4
+&playground/chat/vec/Vec1#apply().(x$2)  *x$2Ä*4
+&playground/chat/vec/Vec1#apply().(x$3)  *x$3Ä*+
+ playground/chat/vec/Vec1#`+:`().*+:Ä*/
+$playground/chat/vec/Vec1#`+:`().[A1]	*A1Ä*-
+#playground/chat/vec/Vec1#`+:`().(h)*hÄ*(
+playground/chat/vec/Vec1.
+ *Vec1Ä*-
+playground/chat/vec/Vec1.Nil. Ä©*NilÄ*/
+playground/chat/vec/Vec1.`%::`# àÅ*%::Ä*<
+*playground/chat/vec/Vec1.`%::`#`<init>`(). Ä@*<init>Ä*@
+0playground/chat/vec/Vec1.`%::`#`<init>`().(head) Ä*headÄ*@
+0playground/chat/vec/Vec1.`%::`#`<init>`().(tail) Ä*tailÄ*,
+"playground/chat/vec/Vec1.`%::`#[N]	*NÄ*/
+"playground/chat/vec/Vec1.`%::`#[A]	 Ä*AÄ*4
+$playground/chat/vec/Vec1.`%::`#head. Ä*headÄ*4
+$playground/chat/vec/Vec1.`%::`#tail. Ä*tailÄ*3
+&playground/chat/vec/Vec1.`%::`#copy().*copyÄ*3
+)playground/chat/vec/Vec1.`%::`#copy().[N]	*NÄ*3
+)playground/chat/vec/Vec1.`%::`#copy().[A]	*AÄ*9
+,playground/chat/vec/Vec1.`%::`#copy().(head)*headÄ*9
+,playground/chat/vec/Vec1.`%::`#copy().(tail)*tailÄ*G
+0playground/chat/vec/Vec1.`%::`#copy$default$1().*copy$default$1Ä*=
+3playground/chat/vec/Vec1.`%::`#copy$default$1().[N]	*NÄ*=
+3playground/chat/vec/Vec1.`%::`#copy$default$1().[A]	*AÄ*G
+0playground/chat/vec/Vec1.`%::`#copy$default$2().*copy$default$2Ä*=
+3playground/chat/vec/Vec1.`%::`#copy$default$2().[N]	*NÄ*=
+3playground/chat/vec/Vec1.`%::`#copy$default$2().[A]	*AÄ*9
+)playground/chat/vec/Vec1.`%::`#ordinal().*ordinalÄ*/
+$playground/chat/vec/Vec1.`%::`#_1().*_1Ä*/
+$playground/chat/vec/Vec1.`%::`#_2().*_2Ä*-
+playground/chat/vec/Vec1.`%::`.
+ *%::Ä*5
+'playground/chat/vec/Vec1.`%::`.apply().*applyÄ*4
+*playground/chat/vec/Vec1.`%::`.apply().[N]	*NÄ*4
+*playground/chat/vec/Vec1.`%::`.apply().[A]	*AÄ*:
+-playground/chat/vec/Vec1.`%::`.apply().(head)*headÄ*:
+-playground/chat/vec/Vec1.`%::`.apply().(tail)*tailÄ*9
+)playground/chat/vec/Vec1.`%::`.unapply().*unapplyÄ*6
+,playground/chat/vec/Vec1.`%::`.unapply().[N]	*NÄ*6
+,playground/chat/vec/Vec1.`%::`.unapply().[A]	*AÄ*:
+.playground/chat/vec/Vec1.`%::`.unapply().(x$1)*x$1Ä*;
+*playground/chat/vec/Vec1.`%::`.toString().*toStringÄ*;
+'playground/chat/vec/Vec1.fromOrdinal().*fromOrdinalÄ*@
+0playground/chat/vec/Vec1.fromOrdinal().(ordinal)*ordinalÄ*7
+%playground/chat/vec/Vec1.getUnsafe().*	getUnsafeÄ*2
+(playground/chat/vec/Vec1.getUnsafe().[A]	*AÄ*2
+(playground/chat/vec/Vec1.getUnsafe().(v)*vÄ*2
+(playground/chat/vec/Vec1.getUnsafe().(i)*iÄ*
+local3 Ä*hÄ*
+local4 Ä*tÄ*&
+playground/chat/vec/Vec.
+ *VecÄ*,
+playground/chat/vec/Vec.Nil. Ä©*NilÄ*.
+playground/chat/vec/Vec.`%::`# àÅ*%::Ä*;
+)playground/chat/vec/Vec.`%::`#`<init>`(). Ä@*<init>Ä*?
+/playground/chat/vec/Vec.`%::`#`<init>`().(head) Ä*headÄ*?
+/playground/chat/vec/Vec.`%::`#`<init>`().(tail) Ä*tailÄ*+
+!playground/chat/vec/Vec.`%::`#[N]	*NÄ*.
+!playground/chat/vec/Vec.`%::`#[A]	 Ä*AÄ*3
+#playground/chat/vec/Vec.`%::`#head. Ä*headÄ*3
+#playground/chat/vec/Vec.`%::`#tail. Ä*tailÄ*2
+%playground/chat/vec/Vec.`%::`#copy().*copyÄ*2
+(playground/chat/vec/Vec.`%::`#copy().[N]	*NÄ*2
+(playground/chat/vec/Vec.`%::`#copy().[A]	*AÄ*8
++playground/chat/vec/Vec.`%::`#copy().(head)*headÄ*8
++playground/chat/vec/Vec.`%::`#copy().(tail)*tailÄ*F
+/playground/chat/vec/Vec.`%::`#copy$default$1().*copy$default$1Ä*<
+2playground/chat/vec/Vec.`%::`#copy$default$1().[N]	*NÄ*<
+2playground/chat/vec/Vec.`%::`#copy$default$1().[A]	*AÄ*F
+/playground/chat/vec/Vec.`%::`#copy$default$2().*copy$default$2Ä*<
+2playground/chat/vec/Vec.`%::`#copy$default$2().[N]	*NÄ*<
+2playground/chat/vec/Vec.`%::`#copy$default$2().[A]	*AÄ*8
+(playground/chat/vec/Vec.`%::`#ordinal().*ordinalÄ*.
+#playground/chat/vec/Vec.`%::`#_1().*_1Ä*.
+#playground/chat/vec/Vec.`%::`#_2().*_2Ä*,
+playground/chat/vec/Vec.`%::`.
+ *%::Ä*4
+&playground/chat/vec/Vec.`%::`.apply().*applyÄ*3
+)playground/chat/vec/Vec.`%::`.apply().[N]	*NÄ*3
+)playground/chat/vec/Vec.`%::`.apply().[A]	*AÄ*9
+,playground/chat/vec/Vec.`%::`.apply().(head)*headÄ*9
+,playground/chat/vec/Vec.`%::`.apply().(tail)*tailÄ*8
+(playground/chat/vec/Vec.`%::`.unapply().*unapplyÄ*5
++playground/chat/vec/Vec.`%::`.unapply().[N]	*NÄ*5
++playground/chat/vec/Vec.`%::`.unapply().[A]	*AÄ*9
+-playground/chat/vec/Vec.`%::`.unapply().(x$1)*x$1Ä*:
+)playground/chat/vec/Vec.`%::`.toString().*toStringÄ*:
+&playground/chat/vec/Vec.fromOrdinal().*fromOrdinalÄ*?
+/playground/chat/vec/Vec.fromOrdinal().(ordinal)*ordinalÄ*.
+ playground/chat/vec/Vec.apply().*applyÄ*-
+#playground/chat/vec/Vec.apply().[M]	*MÄ*-
+#playground/chat/vec/Vec.apply().[N]	*NÄ*-
+#playground/chat/vec/Vec.apply().[A]	*AÄ*-
+#playground/chat/vec/Vec.apply().(v)*vÄ*-
+#playground/chat/vec/Vec.apply().(m)*mÄ*3
+%playground/chat/vec/Vec.apply().(x$2)  *x$2Ä**
+playground/chat/vec/Vec.get().*getÄ*+
+!playground/chat/vec/Vec.get().[M]	*MÄ*+
+!playground/chat/vec/Vec.get().[N]	*NÄ*+
+!playground/chat/vec/Vec.get().[A]	*AÄ*-
+"playground/chat/vec/Vec.get().(lt)*ltÄ*+
+!playground/chat/vec/Vec.get().(v)*vÄ*
+local5 Ä*hÄ*
+local6 Ä*tÄ*
+local7 Ä	*N$2Ä*
+local8 Ä	*M$1Ä*
+local9 Ä*pÄ*.
+ playground/chat/vec/vec$package. *vecÄ*0
+%playground/chat/vec/vec$package.`%+`#*%+Ä*2
+(playground/chat/vec/vec$package.`%+`#[N]	*NÄ*2
+(playground/chat/vec/vec$package.`%+`#[M]	*MÄ*
+local10 Ä	*nÄ2
+ playground/chat/vec/2
+ playground/chat/2
+ playground/2(
+  scala/compiletime/ops/int.2$
+ scala/compiletime/ops/2 
+ scala/compiletime/2
+ scala/2&
+ playground/chat/vec/Nat#21
+ #playground/chat/vec/Nat#`<init>`().2(
+	 
+playground/chat/vec/Nat.S#23
+
+ 
+%playground/chat/vec/Nat.S#`<init>`().2+
+ playground/chat/vec/Nat.S#[N]2(
+	 
+playground/chat/vec/Nat.Z#23
+
+ 
+%playground/chat/vec/Nat.Z#`<init>`().2(
+ playground/chat/vec/Nat.S.2(
+ playground/chat/vec/Nat.S#2(
+ playground/chat/vec/Nat.Z.2(
+ playground/chat/vec/Nat.Z#2&
+ 
+playground/chat/vec/Nat.2'
+ playground/chat/vec/`<=`#22
+ $playground/chat/vec/`<=`#`<init>`().2*
+ 	playground/chat/vec/`<=`#[N]2*
+ playground/chat/vec/`<=`#[M]21
+
+ #playground/chat/vec/`<=`#given_Z().24
+ &playground/chat/vec/`<=`#given_Z().[N]2&
+ playground/chat/vec/Nat#2'
+ playground/chat/vec/`<=`#2(
+ playground/chat/vec/Nat.Z#24
+ &playground/chat/vec/`<=`#given_Z().[N]22
+% %$playground/chat/vec/`<=`.LZ.apply().2*
+# %playground/chat/vec/`<=`.LZ.23
+
+ %playground/chat/vec/`<=`#given_S_N().26
+ (playground/chat/vec/`<=`#given_S_N().[N]2&
+ playground/chat/vec/Nat#26
+ (playground/chat/vec/`<=`#given_S_N().[M]2&
+ playground/chat/vec/Nat#2'
+6 8playground/chat/vec/`<=`#2(
+1 2playground/chat/vec/Nat.S#26
+3 4(playground/chat/vec/`<=`#given_S_N().[N]2(
+9 :playground/chat/vec/Nat.S#26
+; <(playground/chat/vec/`<=`#given_S_N().[M]22
+C C$playground/chat/vec/`<=`.LS.apply().2*
+A Cplayground/chat/vec/`<=`.LS.2$
+D Jscala/Predef.summon().28
+J J*playground/chat/vec/`<=`#given_S_N().(x$1)2*
+	 playground/chat/vec/`<=`.LZ#25
+ 'playground/chat/vec/`<=`.LZ#`<init>`().22
+' '$playground/chat/vec/`<=`#`<init>`().2'
+# %playground/chat/vec/`<=`#2(
+! "playground/chat/vec/Nat.Z#2-
+& 'playground/chat/vec/`<=`.LZ#[N]2-
+ playground/chat/vec/`<=`.LZ#[N]2*
+	 playground/chat/vec/`<=`.LS#25
+ 'playground/chat/vec/`<=`.LS#`<init>`().2'
+& (playground/chat/vec/`<=`#2-
+$ %playground/chat/vec/`<=`.LS#[N]2-
+) *playground/chat/vec/`<=`.LS#[M]22
+A A$playground/chat/vec/`<=`#`<init>`().2'
+: <playground/chat/vec/`<=`#2(
+5 6playground/chat/vec/Nat.S#2-
+7 8playground/chat/vec/`<=`.LS#[N]2(
+= >playground/chat/vec/Nat.S#2-
+? @playground/chat/vec/`<=`.LS#[M]2-
+ playground/chat/vec/`<=`.LS#[N]2-
+ playground/chat/vec/`<=`.LS#[M]2-
+  "playground/chat/vec/`<=`.LS#le.2&
+ playground/chat/vec/Vec#21
+ #playground/chat/vec/Vec#`<init>`().2)
+	 
+playground/chat/vec/Vec#[N]2)
+ playground/chat/vec/Vec#[A]2*
+	 playground/chat/vec/Vec#Len#2)
+ playground/chat/vec/Vec#[N]2-
+ 
+playground/chat/vec/Vec#`+:`().21
+ #playground/chat/vec/Vec#`+:`().[A1]2)
+ playground/chat/vec/Vec#[A]20
+ "playground/chat/vec/Vec#`+:`().(h)21
+ #playground/chat/vec/Vec#`+:`().[A1]2&
+  playground/chat/vec/Vec#2(
+! "playground/chat/vec/Nat.S#2)
+# $playground/chat/vec/Vec#[N]21
+' )#playground/chat/vec/Vec#`+:`().[A1]24
+0 0&playground/chat/vec/Vec.`%::`.apply().2,
+- 0playground/chat/vec/Vec.`%::`.20
+1 2"playground/chat/vec/Vec#`+:`().(h)2.
+  playground/chat/vec/Vec#`++:`().21
+ #playground/chat/vec/Vec#`++:`().[M]2&
+ playground/chat/vec/Nat#22
+ $playground/chat/vec/Vec#`++:`().[A1]2)
+ playground/chat/vec/Vec#[A]21
+  #playground/chat/vec/Vec#`++:`().(v)2&
+# &playground/chat/vec/Vec#21
+' (#playground/chat/vec/Vec#`++:`().[M]22
+* ,$playground/chat/vec/Vec#`++:`().[A1]2&
+0 3playground/chat/vec/Vec#23
+6 8%playground/chat/vec/vec$package.`%+`#21
+4 5#playground/chat/vec/Vec#`++:`().[M]2)
+9 :playground/chat/vec/Vec#[N]22
+< >$playground/chat/vec/Vec#`++:`().[A1]21
+B C#playground/chat/vec/Vec#`++:`().(v)2*
+ playground/chat/vec/Vec.Nil.26
+ (playground/chat/vec/Vec.`%::`.unapply().2,
+ playground/chat/vec/Vec.`%::`.2
+ local02
+ local12
+ local22-
+# 3scala/`=:=`#substituteContra().2$
+ scala/Predef.summon().2
+ scala/`=:=`#21
+ #playground/chat/vec/Vec#`++:`().[M]2(
+ playground/chat/vec/Nat.S#2*
+  playground/chat/vec/Vec#Len#2
+ local221
+5 6#playground/chat/vec/Vec#`++:`().[n]2&
+< ?playground/chat/vec/Vec#23
+B D%playground/chat/vec/vec$package.`%+`#21
+@ A#playground/chat/vec/Vec#`++:`().[n]2)
+E Fplayground/chat/vec/Vec#[N]22
+H J$playground/chat/vec/Vec#`++:`().[A1]2-
+\ \playground/chat/vec/Vec#`+:`().2.
+\ \ playground/chat/vec/Vec#`++:`().2
+R Slocal22
+M Nlocal12'
+ 	playground/chat/vec/Vec1#22
+	 	$playground/chat/vec/Vec1#`<init>`().2*
+
+ playground/chat/vec/Vec1#[N]2*
+ playground/chat/vec/Vec1#[A]2/
+## !playground/chat/vec/Vec1#apply().22
+## $playground/chat/vec/Vec1#apply().[i]2
+## 
+scala/Int#22
+## $playground/chat/vec/Vec1#apply().(i)22
+## $playground/chat/vec/Vec1#apply().[i]2*
+#G# Hplayground/chat/vec/Vec1#[A]23
+#P# Y%playground/chat/vec/Vec1.getUnsafe().2'
+#K# Oplayground/chat/vec/Vec1.22
+#`# a$playground/chat/vec/Vec1#apply().(i)2.
+%% 
+ playground/chat/vec/Vec1#`+:`().22
+%% $playground/chat/vec/Vec1#`+:`().[A1]2*
+%% playground/chat/vec/Vec1#[A]21
+%% #playground/chat/vec/Vec1#`+:`().(h)22
+%% $playground/chat/vec/Vec1#`+:`().[A1]2'
+%% !playground/chat/vec/Vec1#2,
+%$% %scala/compiletime/ops/int.`+`#2*
+%"% #playground/chat/vec/Vec1#[N]22
+%)% +$playground/chat/vec/Vec1#`+:`().[A1]25
+%2% 2'playground/chat/vec/Vec1.`%::`.apply().2-
+%/% 2playground/chat/vec/Vec1.`%::`.21
+%3% 4#playground/chat/vec/Vec1#`+:`().(h)2'
+,, playground/chat/vec/Vec1.2+
+ 	  playground/chat/vec/Vec1.Nil.22
+ %  %$playground/chat/vec/Vec1#`<init>`().2'
+   playground/chat/vec/Vec1#2
+   $scala/Nothing#2&
+ %  %scala/runtime/EnumValue#2-
+!	! playground/chat/vec/Vec1.`%::`#28
+!! *playground/chat/vec/Vec1.`%::`#`<init>`().20
+!"! #"playground/chat/vec/Vec1.`%::`#[A]2'
+!+! /playground/chat/vec/Vec1#20
+!0! 1"playground/chat/vec/Vec1.`%::`#[N]20
+!3! 4"playground/chat/vec/Vec1.`%::`#[A]22
+!M! M$playground/chat/vec/Vec1#`<init>`().2'
+!?! Cplayground/chat/vec/Vec1#2,
+!F! Gscala/compiletime/ops/int.`+`#20
+!D! E"playground/chat/vec/Vec1.`%::`#[N]20
+!K! L"playground/chat/vec/Vec1.`%::`#[A]20
+!! "playground/chat/vec/Vec1.`%::`#[N]20
+!! "playground/chat/vec/Vec1.`%::`#[A]22
+!! $playground/chat/vec/Vec1.`%::`#head.22
+!%! )$playground/chat/vec/Vec1.`%::`#tail.23
+-- %playground/chat/vec/Vec1.getUnsafe().26
+-- (playground/chat/vec/Vec1.getUnsafe().[A]26
+-- (playground/chat/vec/Vec1.getUnsafe().(v)2'
+- - $playground/chat/vec/Vec1#26
+-(- )(playground/chat/vec/Vec1.getUnsafe().[A]26
+-,- -(playground/chat/vec/Vec1.getUnsafe().(i)2
+-/- 2
+scala/Int#26
+-5- 6(playground/chat/vec/Vec1.getUnsafe().[A]26
+-9- :(playground/chat/vec/Vec1.getUnsafe().(v)2+
+.. playground/chat/vec/Vec1.Nil.2:
+.4. 4,java/util/NoSuchElementException#`<init>`().23
+.. 4%scala/package.NoSuchElementException#27
+// )playground/chat/vec/Vec1.`%::`.unapply().2-
+// playground/chat/vec/Vec1.`%::`.2
+// local32
+// local42!
+// scala/Int#`==`(+3).26
+// (playground/chat/vec/Vec1.getUnsafe().(i)2
+/'/ (local323
+/./ 7%playground/chat/vec/Vec1.getUnsafe().2
+/8/ 9local42 
+/=/ >scala/Int#`-`(+3).26
+/;/ <(playground/chat/vec/Vec1.getUnsafe().(i)2&
+11 
+playground/chat/vec/Vec.2*
+	 playground/chat/vec/Vec.Nil.21
+$ $#playground/chat/vec/Vec#`<init>`().2&
+ playground/chat/vec/Vec#2(
+ playground/chat/vec/Nat.Z#2
+ #scala/Nothing#2&
+$ $scala/runtime/EnumValue#2,
+	 playground/chat/vec/Vec.`%::`#27
+ )playground/chat/vec/Vec.`%::`#`<init>`().2/
+! "!playground/chat/vec/Vec.`%::`#[A]2&
+* -playground/chat/vec/Vec#2/
+. /!playground/chat/vec/Vec.`%::`#[N]2/
+1 2!playground/chat/vec/Vec.`%::`#[A]21
+I I#playground/chat/vec/Vec#`<init>`().2&
+= @playground/chat/vec/Vec#2(
+A Bplayground/chat/vec/Nat.S#2/
+C D!playground/chat/vec/Vec.`%::`#[N]2/
+G H!playground/chat/vec/Vec.`%::`#[A]2/
+ !playground/chat/vec/Vec.`%::`#[N]2/
+ !playground/chat/vec/Vec.`%::`#[A]21
+ #playground/chat/vec/Vec.`%::`#head.21
+$ (#playground/chat/vec/Vec.`%::`#tail.2.
+33  playground/chat/vec/Vec.apply().21
+22 #playground/chat/vec/Vec.apply().[M]2&
+22 playground/chat/vec/Nat#21
+22 #playground/chat/vec/Vec.apply().[N]2&
+22 !playground/chat/vec/Nat#21
+2#2 $#playground/chat/vec/Vec.apply().[A]21
+2'2 (#playground/chat/vec/Vec.apply().(v)2&
+2*2 -playground/chat/vec/Vec#2(
+2.2 /playground/chat/vec/Nat.S#21
+202 1#playground/chat/vec/Vec.apply().[N]21
+242 5#playground/chat/vec/Vec.apply().[A]21
+33 #playground/chat/vec/Vec.apply().(m)21
+33 #playground/chat/vec/Vec.apply().[M]21
+3)3 *#playground/chat/vec/Vec.apply().[A]2,
+3-3 0playground/chat/vec/Vec.get().2$
+313 7scala/Predef.summon().23
+373 7%playground/chat/vec/Vec.apply().(x$2)21
+393 :#playground/chat/vec/Vec.apply().(v)2,
+55 playground/chat/vec/Vec.get().2/
+55 !playground/chat/vec/Vec.get().[M]2&
+55 playground/chat/vec/Nat#2/
+55 !playground/chat/vec/Vec.get().[N]2&
+55 playground/chat/vec/Nat#2/
+5 5 !!playground/chat/vec/Vec.get().[A]20
+5#5 %"playground/chat/vec/Vec.get().(lt)2'
+5*5 ,playground/chat/vec/`<=`#2/
+5(5 )!playground/chat/vec/Vec.get().[M]2/
+5-5 .!playground/chat/vec/Vec.get().[N]2/
+505 1!playground/chat/vec/Vec.get().(v)2&
+535 6playground/chat/vec/Vec#2(
+575 8playground/chat/vec/Nat.S#2/
+595 :!playground/chat/vec/Vec.get().[N]2/
+5=5 >!playground/chat/vec/Vec.get().[A]2/
+5B5 C!playground/chat/vec/Vec.get().[A]2#
+5G5 Gscala/Tuple2.apply().2/
+5G5 H!playground/chat/vec/Vec.get().(v)20
+5J5 L"playground/chat/vec/Vec.get().(lt)2%
+66 scala/Tuple2.unapply().26
+66 (playground/chat/vec/Vec.`%::`.unapply().2,
+66 playground/chat/vec/Vec.`%::`.2
+66 local524
+66 &playground/chat/vec/`<=`.LZ.unapply().2*
+66 playground/chat/vec/`<=`.LZ.2'
+66 playground/chat/vec/`<=`.2
+6$6 %local52%
+77 scala/Tuple2.unapply().26
+77 (playground/chat/vec/Vec.`%::`.unapply().2,
+77 playground/chat/vec/Vec.`%::`.2
+77 local624
+77 &playground/chat/vec/`<=`.LS.unapply().2*
+77 playground/chat/vec/`<=`.LS.2'
+77 playground/chat/vec/`<=`.2
+77 local72
+77 local82
+77 local92,
+7$7 'playground/chat/vec/Vec.get().2
+7(7 )local92
+7+7 ,local62*
+ playground/chat/vec/vec$package.23
+ %playground/chat/vec/vec$package.`%+`#26
+ 	(playground/chat/vec/vec$package.`%+`#[N]26
+ (playground/chat/vec/vec$package.`%+`#[M]2&
+ playground/chat/vec/Nat#2&
+ playground/chat/vec/Nat#26
+ (playground/chat/vec/vec$package.`%+`#[N]2(
+	 
+playground/chat/vec/Nat.Z#26
+ (playground/chat/vec/vec$package.`%+`#[M]2(
+			 
+playground/chat/vec/Nat.S#2
+		 local102(
+		 playground/chat/vec/Nat.S#23
+		 %playground/chat/vec/vec$package.`%+`#2
+		 local1026
+		 (playground/chat/vec/vec$package.`%+`#[M]PZ 0FE3E13C425DA5180EA7908D5746FA2B

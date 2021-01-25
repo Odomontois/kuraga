@@ -1,190 +1,0 @@
-
-¿2'src/main/scala/playground/tchecks.scala*#
-playground/TInfer.
- *TInfer€*$
-playground/TInfer.foo().*foo€*%
-playground/TInfer.foo().[T]	*T€*%
-playground/TInfer.foo().(x)*x€*%
-playground/TInfer.foo().(f)*f€*
-local0*x€*(
-playground/TInfer.check().*check€*'
-playground/TInfer.check().[C]	*C€*'
-playground/TInfer.check().[A]	*A€*'
-playground/TInfer.check().[B]	*B€**
-playground/TInfer.check2().*check2€*(
-playground/TInfer.check2().[C]	*C€*(
-playground/TInfer.check2().[A]	*A€*(
-playground/TInfer.check2().[B]	*B€**
-playground/TInfer.implem().*implem€*(
-playground/TInfer.implem().[A]	*A€*(
-playground/TInfer.implem().[B]	*B€*(
-playground/TInfer.implem().[R]	*R€*
-local1*x$1€*
-local2 €*f€*
-local3*ab€*
-local4 €*g€*
-local5*ab€*#
-playground/TInfer.ho. €*ho€*
-local6 *$anon€*
-local7*apply€*
-local8	*A€*
-local9*xs€*#
-playground/PolyLol#*PolyLol€*0
-playground/PolyLol#`<init>`(). €@*<init>€*'
-playground/PolyLol#kek(). *kek€*&
-playground/PolyLol#kek().[A]	*A€*&
-playground/PolyLol#kek().(x)*x€*&
-playground/PolyLol#kek().(y)*y€*%
-playground/PolyLol.
- *PolyLol€2
- playground/2 
- playground/TInfer.2
- 
-scala/App#2&
- 	playground/TInfer.foo().2)
-
- playground/TInfer.foo().[T]2)
- playground/TInfer.foo().(x)2)
- playground/TInfer.foo().[T]2)
- playground/TInfer.foo().(f)2)
- playground/TInfer.foo().[T]2)
- playground/TInfer.foo().[T]2)
-  playground/TInfer.foo().[T]2&
-$ $scala/Function1#apply().2)
-# $playground/TInfer.foo().(f)2)
-% &playground/TInfer.foo().(x)2'
- 	scala/Predef.println(+1).2&
-
- playground/TInfer.foo().2
- local02 
- scala/Int#`+`(+4).2
- local02(
- playground/TInfer.check().2+
- playground/TInfer.check().[C]2+
- playground/TInfer.check().[A]2+
- playground/TInfer.check().[B]2$
- 
-scala/Predef.summon().2
- scala/`=:=`#2
- 
-scala/`&`#2+
- playground/TInfer.check().[C]2+
- playground/TInfer.check().[A]2+
- playground/TInfer.check().[C]2+
- playground/TInfer.check().[B]2+
- playground/TInfer.check().[C]2
-! "
-scala/`|`#2+
-  playground/TInfer.check().[A]2+
-# $playground/TInfer.check().[B]2!
-& &scala/`<:<`.refl().2$
-		 
-scala/Predef.summon().2
-		 scala/`<:<`#2
-		 
-scala/`|`#2+
-		 playground/TInfer.check().[C]2+
-		 playground/TInfer.check().[A]2+
-		 playground/TInfer.check().[C]2+
-		 playground/TInfer.check().[B]2+
-		 playground/TInfer.check().[C]2
-	!	 "
-scala/`&`#2+
-		  playground/TInfer.check().[A]2+
-	#	 $playground/TInfer.check().[B]2!
-	&	 &scala/`<:<`.refl().2)
- playground/TInfer.check2().2,
- playground/TInfer.check2().[C]2,
- playground/TInfer.check2().[A]2,
- playground/TInfer.check2().[B]2$
- 
-scala/Predef.summon().2
- scala/`=:=`#2
- 
-scala/`&`#2,
- playground/TInfer.check2().[C]2,
- playground/TInfer.check2().[A]2,
- playground/TInfer.check2().[C]2,
- playground/TInfer.check2().[B]2,
- playground/TInfer.check2().[C]2
-! "
-scala/`&`#2,
-  playground/TInfer.check2().[A]2,
-# $playground/TInfer.check2().[B]2!
-& &scala/`<:<`.refl().2$
- 
-scala/Predef.summon().2
- scala/`<:<`#2
- 
-scala/`|`#2,
- playground/TInfer.check2().[C]2,
- playground/TInfer.check2().[A]2,
- playground/TInfer.check2().[C]2,
- playground/TInfer.check2().[B]2,
- playground/TInfer.check2().[C]2
-! "
-scala/`|`#2,
-  playground/TInfer.check2().[A]2,
-# $playground/TInfer.check2().[B]2!
-& &scala/`<:<`.refl().2)
- playground/TInfer.implem().2,
- playground/TInfer.implem().[A]2,
- playground/TInfer.implem().[B]2,
- playground/TInfer.implem().[R]2#
- scala/package.Either#2,
- playground/TInfer.implem().[A]2,
-# $playground/TInfer.implem().[R]2,
-& 'playground/TInfer.implem().[B]2,
-+ ,playground/TInfer.implem().[R]2,
-3 4playground/TInfer.implem().[A]2,
-6 7playground/TInfer.implem().[B]2,
-= >playground/TInfer.implem().[R]2
- local12(
- scala/util/Left.unapply().2!
- scala/package.Left.2
- local22
- local32&
- scala/Function1#apply().2
- local22
-! #scala/Tuple2#_1.2
-  local32)
- scala/util/Right.unapply().2"
- scala/package.Right.2
- local42
- local52&
- scala/Function1#apply().2
- local42
-" $scala/Tuple2#_2.2
- !local52#
- 
-playground/TInfer.ho.2
- local72
- local82
- local92!
- scala/package.List#2
- local829
-( 2+scala/collection/LinearSeqOps#headOption().2
-% 'local92'
- scala/Predef.println(+1).2#
- playground/TInfer.ho.27
- )scala/collection/IterableFactory#apply().2!
- scala/package.List.2'
- scala/Predef.println(+1).2#
- playground/TInfer.ho.2 
- scala/package.Nil.2'
- scala/Predef.println(+1).2#
- playground/TInfer.ho.28
- *scala/collection/IterableOnceOps#toList().26
- (scala/LowPriorityImplicits#wrapString().2!
- playground/PolyLol#2,
- playground/PolyLol#`<init>`().2'
- 	playground/PolyLol#kek().2*
-
- playground/PolyLol#kek().[A]2*
- playground/PolyLol#kek().(x)2*
- playground/PolyLol#kek().[A]2*
- playground/PolyLol#kek().(y)2*
- playground/PolyLol#kek().[A]2!
- scala/package.List#2*
-  playground/PolyLol#kek().[A]2!
-"" playground/PolyLol.PZ 3920D7A78D0A880BC3EAAC4A449D2CFF

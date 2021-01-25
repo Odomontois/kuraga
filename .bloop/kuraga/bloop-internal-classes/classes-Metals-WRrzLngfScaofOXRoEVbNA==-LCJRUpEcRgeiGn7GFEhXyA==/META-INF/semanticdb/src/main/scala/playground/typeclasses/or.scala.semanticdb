@@ -1,88 +1,0 @@
-
-ê.src/main/scala/playground/typeclasses/or.scala*%
-playground/typeclasses/Eq#*Eq€*7
-%playground/typeclasses/Eq#`<init>`(). €@*<init>€*'
-playground/typeclasses/Eq#[A]	*A€*0
-"playground/typeclasses/Eq#`===`(). *===€*/
-%playground/typeclasses/Eq#`===`().(a)*a€*/
-%playground/typeclasses/Eq#`===`().(b)*b€*'
-playground/typeclasses/Eq.
- *Eq€*4
-"playground/typeclasses/Eq.listEqs# *listEqs€*?
--playground/typeclasses/Eq.listEqs#`<init>`(). €@*<init>€*A
-2playground/typeclasses/Eq.listEqs#`<init>`().(x$1)  *x$1€*/
-%playground/typeclasses/Eq.listEqs#[A]	*A€*5
-&playground/typeclasses/Eq.listEqs#x$1.  *x$1€*6
-*playground/typeclasses/Eq.listEqs#`===`().*===€*9
-.playground/typeclasses/Eq.listEqs#`===`().(as)*as€*9
-.playground/typeclasses/Eq.listEqs#`===`().(bs)*bs€*
-local0 €*a€*
-local1 €*as1€*
-local2 €*b€*
-local3 €*bs1€*6
-$playground/typeclasses/Eq.listEqs(). (*listEqs€*1
-'playground/typeclasses/Eq.listEqs().[A]	*A€*7
-)playground/typeclasses/Eq.listEqs().(x$1)  *x$1€2!
- playground/typeclasses/2
- playground/2'
- scala/annotation/tailrec#2
- scala/annotation/2
- scala/2(
- playground/typeclasses/Eq#23
- %playground/typeclasses/Eq#`<init>`().2+
-	 
-playground/typeclasses/Eq#[A]20
- "playground/typeclasses/Eq#`===`().23
- %playground/typeclasses/Eq#`===`().(a)2+
- playground/typeclasses/Eq#[A]23
- %playground/typeclasses/Eq#`===`().(b)2+
-! "playground/typeclasses/Eq#[A]2
-% ,scala/Boolean#2(
- 	playground/typeclasses/Eq.2;
- -playground/typeclasses/Eq.listEqs#`<init>`().2(
-" $playground/typeclasses/Eq#23
-% &%playground/typeclasses/Eq.listEqs#[A]2(
-, .playground/typeclasses/Eq#2!
-/ 3scala/package.List#23
-4 5%playground/typeclasses/Eq.listEqs#[A]23
- %playground/typeclasses/Eq.listEqs#[A]2'
-! (scala/annotation/tailrec#28
-- 0*playground/typeclasses/Eq.listEqs#`===`().2<
- .playground/typeclasses/Eq.listEqs#`===`().(as)2!
- scala/package.List#23
- %playground/typeclasses/Eq.listEqs#[A]2<
-2 4.playground/typeclasses/Eq.listEqs#`===`().(bs)2!
-6 :scala/package.List#23
-; <%playground/typeclasses/Eq.listEqs#[A]2<
-A C.playground/typeclasses/Eq.listEqs#`===`().(as)2 
-		 scala/package.Nil.2
-		 scala/Any#`==`().2<
-		 .playground/typeclasses/Eq.listEqs#`===`().(bs)2 
-		 !scala/package.Nil.28
-
-
- *scala/collection/immutable/`::`.unapply().2!
-
-
- scala/package.`::`.2
-
-
- local02
-
-
- local12<
-
-
- .playground/typeclasses/Eq.listEqs#`===`().(bs)2 
- scala/package.Nil.28
- *scala/collection/immutable/`::`.unapply().2!
- scala/package.`::`.2
- local22
- local32#
-) +scala/Boolean#`&&`().20
-! !"playground/typeclasses/Eq#`===`().2
-! "local02
-' (local228
-, ,*playground/typeclasses/Eq.listEqs#`===`().2
-, /local12
-4 7local3PZ A5D27255344B6FA7A078295E3AD93F83

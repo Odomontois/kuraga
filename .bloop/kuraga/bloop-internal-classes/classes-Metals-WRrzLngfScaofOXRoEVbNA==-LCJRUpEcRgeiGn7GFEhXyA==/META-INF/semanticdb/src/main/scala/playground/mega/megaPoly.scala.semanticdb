@@ -1,319 +1,0 @@
-
-òl-src/main/scala/playground/mega/megaPoly.scala*(
-playground/mega/Result# *Result€*4
-"playground/mega/Result#`<init>`(). €@*<init>€*&
-playground/mega/Error# *Error€*3
-!playground/mega/Error#`<init>`(). €@*<init>€**
-playground/mega/Context# *Context€*5
-#playground/mega/Context#`<init>`(). €@*<init>€*&
-playground/mega/Input# *Input€*3
-!playground/mega/Input#`<init>`(). €@*<init>€*(
-playground/mega/Output# *Output€*4
-"playground/mega/Output#`<init>`(). €@*<init>€*$
-playground/mega/Monad#*Monad€*3
-!playground/mega/Monad#`<init>`(). €@*<init>€*#
-playground/mega/Monad#[F]	*F€*,
-playground/mega/Monad#pure(). *pure€**
- playground/mega/Monad#pure().[A]	*A€**
- playground/mega/Monad#pure().(a)*a€*2
- playground/mega/Monad#flatMap(). *flatMap€*-
-#playground/mega/Monad#flatMap().[A]	*A€*-
-#playground/mega/Monad#flatMap().[B]	*B€*/
-$playground/mega/Monad#flatMap().(fa)*fa€*-
-#playground/mega/Monad#flatMap().(f)*f€**
-playground/mega/BIOError#*BIOError€*6
-$playground/mega/BIOError#`<init>`(). €@*<init>€*&
-playground/mega/BIOError#[F]	*F€*1
-!playground/mega/BIOError#raise(). *raise€*.
-$playground/mega/BIOError#raise().[E]	*E€*.
-$playground/mega/BIOError#raise().[A]	*A€*.
-$playground/mega/BIOError#raise().(e)*e€*;
-&playground/mega/BIOError#handleWith(). *
-handleWith€*3
-)playground/mega/BIOError#handleWith().[E]	*E€*3
-)playground/mega/BIOError#handleWith().[A]	*A€*5
-*playground/mega/BIOError#handleWith().(fa)*fa€*3
-)playground/mega/BIOError#handleWith().(f)*f€**
-playground/mega/ProLocal#*ProLocal€*6
-$playground/mega/ProLocal#`<init>`(). €@*<init>€*&
-playground/mega/ProLocal#[F]	*F€*-
-playground/mega/ProLocal#ask(). *ask€*,
-"playground/mega/ProLocal#ask().[R]	*R€*1
-!playground/mega/ProLocal#local(). *local€*.
-$playground/mega/ProLocal#local().[R]	*R€*0
-%playground/mega/ProLocal#local().[R1]	*R1€*.
-$playground/mega/ProLocal#local().[A]	*A€*0
-%playground/mega/ProLocal#local().(fa)*fa€*.
-$playground/mega/ProLocal#local().(f)*f€*A
-#playground/mega/ApplicationContext# ˆ*ApplicationContext€*@
-.playground/mega/ApplicationContext#`<init>`(). €@*<init>€*7
-*playground/mega/ApplicationContext#copy().*copy€*@
-#playground/mega/ApplicationContext.
- *ApplicationContext€*9
-+playground/mega/ApplicationContext.apply().*apply€*=
--playground/mega/ApplicationContext.unapply().*unapply€*>
-2playground/mega/ApplicationContext.unapply().(x$1)*x$1€*?
-.playground/mega/ApplicationContext.toString().*toString€*0
-!playground/mega/megaPoly$package. *mega€*5
-'playground/mega/megaPoly$package.MonoT#*MonoT€*1
-%playground/mega/megaPoly$package.BiT#*BiT€*3
-&playground/mega/megaPoly$package.ProT#*ProT€*3
-&playground/mega/megaPoly$package.ReaT#*ReaT€*3
-&playground/mega/megaPoly$package.Mono#*Mono€*3
-)playground/mega/megaPoly$package.Mono#[T]	*T€*/
-$playground/mega/megaPoly$package.Bi#*Bi€*1
-'playground/mega/megaPoly$package.Bi#[T]	*T€*1
-%playground/mega/megaPoly$package.Pro#*Pro€*2
-(playground/mega/megaPoly$package.Pro#[T]	*T€*1
-%playground/mega/megaPoly$package.Rea#*Rea€*2
-(playground/mega/megaPoly$package.Rea#[T]	*T€*-
-#playground/mega/megaPoly$package.M#*M€*0
-&playground/mega/megaPoly$package.M#[F]	*F€*0
-&playground/mega/megaPoly$package.M#[A]	*A€*0
-&playground/mega/megaPoly$package.M#[T]	*T€*1
-%playground/mega/megaPoly$package.BiA#*BiA€*2
-(playground/mega/megaPoly$package.BiA#[F]	*F€*2
-(playground/mega/megaPoly$package.BiA#[E]	*E€*2
-(playground/mega/megaPoly$package.BiA#[A]	*A€*2
-(playground/mega/megaPoly$package.BiA#[T]	*T€*3
-&playground/mega/megaPoly$package.ProA#*ProA€*3
-)playground/mega/megaPoly$package.ProA#[F]	*F€*3
-)playground/mega/megaPoly$package.ProA#[R]	*R€*3
-)playground/mega/megaPoly$package.ProA#[A]	*A€*3
-)playground/mega/megaPoly$package.ProA#[T]	*T€*3
-&playground/mega/megaPoly$package.Reap#*Reap€*3
-)playground/mega/megaPoly$package.Reap#[F]	*F€*3
-)playground/mega/megaPoly$package.Reap#[R]	*R€*3
-)playground/mega/megaPoly$package.Reap#[E]	*E€*3
-)playground/mega/megaPoly$package.Reap#[A]	*A€*3
-)playground/mega/megaPoly$package.Reap#[T]	*T€*9
-)playground/mega/megaPoly$package.EitherR#*EitherR€*6
-,playground/mega/megaPoly$package.EitherR#[T]	*T€*=
-+playground/mega/megaPoly$package.FunctionR#*	FunctionR€*8
-.playground/mega/megaPoly$package.FunctionR#[T]	*T€2
- playground/mega/2
- playground/2%
- playground/mega/Result#2,
-"playground/mega/Result#`<init>`().2$
- playground/mega/Error#2+
-!playground/mega/Error#`<init>`().2&
- playground/mega/Context#2-
-#playground/mega/Context#`<init>`().2$
- playground/mega/Input#2+
-!playground/mega/Input#`<init>`().2%
- playground/mega/Output#2,
-"playground/mega/Output#`<init>`().2$
-++ playground/mega/Monad#2/
-++ !playground/mega/Monad#`<init>`().2'
-++ playground/mega/Monad#[F]2+
-,, playground/mega/Monad#pure().2.
-,,  playground/mega/Monad#pure().[A]2.
-,,  playground/mega/Monad#pure().(a)2.
-,,  playground/mega/Monad#pure().[A]21
-,, #playground/mega/megaPoly$package.M#2'
-,, playground/mega/Monad#[F]2.
-,,  playground/mega/Monad#pure().[A]2.
---  playground/mega/Monad#flatMap().21
--- #playground/mega/Monad#flatMap().[A]21
--- #playground/mega/Monad#flatMap().[B]22
--- $playground/mega/Monad#flatMap().(fa)21
--- #playground/mega/megaPoly$package.M#2'
--- playground/mega/Monad#[F]21
---  #playground/mega/Monad#flatMap().[A]21
--%- &#playground/mega/Monad#flatMap().(f)21
--(- )#playground/mega/Monad#flatMap().[A]21
---- .#playground/mega/megaPoly$package.M#2'
--/- 0playground/mega/Monad#[F]21
--2- 3#playground/mega/Monad#flatMap().[B]21
--7- 8#playground/mega/megaPoly$package.M#2'
--9- :playground/mega/Monad#[F]21
--<- =#playground/mega/Monad#flatMap().[B]2'
-// playground/mega/BIOError#22
-// $playground/mega/BIOError#`<init>`().2*
-// playground/mega/BIOError#[F]2/
-00 !playground/mega/BIOError#raise().22
-00 $playground/mega/BIOError#raise().[E]22
-00 $playground/mega/BIOError#raise().[A]22
-00 $playground/mega/BIOError#raise().(e)22
-00 $playground/mega/BIOError#raise().[E]23
-00  %playground/mega/megaPoly$package.BiA#2*
-0!0 "playground/mega/BIOError#[F]22
-0$0 %$playground/mega/BIOError#raise().[E]22
-0'0 ($playground/mega/BIOError#raise().[A]24
-11 &playground/mega/BIOError#handleWith().27
-11 )playground/mega/BIOError#handleWith().[E]27
-11 )playground/mega/BIOError#handleWith().[A]28
-11 *playground/mega/BIOError#handleWith().(fa)23
-11  %playground/mega/megaPoly$package.BiA#2*
-1!1 "playground/mega/BIOError#[F]27
-1$1 %)playground/mega/BIOError#handleWith().[E]27
-1'1 ()playground/mega/BIOError#handleWith().[A]27
-1+1 ,)playground/mega/BIOError#handleWith().(f)27
-1.1 /)playground/mega/BIOError#handleWith().[E]23
-131 6%playground/mega/megaPoly$package.BiA#2*
-171 8playground/mega/BIOError#[F]2
-1:1 Ascala/Nothing#27
-1C1 D)playground/mega/BIOError#handleWith().[A]23
-1I1 L%playground/mega/megaPoly$package.BiA#2*
-1M1 Nplayground/mega/BIOError#[F]2
-1P1 Wscala/Nothing#27
-1Y1 Z)playground/mega/BIOError#handleWith().[A]2'
-33 playground/mega/ProLocal#22
-33 $playground/mega/ProLocal#`<init>`().2*
-33 playground/mega/ProLocal#[F]2-
-44 playground/mega/ProLocal#ask().20
-44 "playground/mega/ProLocal#ask().[R]24
-44 &playground/mega/megaPoly$package.ProA#2*
-44 playground/mega/ProLocal#[F]20
-44 "playground/mega/ProLocal#ask().[R]20
-44 "playground/mega/ProLocal#ask().[R]2/
-55 !playground/mega/ProLocal#local().22
-55 $playground/mega/ProLocal#local().[R]23
-55 %playground/mega/ProLocal#local().[R1]22
-55 $playground/mega/ProLocal#local().[A]23
-55 %playground/mega/ProLocal#local().(fa)24
-55  &playground/mega/megaPoly$package.ProA#2*
-5!5 "playground/mega/ProLocal#[F]23
-5$5 &%playground/mega/ProLocal#local().[R1]22
-5(5 )$playground/mega/ProLocal#local().[A]22
-5,5 -$playground/mega/ProLocal#local().(f)22
-5/5 0$playground/mega/ProLocal#local().[R]23
-545 6%playground/mega/ProLocal#local().[R1]24
-595 =&playground/mega/megaPoly$package.ProA#2*
-5>5 ?playground/mega/ProLocal#[F]22
-5A5 B$playground/mega/ProLocal#local().[R]22
-5D5 E$playground/mega/ProLocal#local().[A]21
-77 ##playground/mega/ApplicationContext#2<
-7#7 #.playground/mega/ApplicationContext#`<init>`().2+
-		!playground/mega/megaPoly$package.25
-		 
-'playground/mega/megaPoly$package.MonoT#2%
-		 playground/mega/Result#2
-		 "
-scala/Any#23
-
-
- %playground/mega/megaPoly$package.BiT#2
-
-
- 
-scala/`|`#2%
-
-
- playground/mega/Result#2$
-
-
- playground/mega/Error#2
-
-%
- (
-scala/Any#24
- 	&playground/mega/megaPoly$package.ProT#2
- 
-scala/`|`#2%
- playground/mega/Result#2&
- "playground/mega/Context#2
-( +
-scala/Any#24
- 	&playground/mega/megaPoly$package.ReaT#2
-! "
-scala/`|`#2
- 
-scala/`|`#2%
- playground/mega/Result#2$
-  playground/mega/Error#2&
-# *playground/mega/Context#2
-0 3
-scala/Any#24
- 	&playground/mega/megaPoly$package.Mono#27
- )playground/mega/megaPoly$package.Mono#[T]2
-! $
-scala/Any#22
- $playground/mega/megaPoly$package.Bi#25
- 'playground/mega/megaPoly$package.Bi#[T]2
- "
-scala/Any#23
- %playground/mega/megaPoly$package.Pro#26
- (playground/mega/megaPoly$package.Pro#[T]2
-* -
-scala/Any#23
- %playground/mega/megaPoly$package.Rea#26
- (playground/mega/megaPoly$package.Rea#[T]2
-2 5
-scala/Any#21
- #playground/mega/megaPoly$package.M#24
- &playground/mega/megaPoly$package.M#[F]24
- &playground/mega/megaPoly$package.M#[A]24
-  &playground/mega/megaPoly$package.M#[F]24
-" #&playground/mega/megaPoly$package.M#[T]2%
-' -playground/mega/Result#24
-3 4&playground/mega/megaPoly$package.M#[T]2%
-	 playground/mega/Result#24
- &playground/mega/megaPoly$package.M#[A]23
- %playground/mega/megaPoly$package.BiA#26
-	 
-(playground/mega/megaPoly$package.BiA#[F]26
-$ %(playground/mega/megaPoly$package.BiA#[E]26
-' ((playground/mega/megaPoly$package.BiA#[A]26
-, -(playground/mega/megaPoly$package.BiA#[F]26
-/ 0(playground/mega/megaPoly$package.BiA#[T]2
-; <
-scala/`|`#2%
-4 :playground/mega/Result#2$
-= Bplayground/mega/Error#26
-H I(playground/mega/megaPoly$package.BiA#[T]2$
-	 playground/mega/Error#26
- (playground/mega/megaPoly$package.BiA#[E]2%
-	 playground/mega/Result#26
- (playground/mega/megaPoly$package.BiA#[A]24
- 	&playground/mega/megaPoly$package.ProA#27
-
- )playground/mega/megaPoly$package.ProA#[F]27
-' ()playground/mega/megaPoly$package.ProA#[R]27
-* +)playground/mega/megaPoly$package.ProA#[A]27
-/ 0)playground/mega/megaPoly$package.ProA#[F]27
-2 3)playground/mega/megaPoly$package.ProA#[T]2
-? @
-scala/`|`#2&
-7 >playground/mega/Context#2%
-A Gplayground/mega/Result#27
-M N)playground/mega/megaPoly$package.ProA#[T]2&
-	 playground/mega/Context#27
- )playground/mega/megaPoly$package.ProA#[R]2%
-	 playground/mega/Result#27
- )playground/mega/megaPoly$package.ProA#[A]24
-!! 	&playground/mega/megaPoly$package.Reap#27
-!
-! )playground/mega/megaPoly$package.Reap#[F]27
-!/! 0)playground/mega/megaPoly$package.Reap#[R]27
-!2! 3)playground/mega/megaPoly$package.Reap#[E]27
-!5! 6)playground/mega/megaPoly$package.Reap#[A]27
-!:! ;)playground/mega/megaPoly$package.Reap#[F]27
-!=! >)playground/mega/megaPoly$package.Reap#[T]2
-!R! S
-scala/`|`#2
-!J! K
-scala/`|`#2&
-!B! Iplayground/mega/Context#2$
-!L! Qplayground/mega/Error#2%
-!T! Zplayground/mega/Result#27
-!`! a)playground/mega/megaPoly$package.Reap#[T]2&
-"	" playground/mega/Context#27
-"" )playground/mega/megaPoly$package.Reap#[R]2%
-#	# playground/mega/Result#27
-## )playground/mega/megaPoly$package.Reap#[A]2$
-$	$ playground/mega/Error#27
-$$ )playground/mega/megaPoly$package.Reap#[E]27
-'' )playground/mega/megaPoly$package.EitherR#2:
-'' ,playground/mega/megaPoly$package.EitherR#[T]2#
-''' -scala/package.Either#2:
-'.' /,playground/mega/megaPoly$package.EitherR#[T]2$
-'0' 5playground/mega/Error#2:
-'8' 9,playground/mega/megaPoly$package.EitherR#[T]2%
-':' @playground/mega/Result#29
-(( +playground/mega/megaPoly$package.FunctionR#2<
-(( .playground/mega/megaPoly$package.FunctionR#[T]2<
-(+( ,.playground/mega/megaPoly$package.FunctionR#[T]2&
-(-( 4playground/mega/Context#2<
-(9( :.playground/mega/megaPoly$package.FunctionR#[T]2%
-(;( Aplayground/mega/Result#PZ 5C54AC92C93164EDD921AD75A11F02CA

@@ -1,63 +1,0 @@
-
-˜"src/main/scala/kuraga/Monoid.scala*#
-kuraga/Semigroup#*	Semigroup€*.
-kuraga/Semigroup#`<init>`(). €@*<init>€*
-kuraga/Semigroup#[T]	*T€*-
-kuraga/Semigroup#combine(). *combine€*(
-kuraga/Semigroup#combine().(x)*x€*(
-kuraga/Semigroup#combine().(y)*y€*/
-kuraga/Semigroup#combineLz().*	combineLz€**
- kuraga/Semigroup#combineLz().(x)*x€**
- kuraga/Semigroup#combineLz().(y)*y€*
-kuraga/Default#*Default€*,
-kuraga/Default#`<init>`(). €@*<init>€*
-kuraga/Default#[T]	*T€*+
-kuraga/Default#default(). *default€*
-kuraga/Monoid#*Monoid€*+
-kuraga/Monoid#`<init>`(). €@*<init>€*
-kuraga/Monoid#[T]	*T€2
- kuraga/2"
- kuraga/Eval.defer().2
- kuraga/Eval.2'
- scala/annotation/tailrec#2
- scala/annotation/2
- scala/2
- kuraga/2
- kuraga/Semigroup#2*
- kuraga/Semigroup#`<init>`().2"
- kuraga/Semigroup#[T]2)
-  kuraga/Semigroup#combine().2,
- kuraga/Semigroup#combine().(x)2"
- kuraga/Semigroup#[T]2,
-! "kuraga/Semigroup#combine().(y)2"
-$ %kuraga/Semigroup#[T]2"
-( )kuraga/Semigroup#[T]2+
- (kuraga/Semigroup#combineLz().2.
-  kuraga/Semigroup#combineLz().(x)2
- kuraga/Eval#2"
- kuraga/Semigroup#[T]2.
-* + kuraga/Semigroup#combineLz().(y)2
-- 1kuraga/Eval#2"
-2 3kuraga/Semigroup#[T]2
-8 <kuraga/Eval#2"
-= >kuraga/Semigroup#[T]2"
-B Bkuraga/Monad#map2().2.
-B C kuraga/Semigroup#combineLz().(x)2.
-I J kuraga/Semigroup#combineLz().(y)2)
-L Lkuraga/Semigroup#combine().2
-		 kuraga/Default#2(
-		 kuraga/Default#`<init>`().2 
-		 kuraga/Default#[T]2'
-
-
- kuraga/Default#default().2 
-
-
- kuraga/Default#[T]2
- kuraga/Monoid#2'
- kuraga/Monoid#`<init>`().2
- !kuraga/Semigroup#2
-" #kuraga/Monoid#[T]2
-* 1kuraga/Default#2
-2 3kuraga/Monoid#[T]2
- kuraga/Monoid#[T]PZ E0BF85599EDBCBA85B990B32C0962379

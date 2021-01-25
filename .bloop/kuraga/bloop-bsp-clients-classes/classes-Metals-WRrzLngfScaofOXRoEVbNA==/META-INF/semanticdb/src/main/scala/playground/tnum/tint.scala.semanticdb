@@ -1,296 +1,0 @@
-
-ÄS)src/main/scala/playground/tnum/tint.scala*"
-playground/tint/Lol.
- *Lol€*4
- playground/tint/Lol.ReverseLoop#*ReverseLoop€*-
-#playground/tint/Lol.ReverseLoop#[A]	*A€*/
-$playground/tint/Lol.ReverseLoop#[XS]	*XS€*
-local0 €	*x€*
-local1 €	*xs€*6
-!playground/tint/Lol.ReverseRecur#*ReverseRecur€*.
-$playground/tint/Lol.ReverseRecur#[A]	*A€*0
-%playground/tint/Lol.ReverseRecur#[XS]	*XS€*,
-playground/tint/Lol.Reverse#*Reverse€*)
-playground/tint/Lol.Reverse#[A]	*A€*,
-playground/tint/Lol.PlusBit#*PlusBit€*)
-playground/tint/Lol.PlusBit#[A]	*A€*)
-playground/tint/Lol.PlusBit#[B]	*B€*,
-playground/tint/Lol.PlusTri#*PlusTri€*)
-playground/tint/Lol.PlusTri#[A]	*A€*)
-playground/tint/Lol.PlusTri#[B]	*B€*)
-playground/tint/Lol.PlusTri#[C]	*C€*$
-playground/tint/Lol.Inc#*Inc€*%
-playground/tint/Lol.Inc#[A]	*A€*
-local2 €	*t€*
-local3 €	*as€*&
-playground/tint/Lol.IncT#*IncT€*&
-playground/tint/Lol.IncT#[A]	*A€*&
-playground/tint/Lol.IncT#[O]	*O€*.
-playground/tint/Lol.PlusLoop#*PlusLoop€**
- playground/tint/Lol.PlusLoop#[A]	*A€**
- playground/tint/Lol.PlusLoop#[B]	*B€**
- playground/tint/Lol.PlusLoop#[O]	*O€*
-local4 €	*a€*
-local5 €	*as€*
-local6 €	*b€*
-local7 €	*bs€*
-local8 €	*o1€*
-local9 €	*r€*&
-playground/tint/Lol.Plus#*Plus€*&
-playground/tint/Lol.Plus#[A]	*A€*&
-playground/tint/Lol.Plus#[B]	*B€*$
-playground/tint/Lol.Fst#*Fst€*%
-playground/tint/Lol.Fst#[A]	*A€*
-local10 €	*x€*
-local11 €	*y€*.
-playground/tint/Lol.ValueAll#*ValueAll€*:
-(playground/tint/Lol.ValueAll#`<init>`(). €@*<init>€**
- playground/tint/Lol.ValueAll#[T]	*T€*5
-%playground/tint/Lol.ValueAll#value(). *value€*R
-.playground/tint/Lol.given_ValueAll_EmptyTuple.
- (*given_ValueAll_EmptyTuple€*D
-6playground/tint/Lol.given_ValueAll_EmptyTuple.value().*value€*>
-%playground/tint/Lol.given_ValueAll_X#*given_ValueAll_X€*B
-0playground/tint/Lol.given_ValueAll_X#`<init>`(). €@*<init>€*@
-3playground/tint/Lol.given_ValueAll_X#`<init>`().(x)  *x€*B
-4playground/tint/Lol.given_ValueAll_X#`<init>`().(xs)  *xs€*2
-(playground/tint/Lol.given_ValueAll_X#[X]	*X€*4
-)playground/tint/Lol.given_ValueAll_X#[XS]	*XS€*4
-'playground/tint/Lol.given_ValueAll_X#x.  *x€*6
-(playground/tint/Lol.given_ValueAll_X#xs.  *xs€*;
--playground/tint/Lol.given_ValueAll_X#value().*value€*B
-'playground/tint/Lol.given_ValueAll_X(). (*given_ValueAll_X€*4
-*playground/tint/Lol.given_ValueAll_X().[X]	*X€*6
-+playground/tint/Lol.given_ValueAll_X().[XS]	*XS€*6
-*playground/tint/Lol.given_ValueAll_X().(x)  *x€*8
-+playground/tint/Lol.given_ValueAll_X().(xs)  *xs€*0
-playground/tint/Lol.valueAll().*valueAll€*,
-"playground/tint/Lol.valueAll().[T]	*T€*.
-"playground/tint/Lol.valueAll().(v)  *v€*0
-playground/tint/Lol.printAll().*printAll€*,
-"playground/tint/Lol.printAll().[T]	*T€*2
-$playground/tint/Lol.printAll().(x$1)  *x$1€* 
-playground/tint/Lol.R#*R€*"
-playground/tint/Lol.R1#*R1€* 
-playground/tint/Lol.Q#*Q€2
- playground/tint/2
- playground/2"
- 
-playground/tint/Lol.2
- 
-scala/App#2.
-  playground/tint/Lol.ReverseLoop#21
- #playground/tint/Lol.ReverseLoop#[A]22
- $playground/tint/Lol.ReverseLoop#[XS]2
- !scala/Tuple#2
-& +scala/Tuple#21
-. /#playground/tint/Lol.ReverseLoop#[A]2
-	 scala/Unit#22
- $playground/tint/Lol.ReverseLoop#[XS]2
- scala/`*:`#2
-	 
-local02
- local12/
-  !playground/tint/Lol.ReverseRecur#2
-! #local12
-' )scala/`*:`#2
-% &local022
-* ,$playground/tint/Lol.ReverseLoop#[XS]2/
-
-
- !playground/tint/Lol.ReverseRecur#22
-
-
- $playground/tint/Lol.ReverseRecur#[A]23
-
-
- %playground/tint/Lol.ReverseRecur#[XS]2
-
-
- "scala/Tuple#23
-
-&
- (%playground/tint/Lol.ReverseRecur#[XS]2.
-
-;
- F playground/tint/Lol.ReverseLoop#22
-
-G
- H$playground/tint/Lol.ReverseRecur#[A]23
-
-J
- L%playground/tint/Lol.ReverseRecur#[XS]2*
- playground/tint/Lol.Reverse#2-
- playground/tint/Lol.Reverse#[A]2.
-  playground/tint/Lol.ReverseLoop#2-
-  !playground/tint/Lol.Reverse#[A]2-
-# -scala/Tuple$package.EmptyTuple#2*
- playground/tint/Lol.PlusBit#2-
- playground/tint/Lol.PlusBit#[A]2-
- playground/tint/Lol.PlusBit#[B]2-
- playground/tint/Lol.PlusBit#[A]2-
- playground/tint/Lol.PlusBit#[B]2
- 
-scala/`|`#2*
- playground/tint/Lol.PlusTri#2-
- playground/tint/Lol.PlusTri#[A]2-
- playground/tint/Lol.PlusTri#[B]2-
- playground/tint/Lol.PlusTri#[C]2
- #scala/Boolean#2
-% ,scala/Boolean#2-
-1 2playground/tint/Lol.PlusTri#[A]2-
-4 5playground/tint/Lol.PlusTri#[B]2-
-7 8playground/tint/Lol.PlusTri#[C]2
-5 6
-scala/`|`#2
- 
-scala/`|`#2
-5 6
-scala/`|`#2
- 
-scala/`|`#2&
- 
-playground/tint/Lol.Inc#2)
- playground/tint/Lol.Inc#[A]2
- scala/Tuple#2
- scala/Tuple#2)
-" #playground/tint/Lol.Inc#[A]2
-	 scala/Unit#2
- scala/`*:`#2
- scala/Unit#2
- scala/`*:`#2
-	 
-local22
- local32
- local22
- scala/`*:`#2
- local32
- scala/`*:`#2&
- playground/tint/Lol.Inc#2
-  "local32'
-## playground/tint/Lol.IncT#2*
-## playground/tint/Lol.IncT#[A]2
-## scala/Tuple#2*
-## playground/tint/Lol.IncT#[O]2
-## #scala/Tuple#2*
-#&# 'playground/tint/Lol.IncT#[O]2*
-$$ playground/tint/Lol.IncT#[A]2&
-%% playground/tint/Lol.Inc#2*
-%% playground/tint/Lol.IncT#[A]2+
-(( playground/tint/Lol.PlusLoop#2.
-((  playground/tint/Lol.PlusLoop#[A]2
-(( scala/Tuple#2.
-((  playground/tint/Lol.PlusLoop#[B]2
-(!( &scala/Tuple#2.
-((( ) playground/tint/Lol.PlusLoop#[O]2
-(.( 3scala/Tuple#2.
-(7( 8 playground/tint/Lol.PlusLoop#[A]2.
-(:( ; playground/tint/Lol.PlusLoop#[B]2
-)
-) scala/Unit#2
-)) scala/Unit#2.
-))   playground/tint/Lol.PlusLoop#[O]2
-** scala/`*:`#2
-**  scala/Unit#2-
-++ scala/Tuple$package.EmptyTuple#2
--
-- scala/Unit#2'
--- playground/tint/Lol.IncT#2.
---  playground/tint/Lol.PlusLoop#[B]2.
---  playground/tint/Lol.PlusLoop#[O]2
-.. scala/Unit#2'
-.. playground/tint/Lol.IncT#2.
-..  playground/tint/Lol.PlusLoop#[A]2.
-..  playground/tint/Lol.PlusLoop#[O]2
-// scala/`*:`#2
-/
-/ local42
-// local52
-// scala/`*:`#2
-// local62
-// local72*
-// &playground/tint/Lol.PlusTri#2
-/'/ (local42
-/*/ +local62.
-/-/ . playground/tint/Lol.PlusLoop#[O]2
-00 local82
-00 local92
-00 scala/`*:`#2
-00 local92+
-00 #playground/tint/Lol.PlusLoop#2
-0$0 &local52
-0(0 *local72
-0,0 .local82'
-44 playground/tint/Lol.Plus#2*
-44 playground/tint/Lol.Plus#[A]2*
-44 playground/tint/Lol.Plus#[B]2*
-44 playground/tint/Lol.Reverse#2+
-44 $playground/tint/Lol.PlusLoop#2*
-4%4 ,playground/tint/Lol.Reverse#2*
-4-4 .playground/tint/Lol.Plus#[A]2*
-414 8playground/tint/Lol.Reverse#2*
-494 :playground/tint/Lol.Plus#[B]2&
->> 
-playground/tint/Lol.Fst#2)
->> playground/tint/Lol.Fst#[A]2
->> scala/Tuple#2)
->> playground/tint/Lol.Fst#[A]2
-?? scala/`*:`#2
-?	? 
-local102
-?? local112
-?? local102
-@	@ scala/Unit#2
-@@ scala/Unit#2+
-CC playground/tint/Lol.ValueAll#26
-CC (playground/tint/Lol.ValueAll#`<init>`().2.
-CC  playground/tint/Lol.ValueAll#[T]23
-DD %playground/tint/Lol.ValueAll#value().2.
-DD  playground/tint/Lol.ValueAll#[T]2<
-GG !.playground/tint/Lol.given_ValueAll_EmptyTuple.2+
-GG playground/tint/Lol.ValueAll#2-
-GG scala/Tuple$package.EmptyTuple#2D
-HH 6playground/tint/Lol.given_ValueAll_EmptyTuple.value().2-
-HH scala/Tuple$package.EmptyTuple.2>
-I	I 	0playground/tint/Lol.given_ValueAll_X#`<init>`().2
-I$I +scala/ValueOf#26
-I,I -(playground/tint/Lol.given_ValueAll_X#[X]2+
-I4I <playground/tint/Lol.ValueAll#27
-I=I ?)playground/tint/Lol.given_ValueAll_X#[XS]2+
-IEI Mplayground/tint/Lol.ValueAll#2
-IPI Rscala/`*:`#26
-INI O(playground/tint/Lol.given_ValueAll_X#[X]27
-ISI U)playground/tint/Lol.given_ValueAll_X#[XS]26
-I	I 
-(playground/tint/Lol.given_ValueAll_X#[X]27
-II )playground/tint/Lol.given_ValueAll_X#[XS]25
-I!I "'playground/tint/Lol.given_ValueAll_X#x.26
-I0I 2(playground/tint/Lol.given_ValueAll_X#xs.2;
-JJ -playground/tint/Lol.given_ValueAll_X#value().2!
-J#J #scala/Tuple#`*:`().23
-JJ #%playground/tint/Lol.ValueAll#value().26
-JJ (playground/tint/Lol.given_ValueAll_X#xs.2"
-JJ scala/ValueOf#value.25
-JJ 'playground/tint/Lol.given_ValueAll_X#x.2-
-MM playground/tint/Lol.valueAll().20
-MM "playground/tint/Lol.valueAll().[T]2
-MM scala/Tuple#20
-M"M #"playground/tint/Lol.valueAll().(v)2+
-M%M -playground/tint/Lol.ValueAll#20
-M.M /"playground/tint/Lol.valueAll().[T]20
-M4M 5"playground/tint/Lol.valueAll().[T]23
-M:M ?%playground/tint/Lol.ValueAll#value().20
-M8M 9"playground/tint/Lol.valueAll().(v)2-
-NN playground/tint/Lol.printAll().20
-NN "playground/tint/Lol.printAll().[T]2
-NN scala/Tuple#2'
-N1N 8scala/Predef.println(+1).2-
-N9N Aplayground/tint/Lol.valueAll().20
-NBN C"playground/tint/Lol.printAll().[T]22
-NDN D$playground/tint/Lol.printAll().(x$1)2$
-RR playground/tint/Lol.R#2'
-RR playground/tint/Lol.Plus#2%
-SS 	playground/tint/Lol.R1#2*
-SS playground/tint/Lol.PlusTri#2$
-ZZ playground/tint/Lol.Q#2'
-ZZ playground/tint/Lol.Plus#PZ 381E923F1AD869330FB916E8784172A2

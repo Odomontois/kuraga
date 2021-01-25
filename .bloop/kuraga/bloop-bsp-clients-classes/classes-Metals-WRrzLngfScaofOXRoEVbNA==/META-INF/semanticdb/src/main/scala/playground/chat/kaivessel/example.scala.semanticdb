@@ -1,436 +1,0 @@
-
-õ´6src/main/scala/playground/chat/kaivessel/example.scala*+
-playground/chat/kaivessel/LS# ˆ*LS€*:
-(playground/chat/kaivessel/LS#`<init>`(). €@*<init>€*8
-+playground/chat/kaivessel/LS#`<init>`().(l) €*l€**
- playground/chat/kaivessel/LS#[F]	*F€*,
-playground/chat/kaivessel/LS#l. €*l€*1
-$playground/chat/kaivessel/LS#copy().*copy€*1
-'playground/chat/kaivessel/LS#copy().[F]	*F€*1
-'playground/chat/kaivessel/LS#copy().(l)*l€*E
-.playground/chat/kaivessel/LS#copy$default$1().*copy$default$1€*;
-1playground/chat/kaivessel/LS#copy$default$1().[F]	*F€*-
-"playground/chat/kaivessel/LS#_1().*_1€**
-playground/chat/kaivessel/LS.
- *LS€*3
-%playground/chat/kaivessel/LS.apply().*apply€*2
-(playground/chat/kaivessel/LS.apply().[F]	*F€*2
-(playground/chat/kaivessel/LS.apply().(l)*l€*7
-'playground/chat/kaivessel/LS.unapply().*unapply€*4
-*playground/chat/kaivessel/LS.unapply().[F]	*F€*8
-,playground/chat/kaivessel/LS.unapply().(x$1)*x$1€*9
-(playground/chat/kaivessel/LS.toString().*toString€*O
-2playground/chat/kaivessel/LS.given_Semigroup_LS(). (*given_Semigroup_LS€*?
-5playground/chat/kaivessel/LS.given_Semigroup_LS().[F]	*F€*E
-7playground/chat/kaivessel/LS.given_Semigroup_LS().(x$1)  *x$1€*
-local0*a€*
-local1*b€*C
-+playground/chat/kaivessel/LS.given_View_LS.
- (*given_View_LS€*A
-3playground/chat/kaivessel/LS.given_View_LS.nullV().*nullV€*@
-6playground/chat/kaivessel/LS.given_View_LS.nullV().[F]	*F€*P
->playground/chat/kaivessel/LS.given_View_LS.nullV().(container)*	container€*+
-playground/chat/kaivessel/LI# ˆ*LI€*:
-(playground/chat/kaivessel/LI#`<init>`(). €@*<init>€*8
-+playground/chat/kaivessel/LI#`<init>`().(l) €*l€**
- playground/chat/kaivessel/LI#[F]	*F€*,
-playground/chat/kaivessel/LI#l. €*l€*1
-$playground/chat/kaivessel/LI#copy().*copy€*1
-'playground/chat/kaivessel/LI#copy().[F]	*F€*1
-'playground/chat/kaivessel/LI#copy().(l)*l€*E
-.playground/chat/kaivessel/LI#copy$default$1().*copy$default$1€*;
-1playground/chat/kaivessel/LI#copy$default$1().[F]	*F€*-
-"playground/chat/kaivessel/LI#_1().*_1€**
-playground/chat/kaivessel/LI.
- *LI€*3
-%playground/chat/kaivessel/LI.apply().*apply€*2
-(playground/chat/kaivessel/LI.apply().[F]	*F€*2
-(playground/chat/kaivessel/LI.apply().(l)*l€*7
-'playground/chat/kaivessel/LI.unapply().*unapply€*4
-*playground/chat/kaivessel/LI.unapply().[F]	*F€*8
-,playground/chat/kaivessel/LI.unapply().(x$1)*x$1€*9
-(playground/chat/kaivessel/LI.toString().*toString€*O
-2playground/chat/kaivessel/LI.given_Semigroup_LI(). (*given_Semigroup_LI€*?
-5playground/chat/kaivessel/LI.given_Semigroup_LI().[F]	*F€*E
-7playground/chat/kaivessel/LI.given_Semigroup_LI().(x$1)  *x$1€*
-local2*a€*
-local3*b€*C
-+playground/chat/kaivessel/LI.given_View_LI.
- (*given_View_LI€*A
-3playground/chat/kaivessel/LI.given_View_LI.nullV().*nullV€*@
-6playground/chat/kaivessel/LI.given_View_LI.nullV().[F]	*F€*P
->playground/chat/kaivessel/LI.given_View_LI.nullV().(container)*	container€*>
-&playground/chat/kaivessel/ExampleGADT# ”€*ExampleGADT€*C
-1playground/chat/kaivessel/ExampleGADT#`<init>`(). €@*<init>€*3
-)playground/chat/kaivessel/ExampleGADT#[c]	*c€*<
-&playground/chat/kaivessel/ExampleGADT.
- *ExampleGADT€*6
-(playground/chat/kaivessel/ExampleGADT.S. €©*S€*6
-(playground/chat/kaivessel/ExampleGADT.I. €©*I€*A
-.playground/chat/kaivessel/ExampleGADT.$values. €*$values€*>
-/playground/chat/kaivessel/ExampleGADT.values().*values€*@
-0playground/chat/kaivessel/ExampleGADT.valueOf().*valueOf€*E
-7playground/chat/kaivessel/ExampleGADT.valueOf().($name)*$name€*H
-4playground/chat/kaivessel/ExampleGADT.fromOrdinal().*fromOrdinal€*M
-=playground/chat/kaivessel/ExampleGADT.fromOrdinal().(ordinal)*ordinal€*`
->playground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.
- (*given_Eq_K2_ExampleGADT€*R
-Eplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().*isEq€*R
-Hplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().[A]	*A€*R
-Hplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().[B]	*B€*R
-Hplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().(k)*k€*T
-Iplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().(k2)*k2€*
-local4 *$anon€*
-local5*apply€*
-local6	*R€*
-local7*eq€*f
-Bplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#*given_Has_K2_TC_ExampleGADT€*_
-Mplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#`<init>`(). €@*<init>€*e
-Tplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#`<init>`().(tcInt)  *tcInt€*k
-Wplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#`<init>`().(tcString)  *tcString€*Q
-Fplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#[TC]	*TC€*Y
-Hplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#tcInt.  *tcInt€*_
-Kplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#tcString.  *tcString€*j
-Splayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#constraintsFor().*constraintsFor€*`
-Vplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#constraintsFor().[A]	*A€*f
-Yplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#constraintsFor().(gadt)*gadt€*j
-Dplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT(). (*given_Has_K2_TC_ExampleGADT€*S
-Hplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT().[TC]	*TC€*[
-Kplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT().(tcInt)  *tcInt€*a
-Nplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT().(tcString)  *tcString€*?
-'playground/chat/kaivessel/ExampleValue# ˆ*ExampleValue€*D
-2playground/chat/kaivessel/ExampleValue#`<init>`(). €@*<init>€*F
-7playground/chat/kaivessel/ExampleValue#`<init>`().(get) €*get€*4
-*playground/chat/kaivessel/ExampleValue#[c]	*c€*:
-+playground/chat/kaivessel/ExampleValue#get. €*get€*;
-.playground/chat/kaivessel/ExampleValue#copy().*copy€*;
-1playground/chat/kaivessel/ExampleValue#copy().[c]	*c€*?
-3playground/chat/kaivessel/ExampleValue#copy().(get)*get€*O
-8playground/chat/kaivessel/ExampleValue#copy$default$1().*copy$default$1€*E
-;playground/chat/kaivessel/ExampleValue#copy$default$1().[c]	*c€*7
-,playground/chat/kaivessel/ExampleValue#_1().*_1€*>
-'playground/chat/kaivessel/ExampleValue.
- *ExampleValue€*=
-/playground/chat/kaivessel/ExampleValue.apply().*apply€*<
-2playground/chat/kaivessel/ExampleValue.apply().[c]	*c€*@
-4playground/chat/kaivessel/ExampleValue.apply().(get)*get€*A
-1playground/chat/kaivessel/ExampleValue.unapply().*unapply€*>
-4playground/chat/kaivessel/ExampleValue.unapply().[c]	*c€*B
-6playground/chat/kaivessel/ExampleValue.unapply().(x$1)*x$1€*C
-2playground/chat/kaivessel/ExampleValue.toString().*toString€*m
-Fplayground/chat/kaivessel/ExampleValue.given_Semigroup_ExampleValue(). (*given_Semigroup_ExampleValue€*S
-Iplayground/chat/kaivessel/ExampleValue.given_Semigroup_ExampleValue().[c]	*c€*Y
-Kplayground/chat/kaivessel/ExampleValue.given_Semigroup_ExampleValue().(x$1)  *x$1€*
-local8*a€*
-local9*b€*>
-*playground/chat/kaivessel/example$package. *	kaivessel€*L
-8playground/chat/kaivessel/example$package.checkVessel().*checkVessel€*
-local10 €*monoidalDMap€*
-local11 €*vessel€*<
-&playground/chat/kaivessel/checkVessel# *checkVessel€*C
-1playground/chat/kaivessel/checkVessel#`<init>`(). €@*<init>€*=
--playground/chat/kaivessel/checkVessel#main(). € *main€*@
-3playground/chat/kaivessel/checkVessel#main().(args)*args€*
-local12 €*error€2$
- !playground/chat/kaivessel/2
- playground/chat/2
- playground/2+
- 	playground/chat/kaivessel/Eq.2+
- playground/chat/kaivessel/LS#26
- (playground/chat/kaivessel/LS#`<init>`().2!
- !scala/package.List#2.
-" # playground/chat/kaivessel/LS#[F]2"
-$ *scala/Predef.String#2.
-  playground/chat/kaivessel/LS#[F]2-
- playground/chat/kaivessel/LS#l.2+
- 	playground/chat/kaivessel/LS.2@
-	 2playground/chat/kaivessel/LS.given_Semigroup_LS().2C
-
- 5playground/chat/kaivessel/LS.given_Semigroup_LS().[F]22
-4 =$playground/chat/kaivessel/Semigroup#2+
-> @playground/chat/kaivessel/LS#2C
-A B5playground/chat/kaivessel/LS.given_Semigroup_LS().[F]2
-H Ilocal02
-K Llocal123
-S S%playground/chat/kaivessel/LS.apply().2+
-Q Splayground/chat/kaivessel/LS.2:
-T T,playground/chat/kaivessel/Semigroup#`<+>`().2-
-V Wplayground/chat/kaivessel/LS#l.2
-T Ulocal02-
-^ _playground/chat/kaivessel/LS#l.2
-\ ]local129
-
- +playground/chat/kaivessel/LS.given_View_LS.2-
-
- playground/chat/kaivessel/View#2A
- 3playground/chat/kaivessel/LS.given_View_LS.nullV().2D
- 6playground/chat/kaivessel/LS.given_View_LS.nullV().[F]2L
-  >playground/chat/kaivessel/LS.given_View_LS.nullV().(container)2+
-" $playground/chat/kaivessel/LS#2D
-% &6playground/chat/kaivessel/LS.given_View_LS.nullV().[F]28
-7 >*scala/collection/immutable/List#isEmpty().2-
-5 6playground/chat/kaivessel/LS#l.2L
-+ 4>playground/chat/kaivessel/LS.given_View_LS.nullV().(container)2+
-
-
- playground/chat/kaivessel/LI#26
-
-
- (playground/chat/kaivessel/LI#`<init>`().2!
-
-
- !scala/package.List#2.
-
-"
- # playground/chat/kaivessel/LI#[F]2
-
-$
- '
-scala/Int#2.
-
-
-  playground/chat/kaivessel/LI#[F]2-
-
-
- playground/chat/kaivessel/LI#l.2+
- 	playground/chat/kaivessel/LI.2@
-	 2playground/chat/kaivessel/LI.given_Semigroup_LI().2C
-
- 5playground/chat/kaivessel/LI.given_Semigroup_LI().[F]22
-0 9$playground/chat/kaivessel/Semigroup#2+
-: <playground/chat/kaivessel/LI#2C
-= >5playground/chat/kaivessel/LI.given_Semigroup_LI().[F]2
-D Elocal22
-G Hlocal323
-O O%playground/chat/kaivessel/LI.apply().2+
-M Oplayground/chat/kaivessel/LI.2:
-P P,playground/chat/kaivessel/Semigroup#`<+>`().2-
-R Splayground/chat/kaivessel/LI#l.2
-P Qlocal22-
-Z [playground/chat/kaivessel/LI#l.2
-X Ylocal329
-
- +playground/chat/kaivessel/LI.given_View_LI.2-
-
- playground/chat/kaivessel/View#2A
- 3playground/chat/kaivessel/LI.given_View_LI.nullV().2D
- 6playground/chat/kaivessel/LI.given_View_LI.nullV().[F]2L
- !>playground/chat/kaivessel/LI.given_View_LI.nullV().(container)2+
-# %playground/chat/kaivessel/LI#2D
-& '6playground/chat/kaivessel/LI.given_View_LI.nullV().[F]28
-8 ?*scala/collection/immutable/List#isEmpty().2-
-6 7playground/chat/kaivessel/LI#l.2L
-, 5>playground/chat/kaivessel/LI.given_View_LI.nullV().(container)24
- &playground/chat/kaivessel/ExampleGADT#2?
- 1playground/chat/kaivessel/ExampleGADT#`<init>`().27
- )playground/chat/kaivessel/ExampleGADT#[c]24
- &playground/chat/kaivessel/ExampleGADT.26
- (playground/chat/kaivessel/ExampleGADT.S.2?
-   1playground/chat/kaivessel/ExampleGADT#`<init>`().24
- &playground/chat/kaivessel/ExampleGADT#2&
-   scala/runtime/EnumValue#26
- (playground/chat/kaivessel/ExampleGADT.I.2?
-   1playground/chat/kaivessel/ExampleGADT#`<init>`().24
- &playground/chat/kaivessel/ExampleGADT#2&
-   scala/runtime/EnumValue#2L
-
- !>playground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.2+
-
- playground/chat/kaivessel/Eq#2;
- -playground/chat/kaivessel/package$package.K2#2S
-< @Eplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().2V
- Hplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().[A]2V
- Hplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().[B]2V
-% &Hplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().(k)24
-( 3&playground/chat/kaivessel/ExampleGADT#2V
-4 5Hplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().[A]2W
-C EIplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().(k2)24
-G R&playground/chat/kaivessel/ExampleGADT#2V
-S THplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().[B]2
- local52
- local62
- local72/
- !playground/chat/kaivessel/Eq.GEQ#2;
- -playground/chat/kaivessel/package$package.K2#2V
-- .Hplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().[A]2V
-0 1Hplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().[B]2
-3 4local62V
-: ;Hplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().(k)26
- (playground/chat/kaivessel/ExampleGADT.S.24
- &playground/chat/kaivessel/ExampleGADT.2W
-" $Iplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().(k2)26
-! "(playground/chat/kaivessel/ExampleGADT.S.24
-  &playground/chat/kaivessel/ExampleGADT.23
-) *%playground/chat/kaivessel/Eq.GEQ#Y().2
-& (local726
-7 8(playground/chat/kaivessel/ExampleGADT.S.24
-+ 6&playground/chat/kaivessel/ExampleGADT.22
-= A$playground/chat/kaivessel/Is.refl().2+
-: <playground/chat/kaivessel/Is.2;
-B D-playground/chat/kaivessel/package$package.K2#2V
-F GHplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().[A]26
-! "(playground/chat/kaivessel/ExampleGADT.I.24
-  &playground/chat/kaivessel/ExampleGADT.23
-) *%playground/chat/kaivessel/Eq.GEQ#N().2
-& (local726
- (playground/chat/kaivessel/ExampleGADT.I.24
- &playground/chat/kaivessel/ExampleGADT.2W
-" $Iplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().(k2)26
-! "(playground/chat/kaivessel/ExampleGADT.S.24
-  &playground/chat/kaivessel/ExampleGADT.23
-) *%playground/chat/kaivessel/Eq.GEQ#N().2
-& (local726
-! "(playground/chat/kaivessel/ExampleGADT.I.24
-  &playground/chat/kaivessel/ExampleGADT.23
-) *%playground/chat/kaivessel/Eq.GEQ#Y().2
-& (local726
-7 8(playground/chat/kaivessel/ExampleGADT.I.24
-+ 6&playground/chat/kaivessel/ExampleGADT.22
-= A$playground/chat/kaivessel/Is.refl().2+
-: <playground/chat/kaivessel/Is.2;
-B D-playground/chat/kaivessel/package$package.K2#2V
-F GHplayground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.isEq().[A]2[
- Mplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#`<init>`().2T
-% 'Fplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#[TC]2T
-7 9Fplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#[TC]2,
-B Eplayground/chat/kaivessel/Has#2;
-F H-playground/chat/kaivessel/package$package.K2#2T
-J LFplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#[TC]2T
- Fplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#[TC]2V
- #Hplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#tcInt.2Y
-- 5Kplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#tcString.2a
- 6  DSplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#constraintsFor().2d
-   Vplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#constraintsFor().[A]2g
-    Yplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#constraintsFor().(gadt)24
- "  -&playground/chat/kaivessel/ExampleGADT#2d
- .  /Vplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#constraintsFor().[A]2T
- F  HFplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#[TC]2d
- I  JVplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#constraintsFor().[A]2g
- N  RYplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#constraintsFor().(gadt)26
-!! (playground/chat/kaivessel/ExampleGADT.S.24
-!! &playground/chat/kaivessel/ExampleGADT.2Y
-!"! *Kplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#tcString.26
-"" (playground/chat/kaivessel/ExampleGADT.I.24
-"" &playground/chat/kaivessel/ExampleGADT.2V
-""" 'Hplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT#tcInt.25
-%% 'playground/chat/kaivessel/ExampleValue#2@
-%% 2playground/chat/kaivessel/ExampleValue#`<init>`().28
-%,% -*playground/chat/kaivessel/ExampleValue#[c]28
-%% *playground/chat/kaivessel/ExampleValue#[c]29
-%'% *+playground/chat/kaivessel/ExampleValue#get.25
-'' 'playground/chat/kaivessel/ExampleValue.2T
-(
-( &Fplayground/chat/kaivessel/ExampleValue.given_Semigroup_ExampleValue().2W
-(( Iplayground/chat/kaivessel/ExampleValue.given_Semigroup_ExampleValue().[c]22
-(3( <$playground/chat/kaivessel/Semigroup#25
-(=( I'playground/chat/kaivessel/ExampleValue#2W
-(J( KIplayground/chat/kaivessel/ExampleValue.given_Semigroup_ExampleValue().[c]2
-(Q( Rlocal82
-(T( Ulocal92=
-(f( f/playground/chat/kaivessel/ExampleValue.apply().25
-(Z( f'playground/chat/kaivessel/ExampleValue.2W
-(g( hIplayground/chat/kaivessel/ExampleValue.given_Semigroup_ExampleValue().[c]2:
-(j( j,playground/chat/kaivessel/Semigroup#`<+>`().29
-(l( o+playground/chat/kaivessel/ExampleValue#get.2
-(j( klocal829
-(v( y+playground/chat/kaivessel/ExampleValue#get.2
-(t( ulocal924
-***playground/chat/kaivessel/example$package.2
-** scala/main#2F
-*
-* 8playground/chat/kaivessel/example$package.checkVessel().26
-++ (playground/chat/kaivessel/ExampleGADT.S.26
-++ (playground/chat/kaivessel/ExampleGADT.I.24
-+	+ &playground/chat/kaivessel/ExampleGADT.2
-,, local102P
--- Bplayground/chat/kaivessel/MonoidalMap$package.MonoidalDMap.`++`().2Q
--- Cplayground/chat/kaivessel/MonoidalMap$package.MonoidalDMap.apply().2I
--- ;playground/chat/kaivessel/MonoidalMap$package.MonoidalDMap.2'
--- scala/Conversion#apply().2-
--- scala/Predef.ArrowAssoc#`->`().2(
--- scala/Predef.ArrowAssoc().26
--- (playground/chat/kaivessel/ExampleGADT.S.2=
--"- "/playground/chat/kaivessel/ExampleValue.apply().25
--- "'playground/chat/kaivessel/ExampleValue.23
--)- )%playground/chat/kaivessel/LS.apply().2+
--'- )playground/chat/kaivessel/LS.27
--.- .)scala/collection/IterableFactory#apply().2!
--*- .scala/package.List.2#
--5- 5scala/Option.apply().2
--/- 5scala/Option.2Q
-.. Cplayground/chat/kaivessel/MonoidalMap$package.MonoidalDMap.apply().2I
-.. ;playground/chat/kaivessel/MonoidalMap$package.MonoidalDMap.2'
-.. scala/Conversion#apply().2-
-.. scala/Predef.ArrowAssoc#`->`().2(
-.. scala/Predef.ArrowAssoc().26
-.. (playground/chat/kaivessel/ExampleGADT.I.2=
-.$. $/playground/chat/kaivessel/ExampleValue.apply().25
-.. $'playground/chat/kaivessel/ExampleValue.23
-.+. +%playground/chat/kaivessel/LI.apply().2+
-.). +playground/chat/kaivessel/LI.27
-.0. 0)scala/collection/IterableFactory#apply().2!
-.,. 0scala/package.List.2#
-.7. 7scala/Option.apply().2
-.1. 7scala/Option.2L
-.>. >>playground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.2R
-.>. >Dplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT().2T
-.>. >Fplayground/chat/kaivessel/ExampleValue.given_Semigroup_ExampleValue().2@
-.>. >2playground/chat/kaivessel/LI.given_Semigroup_LI().2I
-.>. >;playground/chat/kaivessel/Semigroup.given_Semigroup_List().2@
-.>. >2playground/chat/kaivessel/LS.given_Semigroup_LS().2
-00 local112E
-11 7playground/chat/kaivessel/Vessel$package.Vessel.`++`().2F
-1
-1 
-8playground/chat/kaivessel/Vessel$package.Vessel.apply().2>
-11 
-0playground/chat/kaivessel/Vessel$package.Vessel.2'
-11 scala/Conversion#apply().2-
-11 scala/Predef.ArrowAssoc#`->`().2(
-11 scala/Predef.ArrowAssoc().26
-11 (playground/chat/kaivessel/ExampleGADT.S.23
-11 %playground/chat/kaivessel/LS.apply().2+
-11 playground/chat/kaivessel/LS.27
-11 )scala/collection/IterableFactory#apply().2!
-11 scala/package.List.2#
-1&1 &scala/Option.apply().2
-1 1 &scala/Option.2R
-101 0Dplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT().29
-101 0+playground/chat/kaivessel/LI.given_View_LI.29
-101 0+playground/chat/kaivessel/LS.given_View_LS.2F
-2
-2 
-8playground/chat/kaivessel/Vessel$package.Vessel.apply().2>
-22 
-0playground/chat/kaivessel/Vessel$package.Vessel.2'
-22 scala/Conversion#apply().2-
-22 scala/Predef.ArrowAssoc#`->`().2(
-22 scala/Predef.ArrowAssoc().26
-22 (playground/chat/kaivessel/ExampleGADT.I.23
-22 %playground/chat/kaivessel/LI.apply().2+
-22 playground/chat/kaivessel/LI.27
-22 )scala/collection/IterableFactory#apply().2!
-22 scala/package.List.2#
-2&2 &scala/Option.apply().2
-2 2 &scala/Option.2R
-2,2 ,Dplayground/chat/kaivessel/ExampleGADT.given_Has_K2_TC_ExampleGADT().29
-2,2 ,+playground/chat/kaivessel/LI.given_View_LI.29
-2,2 ,+playground/chat/kaivessel/LS.given_View_LS.2L
-2,2 ,>playground/chat/kaivessel/ExampleGADT.given_Eq_K2_ExampleGADT.2@
-2,2 ,2playground/chat/kaivessel/LI.given_Semigroup_LI().2I
-2,2 ,;playground/chat/kaivessel/Semigroup.given_Semigroup_List().2@
-2,2 ,2playground/chat/kaivessel/LS.given_Semigroup_LS().2'
-44 	scala/Predef.println(+1).2
-4
-4 local102I
-44 $;playground/chat/kaivessel/MonoidalMap$package.MonoidalDMap#2;
-4%4 '-playground/chat/kaivessel/package$package.K2#2'
-55 	scala/Predef.println(+1).2
-5
-5 local112>
-55 0playground/chat/kaivessel/Vessel$package.Vessel#20
-**&playground/chat/kaivessel/checkVessel#2;
-**1playground/chat/kaivessel/checkVessel#`<init>`().2B
-**8playground/chat/kaivessel/example$package.checkVessel().23
-**)scala/util/CommandLineParser.showError().2
-**local12PZ 8E30E32BF9A0D8621CB08C321801666B

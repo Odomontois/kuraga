@@ -1,209 +1,0 @@
-
-ç<)src/main/scala/playground/data/Proc.scala* 
-playground/data/Err#*Err€*1
-playground/data/Err#`<init>`(). €@*<init>€**
-playground/data/Err#Result#*Result€*"
-playground/data/Err.
- *Err€*&
-playground/data/Err.err.
- *err€*$
-playground/data/Err.Aux#*Aux€*(
-playground/data/Err.Aux#[E]	 €*E€*%
-playground/data/Err.Aux#[A]	*A€*
-local0*Result€*.
-playground/data/Err.success().*success€*+
-!playground/data/Err.success().[A]	*A€* 
-playground/data/Opt#*Opt€*1
-playground/data/Opt#`<init>`(). €@*<init>€**
-playground/data/Opt#none(). *none€*&
-playground/data/Raisen#*Raisen€*4
-"playground/data/Raisen#`<init>`(). €@*<init>€*'
-playground/data/Raisen#[X]	 €*X€*1
- playground/data/Raisen#handle(). *handle€*-
-#playground/data/Raisen#handle().(x)*x€* 
-playground/data/Ctx#*Ctx€*1
-playground/data/Ctx#`<init>`(). €@*<init>€*$
-playground/data/Ctx#Eff#*Eff€*"
-playground/data/Ctx.
- *Ctx€*$
-playground/data/Ctx.Aux#*Aux€*(
-playground/data/Ctx.Aux#[C]	 €*C€*%
-playground/data/Ctx.Aux#[F]	*F€*
-local1*Eff€*
-local2	 €*a€*"
-playground/data/Ctx.Of#*Of€*4
-"playground/data/Ctx.Of#`<init>`(). €@*<init>€*$
-playground/data/Ctx.Of#[F]	*F€*'
-playground/data/Ctx.Of#Eff#*Eff€*+
-playground/data/Ctx.Of#Eff#[a]	 €*a€*&
-playground/data/LocalT#*LocalT€*4
-"playground/data/LocalT#`<init>`(). €@*<init>€*'
-playground/data/LocalT#[F]	 €*F€*$
-playground/data/LocalT#[C]	*C€*'
-playground/data/LocalT#[E]	 €*E€*'
-playground/data/LocalT#[A]	 €*A€*+
-playground/data/LocalT#run(). *run€*,
-!playground/data/LocalT#run().[F1]	*F1€*6
-&playground/data/LocalT#run().(context)*context€*"
-playground/data/Proc#*Proc€*2
- playground/data/Proc#`<init>`(). €@*<init>€*"
-playground/data/Proc#[F]	*F€*%
-playground/data/Proc#[C]	 €*C€*%
-playground/data/Proc#[E]	 €*E€*%
-playground/data/Proc#[A]	 €*A€*!
-playground/data/Proc#P#*P€*'
-playground/data/Proc#P#[x]	 €*x€*)
-playground/data/Proc#run(). *run€*(
-playground/data/Proc#run().[B]	*B€*,
- playground/data/Proc#run().(ctx)*ctx€*2
-#playground/data/Proc#run().(handle)*handle€* 
-playground/data/Foo#*Foo€*1
-playground/data/Foo#`<init>`(). €@*<init>€*$
-playground/data/Foo#[F]	 €*F€*(
-playground/data/Foo#foo(). *foo€*)
-playground/data/Foo#foo().[F1]	*F1€*,
-playground/data/Proc$package. *data€*3
-$playground/data/Proc$package.CtxLoc#*CtxLoc€*1
-'playground/data/Proc$package.CtxLoc#[C]	*C€*1
-'playground/data/Proc$package.CtxLoc#[F]	*F€*
-local3*Eff€*
-local4	*e€*
-local5	*a€2
- playground/data/2
- playground/2"
- 	playground/data/Err#2-
- playground/data/Err#`<init>`().2)
- playground/data/Err#Result#2"
- 
-playground/data/Err.2&
- playground/data/Err.err.2"
-  playground/data/Err#2&
- 
-playground/data/Err.Aux#2)
- playground/data/Err.Aux#[E]2"
- playground/data/Err#2)
- playground/data/Err.Aux#[A]2)
- playground/data/Err.Aux#[E]2
-$ *local02)
-- .playground/data/Err.Aux#[A]2,
- playground/data/Err.success().2/
- !playground/data/Err.success().[A]2&
- playground/data/Err.Aux#2"
- playground/data/Err#2/
- !playground/data/Err.success().[A]2'
-$ 0scala/Any#asInstanceOf().2&
-  #playground/data/Err.err.2&
-1 4playground/data/Err.Aux#2"
-5 8playground/data/Err#2/
-: ;!playground/data/Err.success().[A]2"
- 	playground/data/Opt#2-
- playground/data/Opt#`<init>`().2"
- playground/data/Err#2)
- 
-playground/data/Opt#none().2)
- playground/data/Err#Result#2%
- playground/data/Raisen#20
- "playground/data/Raisen#`<init>`().2(
- playground/data/Raisen#[X]2.
-  playground/data/Raisen#handle().21
- #playground/data/Raisen#handle().(x)2(
- playground/data/Raisen#[X]2)
- playground/data/Err#Result#21
- #playground/data/Raisen#handle().(x)2"
- 	playground/data/Ctx#2-
- playground/data/Ctx#`<init>`().2&
- 
-playground/data/Ctx#Eff#2"
- 
-playground/data/Ctx.2&
- 
-playground/data/Ctx.Aux#2)
- playground/data/Ctx.Aux#[C]2"
- playground/data/Ctx#2)
- playground/data/Ctx.Aux#[F]2)
-  playground/data/Ctx.Aux#[C]2
-( +local12
-- .local22)
-2 3playground/data/Ctx.Aux#[F]2
-4 5local22%
- 
-playground/data/Ctx.Of#20
-
- 
-"playground/data/Ctx.Of#`<init>`().2"
- playground/data/Ctx#2(
- playground/data/Ctx.Of#[F]2)
-	 playground/data/Ctx.Of#Eff#2,
- playground/data/Ctx.Of#Eff#[a]2(
- playground/data/Ctx.Of#[F]2,
- playground/data/Ctx.Of#Eff#[a]2%
- playground/data/LocalT#20
- "playground/data/LocalT#`<init>`().2(
- playground/data/LocalT#[F]2(
- playground/data/LocalT#[C]2(
- playground/data/LocalT#[E]2(
-! "playground/data/LocalT#[A]2+
-   	playground/data/LocalT#run().2/
- 
-  !playground/data/LocalT#run().[F1]24
- !  (&playground/data/LocalT#run().(context)22
- *  0$playground/data/Proc$package.CtxLoc#2(
- 1  2playground/data/LocalT#[C]2/
- 4  6!playground/data/LocalT#run().[F1]2/
- :  <!playground/data/LocalT#run().[F1]2(
- =  >playground/data/LocalT#[E]2(
- @  Aplayground/data/LocalT#[A]2#
-## 
-playground/data/Proc#2.
-#
-# 
- playground/data/Proc#`<init>`().2&
-## playground/data/Proc#[F]2&
-## playground/data/Proc#[C]2&
-## playground/data/Proc#[E]2&
-#)# *playground/data/Proc#[A]2%
-$$ playground/data/Proc#P#2(
-$
-$ playground/data/Proc#P#[x]2#
-$$ playground/data/Proc#2&
-$$ playground/data/Proc#[F]2&
-$$ playground/data/Proc#[C]2&
-$$ playground/data/Proc#[E]2(
-$$ playground/data/Proc#P#[x]2)
-%% 	playground/data/Proc#run().2,
-%
-% playground/data/Proc#run().[B]2&
-%% playground/data/Proc#[A]2.
-%%  playground/data/Proc#run().(ctx)2&
-%% playground/data/Ctx.Aux#2"
-%% playground/data/Ctx.2&
-%%  playground/data/Proc#[C]2%
-%"% #playground/data/Proc#P#21
-%&% ,#playground/data/Proc#run().(handle)2&
-%2% 5playground/data/Err.Aux#2"
-%.% 1playground/data/Err.2"
-%6% 9playground/data/Err#2&
-%;% <playground/data/Proc#[F]2,
-%=% >playground/data/Proc#run().[B]2&
-%C% Dplayground/data/Proc#[F]2,
-%E% Fplayground/data/Proc#run().[B]2"
-'' 	playground/data/Foo#2-
-'	' 	playground/data/Foo#`<init>`().2%
-'' playground/data/Foo#[F]2(
-(( 	playground/data/Foo#foo().2,
-(
-( playground/data/Foo#foo().[F1]2
-(( scala/Unit#2'
-playground/data/Proc$package.22
- $playground/data/Proc$package.CtxLoc#25
- 'playground/data/Proc$package.CtxLoc#[C]25
- 'playground/data/Proc$package.CtxLoc#[F]25
- 'playground/data/Proc$package.CtxLoc#[C]2
-$ 'local32
-( )local42
-+ ,local52%
-0 6playground/data/LocalT#25
-7 8'playground/data/Proc$package.CtxLoc#[F]25
-: ;'playground/data/Proc$package.CtxLoc#[C]2
-= >local42
-@ Alocal5PZ 6BD787A1C05EC1DAD3748F46A9B99640

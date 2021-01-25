@@ -1,206 +1,0 @@
-
- <"src/main/scala/playground/id.scala*
-playground/Eit# îÄ*EitÄ*,
-playground/Eit#`<init>`(). Ä@*<init>Ä*
-playground/Eit#[X]	 Ä*XÄ*
-playground/Eit#[Y]	 Ä*YÄ*
-playground/Eit.
- *EitÄ*
-playground/Eit.L# àÅ*LÄ*.
-playground/Eit.L#`<init>`(). Ä@*<init>Ä*,
-playground/Eit.L#`<init>`().(x) Ä*xÄ*!
-playground/Eit.L#[X]	 Ä*XÄ* 
-playground/Eit.L#x. Ä*xÄ*%
-playground/Eit.L#copy().*copyÄ*%
-playground/Eit.L#copy().[X]	*XÄ*%
-playground/Eit.L#copy().(x)*xÄ*9
-"playground/Eit.L#copy$default$1().*copy$default$1Ä*/
-%playground/Eit.L#copy$default$1().[X]	*XÄ*+
-playground/Eit.L#ordinal().*ordinalÄ*!
-playground/Eit.L#_1().*_1Ä*
-playground/Eit.L.
- *LÄ*'
-playground/Eit.L.apply().*applyÄ*&
-playground/Eit.L.apply().[X]	*XÄ*&
-playground/Eit.L.apply().(x)*xÄ*+
-playground/Eit.L.unapply().*unapplyÄ*(
-playground/Eit.L.unapply().[X]	*XÄ*,
- playground/Eit.L.unapply().(x$1)*x$1Ä*-
-playground/Eit.L.toString().*toStringÄ*
-playground/Eit.R# àÅ*RÄ*.
-playground/Eit.R#`<init>`(). Ä@*<init>Ä*,
-playground/Eit.R#`<init>`().(y) Ä*yÄ*!
-playground/Eit.R#[Y]	 Ä*YÄ* 
-playground/Eit.R#y. Ä*yÄ*%
-playground/Eit.R#copy().*copyÄ*%
-playground/Eit.R#copy().[Y]	*YÄ*%
-playground/Eit.R#copy().(y)*yÄ*9
-"playground/Eit.R#copy$default$1().*copy$default$1Ä*/
-%playground/Eit.R#copy$default$1().[Y]	*YÄ*+
-playground/Eit.R#ordinal().*ordinalÄ*!
-playground/Eit.R#_1().*_1Ä*
-playground/Eit.R.
- *RÄ*'
-playground/Eit.R.apply().*applyÄ*&
-playground/Eit.R.apply().[Y]	*YÄ*&
-playground/Eit.R.apply().(y)*yÄ*+
-playground/Eit.R.unapply().*unapplyÄ*(
-playground/Eit.R.unapply().[Y]	*YÄ*,
- playground/Eit.R.unapply().(x$1)*x$1Ä*-
-playground/Eit.R.toString().*toStringÄ*1
-playground/Eit.fromOrdinal().*fromOrdinalÄ*6
-&playground/Eit.fromOrdinal().(ordinal)*ordinalÄ*
-playground/I# Ä*IÄ**
-playground/I#`<init>`(). Ä@*<init>Ä*(
-playground/I#`<init>`().(a) Ä*aÄ*
-playground/I#[A]	 Ä*AÄ*
-playground/I#a. Ä*aÄ*!
-playground/I#copy().*copyÄ*!
-playground/I#copy().[A]	*AÄ*!
-playground/I#copy().(a)*aÄ*5
-playground/I#copy$default$1().*copy$default$1Ä*+
-!playground/I#copy$default$1().[A]	*AÄ*
-playground/I#_1().*_1Ä*
-playground/I.
- *IÄ*#
-playground/I.apply().*applyÄ*"
-playground/I.apply().[A]	*AÄ*"
-playground/I.apply().(a)*aÄ*'
-playground/I.unapply().*unapplyÄ*$
-playground/I.unapply().[A]	*AÄ*(
-playground/I.unapply().(x$1)*x$1Ä*)
-playground/I.toString().*toStringÄ*#
-playground/IdTest.
- *IdTestÄ*+
-playground/id$package. *
-playgroundÄ*$
-playground/id$package.Id#*IdÄ*)
-playground/id$package.Id#[A]	 Ä*AÄ*&
-playground/id$package.Id.
- *IdÄ*/
-!playground/id$package.Id.apply().*applyÄ*.
-$playground/id$package.Id.apply().[A]	*AÄ*.
-$playground/id$package.Id.apply().(x)*xÄ*&
-playground/id$package.Id2#*Id2Ä*'
-playground/id$package.Id2#[A]	*AÄ*(
-playground/id$package.Id2.
- *Id2Ä*0
-"playground/id$package.Id2.apply().*applyÄ*/
-%playground/id$package.Id2.apply().[A]	*AÄ*/
-%playground/id$package.Id2.apply().(x)*xÄ2
- playground/2
- playground/Eit#2(
- playground/Eit#`<init>`().2 
-
- playground/Eit#[X]2 
- playground/Eit#[Y]2
- 	playground/Eit.L#2*
-	 	playground/Eit.L#`<init>`().2"
- playground/Eit.L#[X]2(
-+ +playground/Eit#`<init>`().2
- playground/Eit#2"
-  !playground/Eit.L#[X]2
-# *scala/Nothing#2"
- playground/Eit.L#[X]2!
- playground/Eit.L#x.2
- 	playground/Eit.R#2*
-	 	playground/Eit.R#`<init>`().2"
- playground/Eit.R#[Y]2(
-+ +playground/Eit#`<init>`().2
- playground/Eit#2
-  'scala/Nothing#2"
-) *playground/Eit.R#[Y]2"
- playground/Eit.R#[Y]2!
- playground/Eit.R#y.2
- playground/I#2&
- playground/I#`<init>`().2
- playground/I#[A]2
- playground/I#[A]2
- playground/I#a.2 
- playground/IdTest.2
- 
-scala/App#2 
- scala/Int#`<`(+3).2/
- !playground/id$package.Id.apply().2'
- playground/id$package.Id.2&
- scala/util/Left.apply().2!
- scala/package.Left.2/
-# #!playground/id$package.Id.apply().2'
-! #playground/id$package.Id.2'
-) )scala/util/Right.apply().2"
-$ )scala/package.Right.2 
- scala/Int#`<`(+3).20
- "playground/id$package.Id2.apply().2(
- playground/id$package.Id2.2&
- scala/util/Left.apply().2!
- scala/package.Left.20
-$ $"playground/id$package.Id2.apply().2(
-! $playground/id$package.Id2.2'
-* *scala/util/Right.apply().2"
-% *scala/package.Right.2 
- scala/Int#`<`(+3).2#
- playground/I.apply().2
- playground/I.2&
- scala/util/Left.apply().2!
- scala/package.Left.2#
-" "playground/I.apply().2
-! "playground/I.2'
-( (scala/util/Right.apply().2"
-# (scala/package.Right.2 
- scala/Int#`<`(+3).2/
- !playground/id$package.Id.apply().2'
- playground/id$package.Id.2'
- playground/Eit.L.apply().2
- playground/Eit.L.2
- playground/Eit.2/
-# #!playground/id$package.Id.apply().2'
-! #playground/id$package.Id.2'
-) )playground/Eit.R.apply().2
-( )playground/Eit.R.2
-$ 'playground/Eit.2 
- scala/Int#`<`(+3).20
- "playground/id$package.Id2.apply().2(
- playground/id$package.Id2.2'
- playground/Eit.L.apply().2
- playground/Eit.L.2
- playground/Eit.20
-$ $"playground/id$package.Id2.apply().2(
-! $playground/id$package.Id2.2'
-* *playground/Eit.R.apply().2
-) *playground/Eit.R.2
-% (playground/Eit.2 
- scala/Int#`<`(+3).2#
- playground/I.apply().2
- playground/I.2'
- playground/Eit.L.apply().2
- playground/Eit.L.2
- playground/Eit.2#
-" "playground/I.apply().2
-! "playground/I.2'
-( (playground/Eit.R.apply().2
-' (playground/Eit.R.2
-# &playground/Eit.2 
-playground/id$package.2'
- playground/id$package.Id#2*
- playground/id$package.Id#[A]2*
- playground/id$package.Id#[A]2'
- 	playground/id$package.Id.2/
- !playground/id$package.Id.apply().22
- $playground/id$package.Id.apply().[A]22
- $playground/id$package.Id.apply().(x)22
- $playground/id$package.Id.apply().[A]2'
- playground/id$package.Id#22
- $playground/id$package.Id.apply().[A]22
-  !$playground/id$package.Id.apply().(x)2(
- playground/id$package.Id2#2+
- playground/id$package.Id2#[A]2+
- playground/id$package.Id2#[A]2(
- 
-playground/id$package.Id2.20
-		 "playground/id$package.Id2.apply().23
-		 %playground/id$package.Id2.apply().[A]23
-		 %playground/id$package.Id2.apply().(x)23
-		 %playground/id$package.Id2.apply().[A]2(
-		 playground/id$package.Id2#23
-		 %playground/id$package.Id2.apply().[A]23
-	!	 "%playground/id$package.Id2.apply().(x)PZ 571B6C89EC4A4D56E0D71BDF06779C0E

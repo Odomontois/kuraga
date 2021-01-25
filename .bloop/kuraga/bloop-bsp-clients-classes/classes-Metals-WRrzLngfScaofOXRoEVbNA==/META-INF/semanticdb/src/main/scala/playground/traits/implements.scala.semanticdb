@@ -1,39 +1,0 @@
-
-¯1src/main/scala/playground/traits/implements.scala*6
-%playground/traits/implements$package. *traits€*>
-,playground/traits/implements$package.zoneId. €*zoneId€*
-local0*x€*I
-4playground/traits/implements$package.tryToGetSome().*tryToGetSome€*A
-7playground/traits/implements$package.tryToGetSome().[A]	*A€*U
-Aplayground/traits/implements$package.tryToGetSome().(fromRequest)*fromRequest€*M
-=playground/traits/implements$package.tryToGetSome().(default)*default€*]
->playground/traits/implements$package.tryToGetSome$default$1().*tryToGetSome$default$1€*K
-Aplayground/traits/implements$package.tryToGetSome$default$1().[A]	*A€2
- playground/traits/2
- playground/2#
- kuraga/id$package.Id.2
- kuraga/2/
-%playground/traits/implements$package.2:
- 
-,playground/traits/implements$package.zoneId.2B
- 4playground/traits/implements$package.tryToGetSome().2O
- Aplayground/traits/implements$package.tryToGetSome().(fromRequest)2!
- scala/Some.apply().2
- scala/Some.2
- local02(
- #java/lang/String#length().2
- local02K
- 	=playground/traits/implements$package.tryToGetSome().(default)2B
- 4playground/traits/implements$package.tryToGetSome().2
- playground/traits/2E
- 7playground/traits/implements$package.tryToGetSome().[A]2O
- 'Aplayground/traits/implements$package.tryToGetSome().(fromRequest)2
-) /scala/Option#2"
-0 6scala/Predef.String#2E
-: ;7playground/traits/implements$package.tryToGetSome().[A]2K
- #=playground/traits/implements$package.tryToGetSome().(default)2E
-% &7playground/traits/implements$package.tryToGetSome().[A]2E
-) *7playground/traits/implements$package.tryToGetSome().[A]2K
- 	=playground/traits/implements$package.tryToGetSome().(default)2O
- Aplayground/traits/implements$package.tryToGetSome$default$1().[A]2
-? Cscala/None.PZ 0191223FEB7C278FA2356C444E743930

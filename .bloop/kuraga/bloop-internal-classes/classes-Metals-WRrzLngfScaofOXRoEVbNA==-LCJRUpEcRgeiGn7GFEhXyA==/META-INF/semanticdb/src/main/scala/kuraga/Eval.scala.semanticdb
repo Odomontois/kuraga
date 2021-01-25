@@ -1,272 +1,0 @@
-
-¡O src/main/scala/kuraga/Eval.scala*
-kuraga/Eval# ”€*Eval€*)
-kuraga/Eval#`<init>`(). €@*<init>€*
-kuraga/Eval#[A]	 €*A€*&
-kuraga/Eval#flatMap().*flatMap€*#
-kuraga/Eval#flatMap().[B]	*B€*#
-kuraga/Eval#flatMap().(f)*f€*
-kuraga/Eval#map().*map€*
-kuraga/Eval#map().[B]	*B€*
-kuraga/Eval#map().(f)*f€*
-local0*a€*$
-kuraga/Eval#value(). *value€*
-local1 €*a€*
-local2 €	*A$1€*
-local3 €*x€*
-local4 €*f€*
-local5 €	*A$2€*
-local6 €	*A$3€*
-local7 €*x€*
-local8 €*f€*
-local9 €*g€*
-local10*y€*
-kuraga/Eval.
- *Eval€*"
-kuraga/Eval.Pure# ˆ*Pure€*.
-kuraga/Eval.Pure#`<init>`(). €@*<init>€*,
-kuraga/Eval.Pure#`<init>`().(a) €*a€*!
-kuraga/Eval.Pure#[A]	 €*A€* 
-kuraga/Eval.Pure#a. €*a€*%
-kuraga/Eval.Pure#copy().*copy€*%
-kuraga/Eval.Pure#copy().[A]	*A€*%
-kuraga/Eval.Pure#copy().(a)*a€*9
-"kuraga/Eval.Pure#copy$default$1().*copy$default$1€*/
-%kuraga/Eval.Pure#copy$default$1().[A]	*A€*+
-kuraga/Eval.Pure#ordinal().*ordinal€*!
-kuraga/Eval.Pure#_1().*_1€* 
-kuraga/Eval.Pure.
- *Pure€*'
-kuraga/Eval.Pure.apply().*apply€*&
-kuraga/Eval.Pure.apply().[A]	*A€*&
-kuraga/Eval.Pure.apply().(a)*a€*+
-kuraga/Eval.Pure.unapply().*unapply€*(
-kuraga/Eval.Pure.unapply().[A]	*A€*,
- kuraga/Eval.Pure.unapply().(x$1)*x$1€*-
-kuraga/Eval.Pure.toString().*toString€*(
-kuraga/Eval.FlatMap# ˆ*FlatMap€*1
-kuraga/Eval.FlatMap#`<init>`(). €@*<init>€*/
-"kuraga/Eval.FlatMap#`<init>`().(e) €*e€*/
-"kuraga/Eval.FlatMap#`<init>`().(f) €*f€*!
-kuraga/Eval.FlatMap#[A]	*A€*$
-kuraga/Eval.FlatMap#[B]	 €*B€*#
-kuraga/Eval.FlatMap#e. €*e€*#
-kuraga/Eval.FlatMap#f. €*f€*(
-kuraga/Eval.FlatMap#copy().*copy€*(
-kuraga/Eval.FlatMap#copy().[A]	*A€*(
-kuraga/Eval.FlatMap#copy().[B]	*B€*(
-kuraga/Eval.FlatMap#copy().(e)*e€*(
-kuraga/Eval.FlatMap#copy().(f)*f€*<
-%kuraga/Eval.FlatMap#copy$default$1().*copy$default$1€*2
-(kuraga/Eval.FlatMap#copy$default$1().[A]	*A€*2
-(kuraga/Eval.FlatMap#copy$default$1().[B]	*B€*<
-%kuraga/Eval.FlatMap#copy$default$2().*copy$default$2€*2
-(kuraga/Eval.FlatMap#copy$default$2().[A]	*A€*2
-(kuraga/Eval.FlatMap#copy$default$2().[B]	*B€*.
-kuraga/Eval.FlatMap#ordinal().*ordinal€*$
-kuraga/Eval.FlatMap#_1().*_1€*$
-kuraga/Eval.FlatMap#_2().*_2€*&
-kuraga/Eval.FlatMap.
- *FlatMap€**
-kuraga/Eval.FlatMap.apply().*apply€*)
-kuraga/Eval.FlatMap.apply().[A]	*A€*)
-kuraga/Eval.FlatMap.apply().[B]	*B€*)
-kuraga/Eval.FlatMap.apply().(e)*e€*)
-kuraga/Eval.FlatMap.apply().(f)*f€*.
-kuraga/Eval.FlatMap.unapply().*unapply€*+
-!kuraga/Eval.FlatMap.unapply().[A]	*A€*+
-!kuraga/Eval.FlatMap.unapply().[B]	*B€*/
-#kuraga/Eval.FlatMap.unapply().(x$1)*x$1€*0
-kuraga/Eval.FlatMap.toString().*toString€*.
-kuraga/Eval.fromOrdinal().*fromOrdinal€*3
-#kuraga/Eval.fromOrdinal().(ordinal)*ordinal€*!
-kuraga/Eval.unit. €*unit€*
-kuraga/Eval.now().*now€*
-kuraga/Eval.now().[A]	*A€*
-kuraga/Eval.now().(a)*a€*"
-kuraga/Eval.later().*later€*!
-kuraga/Eval.later().[A]	*A€*!
-kuraga/Eval.later().(a)*a€*"
-kuraga/Eval.delay().*delay€*!
-kuraga/Eval.delay().[A]	*A€*!
-kuraga/Eval.delay().(a)*a€*"
-kuraga/Eval.defer().*defer€*!
-kuraga/Eval.defer().[A]	*A€*!
-kuraga/Eval.defer().(a)*a€*J
-&kuraga/Eval.given_StackSafeMonad_Eval.
- (*given_StackSafeMonad_Eval€*:
--kuraga/Eval.given_StackSafeMonad_Eval.pure().*pure€*:
-0kuraga/Eval.given_StackSafeMonad_Eval.pure().[A]	*A€*:
-0kuraga/Eval.given_StackSafeMonad_Eval.pure().(a)*a€*@
-0kuraga/Eval.given_StackSafeMonad_Eval.flatMap().*flatMap€*=
-3kuraga/Eval.given_StackSafeMonad_Eval.flatMap().[A]	*A€*=
-3kuraga/Eval.given_StackSafeMonad_Eval.flatMap().[B]	*B€*=
-3kuraga/Eval.given_StackSafeMonad_Eval.flatMap().(a)*a€*=
-3kuraga/Eval.given_StackSafeMonad_Eval.flatMap().(f)*f€2
- kuraga/2'
- scala/annotation/tailrec#2
- scala/annotation/2
- scala/2
- 	kuraga/Eval#2%
-	 	kuraga/Eval#`<init>`().2
- kuraga/Eval#[A]2$
- kuraga/Eval#flatMap().2'
- kuraga/Eval#flatMap().[B]2'
- kuraga/Eval#flatMap().(f)2
- kuraga/Eval#[A]2
- kuraga/Eval#2'
-  !kuraga/Eval#flatMap().[B]2
-% )kuraga/Eval#2'
-* +kuraga/Eval#flatMap().[B]2*
-6 6kuraga/Eval.FlatMap.apply().2"
-/ 6kuraga/Eval.FlatMap.2'
-= >kuraga/Eval#flatMap().(f)2 
- kuraga/Eval#map().2#
- kuraga/Eval#map().[B]2#
- kuraga/Eval#map().(f)2
- kuraga/Eval#[A]2#
- kuraga/Eval#map().[B]2
- kuraga/Eval#2#
-  !kuraga/Eval#map().[B]2$
-% ,kuraga/Eval#flatMap().2
-- .local02'
-6 6kuraga/Eval.Pure.apply().2
-2 6kuraga/Eval.Pure.2&
-8 8scala/Function1#apply().2#
-7 8kuraga/Eval#map().(f)2
-9 :local02'
-
-
- scala/annotation/tailrec#2"
-
-
- kuraga/Eval#value().2
-
-
-  kuraga/Eval#[A]2)
- kuraga/Eval.Pure.unapply().2
- kuraga/Eval.Pure.2
- local12
-* +local12,
- kuraga/Eval.FlatMap.unapply().2"
- kuraga/Eval.FlatMap.2
- local22)
- kuraga/Eval.Pure.unapply().2
- kuraga/Eval.Pure.2
- local32
- local42"
-/ 4kuraga/Eval#value().2&
-+ +scala/Function1#apply().2
-* +local42
-, -local32,
- kuraga/Eval.FlatMap.unapply().2"
- kuraga/Eval.FlatMap.2
- local52,
- kuraga/Eval.FlatMap.unapply().2"
- kuraga/Eval.FlatMap.2
- local62
- local72
-  !local82
-$ %local92"
-J Okuraga/Eval#value().2$
-, 3kuraga/Eval#flatMap().2
-* +local72
-4 5local102$
-> Ekuraga/Eval#flatMap().2&
-: :scala/Function1#apply().2
-9 :local82
-; <local102
-F Glocal92
- kuraga/Eval.2
-	 kuraga/Eval.Pure#2*
- kuraga/Eval.Pure#`<init>`().2"
- kuraga/Eval.Pure#[A]2!
- kuraga/Eval.Pure#a.2"
-	 kuraga/Eval.FlatMap#2-
- kuraga/Eval.FlatMap#`<init>`().2
- kuraga/Eval#2%
-  !kuraga/Eval.FlatMap#[A]2%
-' (kuraga/Eval.FlatMap#[A]2
-, 0kuraga/Eval#2%
-1 2kuraga/Eval.FlatMap#[B]2%
-D Dkuraga/Eval#`<init>`().2
-= Akuraga/Eval#2%
-B Ckuraga/Eval.FlatMap#[B]2%
- kuraga/Eval.FlatMap#[A]2%
- kuraga/Eval.FlatMap#[B]2$
- kuraga/Eval.FlatMap#e.2$
-$ %kuraga/Eval.FlatMap#f.2
- kuraga/Eval.unit.2
- kuraga/Eval#2
- scala/Unit#2'
-   kuraga/Eval.Pure.apply().2
-  kuraga/Eval.Pure.2 
- kuraga/Eval.now().2#
- kuraga/Eval.now().[A]2#
- kuraga/Eval.now().(a)2#
- kuraga/Eval.now().[A]2
- kuraga/Eval#2#
- kuraga/Eval.now().[A]2'
-$ $kuraga/Eval.Pure.apply().2
-  $kuraga/Eval.Pure.2#
-% &kuraga/Eval.now().(a)2"
- kuraga/Eval.later().2%
- kuraga/Eval.later().[A]2%
- kuraga/Eval.later().(a)2%
- kuraga/Eval.later().[A]2
- kuraga/Eval#2%
-  !kuraga/Eval.later().[A]2*
-- -kuraga/Eval.FlatMap.apply().2"
-& -kuraga/Eval.FlatMap.2
-. 2kuraga/Eval.unit.2'
-= =kuraga/Eval.Pure.apply().2
-9 =kuraga/Eval.Pure.2%
-> ?kuraga/Eval.later().(a)2"
- $kuraga/Eval.delay().2%
- kuraga/Eval.delay().[A]2%
- kuraga/Eval.delay().(a)2%
- kuraga/Eval.delay().[A]2
-' +kuraga/Eval#2%
-, -kuraga/Eval.delay().[A]2"
-2 7kuraga/Eval.later().2%
-8 9kuraga/Eval.delay().(a)2"
-$ )kuraga/Eval.defer().2%
- kuraga/Eval.defer().[A]2%
- kuraga/Eval.defer().(a)2
- kuraga/Eval#2%
- kuraga/Eval.defer().[A]2
-+ /kuraga/Eval#2%
-0 1kuraga/Eval.defer().[A]2*
-< <kuraga/Eval.FlatMap.apply().2"
-5 <kuraga/Eval.FlatMap.2
-= Akuraga/Eval.unit.2%
-H Ikuraga/Eval.defer().(a)24
-
- #&kuraga/Eval.given_StackSafeMonad_Eval.2$
-
- kuraga/StackSafeMonad#2;
-! %-kuraga/Eval.given_StackSafeMonad_Eval.pure().2>
- 0kuraga/Eval.given_StackSafeMonad_Eval.pure().[A]2>
- 0kuraga/Eval.given_StackSafeMonad_Eval.pure().(a)2>
- 0kuraga/Eval.given_StackSafeMonad_Eval.pure().[A]2
-( ,kuraga/Eval#2>
-- .0kuraga/Eval.given_StackSafeMonad_Eval.pure().[A]2'
-6 6kuraga/Eval.Pure.apply().2
-2 6kuraga/Eval.Pure.2>
-7 80kuraga/Eval.given_StackSafeMonad_Eval.pure().(a)2>
-* 10kuraga/Eval.given_StackSafeMonad_Eval.flatMap().2A
- 3kuraga/Eval.given_StackSafeMonad_Eval.flatMap().[A]2A
- 3kuraga/Eval.given_StackSafeMonad_Eval.flatMap().[B]2A
- 3kuraga/Eval.given_StackSafeMonad_Eval.flatMap().(a)2
- !kuraga/Eval#2A
-" #3kuraga/Eval.given_StackSafeMonad_Eval.flatMap().[A]2A
-2 33kuraga/Eval.given_StackSafeMonad_Eval.flatMap().(f)2A
-5 63kuraga/Eval.given_StackSafeMonad_Eval.flatMap().[A]2
-: >kuraga/Eval#2A
-? @3kuraga/Eval.given_StackSafeMonad_Eval.flatMap().[B]2
-D Hkuraga/Eval#2A
-I J3kuraga/Eval.given_StackSafeMonad_Eval.flatMap().[B]2*
-U Ukuraga/Eval.FlatMap.apply().2"
-N Ukuraga/Eval.FlatMap.2A
-V W3kuraga/Eval.given_StackSafeMonad_Eval.flatMap().(a)2A
-Y Z3kuraga/Eval.given_StackSafeMonad_Eval.flatMap().(f)PZ 05ACA94DD50721FF64E0B99D8A84613B

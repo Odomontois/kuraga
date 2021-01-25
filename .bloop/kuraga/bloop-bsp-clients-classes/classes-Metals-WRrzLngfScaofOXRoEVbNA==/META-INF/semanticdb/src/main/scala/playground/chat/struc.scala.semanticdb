@@ -1,59 +1,0 @@
-
-Ê*src/main/scala/playground/chat/struc.scala*4
-$playground/chat/struc/struc$package. *struc€*:
-+playground/chat/struc/struc$package.Person#*Person€*
-local0 *id€*
-local1 *name€*
-local2 *isFriend€*
-local3*p€*9
-)playground/chat/struc/struc$package.oleg. €*oleg€*
-local4 *$anon€*
-local5 €*id€*
-local6 €*name€*
-local7*isFriend€*
-local8*p€*
-local9*toString€*>
-.playground/chat/struc/struc$package.strucGo().*strucGo€*0
-playground/chat/struc/strucGo# *strucGo€*;
-)playground/chat/struc/strucGo#`<init>`(). €@*<init>€*5
-%playground/chat/struc/strucGo#main(). € *main€*8
-+playground/chat/struc/strucGo#main().(args)*args€*
-local10 €*error€2 
- playground/chat/struc/2
- playground/chat/2
- playground/2.
-$playground/chat/struc/struc$package.29
- +playground/chat/struc/struc$package.Person#2
- 
-local02"
- scala/Predef.String#2
- local12"
- scala/Predef.String#2
- local22
- local32"
- scala/Predef.String#2
- %scala/Boolean#27
- )playground/chat/struc/struc$package.oleg.29
- +playground/chat/struc/struc$package.Person#2
-		 
-local52
-
-
- local62
- local72
- local82"
- scala/Predef.String#2
- local92&
-' (scala/StringContext#s().2*
- scala/StringContext.apply().2
-# 'local62
- scala/main#2<
-
- .playground/chat/struc/struc$package.strucGo().2'
- scala/Predef.println(+1).27
- !)playground/chat/struc/struc$package.oleg.2(
-playground/chat/struc/strucGo#23
-)playground/chat/struc/strucGo#`<init>`().28
-.playground/chat/struc/struc$package.strucGo().23
-)scala/util/CommandLineParser.showError().2
-local10PZ 394C42419833F218754225E5C2C06C39

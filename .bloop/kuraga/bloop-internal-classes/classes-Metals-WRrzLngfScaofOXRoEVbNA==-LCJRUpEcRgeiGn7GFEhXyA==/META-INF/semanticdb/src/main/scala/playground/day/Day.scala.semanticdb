@@ -1,1037 +1,0 @@
-
-€Ò'src/main/scala/playground/day/Day.scala*
-playground/day/Day#*Day€*0
-playground/day/Day#`<init>`(). €@*<init>€* 
-playground/day/Day#[F]	*F€* 
-playground/day/Day#[G]	*G€* 
-playground/day/Day#[A]	*A€*
-playground/day/Day#X#*X€*
-playground/day/Day#Y#*Y€*%
-playground/day/Day#fx(). *fx€*%
-playground/day/Day#gy(). *gy€*'
-playground/day/Day#run(). *run€*&
-playground/day/Day#run().(x)*x€*&
-playground/day/Day#run().(y)*y€*'
-playground/day/Day#comb().*comb€*
-local0*x€*
-local1*y€*3
-playground/day/Day#mapKFirst(). *	mapKFirst€*,
-"playground/day/Day#mapKFirst().[H]	*H€*.
-#playground/day/Day#mapKFirst().(fk)*fk€*5
- playground/day/Day#mapKSecond(). *
-mapKSecond€*-
-#playground/day/Day#mapKSecond().[H]	*H€*/
-$playground/day/Day#mapKSecond().(fk)*fk€*%
-playground/day/Day#map().*map€*&
-playground/day/Day#map().[B]	*B€*&
-playground/day/Day#map().(f)*f€*
-local2*x€*
-local3*y€*'
-playground/day/Day#fold().*fold€*'
-playground/day/Day#fold().[H]	*H€*)
-playground/day/Day#fold().(fk)*fk€*)
-playground/day/Day#fold().(gk)*gk€*'
-playground/day/Day#swap().*swap€*
-local4*y€*
-local5*x€*/
-playground/day/Day#projectL().*projectL€*+
-!playground/day/Day#projectL().[B]	*B€*-
-!playground/day/Day#projectL().(F)  *F€*-
-!playground/day/Day#projectL().(G)  *G€*/
-playground/day/Day#projectR().*projectR€*+
-!playground/day/Day#projectR().[B]	*B€*-
-!playground/day/Day#projectR().(F)  *F€*-
-!playground/day/Day#projectR().(G)  *G€*!
-playground/day/Day.
- *Day€*)
-playground/day/Day.apply().*apply€*(
-playground/day/Day.apply().[F]	*F€*(
-playground/day/Day.apply().[G]	*G€*(
-playground/day/Day.apply().[X]	*X€*(
-playground/day/Day.apply().[Y]	*Y€*(
-playground/day/Day.apply().[A]	*A€**
-playground/day/Day.apply().(fx)*fx€**
-playground/day/Day.apply().(gy)*gy€*.
-!playground/day/Day.apply().(comb)*comb€*-
-playground/day/Day.combine().*combine€**
- playground/day/Day.combine().[F]	*F€**
- playground/day/Day.combine().[G]	*G€**
- playground/day/Day.combine().[X]	*X€**
- playground/day/Day.combine().[Y]	*Y€**
- playground/day/Day.combine().[A]	*A€*,
-!playground/day/Day.combine().(fx)*fx€*,
-!playground/day/Day.combine().(gy)*gy€*0
-#playground/day/Day.combine().(comb)*comb€*
-local6*x€*
-local7*y€*'
-playground/day/Day.left().*left€*'
-playground/day/Day.left().[F]	*F€*'
-playground/day/Day.left().[G]	*G€*'
-playground/day/Day.left().[A]	*A€*)
-playground/day/Day.left().(fa)*fa€*)
-playground/day/Day.left().(G)  *G€*
-local8*a€*)
-playground/day/Day.right().*right€*(
-playground/day/Day.right().[F]	*F€*(
-playground/day/Day.right().[G]	*G€*(
-playground/day/Day.right().[A]	*A€**
-playground/day/Day.right().(ga)*ga€**
-playground/day/Day.right().(F)  *F€*
-local9*a€*%
-playground/day/Day.zip().*zip€*&
-playground/day/Day.zip().[F]	*F€*&
-playground/day/Day.zip().[G]	*G€*&
-playground/day/Day.zip().[A]	*A€**
-playground/day/Day.zip().(dfg)*dfg€*
-local10*fx€*
-local11*gy€*
-local12*x€*
-local13*y€*'
-playground/day/Day.zipK().*zipK€*'
-playground/day/Day.zipK().[F]	*F€*'
-playground/day/Day.zipK().[G]	*G€*
-local14 *$anon€*
-local15*apply€*
-local16	*X€*
-local17*day€*%
-playground/day/Day.Impl#*Impl€*5
-#playground/day/Day.Impl#`<init>`(). €@*<init>€*5
-'playground/day/Day.Impl#`<init>`().(fx) €*fx€*5
-'playground/day/Day.Impl#`<init>`().(gy) €*gy€*9
-)playground/day/Day.Impl#`<init>`().(comb) €*comb€*%
-playground/day/Day.Impl#[F]	*F€*%
-playground/day/Day.Impl#[G]	*G€*'
-playground/day/Day.Impl#[XX]	*XX€*'
-playground/day/Day.Impl#[YY]	*YY€*%
-playground/day/Day.Impl#[A]	*A€*)
-playground/day/Day.Impl#fx. €*fx€*)
-playground/day/Day.Impl#gy. €*gy€*-
-playground/day/Day.Impl#comb. €*comb€*$
-playground/day/Day.Impl#X#*X€*$
-playground/day/Day.Impl#Y#*Y€**
-playground/day/Day.Impl#run().*run€*+
-!playground/day/Day.Impl#run().(x)*x€*+
-!playground/day/Day.Impl#run().(y)*y€*6
-$playground/day/Day.Impl#mapKFirst().*	mapKFirst€*1
-'playground/day/Day.Impl#mapKFirst().[H]	*H€*3
-(playground/day/Day.Impl#mapKFirst().(fk)*fk€*8
-%playground/day/Day.Impl#mapKSecond().*
-mapKSecond€*2
-(playground/day/Day.Impl#mapKSecond().[H]	*H€*4
-)playground/day/Day.Impl#mapKSecond().(fk)*fk€*1
-playground/day/DayImplicits#*DayImplicits€*9
-'playground/day/DayImplicits#`<init>`(). €@*<init>€*N
-1playground/day/DayImplicits#given_Comonad_DayF(). (*given_Comonad_DayF€*>
-4playground/day/DayImplicits#given_Comonad_DayF().[F]	*F€*>
-4playground/day/DayImplicits#given_Comonad_DayF().[G]	*G€*>
-4playground/day/DayImplicits#given_Comonad_DayF().[A]	*A€*3
-playground/day/DayImplicits1#*DayImplicits1€*:
-(playground/day/DayImplicits1#`<init>`(). €@*<init>€*S
-4playground/day/DayImplicits1#given_CoflatMap_DayF(). (*given_CoflatMap_DayF€*A
-7playground/day/DayImplicits1#given_CoflatMap_DayF().[F]	*F€*A
-7playground/day/DayImplicits1#given_CoflatMap_DayF().[G]	*G€*A
-7playground/day/DayImplicits1#given_CoflatMap_DayF().[A]	*A€*3
-playground/day/DayImplicits2#*DayImplicits2€*:
-(playground/day/DayImplicits2#`<init>`(). €@*<init>€*W
-6playground/day/DayImplicits2#given_Applicative_DayF(). (*given_Applicative_DayF€*C
-9playground/day/DayImplicits2#given_Applicative_DayF().[F]	*F€*C
-9playground/day/DayImplicits2#given_Applicative_DayF().[G]	*G€*C
-9playground/day/DayImplicits2#given_Applicative_DayF().[A]	*A€*3
-playground/day/DayImplicits3#*DayImplicits3€*:
-(playground/day/DayImplicits3#`<init>`(). €@*<init>€*K
-0playground/day/DayImplicits3#given_Apply_DayF(). (*given_Apply_DayF€*=
-3playground/day/DayImplicits3#given_Apply_DayF().[F]	*F€*=
-3playground/day/DayImplicits3#given_Apply_DayF().[G]	*G€*=
-3playground/day/DayImplicits3#given_Apply_DayF().[A]	*A€*3
-playground/day/DayImplicits4#*DayImplicits4€*:
-(playground/day/DayImplicits4#`<init>`(). €@*<init>€*O
-2playground/day/DayImplicits4#given_Functor_DayF(). (*given_Functor_DayF€*?
-5playground/day/DayImplicits4#given_Functor_DayF().[F]	*F€*?
-5playground/day/DayImplicits4#given_Functor_DayF().[G]	*G€*-
-playground/day/DayFunctor#*
-DayFunctor€*7
-%playground/day/DayFunctor#`<init>`(). €@*<init>€*'
-playground/day/DayFunctor#[F]	*F€*'
-playground/day/DayFunctor#[G]	*G€*,
- playground/day/DayFunctor#map().*map€*-
-#playground/day/DayFunctor#map().[A]	*A€*-
-#playground/day/DayFunctor#map().[B]	*B€*/
-$playground/day/DayFunctor#map().(fa)*fa€*-
-#playground/day/DayFunctor#map().(f)*f€*)
-playground/day/DayApply#*DayApply€*5
-#playground/day/DayApply#`<init>`(). €@*<init>€*%
-playground/day/DayApply#[F]	*F€*%
-playground/day/DayApply#[G]	*G€*(
-playground/day/DayApply#ap().*ap€**
- playground/day/DayApply#ap().[A]	*A€**
- playground/day/DayApply#ap().[B]	*B€*,
-!playground/day/DayApply#ap().(ff)*ff€*,
-!playground/day/DayApply#ap().(fa)*fa€*,
-playground/day/DayApply#map2().*map2€*,
-"playground/day/DayApply#map2().[A]	*A€*,
-"playground/day/DayApply#map2().[B]	*B€*,
-"playground/day/DayApply#map2().[Z]	*Z€*.
-#playground/day/DayApply#map2().(fa)*fa€*.
-#playground/day/DayApply#map2().(fb)*fb€*,
-"playground/day/DayApply#map2().(f)*f€*
-local18*x$1€*
-local19*x$2€*
-local20 €*ax€*
-local21 €*bx€*
-local22 €*ay€*
-local23 €*by€*5
-playground/day/DayApplicative#*DayApplicative€*;
-)playground/day/DayApplicative#`<init>`(). €@*<init>€*+
-!playground/day/DayApplicative#[F]	*F€*+
-!playground/day/DayApplicative#[G]	*G€*3
-#playground/day/DayApplicative#unit. €*unit€*2
-%playground/day/DayApplicative#pure().*pure€*2
-(playground/day/DayApplicative#pure().[A]	*A€*2
-(playground/day/DayApplicative#pure().(x)*x€*1
-playground/day/DayCoflatMap#*DayCoflatMap€*9
-'playground/day/DayCoflatMap#`<init>`(). €@*<init>€*)
-playground/day/DayCoflatMap#[F]	*F€*)
-playground/day/DayCoflatMap#[G]	*G€*:
-(playground/day/DayCoflatMap#coflatMap().*	coflatMap€*5
-+playground/day/DayCoflatMap#coflatMap().[A]	*A€*5
-+playground/day/DayCoflatMap#coflatMap().[B]	*B€*7
-,playground/day/DayCoflatMap#coflatMap().(fa)*fa€*5
-+playground/day/DayCoflatMap#coflatMap().(f)*f€*
-local24*fx€*
-local25*gy€*-
-playground/day/DayComonad#*
-DayComonad€*7
-%playground/day/DayComonad#`<init>`(). €@*<init>€*'
-playground/day/DayComonad#[F]	*F€*'
-playground/day/DayComonad#[G]	*G€*4
-$playground/day/DayComonad#extract().*extract€*1
-'playground/day/DayComonad#extract().[A]	*A€*1
-'playground/day/DayComonad#extract().(x)*x€*)
-playground/day/Day$package. *day€*-
- playground/day/Day$package.DayF#*DayF€*-
-#playground/day/Day$package.DayF#[F]	*F€*-
-#playground/day/Day$package.DayF#[G]	*G€*-
-#playground/day/Day$package.DayF#[A]	*A€*3
-#playground/day/Day$package.CofreeF#*CofreeF€*0
-&playground/day/Day$package.CofreeF#[F]	*F€*0
-&playground/day/Day$package.CofreeF#[A]	*A€2
- playground/day/2
- playground/2
- kuraga/2
- cats/free/Cofree.2
- cats/free/Cofree#2
- 
-cats/free/2
- cats/2(
- cats/syntax/package.apply.2
- cats/syntax/2
- cats/2,
- cats/syntax/package.coflatMap.2
- cats/syntax/2
- cats/2*
- cats/syntax/package.comonad.2
- cats/syntax/2
- cats/2*
- cats/syntax/package.functor.2
- cats/syntax/2
- cats/2.
-  cats/syntax/package.semigroupal.2
- cats/syntax/2
- cats/2
- cats/2!
- 	playground/day/Day#2,
-	 	playground/day/Day#`<init>`().2$
-
- playground/day/Day#[F]2$
- playground/day/Day#[G]2$
- playground/day/Day#[A]2#
- playground/day/Day#X#2#
- playground/day/Day#Y#2&
- playground/day/Day#fx().2$
-
- playground/day/Day#[F]2#
- playground/day/Day#X#2&
- playground/day/Day#gy().2$
-
- playground/day/Day#[G]2#
- playground/day/Day#Y#2'
- 	playground/day/Day#run().2*
-
- playground/day/Day#run().(x)2#
- playground/day/Day#X#2*
- playground/day/Day#run().(y)2#
- playground/day/Day#Y#2
- 
-cats/Eval#2$
- playground/day/Day#[A]2(
- 
-playground/day/Day#comb().2#
- playground/day/Day#X#2#
- playground/day/Day#Y#2
- 
-cats/Eval#2$
- playground/day/Day#[A]2'
-  #playground/day/Day#run().2
-   local02
-   local12-
- playground/day/Day#mapKFirst().20
- "playground/day/Day#mapKFirst().[H]21
- #playground/day/Day#mapKFirst().(fk)2,
- kuraga/functions$package.`~>`#2$
- playground/day/Day#[F]20
-  "playground/day/Day#mapKFirst().[H]2!
-# &playground/day/Day#20
-' ("playground/day/Day#mapKFirst().[H]2$
-* +playground/day/Day#[G]2$
-- .playground/day/Day#[A]2.
-  playground/day/Day#mapKSecond().21
- #playground/day/Day#mapKSecond().[H]22
- $playground/day/Day#mapKSecond().(fk)2,
- kuraga/functions$package.`~>`#2$
- playground/day/Day#[G]21
-  !#playground/day/Day#mapKSecond().[H]2!
-$ 'playground/day/Day#2$
-( )playground/day/Day#[F]21
-+ ,#playground/day/Day#mapKSecond().[H]2$
-. /playground/day/Day#[A]2'
- 	playground/day/Day#map().2*
-
- playground/day/Day#map().[B]2*
- playground/day/Day#map().(f)2$
- playground/day/Day#[A]2*
- playground/day/Day#map().[B]2!
- playground/day/Day#2$
- playground/day/Day#[F]2$
-  !playground/day/Day#[G]2*
-# $playground/day/Day#map().[B]2)
-; ;playground/day/Day.apply().2!
-8 ;playground/day/Day.2$
-< =playground/day/Day#[F]2$
-? @playground/day/Day#[G]2#
-B Cplayground/day/Day#X#2#
-E Fplayground/day/Day#Y#2*
-H Iplayground/day/Day#map().[B]2&
-K Mplayground/day/Day#fx().2&
-O Qplayground/day/Day#gy().2
-T Ulocal22
-W Xlocal32
-h kcats/Eval#map().2&
-a ascala/Function2#apply().2(
-] aplayground/day/Day#comb().2
-b clocal22
-e flocal32*
-l mplayground/day/Day#map().(f)2(
- 
-playground/day/Day#fold().2+
- playground/day/Day#fold().[H]2,
- playground/day/Day#fold().(fk)2,
-  kuraga/functions$package.`~>`#2$
- playground/day/Day#[F]2+
-! "playground/day/Day#fold().[H]2,
-$ &playground/day/Day#fold().(gk)2,
-* ,kuraga/functions$package.`~>`#2$
-( )playground/day/Day#[G]2+
-- .playground/day/Day#fold().[H]2
- cats/Apply#2+
- playground/day/Day#fold().[H]2+
-1 2playground/day/Day#fold().[H]2$
-3 4playground/day/Day#[A]2%
-R Ucats/Functor.Ops#map().27
-8 8)cats/Functor.ToFunctorOps#toFunctorOps().2$
-? Ccats/Apply.Ops#map2().28
-8 8*cats/syntax/ApplySyntax#catsSyntaxApply().2,
-8 :playground/day/Day#fold().(fk)2&
-; =playground/day/Day#fx().2,
-D Fplayground/day/Day#fold().(gk)2&
-G Iplayground/day/Day#gy().2(
-L Pplayground/day/Day#comb().2 
-X ]cats/Eval#value().2(
- 
-playground/day/Day#swap().2!
- playground/day/Day#2$
- playground/day/Day#[G]2$
- playground/day/Day#[F]2$
- playground/day/Day#[A]2)
-; ;playground/day/Day.apply().2!
-8 ;playground/day/Day.2&
-< >playground/day/Day#gy().2&
-@ Bplayground/day/Day#fx().2
-E Flocal42
-H Ilocal52&
-R Rscala/Function2#apply().2(
-N Rplayground/day/Day#comb().2
-S Tlocal52
-V Wlocal42,
- playground/day/Day#projectL().2/
- !playground/day/Day#projectL().[B]2/
- !playground/day/Day#projectL().(F)2
- %cats/Functor#2$
-& 'playground/day/Day#[F]2/
-* +!playground/day/Day#projectL().(G)2
-- 4cats/Comonad#2$
-5 6playground/day/Day#[G]2$
-: ;playground/day/Day#[F]2$
-< =playground/day/Day#[A]2%
-D Gcats/Functor.Ops#map().27
-A A)cats/Functor.ToFunctorOps#toFunctorOps().2&
-A Cplayground/day/Day#fx().2/
-C C!playground/day/Day#projectL().(F)2 
-[ `cats/Eval#value().2'
-H Kplayground/day/Day#run().2)
-R Ycats/Comonad.Ops#extract().27
-O O)cats/Comonad.ToComonadOps#toComonadOps().2&
-O Qplayground/day/Day#gy().2/
-Q Q!playground/day/Day#projectL().(G)2,
- playground/day/Day#projectR().2/
- !playground/day/Day#projectR().[B]2/
- !playground/day/Day#projectR().(F)2
- %cats/Comonad#2$
-& 'playground/day/Day#[F]2/
-* +!playground/day/Day#projectR().(G)2
-- 4cats/Functor#2$
-5 6playground/day/Day#[G]2$
-: ;playground/day/Day#[G]2$
-< =playground/day/Day#[A]2%
-D Gcats/Functor.Ops#map().27
-A A)cats/Functor.ToFunctorOps#toFunctorOps().2&
-A Cplayground/day/Day#gy().2/
-C C!playground/day/Day#projectR().(G)2 
-[ `cats/Eval#value().2'
-H Kplayground/day/Day#run().2)
-O Vcats/Comonad.Ops#extract().27
-L L)cats/Comonad.ToComonadOps#toComonadOps().2&
-L Nplayground/day/Day#fx().2/
-N N!playground/day/Day#projectR().(F)2!
- 
-playground/day/Day.2*
- playground/day/DayImplicits#2)
- playground/day/Day.apply().2,
- playground/day/Day.apply().[F]2,
- playground/day/Day.apply().[G]2,
- playground/day/Day.apply().[X]2,
- playground/day/Day.apply().[Y]2,
-  !playground/day/Day.apply().[A]2-
-# %playground/day/Day.apply().(fx)2,
-' (playground/day/Day.apply().[F]2,
-) *playground/day/Day.apply().[X]2-
-- /playground/day/Day.apply().(gy)2,
-1 2playground/day/Day.apply().[G]2,
-3 4playground/day/Day.apply().[Y]2/
-7 ;!playground/day/Day.apply().(comb)2,
-> ?playground/day/Day.apply().[X]2,
-A Bplayground/day/Day.apply().[Y]2
-G K
-cats/Eval#2,
-L Mplayground/day/Day.apply().[A]2!
-Q Tplayground/day/Day#2,
-U Vplayground/day/Day.apply().[F]2,
-X Yplayground/day/Day.apply().[G]2,
-[ \playground/day/Day.apply().[A]21
-d d#playground/day/Day.Impl#`<init>`().2-
-e gplayground/day/Day.apply().(fx)2-
-i kplayground/day/Day.apply().(gy)2/
-m q!playground/day/Day.apply().(comb)2+
-!! playground/day/Day.combine().2.
-!!  playground/day/Day.combine().[F]2.
-!!  playground/day/Day.combine().[G]2.
-!!  playground/day/Day.combine().[X]2.
-!!   playground/day/Day.combine().[Y]2.
-!"! # playground/day/Day.combine().[A]2/
-!%! '!playground/day/Day.combine().(fx)2.
-!)! * playground/day/Day.combine().[F]2.
-!+! , playground/day/Day.combine().[X]2/
-!/! 1!playground/day/Day.combine().(gy)2.
-!3! 4 playground/day/Day.combine().[G]2.
-!5! 6 playground/day/Day.combine().[Y]21
-!9! =#playground/day/Day.combine().(comb)2.
-!@! A playground/day/Day.combine().[X]2.
-!C! D playground/day/Day.combine().[Y]2.
-!I! J playground/day/Day.combine().[A]2!
-!M! Pplayground/day/Day#2.
-!Q! R playground/day/Day.combine().[F]2.
-!T! U playground/day/Day.combine().[G]2.
-!W! X playground/day/Day.combine().[A]21
-"" #playground/day/Day.Impl#`<init>`().2/
-"" !playground/day/Day.combine().(fx)2/
-"" !playground/day/Day.combine().(gy)2
-"" local62
-"" local72 
-"$" )cats/Eval.later().2
-"" #
-cats/Eval.2&
-"." .scala/Function2#apply().21
-"*" .#playground/day/Day.combine().(comb)2
-"/" 0local62
-"2" 3local72(
-$$ playground/day/Day.left().2+
-$$ playground/day/Day.left().[F]2+
-$$ playground/day/Day.left().[G]2+
-$$ playground/day/Day.left().[A]2,
-$$ playground/day/Day.left().(fa)2+
-$ $ !playground/day/Day.left().[F]2+
-$"$ #playground/day/Day.left().[A]2+
-$-$ .playground/day/Day.left().(G)2%
-$0$ Acats/InvariantMonoidal#2+
-$B$ Cplayground/day/Day.left().[G]2!
-$G$ Jplayground/day/Day#2+
-$K$ Lplayground/day/Day.left().[F]2+
-$N$ Oplayground/day/Day.left().[G]2+
-$Q$ Rplayground/day/Day.left().[A]2+
-$V$ ]playground/day/Day.combine().2,
-$^$ `playground/day/Day.left().(fa)2,
-$d$ hcats/InvariantMonoidal#unit().2+
-$b$ cplayground/day/Day.left().(G)2
-$k$ llocal82
-$t$ ulocal82)
-&& playground/day/Day.right().2,
-&& playground/day/Day.right().[F]2,
-&& playground/day/Day.right().[G]2,
-&& playground/day/Day.right().[A]2-
-&& playground/day/Day.right().(ga)2,
-&!& "playground/day/Day.right().[G]2,
-&#& $playground/day/Day.right().[A]2,
-&.& /playground/day/Day.right().(F)2%
-&1& Bcats/InvariantMonoidal#2,
-&C& Dplayground/day/Day.right().[F]2!
-&H& Kplayground/day/Day#2,
-&L& Mplayground/day/Day.right().[F]2,
-&O& Pplayground/day/Day.right().[G]2,
-&R& Splayground/day/Day.right().[A]2+
-&[& bplayground/day/Day.combine().2!
-&W& Zplayground/day/Day.2,
-&e& icats/InvariantMonoidal#unit().2,
-&c& dplayground/day/Day.right().(F)2-
-&k& mplayground/day/Day.right().(ga)2
-&s& tlocal92
-&y& zlocal92'
-)
-) playground/day/Day.zip().2*
-(( playground/day/Day.zip().[F]2*
-(( playground/day/Day.zip().[G]2*
-(( playground/day/Day.zip().[A]2,
-(( !playground/day/Day.zip().(dfg)2!
-(#( &playground/day/Day#21
-('( .#playground/day/Day$package.CofreeF#2*
-(/( 0playground/day/Day.zip().[F]21
-(3( :#playground/day/Day$package.CofreeF#2*
-(;( <playground/day/Day.zip().[G]2*
-(?( @playground/day/Day.zip().[A]2
-)) cats/free/Cofree#2.
-))  playground/day/Day$package.DayF#2*
-)) playground/day/Day.zip().[F]2*
-)) playground/day/Day.zip().[G]2*
-)") #playground/day/Day.zip().[A]2'
-)-) -cats/free/Cofree.apply().2
-)') -cats/free/Cofree.2 
-*+* 0cats/Eval#value().2&
-** scala/Function2#apply().2(
-** playground/day/Day#comb().2,
-** playground/day/Day.zip().(dfg)2$
-** cats/free/Cofree#head.2&
-** playground/day/Day#fx().2,
-** playground/day/Day.zip().(dfg)2$
-*%* )cats/free/Cofree#head.2&
-*"* $playground/day/Day#gy().2,
-** !playground/day/Day.zip().(dfg)26
-+#+ '(cats/syntax/Tuple2SemigroupalOps#mapN().2O
-++ Acats/syntax/TupleSemigroupalSyntax#catsSyntaxTuple2Semigroupal().2#
-+	+ 	scala/Tuple2.apply().2$
-++ cats/free/Cofree#tail.2&
-++ playground/day/Day#fx().2,
-+	+ playground/day/Day.zip().(dfg)2$
-++ !cats/free/Cofree#tail.2&
-++ playground/day/Day#gy().2,
-++ playground/day/Day.zip().(dfg)2
-+)+ +local102
-+-+ /local112)
-+7+ 7playground/day/Day.apply().2!
-+4+ 7playground/day/Day.2
-+8+ :local102
-+<+ >local112
-+A+ Blocal122
-+D+ Elocal132 
-+O+ Tcats/Eval.later().2
-+J+ N
-cats/Eval.2'
-+U+ Uplayground/day/Day.zip().2)
-+X+ Xplayground/day/Day.apply().2!
-+U+ Xplayground/day/Day.2
-+Y+ Zlocal122
-+\+ ]local132(
-+c+ gplayground/day/Day#comb().2,
-+_+ bplayground/day/Day.zip().(dfg)24
-+o+ o&cats/EvalInstances#catsBimonadForEval.2(
-.. playground/day/Day.zipK().2+
-.. playground/day/Day.zipK().[F]2+
-.. playground/day/Day.zipK().[G]2,
-.7. 9kuraga/functions$package.`~>`#2.
-..  playground/day/Day$package.DayF#21
-.. &#playground/day/Day$package.CofreeF#2+
-.'. (playground/day/Day.zipK().[F]21
-.+. 2#playground/day/Day$package.CofreeF#2+
-.3. 4playground/day/Day.zipK().[G]21
-.:. A#playground/day/Day$package.CofreeF#2.
-.B. F playground/day/Day$package.DayF#2+
-.G. Hplayground/day/Day.zipK().[F]2+
-.J. Kplayground/day/Day.zipK().[G]2
-/	/ 	local152
-/	/ 
-local162
-// local172!
-// playground/day/Day#21
-//  #playground/day/Day$package.CofreeF#2+
-/!/ "playground/day/Day.zipK().[F]21
-/%/ ,#playground/day/Day$package.CofreeF#2+
-/-/ .playground/day/Day.zipK().[G]2
-/1/ 2local162'
-/8/ 8playground/day/Day.zip().2
-/8/ ;local172&
-33 playground/day/Day.Impl#21
-33 #playground/day/Day.Impl#`<init>`().2)
-44 playground/day/Day.Impl#[F]2*
-44 playground/day/Day.Impl#[XX]2)
-55 playground/day/Day.Impl#[G]2*
-55 playground/day/Day.Impl#[YY]2*
-66 playground/day/Day.Impl#[XX]2*
-6 6 "playground/day/Day.Impl#[YY]2
-6'6 +
-cats/Eval#2)
-6,6 -playground/day/Day.Impl#[A]2!
-686 ;playground/day/Day#2)
-6<6 =playground/day/Day.Impl#[F]2)
-6?6 @playground/day/Day.Impl#[G]2)
-6B6 Cplayground/day/Day.Impl#[A]2)
-33 playground/day/Day.Impl#[F]2)
-33 playground/day/Day.Impl#[G]2*
-3#3 %playground/day/Day.Impl#[XX]2*
-3'3 )playground/day/Day.Impl#[YY]2)
-3+3 ,playground/day/Day.Impl#[A]2)
-44 playground/day/Day.Impl#fx.2)
-55 playground/day/Day.Impl#gy.2+
-66 playground/day/Day.Impl#comb.2(
-88 playground/day/Day.Impl#X#2*
-88 playground/day/Day.Impl#[XX]2(
-99 playground/day/Day.Impl#Y#2*
-99 playground/day/Day.Impl#[YY]2,
-;; playground/day/Day.Impl#run().2/
-;; !playground/day/Day.Impl#run().(x)2*
-;; playground/day/Day.Impl#[XX]2/
-; ; !!playground/day/Day.Impl#run().(y)2*
-;#; %playground/day/Day.Impl#[YY]2
-;(; ,
-cats/Eval#2)
-;-; .playground/day/Day.Impl#[A]2&
-;6; 6scala/Function2#apply().2+
-;2; 6playground/day/Day.Impl#comb.2/
-;7; 8!playground/day/Day.Impl#run().(x)2/
-;:; ;!playground/day/Day.Impl#run().(y)22
-<< $playground/day/Day.Impl#mapKFirst().25
-<<  'playground/day/Day.Impl#mapKFirst().[H]26
-<%< '(playground/day/Day.Impl#mapKFirst().(fk)2,
-<+< -kuraga/functions$package.`~>`#2)
-<)< *playground/day/Day.Impl#[F]25
-<.< /'playground/day/Day.Impl#mapKFirst().[H]2!
-<2< 5playground/day/Day#25
-<6< 7'playground/day/Day.Impl#mapKFirst().[H]2)
-<9< :playground/day/Day.Impl#[G]2)
-<<< =playground/day/Day.Impl#[A]2)
-<E< Eplayground/day/Day.apply().2!
-<B< Eplayground/day/Day.26
-<F< H(playground/day/Day.Impl#mapKFirst().(fk)2)
-<I< Kplayground/day/Day.Impl#fx.2)
-<N< Pplayground/day/Day.Impl#gy.2+
-<R< Vplayground/day/Day.Impl#comb.23
-== %playground/day/Day.Impl#mapKSecond().26
-= = !(playground/day/Day.Impl#mapKSecond().[H]27
-=&= ()playground/day/Day.Impl#mapKSecond().(fk)2,
-=,= .kuraga/functions$package.`~>`#2)
-=*= +playground/day/Day.Impl#[G]26
-=/= 0(playground/day/Day.Impl#mapKSecond().[H]2!
-=3= 6playground/day/Day#2)
-=7= 8playground/day/Day.Impl#[F]26
-=:= ;(playground/day/Day.Impl#mapKSecond().[H]2)
-=== >playground/day/Day.Impl#[A]2)
-=E= Eplayground/day/Day.apply().2!
-=B= Eplayground/day/Day.2)
-=F= Hplayground/day/Day.Impl#fx.27
-=J= L)playground/day/Day.Impl#mapKSecond().(fk)2)
-=M= Oplayground/day/Day.Impl#gy.2+
-=R= Vplayground/day/Day.Impl#comb.2*
-DD playground/day/DayImplicits#25
-DD 'playground/day/DayImplicits#`<init>`().2+
-DD (playground/day/DayImplicits1#2?
-E
-E 1playground/day/DayImplicits#given_Comonad_DayF().2B
-EE 4playground/day/DayImplicits#given_Comonad_DayF().[F]2B
-EE 4playground/day/DayImplicits#given_Comonad_DayF().[G]2B
-E)E *4playground/day/DayImplicits#given_Comonad_DayF().[A]2
-EE cats/Comonad#2B
-EE 4playground/day/DayImplicits#given_Comonad_DayF().[F]2
-E E 'cats/Comonad#2B
-E'E '4playground/day/DayImplicits#given_Comonad_DayF().[G]2
-E/E 6cats/Comonad#2.
-E7E ; playground/day/Day$package.DayF#2B
-E<E =4playground/day/DayImplicits#given_Comonad_DayF().[F]2B
-E?E @4playground/day/DayImplicits#given_Comonad_DayF().[G]23
-ESE S%playground/day/DayComonad#`<init>`().2+
-GG playground/day/DayImplicits1#26
-GG (playground/day/DayImplicits1#`<init>`().2+
-GG )playground/day/DayImplicits2#2B
-H
-H 4playground/day/DayImplicits1#given_CoflatMap_DayF().2E
-HH 7playground/day/DayImplicits1#given_CoflatMap_DayF().[F]2E
-HH 7playground/day/DayImplicits1#given_CoflatMap_DayF().[G]2E
-H-H .7playground/day/DayImplicits1#given_CoflatMap_DayF().[A]2
-HH cats/CoflatMap#2E
-HH 7playground/day/DayImplicits1#given_CoflatMap_DayF().[F]2
-H"H +cats/CoflatMap#2E
-H+H +7playground/day/DayImplicits1#given_CoflatMap_DayF().[G]2
-H3H <cats/CoflatMap#2.
-H=H A playground/day/Day$package.DayF#2E
-HBH C7playground/day/DayImplicits1#given_CoflatMap_DayF().[F]2E
-HEH F7playground/day/DayImplicits1#given_CoflatMap_DayF().[G]25
-H[H ['playground/day/DayCoflatMap#`<init>`().2+
-JJ playground/day/DayImplicits2#26
-JJ (playground/day/DayImplicits2#`<init>`().2+
-JJ )playground/day/DayImplicits3#2D
-K	K 6playground/day/DayImplicits2#given_Applicative_DayF().2G
-K
-K 9playground/day/DayImplicits2#given_Applicative_DayF().[F]2G
-K#K $9playground/day/DayImplicits2#given_Applicative_DayF().[G]2G
-K<K =9playground/day/DayImplicits2#given_Applicative_DayF().[A]2%
-KK !cats/InvariantMonoidal#2G
-K!K !9playground/day/DayImplicits2#given_Applicative_DayF().[F]2%
-K)K :cats/InvariantMonoidal#2G
-K:K :9playground/day/DayImplicits2#given_Applicative_DayF().[G]2
-K@K Kcats/Applicative#2.
-KLK P playground/day/Day$package.DayF#2G
-KQK R9playground/day/DayImplicits2#given_Applicative_DayF().[F]2G
-KTK U9playground/day/DayImplicits2#given_Applicative_DayF().[G]27
-KlK l)playground/day/DayApplicative#`<init>`().2+
-MM playground/day/DayImplicits3#26
-MM (playground/day/DayImplicits3#`<init>`().2+
-MM )playground/day/DayImplicits4#2>
-N	N 0playground/day/DayImplicits3#given_Apply_DayF().2A
-N
-N 3playground/day/DayImplicits3#given_Apply_DayF().[F]2A
-NN 3playground/day/DayImplicits3#given_Apply_DayF().[G]2A
-N0N 13playground/day/DayImplicits3#given_Apply_DayF().[A]2
-NN cats/Semigroupal#2A
-NN 3playground/day/DayImplicits3#given_Apply_DayF().[F]2
-N#N .cats/Semigroupal#2A
-N.N .3playground/day/DayImplicits3#given_Apply_DayF().[G]2
-N4N 9cats/Apply#2.
-N:N > playground/day/Day$package.DayF#2A
-N?N @3playground/day/DayImplicits3#given_Apply_DayF().[F]2A
-NBN C3playground/day/DayImplicits3#given_Apply_DayF().[G]21
-NTN T#playground/day/DayApply#`<init>`().2+
-PP playground/day/DayImplicits4#26
-QQ (playground/day/DayImplicits4#`<init>`().2@
-Q
-Q 2playground/day/DayImplicits4#given_Functor_DayF().2C
-QQ 5playground/day/DayImplicits4#given_Functor_DayF().[F]2C
-QQ 5playground/day/DayImplicits4#given_Functor_DayF().[G]2
-QQ !cats/Functor#2.
-Q"Q & playground/day/Day$package.DayF#2C
-Q'Q (5playground/day/DayImplicits4#given_Functor_DayF().[F]2C
-Q*Q +5playground/day/DayImplicits4#given_Functor_DayF().[G]23
-Q>Q >%playground/day/DayFunctor#`<init>`().2(
-TT playground/day/DayFunctor#23
-TT %playground/day/DayFunctor#`<init>`().2
-T%T ,cats/Functor#2.
-T-T 1 playground/day/Day$package.DayF#2+
-T2T 3playground/day/DayFunctor#[F]2+
-T5T 6playground/day/DayFunctor#[G]2+
-TT playground/day/DayFunctor#[F]2+
-TT playground/day/DayFunctor#[G]2.
-UU  playground/day/DayFunctor#map().21
-UU #playground/day/DayFunctor#map().[A]21
-UU #playground/day/DayFunctor#map().[B]22
-UU $playground/day/DayFunctor#map().(fa)2!
-UU "playground/day/Day#2+
-U#U $playground/day/DayFunctor#[F]2+
-U&U 'playground/day/DayFunctor#[G]21
-U)U *#playground/day/DayFunctor#map().[A]21
-U-U .#playground/day/DayFunctor#map().(f)21
-U0U 1#playground/day/DayFunctor#map().[A]21
-U5U 6#playground/day/DayFunctor#map().[B]2!
-U9U <playground/day/Day#2+
-U=U >playground/day/DayFunctor#[F]2+
-U@U Aplayground/day/DayFunctor#[G]21
-UCU D#playground/day/DayFunctor#map().[B]2'
-UKU Nplayground/day/Day#map().22
-UHU J$playground/day/DayFunctor#map().(fa)21
-UOU P#playground/day/DayFunctor#map().(f)2&
-XX playground/day/DayApply#21
-XX #playground/day/DayApply#`<init>`().2
-XX  cats/Semigroupal#2)
-X X  playground/day/DayApply#[F]2
-X(X 3cats/Semigroupal#2)
-X3X 3playground/day/DayApply#[G]23
-XMX M%playground/day/DayFunctor#`<init>`().2(
-X=X Gplayground/day/DayFunctor#2)
-XHX Iplayground/day/DayApply#[F]2)
-XKX Lplayground/day/DayApply#[G]2
-XSX Xcats/Apply#2.
-XYX ] playground/day/Day$package.DayF#2)
-X^X _playground/day/DayApply#[F]2)
-XaX bplayground/day/DayApply#[G]2)
-XX playground/day/DayApply#[F]2)
-X"X #playground/day/DayApply#[G]2+
-YY playground/day/DayApply#ap().2.
-YY  playground/day/DayApply#ap().[A]2.
-YY  playground/day/DayApply#ap().[B]2/
-YY !playground/day/DayApply#ap().(ff)2!
-YY !playground/day/Day#2)
-Y"Y #playground/day/DayApply#[F]2)
-Y%Y &playground/day/DayApply#[G]2.
-Y(Y ) playground/day/DayApply#ap().[A]2.
-Y-Y . playground/day/DayApply#ap().[B]2/
-Y1Y 3!playground/day/DayApply#ap().(fa)2!
-Y5Y 8playground/day/Day#2)
-Y9Y :playground/day/DayApply#[F]2)
-Y<Y =playground/day/DayApply#[G]2.
-Y?Y @ playground/day/DayApply#ap().[A]2!
-YDY Gplayground/day/Day#2)
-YHY Iplayground/day/DayApply#[F]2)
-YKY Lplayground/day/DayApply#[G]2.
-YNY O playground/day/DayApply#ap().[B]2-
-YSY Wplayground/day/DayApply#map2().2/
-YXY Z!playground/day/DayApply#ap().(ff)2/
-Y\Y ^!playground/day/DayApply#ap().(fa)2&
-YaY ascala/Function1#apply().2-
-ZZ playground/day/DayApply#map2().20
-ZZ "playground/day/DayApply#map2().[A]20
-ZZ "playground/day/DayApply#map2().[B]20
-ZZ "playground/day/DayApply#map2().[Z]21
-ZZ !#playground/day/DayApply#map2().(fa)2!
-Z#Z &playground/day/Day#2)
-Z'Z (playground/day/DayApply#[F]2)
-Z*Z +playground/day/DayApply#[G]20
-Z-Z ."playground/day/DayApply#map2().[A]21
-Z1Z 3#playground/day/DayApply#map2().(fb)2!
-Z5Z 8playground/day/Day#2)
-Z9Z :playground/day/DayApply#[F]2)
-Z<Z =playground/day/DayApply#[G]20
-Z?Z @"playground/day/DayApply#map2().[B]20
-ZCZ D"playground/day/DayApply#map2().(f)20
-ZGZ H"playground/day/DayApply#map2().[A]20
-ZJZ K"playground/day/DayApply#map2().[B]20
-ZPZ Q"playground/day/DayApply#map2().[Z]2!
-ZTZ Wplayground/day/Day#2)
-ZXZ Yplayground/day/DayApply#[F]2)
-Z[Z \playground/day/DayApply#[G]20
-Z^Z _"playground/day/DayApply#map2().[Z]2)
-[[ playground/day/Day.apply().2!
-[[ playground/day/Day.2-
-[[ cats/Semigroupal.Ops#product().2D
-[[ 6cats/syntax/SemigroupalSyntax#catsSyntaxSemigroupal().2&
-[[ playground/day/Day#fx().21
-[[ #playground/day/DayApply#map2().(fa)2&
-[[ playground/day/Day#fx().21
-[[ #playground/day/DayApply#map2().(fb)2-
-[([ /cats/Semigroupal.Ops#product().2D
-["[ "6cats/syntax/SemigroupalSyntax#catsSyntaxSemigroupal().2&
-[%[ 'playground/day/Day#gy().21
-["[ $#playground/day/DayApply#map2().(fa)2&
-[3[ 5playground/day/Day#gy().21
-[0[ 2#playground/day/DayApply#map2().(fb)2#
-\
-\ 
-scala/Tuple2.apply().2
-\
-\ 
-local182
-\
-\ 
-local192%
-\\ scala/Tuple2.unapply().2%
-\\ scala/Tuple2.unapply().2
-\\ local202
-\\ local212%
-\\ scala/Tuple2.unapply().2
-\\ local222
-\\ !local232$
-\6\ :cats/Apply.Ops#map2().28
-\'\ '*cats/syntax/ApplySyntax#catsSyntaxApply().2'
-\*\ -playground/day/Day#run().21
-\'\ )#playground/day/DayApply#map2().(fa)2
-\.\ 0local202
-\2\ 4local2224
-\5\ 5&cats/EvalInstances#catsBimonadForEval.2'
-\>\ Aplayground/day/Day#run().21
-\;\ =#playground/day/DayApply#map2().(fb)2
-\B\ Dlocal212
-\F\ Hlocal2320
-\K\ L"playground/day/DayApply#map2().(f)2,
-`` playground/day/DayApplicative#27
-`` )playground/day/DayApplicative#`<init>`().2%
-`` ,cats/InvariantMonoidal#2/
-`,` ,!playground/day/DayApplicative#[F]2%
-`4` Ecats/InvariantMonoidal#2/
-`E` E!playground/day/DayApplicative#[G]21
-`]` ]#playground/day/DayApply#`<init>`().2&
-`O` Wplayground/day/DayApply#2/
-`X` Y!playground/day/DayApplicative#[F]2/
-`[` \!playground/day/DayApplicative#[G]2
-`c` ncats/Applicative#2.
-`o` s playground/day/Day$package.DayF#2/
-`t` u!playground/day/DayApplicative#[F]2/
-`w` x!playground/day/DayApplicative#[G]2/
-`` !playground/day/DayApplicative#[F]2/
-`.` /!playground/day/DayApplicative#[G]21
-aa #playground/day/DayApplicative#unit.2!
-aa playground/day/Day#2/
-aa !playground/day/DayApplicative#[F]2/
-aa !playground/day/DayApplicative#[G]2
-a!a %scala/Unit#2)
-bb playground/day/Day.apply().2!
-bb playground/day/Day.2,
-b)b -cats/InvariantMonoidal#unit().2$
-bb scala/Predef.summon().2%
-bb $cats/InvariantMonoidal#2/
-b%b &!playground/day/DayApplicative#[F]2,
-bLb Pcats/InvariantMonoidal#unit().2$
-b/b 5scala/Predef.summon().2%
-b6b Gcats/InvariantMonoidal#2/
-bHb I!playground/day/DayApplicative#[G]2
-bab dcats/Eval.now().2
-b\b `
-cats/Eval.23
-cc %playground/day/DayApplicative#pure().26
-cc (playground/day/DayApplicative#pure().[A]26
-cc (playground/day/DayApplicative#pure().(x)26
-cc (playground/day/DayApplicative#pure().[A]2!
-c c #playground/day/Day#2/
-c$c %!playground/day/DayApplicative#[F]2/
-c'c (!playground/day/DayApplicative#[G]26
-c*c +(playground/day/DayApplicative#pure().[A]2%
-c/c 2cats/Applicative#map().21
-c3c 7#playground/day/DayApplicative#unit.26
-c>c ?(playground/day/DayApplicative#pure().(x)2*
-ff playground/day/DayCoflatMap#25
-ff 'playground/day/DayCoflatMap#`<init>`().2
-ff "cats/CoflatMap#2-
-f"f "playground/day/DayCoflatMap#[F]2
-f*f 3cats/CoflatMap#2-
-f3f 3playground/day/DayCoflatMap#[G]23
-fMf M%playground/day/DayFunctor#`<init>`().2(
-f=f Gplayground/day/DayFunctor#2-
-fHf Iplayground/day/DayCoflatMap#[F]2-
-fKf Lplayground/day/DayCoflatMap#[G]2
-fSf \cats/CoflatMap#2.
-f]f a playground/day/Day$package.DayF#2-
-fbf cplayground/day/DayCoflatMap#[F]2-
-fef fplayground/day/DayCoflatMap#[G]2-
-ff playground/day/DayCoflatMap#[F]2-
-f$f %playground/day/DayCoflatMap#[G]26
-gg (playground/day/DayCoflatMap#coflatMap().29
-gg +playground/day/DayCoflatMap#coflatMap().[A]29
-gg +playground/day/DayCoflatMap#coflatMap().[B]2:
-g!g #,playground/day/DayCoflatMap#coflatMap().(fa)2!
-g%g (playground/day/Day#2-
-g)g *playground/day/DayCoflatMap#[F]2-
-g,g -playground/day/DayCoflatMap#[G]29
-g/g 0+playground/day/DayCoflatMap#coflatMap().[A]29
-g3g 4+playground/day/DayCoflatMap#coflatMap().(f)2!
-g6g 9playground/day/Day#2-
-g:g ;playground/day/DayCoflatMap#[F]2-
-g=g >playground/day/DayCoflatMap#[G]29
-g@g A+playground/day/DayCoflatMap#coflatMap().[A]29
-gFg G+playground/day/DayCoflatMap#coflatMap().[B]2!
-gJg Mplayground/day/Day#2-
-gNg Oplayground/day/DayCoflatMap#[F]2-
-gQg Rplayground/day/DayCoflatMap#[G]29
-gTg U+playground/day/DayCoflatMap#coflatMap().[B]2)
-hh playground/day/Day.apply().2!
-hh playground/day/Day.2-
-hh cats/CoflatMap.Ops#coflatten().2=
-hh /cats/CoflatMap.ToCoflatMapOps#toCoflatMapOps().2&
-hh playground/day/Day#fx().2:
-hh ,playground/day/DayCoflatMap#coflatMap().(fa)2-
-h#h ,cats/CoflatMap.Ops#coflatten().2=
-hh /cats/CoflatMap.ToCoflatMapOps#toCoflatMapOps().2&
-h h "playground/day/Day#gy().2:
-hh ,playground/day/DayCoflatMap#coflatMap().(fa)2
-h/h 1local242
-h3h 5local252 
-h?h Dcats/Eval.later().2
-h:h >
-cats/Eval.2&
-hFh Fscala/Function1#apply().29
-hEh F+playground/day/DayCoflatMap#coflatMap().(f)2)
-hJh Jplayground/day/Day.apply().2!
-hGh Jplayground/day/Day.2
-hKh Mlocal242
-hOh Qlocal252(
-hVh Zplayground/day/Day#comb().2:
-hSh U,playground/day/DayCoflatMap#coflatMap().(fa)2(
-kk playground/day/DayComonad#23
-kk %playground/day/DayComonad#`<init>`().2
-kk cats/Comonad#2+
-kk playground/day/DayComonad#[F]2
-k&k -cats/Comonad#2+
-k-k -playground/day/DayComonad#[G]25
-kIk I'playground/day/DayCoflatMap#`<init>`().2*
-k7k Cplayground/day/DayCoflatMap#2+
-kDk Eplayground/day/DayComonad#[F]2+
-kGk Hplayground/day/DayComonad#[G]2
-kOk Vcats/Comonad#2.
-kWk [ playground/day/Day$package.DayF#2+
-k\k ]playground/day/DayComonad#[F]2+
-k_k `playground/day/DayComonad#[G]2+
-kk playground/day/DayComonad#[F]2+
-k k !playground/day/DayComonad#[G]22
-ll $playground/day/DayComonad#extract().25
-ll 'playground/day/DayComonad#extract().[A]25
-ll 'playground/day/DayComonad#extract().(x)2!
-ll "playground/day/Day#2+
-l#l $playground/day/DayComonad#[F]2+
-l&l 'playground/day/DayComonad#[G]25
-l)l *'playground/day/DayComonad#extract().[A]25
-l.l /'playground/day/DayComonad#extract().[A]2 
-lTl Ycats/Eval#value().2'
-l4l 7playground/day/Day#run().25
-l2l 3'playground/day/DayComonad#extract().(x)2)
-l=l Dcats/Comonad.Ops#extract().27
-l8l 8)cats/Comonad.ToComonadOps#toComonadOps().2&
-l:l <playground/day/Day#fx().25
-l8l 9'playground/day/DayComonad#extract().(x)2)
-lKl Rcats/Comonad.Ops#extract().27
-lFl F)cats/Comonad.ToComonadOps#toComonadOps().2&
-lHl Jplayground/day/Day#gy().25
-lFl G'playground/day/DayComonad#extract().(x)2%
-
-
-playground/day/Day$package.2.
-
-
- 	 playground/day/Day$package.DayF#21
-
-
-
- #playground/day/Day$package.DayF#[F]21
-
-
- #playground/day/Day$package.DayF#[G]21
-
-
- #playground/day/Day$package.DayF#[A]2!
-
- 
- #playground/day/Day#21
-
-$
- %#playground/day/Day$package.DayF#[F]21
-
-'
- (#playground/day/Day$package.DayF#[G]21
-
-*
- +#playground/day/Day$package.DayF#[A]21
- #playground/day/Day$package.CofreeF#24
- &playground/day/Day$package.CofreeF#[F]24
- &playground/day/Day$package.CofreeF#[A]2
- #cats/free/Cofree#24
-$ %&playground/day/Day$package.CofreeF#[F]24
-' (&playground/day/Day$package.CofreeF#[A]PZ 25F0C5AD9ACEDE2174EB623FC5C24B16

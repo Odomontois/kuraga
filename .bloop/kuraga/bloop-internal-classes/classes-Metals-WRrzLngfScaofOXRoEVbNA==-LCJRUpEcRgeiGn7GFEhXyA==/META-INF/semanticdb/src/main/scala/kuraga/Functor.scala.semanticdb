@@ -1,412 +1,0 @@
-
-ém#src/main/scala/kuraga/Functor.scala*
-kuraga/Functor#*Functor€*,
-kuraga/Functor#`<init>`(). €@*<init>€*
-kuraga/Functor#[F]	*F€*#
-kuraga/Functor#map(). *map€*"
-kuraga/Functor#map().[A]	*A€*"
-kuraga/Functor#map().[B]	*B€*$
-kuraga/Functor#map().(fa)*fa€*"
-kuraga/Functor#map().(f)*f€*
-kuraga/Pure#*Pure€*)
-kuraga/Pure#`<init>`(). €@*<init>€*
-kuraga/Pure#[F]	 €*F€*"
-kuraga/Pure#pure(). *pure€* 
-kuraga/Pure#pure().[A]	*A€* 
-kuraga/Pure#pure().(a)*a€*!
-kuraga/Pure#unit. €*unit€*
-kuraga/Apply#*Apply€**
-kuraga/Apply#`<init>`(). €@*<init>€*
-kuraga/Apply#[F]	*F€*#
-kuraga/Apply#map2(). *map2€*!
-kuraga/Apply#map2().[A]	*A€*!
-kuraga/Apply#map2().[B]	*B€*!
-kuraga/Apply#map2().[C]	*C€*#
-kuraga/Apply#map2().(fa)*fa€*#
-kuraga/Apply#map2().(fb)*fb€*!
-kuraga/Apply#map2().(f)*f€*%
-kuraga/Apply#map2Lz().*map2Lz€*#
-kuraga/Apply#map2Lz().[A]	*A€*#
-kuraga/Apply#map2Lz().[B]	*B€*#
-kuraga/Apply#map2Lz().[C]	*C€*%
-kuraga/Apply#map2Lz().(fa)*fa€*%
-kuraga/Apply#map2Lz().(fb)*fb€*#
-kuraga/Apply#map2Lz().(f)*f€*
-local0*fae€*
-local1*fbr€*
-local2*a€*
-local3*b€*'
-kuraga/Applicative#*Applicative€*0
-kuraga/Applicative#`<init>`(). €@*<init>€* 
-kuraga/Applicative#[F]	*F€*%
-kuraga/Applicative#map().*map€*&
-kuraga/Applicative#map().[A]	*A€*&
-kuraga/Applicative#map().[B]	*B€*(
-kuraga/Applicative#map().(fa)*fa€*&
-kuraga/Applicative#map().(f)*f€*
-local4*a€*
-kuraga/FlatMap#*FlatMap€*,
-kuraga/FlatMap#`<init>`(). €@*<init>€*
-kuraga/FlatMap#[F]	*F€*+
-kuraga/FlatMap#flatMap(). *flatMap€*&
-kuraga/FlatMap#flatMap().[A]	*A€*&
-kuraga/FlatMap#flatMap().[B]	*B€*(
-kuraga/FlatMap#flatMap().(fa)*fa€*&
-kuraga/FlatMap#flatMap().(f)*f€*'
-kuraga/FlatMapTail#*FlatMapTail€*0
-kuraga/FlatMapTail#`<init>`(). €@*<init>€* 
-kuraga/FlatMapTail#[F]	*F€*1
-kuraga/FlatMapTail#tailRecM(). *tailRecM€*+
-!kuraga/FlatMapTail#tailRecM().[A]	*A€*+
-!kuraga/FlatMapTail#tailRecM().[B]	*B€*+
-!kuraga/FlatMapTail#tailRecM().(a)*a€*+
-!kuraga/FlatMapTail#tailRecM().(f)*f€*
-kuraga/Monad#*Monad€**
-kuraga/Monad#`<init>`(). €@*<init>€*
-kuraga/Monad#[F]	*F€*!
-kuraga/Monad#map2().*map2€*!
-kuraga/Monad#map2().[A]	*A€*!
-kuraga/Monad#map2().[B]	*B€*!
-kuraga/Monad#map2().[C]	*C€*#
-kuraga/Monad#map2().(fa)*fa€*#
-kuraga/Monad#map2().(fb)*fb€*!
-kuraga/Monad#map2().(f)*f€*
-local5*a€*
-local6*b€*-
-kuraga/StackSafeMonad#*StackSafeMonad€*3
-!kuraga/StackSafeMonad#`<init>`(). €@*<init>€*#
-kuraga/StackSafeMonad#[F]	*F€*2
-!kuraga/StackSafeMonad#tailRecM().*tailRecM€*.
-$kuraga/StackSafeMonad#tailRecM().[A]	*A€*.
-$kuraga/StackSafeMonad#tailRecM().[B]	*B€*.
-$kuraga/StackSafeMonad#tailRecM().(a)*a€*.
-$kuraga/StackSafeMonad#tailRecM().(f)*f€*
-local7*x$1€*
-local8 €*a€*
-local9 €*b€*
-kuraga/Extract#*Extract€*,
-kuraga/Extract#`<init>`(). €@*<init>€*
-kuraga/Extract#[F]	*F€*+
-kuraga/Extract#extract(). *extract€*&
-kuraga/Extract#extract().[A]	*A€*(
-kuraga/Extract#extract().(fa)*fa€*#
-kuraga/CoFlatMap#*	CoFlatMap€*.
-kuraga/CoFlatMap#`<init>`(). €@*<init>€*
-kuraga/CoFlatMap#[F]	*F€*1
-kuraga/CoFlatMap#coflatMap(). *	coflatMap€**
- kuraga/CoFlatMap#coflatMap().[A]	*A€**
- kuraga/CoFlatMap#coflatMap().[B]	*B€*,
-!kuraga/CoFlatMap#coflatMap().(fa)*fa€**
- kuraga/CoFlatMap#coflatMap().(f)*f€*
-kuraga/Comonad#*Comonad€*,
-kuraga/Comonad#`<init>`(). €@*<init>€*
-kuraga/Comonad#[F]	*F€*!
-kuraga/Comonad#map().*map€*"
-kuraga/Comonad#map().[A]	*A€*"
-kuraga/Comonad#map().[B]	*B€*$
-kuraga/Comonad#map().(fa)*fa€*"
-kuraga/Comonad#map().(f)*f€*
-local10*fa1€2
- kuraga/2
- kuraga/Functor#2(
- kuraga/Functor#`<init>`().2 
- kuraga/Functor#[F]2#
-$ 'kuraga/Functor#map().2&
- kuraga/Functor#map().[A]2&
- kuraga/Functor#map().[B]2'
- kuraga/Functor#map().(fa)2 
- kuraga/Functor#[F]2&
- kuraga/Functor#map().[A]2&
-) *kuraga/Functor#map().(f)2&
-, -kuraga/Functor#map().[A]2&
-1 2kuraga/Functor#map().[B]2 
-6 7kuraga/Functor#[F]2&
-8 9kuraga/Functor#map().[B]2
- 
-kuraga/Pure#2%
-
- 
-kuraga/Pure#`<init>`().2
- kuraga/Pure#[F]2!
- kuraga/Pure#pure().2$
- kuraga/Pure#pure().[A]2$
- kuraga/Pure#pure().(a)2$
- kuraga/Pure#pure().[A]2
-" #kuraga/Pure#[F]2$
-$ %kuraga/Pure#pure().[A]2
- 
-kuraga/Pure#unit.2
- kuraga/Pure#[F]2
- scala/Unit#2!
- kuraga/Pure#pure().2
-		 kuraga/Apply#2&
-		 kuraga/Apply#`<init>`().2
-		 !kuraga/Functor#2
-	"	 #kuraga/Apply#[F]2
-		 kuraga/Apply#[F]2"
-
-%
- )kuraga/Apply#map2().2%
-
-
- kuraga/Apply#map2().[A]2%
-
-
- kuraga/Apply#map2().[B]2%
-
-
- kuraga/Apply#map2().[C]2&
-
-
- kuraga/Apply#map2().(fa)2
-
-
- kuraga/Apply#[F]2%
-
-
- kuraga/Apply#map2().[A]2&
-
-+
- -kuraga/Apply#map2().(fb)2
-
-/
- 0kuraga/Apply#[F]2%
-
-1
- 2kuraga/Apply#map2().[B]2%
-
-5
- 6kuraga/Apply#map2().(f)2%
-
-9
- :kuraga/Apply#map2().[A]2%
-
-<
- =kuraga/Apply#map2().[B]2%
-
-B
- Ckuraga/Apply#map2().[C]2
-
-F
- Gkuraga/Apply#[F]2%
-
-H
- Ikuraga/Apply#map2().[C]2$
-, 2kuraga/Apply#map2Lz().2'
- kuraga/Apply#map2Lz().[A]2'
- kuraga/Apply#map2Lz().[B]2'
- kuraga/Apply#map2Lz().[C]2(
- kuraga/Apply#map2Lz().(fa)2
- kuraga/Eval#2
-  !kuraga/Apply#[F]2'
-" #kuraga/Apply#map2Lz().[A]2(
-3 5kuraga/Apply#map2Lz().(fb)2
-7 ;kuraga/Eval#2
-< =kuraga/Apply#[F]2'
-> ?kuraga/Apply#map2Lz().[B]2'
-D Ekuraga/Apply#map2Lz().(f)2'
-H Ikuraga/Apply#map2Lz().[A]2'
-K Lkuraga/Apply#map2Lz().[B]2
-Q Ukuraga/Eval#2'
-V Wkuraga/Apply#map2Lz().[C]2
-[ _kuraga/Eval#2
-` akuraga/Apply#[F]2'
-b ckuraga/Apply#map2Lz().[C]2$
- kuraga/Eval#flatMap().2(
- kuraga/Apply#map2Lz().(fa)2
- local02 
- kuraga/Eval#map().2(
- kuraga/Apply#map2Lz().(fb)2
- local12"
- kuraga/Apply#map2().2
- local02
- local12
- local22
-  !local32"
-. 3kuraga/Eval#value().2&
-' 'scala/Function2#apply().2'
-& 'kuraga/Apply#map2Lz().(f)2
-( )local22
-+ ,local32!
- kuraga/Applicative#2,
- kuraga/Applicative#`<init>`().2
-  $kuraga/Pure#2$
-% &kuraga/Applicative#[F]2
-- 2kuraga/Apply#2$
-3 4kuraga/Applicative#[F]2$
- kuraga/Applicative#[F]2'
-- 0kuraga/Applicative#map().2*
- kuraga/Applicative#map().[A]2*
- kuraga/Applicative#map().[B]2+
- kuraga/Applicative#map().(fa)2$
- kuraga/Applicative#[F]2*
- kuraga/Applicative#map().[A]2*
-2 3kuraga/Applicative#map().(f)2*
-5 6kuraga/Applicative#map().[A]2*
-: ;kuraga/Applicative#map().[B]2$
-> ?kuraga/Applicative#[F]2*
-@ Akuraga/Applicative#map().[B]2"
- kuraga/Apply#map2().2+
- 
-kuraga/Applicative#map().(fa)2
- kuraga/Pure#unit.2
- local42&
-! !scala/Function1#apply().2*
-  !kuraga/Applicative#map().(f)2
-" #local42
- kuraga/FlatMap#2(
- kuraga/FlatMap#`<init>`().2
- !kuraga/Apply#2 
-" #kuraga/FlatMap#[F]2 
- kuraga/FlatMap#[F]2'
-$ +kuraga/FlatMap#flatMap().2*
- kuraga/FlatMap#flatMap().[A]2*
- kuraga/FlatMap#flatMap().[B]2+
- kuraga/FlatMap#flatMap().(fa)2 
- kuraga/FlatMap#[F]2*
- kuraga/FlatMap#flatMap().[A]2*
-, -kuraga/FlatMap#flatMap().(f)2*
-/ 0kuraga/FlatMap#flatMap().[A]2 
-4 5kuraga/FlatMap#[F]2*
-6 7kuraga/FlatMap#flatMap().[B]2 
-; <kuraga/FlatMap#[F]2*
-= >kuraga/FlatMap#flatMap().[B]2!
- kuraga/FlatMapTail#2,
- kuraga/FlatMapTail#`<init>`().2
-  'kuraga/FlatMap#2$
-( )kuraga/FlatMapTail#[F]2$
- kuraga/FlatMapTail#[F]2,
-! )kuraga/FlatMapTail#tailRecM().2/
- !kuraga/FlatMapTail#tailRecM().[A]2/
- !kuraga/FlatMapTail#tailRecM().[B]2/
- !kuraga/FlatMapTail#tailRecM().(a)2/
- !kuraga/FlatMapTail#tailRecM().[A]2/
-* +!kuraga/FlatMapTail#tailRecM().(f)2/
-- .!kuraga/FlatMapTail#tailRecM().[A]2$
-2 3kuraga/FlatMapTail#[F]2#
-4 :scala/package.Either#2/
-; <!kuraga/FlatMapTail#tailRecM().[A]2/
-> ?!kuraga/FlatMapTail#tailRecM().[B]2$
-D Ekuraga/FlatMapTail#[F]2/
-F G!kuraga/FlatMapTail#tailRecM().[B]2
- kuraga/Monad#2&
- kuraga/Monad#`<init>`().2!
- %kuraga/FlatMapTail#2
-& 'kuraga/Monad#[F]2!
-. 9kuraga/Applicative#2
-: ;kuraga/Monad#[F]2
- kuraga/Monad#[F]2"
-0 4kuraga/Monad#map2().2%
- kuraga/Monad#map2().[A]2%
- kuraga/Monad#map2().[B]2%
- kuraga/Monad#map2().[C]2&
- kuraga/Monad#map2().(fa)2
- kuraga/Monad#[F]2%
-  kuraga/Monad#map2().[A]2&
-6 8kuraga/Monad#map2().(fb)2
-: ;kuraga/Monad#[F]2%
-< =kuraga/Monad#map2().[B]2%
-@ Akuraga/Monad#map2().(f)2%
-D Ekuraga/Monad#map2().[A]2%
-G Hkuraga/Monad#map2().[B]2%
-M Nkuraga/Monad#map2().[C]2
-Q Rkuraga/Monad#[F]2%
-S Tkuraga/Monad#map2().[C]2'
- kuraga/FlatMap#flatMap().2&
- 
-kuraga/Monad#map2().(fa)2
- local52'
- kuraga/FlatMap#flatMap().2&
- kuraga/Monad#map2().(fb)2
-# $local62!
-( (kuraga/Pure#pure().2&
-) )scala/Function2#apply().2%
-( )kuraga/Monad#map2().(f)2
-* +local52
-- .local62$
-   kuraga/StackSafeMonad#2/
-   !kuraga/StackSafeMonad#`<init>`().2
- #  (kuraga/Monad#2'
- )  *kuraga/StackSafeMonad#[F]2'
-   kuraga/StackSafeMonad#[F]2/
-!)! 1!kuraga/StackSafeMonad#tailRecM().22
-!! $kuraga/StackSafeMonad#tailRecM().[A]22
-!! $kuraga/StackSafeMonad#tailRecM().[B]22
-!! $kuraga/StackSafeMonad#tailRecM().(a)22
-!! $kuraga/StackSafeMonad#tailRecM().[A]22
-!2! 3$kuraga/StackSafeMonad#tailRecM().(f)22
-!5! 6$kuraga/StackSafeMonad#tailRecM().[A]2'
-!:! ;kuraga/StackSafeMonad#[F]2#
-!<! Bscala/package.Either#22
-!C! D$kuraga/StackSafeMonad#tailRecM().[A]22
-!F! G$kuraga/StackSafeMonad#tailRecM().[B]2'
-!L! Mkuraga/StackSafeMonad#[F]22
-!N! O$kuraga/StackSafeMonad#tailRecM().[B]2'
-"" kuraga/FlatMap#flatMap().2&
-"	" 	scala/Function1#apply().22
-"" 	$kuraga/StackSafeMonad#tailRecM().(f)22
-"
-" $kuraga/StackSafeMonad#tailRecM().(a)2
-## local72(
-## scala/util/Left.unapply().2!
-## scala/package.Left.2
-## local82/
-## !kuraga/StackSafeMonad#tailRecM().2
-## local822
-#(# )$kuraga/StackSafeMonad#tailRecM().(f)2)
-$$ scala/util/Right.unapply().2"
-$$ scala/package.Right.2
-$$ local92!
-$$ kuraga/Pure#pure().2
-$$ local92
-'' kuraga/Extract#2(
-'' kuraga/Extract#`<init>`().2 
-'' kuraga/Extract#[F]2'
-( ( 'kuraga/Extract#extract().2*
-(( kuraga/Extract#extract().[A]2+
-(( kuraga/Extract#extract().(fa)2 
-(( kuraga/Extract#[F]2*
-(( kuraga/Extract#extract().[A]2*
-()( *kuraga/Extract#extract().[A]2
-** kuraga/CoFlatMap#2*
-** kuraga/CoFlatMap#`<init>`().2
-** %kuraga/Functor#2"
-*&* 'kuraga/CoFlatMap#[F]2"
-** kuraga/CoFlatMap#[F]2+
-+$+ -kuraga/CoFlatMap#coflatMap().2.
-++  kuraga/CoFlatMap#coflatMap().[A]2.
-++  kuraga/CoFlatMap#coflatMap().[B]2/
-++ !kuraga/CoFlatMap#coflatMap().(fa)2"
-++ kuraga/CoFlatMap#[F]2.
-++  kuraga/CoFlatMap#coflatMap().[A]2.
-+/+ 0 kuraga/CoFlatMap#coflatMap().(f)2"
-+2+ 3kuraga/CoFlatMap#[F]2.
-+4+ 5 kuraga/CoFlatMap#coflatMap().[A]2.
-+:+ ; kuraga/CoFlatMap#coflatMap().[B]2"
-+?+ @kuraga/CoFlatMap#[F]2.
-+A+ B kuraga/CoFlatMap#coflatMap().[B]2
--- kuraga/Comonad#2(
--- kuraga/Comonad#`<init>`().2
--- %kuraga/CoFlatMap#2 
--&- 'kuraga/Comonad#[F]2
--.- 5kuraga/Extract#2 
--6- 7kuraga/Comonad#[F]2 
--- kuraga/Comonad#[F]2#
-.$. 'kuraga/Comonad#map().2&
-.. kuraga/Comonad#map().[A]2&
-.. kuraga/Comonad#map().[B]2'
-.. kuraga/Comonad#map().(fa)2 
-.. kuraga/Comonad#[F]2&
-.. kuraga/Comonad#map().[A]2&
-.). *kuraga/Comonad#map().(f)2&
-.,. -kuraga/Comonad#map().[A]2&
-.1. 2kuraga/Comonad#map().[B]2 
-.6. 7kuraga/Comonad#[F]2&
-.8. 9kuraga/Comonad#map().[B]2+
-.=. =kuraga/CoFlatMap#coflatMap().2'
-.=. ?kuraga/Comonad#map().(fa)2
-.J. Mlocal102&
-.R. Rscala/Function1#apply().2&
-.Q. Rkuraga/Comonad#map().(f)2'
-.S. Skuraga/Extract#extract().2
-.S. Vlocal10PZ 36B2549AB8370287A0DAC5D64AFE6C9A

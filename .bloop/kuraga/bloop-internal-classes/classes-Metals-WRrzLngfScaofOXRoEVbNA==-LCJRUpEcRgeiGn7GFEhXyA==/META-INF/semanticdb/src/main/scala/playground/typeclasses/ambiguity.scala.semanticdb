@@ -1,473 +1,0 @@
-
-Ë×5src/main/scala/playground/typeclasses/ambiguity.scala*/
-playground/typeclasses/Functor#*Functor€*<
-*playground/typeclasses/Functor#`<init>`(). €@*<init>€*,
-"playground/typeclasses/Functor#[F]	*F€*5
-&playground/typeclasses/Functor#fmap(). *fmap€*3
-)playground/typeclasses/Functor#fmap().[A]	*A€*3
-)playground/typeclasses/Functor#fmap().[B]	*B€*5
-*playground/typeclasses/Functor#fmap().(fa)*fa€*3
-)playground/typeclasses/Functor#fmap().(f)*f€*7
-#playground/typeclasses/Applicative#*Applicative€*@
-.playground/typeclasses/Applicative#`<init>`(). €@*<init>€*0
-&playground/typeclasses/Applicative#[F]	*F€*9
-*playground/typeclasses/Applicative#pure(). *pure€*7
--playground/typeclasses/Applicative#pure().[A]	*A€*7
--playground/typeclasses/Applicative#pure().(a)*a€*9
-*playground/typeclasses/Applicative#map2(). *map2€*7
--playground/typeclasses/Applicative#map2().[A]	*A€*7
--playground/typeclasses/Applicative#map2().[B]	*B€*7
--playground/typeclasses/Applicative#map2().[C]	*C€*9
-.playground/typeclasses/Applicative#map2().(fa)*fa€*9
-.playground/typeclasses/Applicative#map2().(fb)*fb€*7
--playground/typeclasses/Applicative#map2().(f)*f€*7
-*playground/typeclasses/Applicative#unit().*unit€*3
-(playground/typeclasses/Applicative#ap().*ap€*5
-+playground/typeclasses/Applicative#ap().[A]	*A€*5
-+playground/typeclasses/Applicative#ap().[B]	*B€*7
-,playground/typeclasses/Applicative#ap().(ff)*ff€*7
-,playground/typeclasses/Applicative#ap().(fa)*fa€*7
-*playground/typeclasses/Applicative#fmap().*fmap€*7
--playground/typeclasses/Applicative#fmap().[A]	*A€*7
--playground/typeclasses/Applicative#fmap().[B]	*B€*9
-.playground/typeclasses/Applicative#fmap().(fa)*fa€*7
--playground/typeclasses/Applicative#fmap().(f)*f€*
-local0*a€*+
-playground/typeclasses/Monad#*Monad€*:
-(playground/typeclasses/Monad#`<init>`(). €@*<init>€**
- playground/typeclasses/Monad#[F]	*F€*9
-'playground/typeclasses/Monad#flatMap(). *flatMap€*4
-*playground/typeclasses/Monad#flatMap().[A]	*A€*4
-*playground/typeclasses/Monad#flatMap().[B]	*B€*6
-+playground/typeclasses/Monad#flatMap().(fa)*fa€*4
-*playground/typeclasses/Monad#flatMap().(f)*f€*1
-$playground/typeclasses/Monad#map2().*map2€*1
-'playground/typeclasses/Monad#map2().[A]	*A€*1
-'playground/typeclasses/Monad#map2().[B]	*B€*1
-'playground/typeclasses/Monad#map2().[C]	*C€*3
-(playground/typeclasses/Monad#map2().(fa)*fa€*3
-(playground/typeclasses/Monad#map2().(fb)*fb€*1
-'playground/typeclasses/Monad#map2().(f)*f€*
-local1*a€*
-local2*b€*1
- playground/typeclasses/Traverse#*Traverse€*=
-+playground/typeclasses/Traverse#`<init>`(). €@*<init>€*-
-#playground/typeclasses/Traverse#[F]	*F€*>
-+playground/typeclasses/Traverse#traverse(). *traverse€*8
-.playground/typeclasses/Traverse#traverse().[G]	*G€*8
-.playground/typeclasses/Traverse#traverse().[A]	*A€*8
-.playground/typeclasses/Traverse#traverse().[B]	*B€*:
-/playground/typeclasses/Traverse#traverse().(fa)*fa€*8
-.playground/typeclasses/Traverse#traverse().(f)*f€*>
-0playground/typeclasses/Traverse#traverse().(x$2)  *x$2€*<
-+playground/typeclasses/Traverse#sequence().*sequence€*8
-.playground/typeclasses/Traverse#sequence().[G]	*G€*8
-.playground/typeclasses/Traverse#sequence().[A]	*A€*:
-/playground/typeclasses/Traverse#sequence().(fa)*fa€*>
-0playground/typeclasses/Traverse#sequence().(x$1)  *x$1€*
-local3*x€*4
-'playground/typeclasses/Traverse#fmap().*fmap€*4
-*playground/typeclasses/Traverse#fmap().[A]	*A€*4
-*playground/typeclasses/Traverse#fmap().[B]	*B€*6
-+playground/typeclasses/Traverse#fmap().(fa)*fa€*4
-*playground/typeclasses/Traverse#fmap().(f)*f€*C
-)playground/typeclasses/MonadWithTraverse#*MonadWithTraverse€*F
-4playground/typeclasses/MonadWithTraverse#`<init>`(). €@*<init>€*6
-,playground/typeclasses/MonadWithTraverse#[F]	*F€*3
- playground/typeclasses/KekKekek.
- *KekKekek€*4
-'playground/typeclasses/KekKekek.main().*main€*:
--playground/typeclasses/KekKekek.main().(args)*args€*?
-)playground/typeclasses/ambiguity$package. *typeclasses€*C
-2playground/typeclasses/ambiguity$package.Identity#*Identity€*?
-5playground/typeclasses/ambiguity$package.Identity#[A]	*A€*I
-4playground/typeclasses/ambiguity$package.idInstance.
- (*
-idInstance€*N
->playground/typeclasses/ambiguity$package.idInstance.flatMap().*flatMap€*K
-Aplayground/typeclasses/ambiguity$package.idInstance.flatMap().[A]	*A€*K
-Aplayground/typeclasses/ambiguity$package.idInstance.flatMap().[B]	*B€*M
-Bplayground/typeclasses/ambiguity$package.idInstance.flatMap().(fa)*fa€*K
-Aplayground/typeclasses/ambiguity$package.idInstance.flatMap().(f)*f€*H
-;playground/typeclasses/ambiguity$package.idInstance.pure().*pure€*H
->playground/typeclasses/ambiguity$package.idInstance.pure().[A]	*A€*H
->playground/typeclasses/ambiguity$package.idInstance.pure().(a)*a€*P
-?playground/typeclasses/ambiguity$package.idInstance.traverse().*traverse€*L
-Bplayground/typeclasses/ambiguity$package.idInstance.traverse().[G]	*G€*L
-Bplayground/typeclasses/ambiguity$package.idInstance.traverse().[A]	*A€*L
-Bplayground/typeclasses/ambiguity$package.idInstance.traverse().[B]	*B€*L
-Bplayground/typeclasses/ambiguity$package.idInstance.traverse().(a)*a€*L
-Bplayground/typeclasses/ambiguity$package.idInstance.traverse().(f)*f€*N
-Bplayground/typeclasses/ambiguity$package.idInstance.traverse().(G)  *G€*Q
-8playground/typeclasses/ambiguity$package.optionInstance.
- (*optionInstance€*R
-Bplayground/typeclasses/ambiguity$package.optionInstance.flatMap().*flatMap€*O
-Eplayground/typeclasses/ambiguity$package.optionInstance.flatMap().[A]	*A€*O
-Eplayground/typeclasses/ambiguity$package.optionInstance.flatMap().[B]	*B€*Q
-Fplayground/typeclasses/ambiguity$package.optionInstance.flatMap().(fa)*fa€*O
-Eplayground/typeclasses/ambiguity$package.optionInstance.flatMap().(f)*f€*L
-?playground/typeclasses/ambiguity$package.optionInstance.pure().*pure€*L
-Bplayground/typeclasses/ambiguity$package.optionInstance.pure().[A]	*A€*L
-Bplayground/typeclasses/ambiguity$package.optionInstance.pure().(a)*a€*T
-Cplayground/typeclasses/ambiguity$package.optionInstance.traverse().*traverse€*P
-Fplayground/typeclasses/ambiguity$package.optionInstance.traverse().[G]	*G€*P
-Fplayground/typeclasses/ambiguity$package.optionInstance.traverse().[A]	*A€*P
-Fplayground/typeclasses/ambiguity$package.optionInstance.traverse().[B]	*B€*P
-Fplayground/typeclasses/ambiguity$package.optionInstance.traverse().(a)*a€*P
-Fplayground/typeclasses/ambiguity$package.optionInstance.traverse().(f)*f€*R
-Fplayground/typeclasses/ambiguity$package.optionInstance.traverse().(G)  *G€*
-local4*a€*;
-/playground/typeclasses/ambiguity$package.foo().*foo€*<
-2playground/typeclasses/ambiguity$package.foo().[A]	*A€*<
-2playground/typeclasses/ambiguity$package.foo().[B]	*B€*<
-2playground/typeclasses/ambiguity$package.foo().[F]	*F€*<
-2playground/typeclasses/ambiguity$package.foo().(x)*x€*<
-2playground/typeclasses/ambiguity$package.foo().(f)*f€*=
-0playground/typeclasses/ambiguity$package.foo2().*foo2€*=
-3playground/typeclasses/ambiguity$package.foo2().[A]	*A€*=
-3playground/typeclasses/ambiguity$package.foo2().[B]	*B€*=
-3playground/typeclasses/ambiguity$package.foo2().[F]	*F€*=
-3playground/typeclasses/ambiguity$package.foo2().(x)*x€*=
-3playground/typeclasses/ambiguity$package.foo2().(f)*f€*C
-5playground/typeclasses/ambiguity$package.foo2().(x$3)  *x$3€*C
-5playground/typeclasses/ambiguity$package.foo2().(x$4)  *x$4€*!
-local5 è*given_Functor_F€*;
-/playground/typeclasses/ambiguity$package.lol().*lol€*<
-2playground/typeclasses/ambiguity$package.lol().(i)*i€2!
- playground/typeclasses/2
- playground/2-
- playground/typeclasses/Functor#28
- *playground/typeclasses/Functor#`<init>`().20
- "playground/typeclasses/Functor#[F]24
-$ (&playground/typeclasses/Functor#fmap().27
- )playground/typeclasses/Functor#fmap().[A]27
- )playground/typeclasses/Functor#fmap().[B]28
- *playground/typeclasses/Functor#fmap().(fa)20
- "playground/typeclasses/Functor#[F]27
- )playground/typeclasses/Functor#fmap().[A]27
-* +)playground/typeclasses/Functor#fmap().(f)27
-- .)playground/typeclasses/Functor#fmap().[A]27
-2 3)playground/typeclasses/Functor#fmap().[B]20
-6 7"playground/typeclasses/Functor#[F]27
-8 9)playground/typeclasses/Functor#fmap().[B]21
- #playground/typeclasses/Applicative#2<
- .playground/typeclasses/Applicative#`<init>`().2-
-  'playground/typeclasses/Functor#24
-( )&playground/typeclasses/Applicative#[F]24
- &playground/typeclasses/Applicative#[F]28
- !*playground/typeclasses/Applicative#pure().2;
- -playground/typeclasses/Applicative#pure().[A]2;
- -playground/typeclasses/Applicative#pure().(a)2;
- -playground/typeclasses/Applicative#pure().[A]24
-$ %&playground/typeclasses/Applicative#[F]2;
-& '-playground/typeclasses/Applicative#pure().[A]28
-' +*playground/typeclasses/Applicative#map2().2;
- -playground/typeclasses/Applicative#map2().[A]2;
- -playground/typeclasses/Applicative#map2().[B]2;
- -playground/typeclasses/Applicative#map2().[C]2<
- .playground/typeclasses/Applicative#map2().(fa)24
- &playground/typeclasses/Applicative#[F]2;
-  -playground/typeclasses/Applicative#map2().[A]2<
-- /.playground/typeclasses/Applicative#map2().(fb)24
-1 2&playground/typeclasses/Applicative#[F]2;
-3 4-playground/typeclasses/Applicative#map2().[B]2;
-7 8-playground/typeclasses/Applicative#map2().(f)2;
-; <-playground/typeclasses/Applicative#map2().[A]2;
-> ?-playground/typeclasses/Applicative#map2().[B]2;
-D E-playground/typeclasses/Applicative#map2().[C]24
-I J&playground/typeclasses/Applicative#[F]2;
-K L-playground/typeclasses/Applicative#map2().[C]28
-
-
- *playground/typeclasses/Applicative#unit().24
-
-
- &playground/typeclasses/Applicative#[F]2
-
-
- scala/Unit#28
-
-
- *playground/typeclasses/Applicative#pure().26
-) +(playground/typeclasses/Applicative#ap().29
- +playground/typeclasses/Applicative#ap().[A]29
- +playground/typeclasses/Applicative#ap().[B]2:
- ,playground/typeclasses/Applicative#ap().(ff)24
- &playground/typeclasses/Applicative#[F]29
- +playground/typeclasses/Applicative#ap().[A]29
-! "+playground/typeclasses/Applicative#ap().[B]2:
-- /,playground/typeclasses/Applicative#ap().(fa)24
-1 2&playground/typeclasses/Applicative#[F]29
-3 4+playground/typeclasses/Applicative#ap().[A]24
-8 9&playground/typeclasses/Applicative#[F]29
-: ;+playground/typeclasses/Applicative#ap().[B]28
-? ?*playground/typeclasses/Applicative#map2().2:
-? A,playground/typeclasses/Applicative#ap().(ff)2:
-G I,playground/typeclasses/Applicative#ap().(fa)2&
-L Lscala/Function1#apply().28
-- 1*playground/typeclasses/Applicative#fmap().2;
- -playground/typeclasses/Applicative#fmap().[A]2;
- -playground/typeclasses/Applicative#fmap().[B]2<
- .playground/typeclasses/Applicative#fmap().(fa)24
- &playground/typeclasses/Applicative#[F]2;
- -playground/typeclasses/Applicative#fmap().[A]2;
-2 3-playground/typeclasses/Applicative#fmap().(f)2;
-5 6-playground/typeclasses/Applicative#fmap().[A]2;
-: ;-playground/typeclasses/Applicative#fmap().[B]24
-> ?&playground/typeclasses/Applicative#[F]2;
-@ A-playground/typeclasses/Applicative#fmap().[B]28
-E E*playground/typeclasses/Applicative#map2().2<
-E G.playground/typeclasses/Applicative#fmap().(fa)28
-M Q*playground/typeclasses/Applicative#unit().2
-T Ulocal02&
-^ ^scala/Function1#apply().2;
-] ^-playground/typeclasses/Applicative#fmap().(f)2
-_ `local02+
- playground/typeclasses/Monad#26
- (playground/typeclasses/Monad#`<init>`().21
- %#playground/typeclasses/Applicative#2.
-& ' playground/typeclasses/Monad#[F]2.
-  playground/typeclasses/Monad#[F]25
-$ +'playground/typeclasses/Monad#flatMap().28
- *playground/typeclasses/Monad#flatMap().[A]28
- *playground/typeclasses/Monad#flatMap().[B]29
- +playground/typeclasses/Monad#flatMap().(fa)2.
-  playground/typeclasses/Monad#[F]28
- *playground/typeclasses/Monad#flatMap().[A]28
-- .*playground/typeclasses/Monad#flatMap().(f)28
-0 1*playground/typeclasses/Monad#flatMap().[A]2.
-5 6 playground/typeclasses/Monad#[F]28
-7 8*playground/typeclasses/Monad#flatMap().[B]2.
-< = playground/typeclasses/Monad#[F]28
-> ?*playground/typeclasses/Monad#flatMap().[B]22
-0 4$playground/typeclasses/Monad#map2().25
- 'playground/typeclasses/Monad#map2().[A]25
- 'playground/typeclasses/Monad#map2().[B]25
- 'playground/typeclasses/Monad#map2().[C]26
- (playground/typeclasses/Monad#map2().(fa)2.
-  playground/typeclasses/Monad#[F]25
-  'playground/typeclasses/Monad#map2().[A]26
-5 7(playground/typeclasses/Monad#map2().(fb)2.
-9 : playground/typeclasses/Monad#[F]25
-; <'playground/typeclasses/Monad#map2().[B]25
-? @'playground/typeclasses/Monad#map2().(f)25
-C D'playground/typeclasses/Monad#map2().[A]25
-F G'playground/typeclasses/Monad#map2().[B]25
-L M'playground/typeclasses/Monad#map2().[C]25
- 'playground/typeclasses/Monad#flatMap().26
- (playground/typeclasses/Monad#map2().(fa)2
- local128
- *playground/typeclasses/Applicative#fmap().26
- (playground/typeclasses/Monad#map2().(fb)2
- local22&
-$ $scala/Function2#apply().25
-# $'playground/typeclasses/Monad#map2().(f)2
-% &local12
-( )local22.
-  playground/typeclasses/Traverse#29
- +playground/typeclasses/Traverse#`<init>`().2-
- $playground/typeclasses/Functor#21
-% &#playground/typeclasses/Traverse#[F]21
- #playground/typeclasses/Traverse#[F]29
-+ 3+playground/typeclasses/Traverse#traverse().2<
- .playground/typeclasses/Traverse#traverse().[G]2<
- .playground/typeclasses/Traverse#traverse().[A]2<
- .playground/typeclasses/Traverse#traverse().[B]2=
- /playground/typeclasses/Traverse#traverse().(fa)21
-  !#playground/typeclasses/Traverse#[F]2<
-" #.playground/typeclasses/Traverse#traverse().[A]2<
-5 6.playground/typeclasses/Traverse#traverse().(f)2<
-8 9.playground/typeclasses/Traverse#traverse().[A]2<
-= >.playground/typeclasses/Traverse#traverse().[G]2<
-? @.playground/typeclasses/Traverse#traverse().[B]2<
-\ ].playground/typeclasses/Traverse#traverse().[G]21
-^ _#playground/typeclasses/Traverse#[F]2<
-` a.playground/typeclasses/Traverse#traverse().[B]29
-* 2+playground/typeclasses/Traverse#sequence().2<
- .playground/typeclasses/Traverse#sequence().[G]2<
- .playground/typeclasses/Traverse#sequence().[A]2=
- /playground/typeclasses/Traverse#sequence().(fa)21
- #playground/typeclasses/Traverse#[F]2<
-  .playground/typeclasses/Traverse#sequence().[G]2<
-! ".playground/typeclasses/Traverse#sequence().[A]2<
-L M.playground/typeclasses/Traverse#sequence().[G]21
-N O#playground/typeclasses/Traverse#[F]2<
-P Q.playground/typeclasses/Traverse#sequence().[A]29
-V V+playground/typeclasses/Traverse#traverse().2=
-V X/playground/typeclasses/Traverse#sequence().(fa)2&
-b jscala/Predef.identity().2
-b blocal32>
-k k0playground/typeclasses/Traverse#sequence().(x$1)25
-- 1'playground/typeclasses/Traverse#fmap().28
- *playground/typeclasses/Traverse#fmap().[A]28
- *playground/typeclasses/Traverse#fmap().[B]29
- +playground/typeclasses/Traverse#fmap().(fa)21
- #playground/typeclasses/Traverse#[F]28
- *playground/typeclasses/Traverse#fmap().[A]28
-2 3*playground/typeclasses/Traverse#fmap().(f)28
-5 6*playground/typeclasses/Traverse#fmap().[A]28
-: ;*playground/typeclasses/Traverse#fmap().[B]21
-> ?#playground/typeclasses/Traverse#[F]28
-@ A*playground/typeclasses/Traverse#fmap().[B]29
-E E+playground/typeclasses/Traverse#traverse().2@
-Q Y2playground/typeclasses/ambiguity$package.Identity#28
-[ \*playground/typeclasses/Traverse#fmap().[A]28
-^ _*playground/typeclasses/Traverse#fmap().[B]29
-E G+playground/typeclasses/Traverse#fmap().(fa)28
-a b*playground/typeclasses/Traverse#fmap().(f)2B
-c c4playground/typeclasses/ambiguity$package.idInstance.27
- )playground/typeclasses/MonadWithTraverse#2B
- 4playground/typeclasses/MonadWithTraverse#`<init>`().2+
-& +playground/typeclasses/Monad#2:
-, -,playground/typeclasses/MonadWithTraverse#[F]2.
-4 < playground/typeclasses/Traverse#2:
-= >,playground/typeclasses/MonadWithTraverse#[F]2:
- ,playground/typeclasses/MonadWithTraverse#[F]2.
-BB  playground/typeclasses/KekKekek.25
-CC 'playground/typeclasses/KekKekek.main().2;
-CC -playground/typeclasses/KekKekek.main().(args)2
-CC scala/Array#2"
-CC scala/Predef.String#2'
-C$C +scala/Predef.println(+1).2=
-C,C ,/playground/typeclasses/ambiguity$package.lol().23
-  )playground/typeclasses/ambiguity$package.2@
-   2playground/typeclasses/ambiguity$package.Identity#2C
-   5playground/typeclasses/ambiguity$package.Identity#[A]2C
-   5playground/typeclasses/ambiguity$package.Identity#[A]2B
-"" 4playground/typeclasses/ambiguity$package.idInstance.27
-"" %)playground/typeclasses/MonadWithTraverse#2L
-#*# 1>playground/typeclasses/ambiguity$package.idInstance.flatMap().2O
-## Aplayground/typeclasses/ambiguity$package.idInstance.flatMap().[A]2O
-## Aplayground/typeclasses/ambiguity$package.idInstance.flatMap().[B]2P
-## Bplayground/typeclasses/ambiguity$package.idInstance.flatMap().(fa)2O
-## Aplayground/typeclasses/ambiguity$package.idInstance.flatMap().[A]2O
-#3# 4Aplayground/typeclasses/ambiguity$package.idInstance.flatMap().(f)2O
-#6# 7Aplayground/typeclasses/ambiguity$package.idInstance.flatMap().[A]2O
-#;# <Aplayground/typeclasses/ambiguity$package.idInstance.flatMap().[B]2&
-#A# Ascala/Function1#apply().2O
-#@# AAplayground/typeclasses/ambiguity$package.idInstance.flatMap().(f)2P
-#B# DBplayground/typeclasses/ambiguity$package.idInstance.flatMap().(fa)2I
-$'$ +;playground/typeclasses/ambiguity$package.idInstance.pure().2L
-$$ >playground/typeclasses/ambiguity$package.idInstance.pure().[A]2L
-$$ >playground/typeclasses/ambiguity$package.idInstance.pure().(a)2L
-$$ >playground/typeclasses/ambiguity$package.idInstance.pure().[A]2L
-$.$ />playground/typeclasses/ambiguity$package.idInstance.pure().(a)2M
-%/% 7?playground/typeclasses/ambiguity$package.idInstance.traverse().2P
-%% Bplayground/typeclasses/ambiguity$package.idInstance.traverse().[G]2P
-%% Bplayground/typeclasses/ambiguity$package.idInstance.traverse().[A]2P
-%% Bplayground/typeclasses/ambiguity$package.idInstance.traverse().[B]2P
-%% Bplayground/typeclasses/ambiguity$package.idInstance.traverse().(a)2P
-%%  Bplayground/typeclasses/ambiguity$package.idInstance.traverse().[A]2P
-%8% 9Bplayground/typeclasses/ambiguity$package.idInstance.traverse().(f)2P
-%;% <Bplayground/typeclasses/ambiguity$package.idInstance.traverse().[A]2P
-%@% ABplayground/typeclasses/ambiguity$package.idInstance.traverse().[G]2P
-%B% CBplayground/typeclasses/ambiguity$package.idInstance.traverse().[B]2P
-%M% NBplayground/typeclasses/ambiguity$package.idInstance.traverse().(G)21
-%P% [#playground/typeclasses/Applicative#2P
-%\% ]Bplayground/typeclasses/ambiguity$package.idInstance.traverse().[G]2P
-%b% cBplayground/typeclasses/ambiguity$package.idInstance.traverse().[G]2P
-%d% eBplayground/typeclasses/ambiguity$package.idInstance.traverse().[B]2&
-%j% jscala/Function1#apply().2P
-%i% jBplayground/typeclasses/ambiguity$package.idInstance.traverse().(f)2P
-%k% lBplayground/typeclasses/ambiguity$package.idInstance.traverse().(a)2F
-)) 8playground/typeclasses/ambiguity$package.optionInstance.27
-)) ))playground/typeclasses/MonadWithTraverse#2P
-*2* 9Bplayground/typeclasses/ambiguity$package.optionInstance.flatMap().2S
-** Eplayground/typeclasses/ambiguity$package.optionInstance.flatMap().[A]2S
-** Eplayground/typeclasses/ambiguity$package.optionInstance.flatMap().[B]2T
-** Fplayground/typeclasses/ambiguity$package.optionInstance.flatMap().(fa)2
-**  scala/Option#2S
-*!* "Eplayground/typeclasses/ambiguity$package.optionInstance.flatMap().[A]2S
-*;* <Eplayground/typeclasses/ambiguity$package.optionInstance.flatMap().(f)2S
-*>* ?Eplayground/typeclasses/ambiguity$package.optionInstance.flatMap().[A]2
-*C* Iscala/Option#2S
-*J* KEplayground/typeclasses/ambiguity$package.optionInstance.flatMap().[B]2%
-*S* Zscala/Option#flatMap().2T
-*P* RFplayground/typeclasses/ambiguity$package.optionInstance.flatMap().(fa)2S
-*[* \Eplayground/typeclasses/ambiguity$package.optionInstance.flatMap().(f)2M
-+&+ *?playground/typeclasses/ambiguity$package.optionInstance.pure().2P
-++ Bplayground/typeclasses/ambiguity$package.optionInstance.pure().[A]2P
-++ Bplayground/typeclasses/ambiguity$package.optionInstance.pure().(a)2P
-++ Bplayground/typeclasses/ambiguity$package.optionInstance.pure().[A]2!
-+1+ 1scala/Some.apply().2
-+-+ 1scala/Some.2P
-+2+ 3Bplayground/typeclasses/ambiguity$package.optionInstance.pure().(a)2Q
-,7, ?Cplayground/typeclasses/ambiguity$package.optionInstance.traverse().2T
-,, Fplayground/typeclasses/ambiguity$package.optionInstance.traverse().[G]2T
-,, Fplayground/typeclasses/ambiguity$package.optionInstance.traverse().[A]2T
-,, Fplayground/typeclasses/ambiguity$package.optionInstance.traverse().[B]2T
-,, Fplayground/typeclasses/ambiguity$package.optionInstance.traverse().(a)2
-,, %scala/Option#2T
-,&, 'Fplayground/typeclasses/ambiguity$package.optionInstance.traverse().[A]2T
-,@, AFplayground/typeclasses/ambiguity$package.optionInstance.traverse().(f)2T
-,C, DFplayground/typeclasses/ambiguity$package.optionInstance.traverse().[A]2T
-,H, IFplayground/typeclasses/ambiguity$package.optionInstance.traverse().[G]2T
-,J, KFplayground/typeclasses/ambiguity$package.optionInstance.traverse().[B]2T
-,U, VFplayground/typeclasses/ambiguity$package.optionInstance.traverse().(G)21
-,X, c#playground/typeclasses/Applicative#2T
-,d, eFplayground/typeclasses/ambiguity$package.optionInstance.traverse().[G]2T
-,j, kFplayground/typeclasses/ambiguity$package.optionInstance.traverse().[G]2
-,l, rscala/Option#2T
-,s, tFplayground/typeclasses/ambiguity$package.optionInstance.traverse().[B]2"
--	- scala/Option#fold().2T
--- Fplayground/typeclasses/ambiguity$package.optionInstance.traverse().(a)28
--- *playground/typeclasses/Applicative#pure().2T
--- Fplayground/typeclasses/ambiguity$package.optionInstance.traverse().(G)2
--- scala/None.2
--- local428
--!- !*playground/typeclasses/Applicative#fmap().2&
--"- "scala/Function1#apply().2T
--!- "Fplayground/typeclasses/ambiguity$package.optionInstance.traverse().(f)2
--#- $local42!
--/- /scala/Some.apply().2
--+- /scala/Some.2=
-77 /playground/typeclasses/ambiguity$package.foo().2@
-77 	2playground/typeclasses/ambiguity$package.foo().[A]2@
-77 2playground/typeclasses/ambiguity$package.foo().[B]2@
-77 2playground/typeclasses/ambiguity$package.foo().[F]2@
-77 2playground/typeclasses/ambiguity$package.foo().(x)2@
-77 2playground/typeclasses/ambiguity$package.foo().[F]2@
-77 2playground/typeclasses/ambiguity$package.foo().[A]2@
-77 2playground/typeclasses/ambiguity$package.foo().(f)2@
-7 7 !2playground/typeclasses/ambiguity$package.foo().[A]2@
-7%7 &2playground/typeclasses/ambiguity$package.foo().[B]2+
-7+7 0playground/typeclasses/Monad#2@
-717 22playground/typeclasses/ambiguity$package.foo().[F]2.
-787 @ playground/typeclasses/Traverse#2@
-7A7 B2playground/typeclasses/ambiguity$package.foo().[F]2@
-7H7 I2playground/typeclasses/ambiguity$package.foo().[F]2@
-7J7 K2playground/typeclasses/ambiguity$package.foo().[B]2@
-7O7 P2playground/typeclasses/ambiguity$package.foo().(x)2@
-7V7 W2playground/typeclasses/ambiguity$package.foo().(f)2>
-99 0playground/typeclasses/ambiguity$package.foo2().2A
-9	9 
-3playground/typeclasses/ambiguity$package.foo2().[A]2A
-99 3playground/typeclasses/ambiguity$package.foo2().[B]2A
-99 3playground/typeclasses/ambiguity$package.foo2().[F]2A
-99 3playground/typeclasses/ambiguity$package.foo2().(x)2A
-99 3playground/typeclasses/ambiguity$package.foo2().[F]2A
-99 3playground/typeclasses/ambiguity$package.foo2().[A]2A
-99 3playground/typeclasses/ambiguity$package.foo2().(f)2A
-9!9 "3playground/typeclasses/ambiguity$package.foo2().[A]2A
-9&9 '3playground/typeclasses/ambiguity$package.foo2().[B]2A
-9I9 J3playground/typeclasses/ambiguity$package.foo2().[F]2A
-9K9 L3playground/typeclasses/ambiguity$package.foo2().[B]2
-:
-: local52-
-:
-: playground/typeclasses/Functor#2A
-:: 3playground/typeclasses/ambiguity$package.foo2().[F]2$
-:: scala/Predef.summon().2+
-:: #playground/typeclasses/Monad#2A
-:$: %3playground/typeclasses/ambiguity$package.foo2().[F]2C
-:': '5playground/typeclasses/ambiguity$package.foo2().(x$3)24
-;; &playground/typeclasses/Functor#fmap().2A
-;; 3playground/typeclasses/ambiguity$package.foo2().(x)2A
-;; 3playground/typeclasses/ambiguity$package.foo2().(f)2=
-?? /playground/typeclasses/ambiguity$package.lol().2@
->> 2playground/typeclasses/ambiguity$package.lol().(i)2
->> 
-scala/Int#2 
-?? scala/Int#`+`(+4).2 
-?? scala/Int#`*`(+3).2@
-?? 2playground/typeclasses/ambiguity$package.lol().(i)PZ A6DA5EE7598FD16D9DD2810353EE6445

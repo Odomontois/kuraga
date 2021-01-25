@@ -1,351 +1,0 @@
-
-¸}%src/main/scala/kuraga/functions.scala*'
-kuraga/DelayedFunc#*DelayedFunc€*0
-kuraga/DelayedFunc#`<init>`(). €@*<init>€*+
-!kuraga/DelayedFunc#`<init>`().(f)*f€* 
-kuraga/DelayedFunc#[A]	*A€* 
-kuraga/DelayedFunc#[B]	*B€*"
-kuraga/DelayedFunc#f. €*f€*)
-kuraga/DelayedFunc#apply().*apply€*(
-kuraga/DelayedFunc#apply().(a)*a€*%
-kuraga/FuncByNeed#*
-FuncByNeed€*/
-kuraga/FuncByNeed#`<init>`(). €@*<init>€**
- kuraga/FuncByNeed#`<init>`().(f)*f€*
-kuraga/FuncByNeed#[A]	*A€*
-kuraga/FuncByNeed#[B]	*B€*!
-kuraga/FuncByNeed#f. €*f€*)
-kuraga/FuncByNeed#fmemo. À*fmemo€*(
-kuraga/FuncByNeed#apply().*apply€*'
-kuraga/FuncByNeed#apply().(a)*a€*"
-kuraga/Compose# €*Compose€*,
-kuraga/Compose#`<init>`(). €@*<init>€**
-kuraga/Compose#`<init>`().(f) €*f€**
-kuraga/Compose#`<init>`().(g) €*g€*
-kuraga/Compose#[A]	*A€*
-kuraga/Compose#[B]	*B€*
-kuraga/Compose#[C]	*C€*
-kuraga/Compose#f. €*f€*
-kuraga/Compose#g. €*g€*'
-kuraga/Compose#apply(). *apply€*$
-kuraga/Compose#apply().(a)*a€*
-local0 €	*A$1€*
-local1 €	*B$1€*
-local2 €	*C$1€*
-local3 €*u€*
-local4 €*v€*5
-kuraga/Compose#standardApply().*standardApply€*,
-"kuraga/Compose#standardApply().(a)*a€*#
-kuraga/Compose#copy().*copy€*#
-kuraga/Compose#copy().[A]	*A€*#
-kuraga/Compose#copy().[B]	*B€*#
-kuraga/Compose#copy().[C]	*C€*#
-kuraga/Compose#copy().(f)*f€*#
-kuraga/Compose#copy().(g)*g€*7
- kuraga/Compose#copy$default$1().*copy$default$1€*-
-#kuraga/Compose#copy$default$1().[A]	*A€*-
-#kuraga/Compose#copy$default$1().[B]	*B€*-
-#kuraga/Compose#copy$default$1().[C]	*C€*7
- kuraga/Compose#copy$default$2().*copy$default$2€*-
-#kuraga/Compose#copy$default$2().[A]	*A€*-
-#kuraga/Compose#copy$default$2().[B]	*B€*-
-#kuraga/Compose#copy$default$2().[C]	*C€*
-kuraga/Compose#_1().*_1€*
-kuraga/Compose#_2().*_2€*!
-kuraga/Compose.
- *Compose€*%
-kuraga/Compose.apply().*apply€*$
-kuraga/Compose.apply().[A]	*A€*$
-kuraga/Compose.apply().[B]	*B€*$
-kuraga/Compose.apply().[C]	*C€*$
-kuraga/Compose.apply().(f)*f€*$
-kuraga/Compose.apply().(g)*g€*)
-kuraga/Compose.unapply().*unapply€*&
-kuraga/Compose.unapply().[A]	*A€*&
-kuraga/Compose.unapply().[B]	*B€*&
-kuraga/Compose.unapply().[C]	*C€**
-kuraga/Compose.unapply().(x$1)*x$1€*+
-kuraga/Compose.toString().*toString€**
-kuraga/functions$package. *kuraga€*)
-kuraga/functions$package.`~>`#*~>€*+
-!kuraga/functions$package.`~>`#[F]	*F€*+
-!kuraga/functions$package.`~>`#[G]	*G€*
-local5 *apply€*
-local6	*A€*
-local7*x$1€*+
-kuraga/functions$package.Endo#*Endo€*+
-!kuraga/functions$package.Endo#[A]	*A€*-
-kuraga/functions$package.Endo.
- *Endo€*4
-&kuraga/functions$package.Endo.apply().*apply€*3
-)kuraga/functions$package.Endo.apply().[A]	*A€*3
-)kuraga/functions$package.Endo.apply().(f)*f€*6
-(kuraga/functions$package.Endo.apply(+1).*apply€*5
-+kuraga/functions$package.Endo.apply(+1).[A]	*A€*;
-.kuraga/functions$package.Endo.apply(+1).(endo)*endo€*7
-,kuraga/functions$package.Endo.apply(+1).(ea)*ea€*J
-0kuraga/functions$package.Endo.given_Monoid_Endo#*given_Monoid_Endo€*M
-;kuraga/functions$package.Endo.given_Monoid_Endo#`<init>`(). €@*<init>€*=
-3kuraga/functions$package.Endo.given_Monoid_Endo#[A]	*A€*J
-:kuraga/functions$package.Endo.given_Monoid_Endo#default().*default€*
-local8*x€*J
-:kuraga/functions$package.Endo.given_Monoid_Endo#combine().*combine€*G
-=kuraga/functions$package.Endo.given_Monoid_Endo#combine().(x)*x€*G
-=kuraga/functions$package.Endo.given_Monoid_Endo#combine().(y)*y€*
-local9*e€*N
-<kuraga/functions$package.Endo.given_Monoid_Endo#combineLz().*	combineLz€*K
-@kuraga/functions$package.Endo.given_Monoid_Endo#combineLz().(lx)*lx€*K
-@kuraga/functions$package.Endo.given_Monoid_Endo#combineLz().(ly)*ly€*
-local10*la€*N
-2kuraga/functions$package.Endo.given_Monoid_Endo(). (*given_Monoid_Endo€*?
-5kuraga/functions$package.Endo.given_Monoid_Endo().[A]	*A€*-
-kuraga/functions$package.EndoE#*EndoE€*,
-"kuraga/functions$package.EndoE#[A]	*A€*/
-kuraga/functions$package.EndoE.
- *EndoE€*5
-'kuraga/functions$package.EndoE.apply().*apply€*4
-*kuraga/functions$package.EndoE.apply().[A]	*A€*4
-*kuraga/functions$package.EndoE.apply().(f)*f€*1
-%kuraga/functions$package.EndoE.run().*run€*2
-(kuraga/functions$package.EndoE.run().[A]	*A€*8
-+kuraga/functions$package.EndoE.run().(endo)*endo€*M
-2kuraga/functions$package.EndoE.given_Monoid_EndoE#*given_Monoid_EndoE€*O
-=kuraga/functions$package.EndoE.given_Monoid_EndoE#`<init>`(). €@*<init>€*?
-5kuraga/functions$package.EndoE.given_Monoid_EndoE#[A]	*A€*L
-<kuraga/functions$package.EndoE.given_Monoid_EndoE#default().*default€*
-local11*x€*L
-<kuraga/functions$package.EndoE.given_Monoid_EndoE#combine().*combine€*I
-?kuraga/functions$package.EndoE.given_Monoid_EndoE#combine().(x)*x€*I
-?kuraga/functions$package.EndoE.given_Monoid_EndoE#combine().(y)*y€*P
->kuraga/functions$package.EndoE.given_Monoid_EndoE#combineLz().*	combineLz€*M
-Bkuraga/functions$package.EndoE.given_Monoid_EndoE#combineLz().(lx)*lx€*M
-Bkuraga/functions$package.EndoE.given_Monoid_EndoE#combineLz().(ly)*ly€*Q
-4kuraga/functions$package.EndoE.given_Monoid_EndoE(). (*given_Monoid_EndoE€*A
-7kuraga/functions$package.EndoE.given_Monoid_EndoE().[A]	*A€2
- kuraga/2'
- scala/annotation/tailrec#2
- scala/annotation/2
- scala/2"
- kuraga/Eval.defer().2"
- kuraga/Eval.delay().2
- kuraga/Eval.2!
- kuraga/DelayedFunc#2,
- kuraga/DelayedFunc#`<init>`().2$
- kuraga/DelayedFunc#[A]2$
-# $kuraga/DelayedFunc#[B]2$
-/ 0kuraga/DelayedFunc#[A]2$
-4 5kuraga/DelayedFunc#[B]2$
- kuraga/DelayedFunc#[A]2$
- kuraga/DelayedFunc#[B]2#
- kuraga/DelayedFunc#f.2)
- kuraga/DelayedFunc#apply().2,
- kuraga/DelayedFunc#apply().(a)2$
- kuraga/DelayedFunc#[A]2$
- kuraga/DelayedFunc#[B]2&
- scala/Function1#apply().2#
- kuraga/DelayedFunc#f.2,
- kuraga/DelayedFunc#apply().(a)2 
- kuraga/FuncByNeed#2+
- kuraga/FuncByNeed#`<init>`().2#
- kuraga/FuncByNeed#[A]2#
-  kuraga/FuncByNeed#[B]2#
-+ ,kuraga/FuncByNeed#[A]2#
-0 1kuraga/FuncByNeed#[B]2#
- kuraga/FuncByNeed#[A]2#
- kuraga/FuncByNeed#[B]2"
- kuraga/FuncByNeed#f.2&
- kuraga/FuncByNeed#fmemo.2"
- kuraga/FuncByNeed#f.2(
- kuraga/FuncByNeed#apply().2+
- kuraga/FuncByNeed#apply().(a)2#
- kuraga/FuncByNeed#[A]2#
- kuraga/FuncByNeed#[B]2&
- scala/Function1#apply().2&
- kuraga/FuncByNeed#fmemo.2+
-  kuraga/FuncByNeed#apply().(a)2
- kuraga/Compose#2(
- kuraga/Compose#`<init>`().2 
-  kuraga/Compose#[A]2 
-$ %kuraga/Compose#[B]2 
-* +kuraga/Compose#[B]2 
-/ 0kuraga/Compose#[C]2 
-; <kuraga/Compose#[A]2 
-@ Akuraga/Compose#[C]2 
- kuraga/Compose#[A]2 
- kuraga/Compose#[B]2 
- kuraga/Compose#[C]2
- kuraga/Compose#f.2
-' (kuraga/Compose#g.2'
- scala/annotation/tailrec#2%
- kuraga/Compose#apply().2(
- kuraga/Compose#apply().(a)2 
-  !kuraga/Compose#[A]2 
-$ %kuraga/Compose#[C]2
-( )kuraga/Compose#f.2'
- kuraga/Compose.unapply().2
- kuraga/Compose.2
- local02
- local12
- local22
- local32
- local42%
-7 7kuraga/Compose#apply().2%
-% %kuraga/Compose.apply().2
- %kuraga/Compose.2
-& 'local32%
-0 0kuraga/Compose.apply().2
-) 0kuraga/Compose.2
-1 2local42
-4 5kuraga/Compose#g.2(
-8 9kuraga/Compose#apply().(a)2-
- kuraga/Compose#standardApply().2(
-  !kuraga/Compose#apply().(a)2
-   scala/inline#2-
-   %kuraga/Compose#standardApply().20
- &  '"kuraga/Compose#standardApply().(a)2 
- )  *kuraga/Compose#[A]2 
- -  .kuraga/Compose#[C]2&
- 2  2scala/Function1#apply().2
- 1  2kuraga/Compose#g.2&
- 4  4scala/Function1#apply().2
- 3  4kuraga/Compose#f.20
- 5  6"kuraga/Compose#standardApply().(a)2#
-kuraga/functions$package.2,
- kuraga/functions$package.`~>`#2/
- 	!kuraga/functions$package.`~>`#[F]2/
- !kuraga/functions$package.`~>`#[G]2
- local52
- local62/
-% &!kuraga/functions$package.`~>`#[G]2
-' (local62,
- kuraga/functions$package.Endo#2/
- !kuraga/functions$package.Endo#[A]2
- kuraga/Eval#2/
- !kuraga/functions$package.Endo#[A]2
-! %kuraga/Eval#2/
-& '!kuraga/functions$package.Endo#[A]2,
- kuraga/functions$package.Endo.24
-		 &kuraga/functions$package.Endo.apply().27
-		 )kuraga/functions$package.Endo.apply().[A]27
-		 )kuraga/functions$package.Endo.apply().(f)2
-		 kuraga/Eval#27
-		 )kuraga/functions$package.Endo.apply().[A]2
-		 #kuraga/Eval#27
-	$	 %)kuraga/functions$package.Endo.apply().[A]2,
-	)	 -kuraga/functions$package.Endo#27
-	.	 /)kuraga/functions$package.Endo.apply().[A]27
-	3	 4)kuraga/functions$package.Endo.apply().(f)26
-% *(kuraga/functions$package.Endo.apply(+1).29
- +kuraga/functions$package.Endo.apply(+1).[A]2<
- .kuraga/functions$package.Endo.apply(+1).(endo)2,
- kuraga/functions$package.Endo#29
- +kuraga/functions$package.Endo.apply(+1).[A]2:
-, .,kuraga/functions$package.Endo.apply(+1).(ea)2
-0 4kuraga/Eval#29
-5 6+kuraga/functions$package.Endo.apply(+1).[A]2
-; ?kuraga/Eval#29
-@ A+kuraga/functions$package.Endo.apply(+1).[A]2&
-I Iscala/Function1#apply().2<
-E I.kuraga/functions$package.Endo.apply(+1).(endo)2:
-J L,kuraga/functions$package.Endo.apply(+1).(ea)2I
- ;kuraga/functions$package.Endo.given_Monoid_Endo#`<init>`().2
- kuraga/Monoid#2,
- kuraga/functions$package.Endo#2A
- 3kuraga/functions$package.Endo.given_Monoid_Endo#[A]2A
- 3kuraga/functions$package.Endo.given_Monoid_Endo#[A]2H
- :kuraga/functions$package.Endo.given_Monoid_Endo#default().2
- local82
- local82H
-# *:kuraga/functions$package.Endo.given_Monoid_Endo#combine().2K
- =kuraga/functions$package.Endo.given_Monoid_Endo#combine().(x)2,
- kuraga/functions$package.Endo#2A
- 3kuraga/functions$package.Endo.given_Monoid_Endo#[A]2K
-, -=kuraga/functions$package.Endo.given_Monoid_Endo#combine().(y)2,
-/ 3kuraga/functions$package.Endo#2A
-4 53kuraga/functions$package.Endo.given_Monoid_Endo#[A]2
-: ;local92"
-? ?kuraga/Eval.defer().2&
-@ @scala/Function1#apply().2K
-? @=kuraga/functions$package.Endo.given_Monoid_Endo#combine().(x)2&
-B Bscala/Function1#apply().2K
-A B=kuraga/functions$package.Endo.given_Monoid_Endo#combine().(y)2
-C Dlocal92J
-3 <<kuraga/functions$package.Endo.given_Monoid_Endo#combineLz().2N
- @kuraga/functions$package.Endo.given_Monoid_Endo#combineLz().(lx)2
- kuraga/Eval#2,
-  kuraga/functions$package.Endo#2A
-! "3kuraga/functions$package.Endo.given_Monoid_Endo#[A]2N
-> @@kuraga/functions$package.Endo.given_Monoid_Endo#combineLz().(ly)2
-B Fkuraga/Eval#2,
-G Kkuraga/functions$package.Endo#2A
-L M3kuraga/functions$package.Endo.given_Monoid_Endo#[A]2
-S Wkuraga/Eval#2,
-X \kuraga/functions$package.Endo#2A
-] ^3kuraga/functions$package.Endo.given_Monoid_Endo#[A]2 
- kuraga/Eval.now().2
- kuraga/Eval.2
- local102$
- %kuraga/Eval#flatMap().2N
- @kuraga/functions$package.Endo.given_Monoid_Endo#combineLz().(lx)2&
-' 'scala/Function1#apply().2$
-+ 2kuraga/Eval#flatMap().2N
-( *@kuraga/functions$package.Endo.given_Monoid_Endo#combineLz().(ly)2&
-4 4scala/Function1#apply().2
-5 7local102-
-"" kuraga/functions$package.EndoE#20
-"" "kuraga/functions$package.EndoE#[A]20
-"" "kuraga/functions$package.EndoE#[A]20
-"" "kuraga/functions$package.EndoE#[A]2-
-## kuraga/functions$package.EndoE.25
-$$ 'kuraga/functions$package.EndoE.apply().28
-$$ *kuraga/functions$package.EndoE.apply().[A]28
-$$ *kuraga/functions$package.EndoE.apply().(f)28
-$$ *kuraga/functions$package.EndoE.apply().[A]28
-$$ *kuraga/functions$package.EndoE.apply().[A]2-
-$$ "kuraga/functions$package.EndoE#28
-$#$ $*kuraga/functions$package.EndoE.apply().[A]28
-$($ )*kuraga/functions$package.EndoE.apply().(f)23
-'' %kuraga/functions$package.EndoE.run().26
-&& (kuraga/functions$package.EndoE.run().[A]29
-&& +kuraga/functions$package.EndoE.run().(endo)2-
-&& kuraga/functions$package.EndoE#26
-&&  (kuraga/functions$package.EndoE.run().[A]26
-'' (kuraga/functions$package.EndoE.run().[A]26
-'' (kuraga/functions$package.EndoE.run().[A]29
-'' +kuraga/functions$package.EndoE.run().(endo)2K
-** =kuraga/functions$package.EndoE.given_Monoid_EndoE#`<init>`().2
-** kuraga/Monoid#2-
-** kuraga/functions$package.EndoE#2C
-** 5kuraga/functions$package.EndoE.given_Monoid_EndoE#[A]2C
-** 5kuraga/functions$package.EndoE.given_Monoid_EndoE#[A]2J
-++ <kuraga/functions$package.EndoE.given_Monoid_EndoE#default().2
-++ local112
-++ local112J
-,$, +<kuraga/functions$package.EndoE.given_Monoid_EndoE#combine().2M
-,, ?kuraga/functions$package.EndoE.given_Monoid_EndoE#combine().(x)2-
-,, kuraga/functions$package.EndoE#2C
-,, 5kuraga/functions$package.EndoE.given_Monoid_EndoE#[A]2M
-,., /?kuraga/functions$package.EndoE.given_Monoid_EndoE#combine().(y)2-
-,1, 6kuraga/functions$package.EndoE#2C
-,7, 85kuraga/functions$package.EndoE.given_Monoid_EndoE#[A]2%
-,D, Dkuraga/Compose.apply().2
-,=, Dkuraga/Compose.2M
-,E, F?kuraga/functions$package.EndoE.given_Monoid_EndoE#combine().(x)2M
-,H, I?kuraga/functions$package.EndoE.given_Monoid_EndoE#combine().(y)2L
--5- >>kuraga/functions$package.EndoE.given_Monoid_EndoE#combineLz().2P
--- Bkuraga/functions$package.EndoE.given_Monoid_EndoE#combineLz().(lx)2
--- kuraga/Eval#2-
--- "kuraga/functions$package.EndoE#2C
--#- $5kuraga/functions$package.EndoE.given_Monoid_EndoE#[A]2P
--A- CBkuraga/functions$package.EndoE.given_Monoid_EndoE#combineLz().(ly)2
--E- Ikuraga/Eval#2-
--J- Okuraga/functions$package.EndoE#2C
--P- Q5kuraga/functions$package.EndoE.given_Monoid_EndoE#[A]2"
-.. kuraga/Eval.delay().2%
-.. kuraga/Compose.apply().2
-.. kuraga/Compose.2"
-.. kuraga/Eval#value().2P
-.. Bkuraga/functions$package.EndoE.given_Monoid_EndoE#combineLz().(lx)2,
-.). )kuraga/DelayedFunc#`<init>`().2"
-.-. 2kuraga/Eval#value().2P
-.*. ,Bkuraga/functions$package.EndoE.given_Monoid_EndoE#combineLz().(ly)PZ 6736FB281AF762282A654F4955BFA84D

@@ -1,54 +1,0 @@
-
-ß)src/main/scala/playground/printType.scala*
-playground/Kek.
- *Kek€*!
-playground/Kek.tag().*tag€*"
-playground/Kek.tag().[A]	*A€*"
-playground/Kek.tag().(a)*a€*(
-playground/Kek.tag().(x$2)  *x$2€*
-local0 €*x€*-
-playground/Kek.printType().*	printType€*(
-playground/Kek.printType().[A]	*A€*(
-playground/Kek.printType().(x)*x€2
- playground/2
- scala/quoted/2
- scala/2
- 
-playground/Kek.2#
- playground/Kek.tag().2&
- playground/Kek.tag().[A]2&
- playground/Kek.tag().(a)2 
- scala/quoted/Expr#2&
- playground/Kek.tag().[A]2 
- scala/quoted/Type#2&
- playground/Kek.tag().[A]2 
-0 4scala/quoted/Expr#2
-5 9scala/Unit#2
- local02#
-  (scala/Any#toString().2$
- scala/Predef.summon().2 
- scala/quoted/Type#2&
- playground/Kek.tag().[A]2-
- scala/ContextFunction1#apply().20
-
- 
-"scala/quoted/runtime/Expr.quote().2'
-
- scala/Predef.println(+1).27
- )scala/quoted/runtime/Expr.nestedSplice().2(
- playground/Kek.tag().(x$2)2(
- scala/quoted/Expr.apply().2 
- scala/quoted/Expr.2
- local021
- #scala/quoted/ToExpr.StringToExpr().2)
- playground/Kek.printType().2,
- playground/Kek.printType().[A]2,
- playground/Kek.printType().(x)2,
-  playground/Kek.printType().[A]2
-$ (scala/Unit#21
-		 #scala/quoted/runtime/Expr.splice().2#
-		 playground/Kek.tag().2-
-		 scala/ContextFunction1#apply().20
-		 "scala/quoted/runtime/Expr.quote().2,
-		 playground/Kek.printType().(x)2-
-		 scala/ContextFunction1#apply().PZ 01CE937B19B1F2469F2B01411374BC98

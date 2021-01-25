@@ -1,578 +1,0 @@
-
-ÉÆ)src/main/scala/playground/free/Free.scala*&
-playground/free/Free# îÄ*FreeÄ*2
- playground/free/Free#`<init>`(). Ä@*<init>Ä*%
-playground/free/Free#[F]	 Ä*FÄ*"
-playground/free/Free#[A]	*AÄ*/
-playground/free/Free#flatMap().*flatMapÄ*,
-"playground/free/Free#flatMap().[B]	*BÄ*,
-"playground/free/Free#flatMap().[G]	*GÄ*,
-"playground/free/Free#flatMap().(k)*kÄ*
-local0 Ä*aÄ*
-local1 Ä	*B$1Ä*
-local2 Ä*fbÄ*
-local3 Ä*k1Ä*
-local4*bÄ*'
-playground/free/Free#map().*mapÄ*(
-playground/free/Free#map().[B]	*BÄ*(
-playground/free/Free#map().(f)*fÄ*
-local5*aÄ*7
-#playground/free/Free#semiFlatMap().*semiFlatMapÄ*0
-&playground/free/Free#semiFlatMap().[B]	*BÄ*0
-&playground/free/Free#semiFlatMap().[G]	*GÄ*0
-&playground/free/Free#semiFlatMap().(k)*kÄ*
-local6*aÄ*$
-playground/free/Free.
- *FreeÄ*+
-playground/free/Free.Pure# àÅ*PureÄ*7
-%playground/free/Free.Pure#`<init>`(). Ä@*<init>Ä*5
-(playground/free/Free.Pure#`<init>`().(a) Ä*aÄ*'
-playground/free/Free.Pure#[A]	*AÄ*)
-playground/free/Free.Pure#a. Ä*aÄ*.
-!playground/free/Free.Pure#copy().*copyÄ*.
-$playground/free/Free.Pure#copy().[A]	*AÄ*.
-$playground/free/Free.Pure#copy().(a)*aÄ*B
-+playground/free/Free.Pure#copy$default$1().*copy$default$1Ä*8
-.playground/free/Free.Pure#copy$default$1().[A]	*AÄ*4
-$playground/free/Free.Pure#ordinal().*ordinalÄ**
-playground/free/Free.Pure#_1().*_1Ä*)
-playground/free/Free.Pure.
- *PureÄ*0
-"playground/free/Free.Pure.apply().*applyÄ*/
-%playground/free/Free.Pure.apply().[A]	*AÄ*/
-%playground/free/Free.Pure.apply().(a)*aÄ*4
-$playground/free/Free.Pure.unapply().*unapplyÄ*1
-'playground/free/Free.Pure.unapply().[A]	*AÄ*5
-)playground/free/Free.Pure.unapply().(x$1)*x$1Ä*6
-%playground/free/Free.Pure.toString().*toStringÄ*+
-playground/free/Free.Bind# àÅ*BindÄ*7
-%playground/free/Free.Bind#`<init>`(). Ä@*<init>Ä*7
-)playground/free/Free.Bind#`<init>`().(fa) Ä*faÄ*5
-(playground/free/Free.Bind#`<init>`().(k) Ä*kÄ**
-playground/free/Free.Bind#[F]	 Ä*FÄ*'
-playground/free/Free.Bind#[B]	*BÄ*'
-playground/free/Free.Bind#[A]	*AÄ*+
-playground/free/Free.Bind#fa. Ä*faÄ*)
-playground/free/Free.Bind#k. Ä*kÄ*.
-!playground/free/Free.Bind#copy().*copyÄ*.
-$playground/free/Free.Bind#copy().[F]	*FÄ*.
-$playground/free/Free.Bind#copy().[B]	*BÄ*.
-$playground/free/Free.Bind#copy().[A]	*AÄ*0
-%playground/free/Free.Bind#copy().(fa)*faÄ*.
-$playground/free/Free.Bind#copy().(k)*kÄ*B
-+playground/free/Free.Bind#copy$default$1().*copy$default$1Ä*8
-.playground/free/Free.Bind#copy$default$1().[F]	*FÄ*8
-.playground/free/Free.Bind#copy$default$1().[B]	*BÄ*8
-.playground/free/Free.Bind#copy$default$1().[A]	*AÄ*B
-+playground/free/Free.Bind#copy$default$2().*copy$default$2Ä*8
-.playground/free/Free.Bind#copy$default$2().[F]	*FÄ*8
-.playground/free/Free.Bind#copy$default$2().[B]	*BÄ*8
-.playground/free/Free.Bind#copy$default$2().[A]	*AÄ*4
-$playground/free/Free.Bind#ordinal().*ordinalÄ**
-playground/free/Free.Bind#_1().*_1Ä**
-playground/free/Free.Bind#_2().*_2Ä*)
-playground/free/Free.Bind.
- *BindÄ*0
-"playground/free/Free.Bind.apply().*applyÄ*/
-%playground/free/Free.Bind.apply().[F]	*FÄ*/
-%playground/free/Free.Bind.apply().[B]	*BÄ*/
-%playground/free/Free.Bind.apply().[A]	*AÄ*1
-&playground/free/Free.Bind.apply().(fa)*faÄ*/
-%playground/free/Free.Bind.apply().(k)*kÄ*4
-$playground/free/Free.Bind.unapply().*unapplyÄ*1
-'playground/free/Free.Bind.unapply().[F]	*FÄ*1
-'playground/free/Free.Bind.unapply().[B]	*BÄ*1
-'playground/free/Free.Bind.unapply().[A]	*AÄ*5
-)playground/free/Free.Bind.unapply().(x$1)*x$1Ä*6
-%playground/free/Free.Bind.toString().*toStringÄ*7
-#playground/free/Free.fromOrdinal().*fromOrdinalÄ*<
-,playground/free/Free.fromOrdinal().(ordinal)*ordinalÄ**
-playground/free/Free.unit. Ä*unitÄ*+
-playground/free/Free.apply().*applyÄ**
- playground/free/Free.apply().[A]	*AÄ**
- playground/free/Free.apply().(a)*aÄ*/
-playground/free/Free.suspend().*suspendÄ*,
-"playground/free/Free.suspend().[F]	*FÄ*,
-"playground/free/Free.suspend().[A]	*AÄ*.
-#playground/free/Free.suspend().(fa)*faÄ*
-local7*xÄ*%
-playground/free/Free.go().*goÄ*'
-playground/free/Free.go().[F]	*FÄ*'
-playground/free/Free.go().[A]	*AÄ*-
- playground/free/Free.go().(free)*freeÄ*'
-playground/free/Free.go().(f)*fÄ*)
-playground/free/Free.go().(F)  *FÄ*
-local8 Ä*aÄ*
-local9 Ä	*B$2Ä*
-local10 Ä*faÄ*
-local11 Ä*kÄ*5
-"playground/free/Free.runTailRec().*
-runTailRecÄ*/
-%playground/free/Free.runTailRec().[F]	*FÄ*/
-%playground/free/Free.runTailRec().[A]	*AÄ*5
-(playground/free/Free.runTailRec().(free)*freeÄ*1
-%playground/free/Free.runTailRec().(F)  *FÄ*
-local12*x$1Ä*
-local13 Ä*aÄ*
-local14 Ä	*B$3Ä*
-local15 Ä*fbÄ*
-local16 Ä*kÄ*
-local17*aÄ*/
-playground/free/Free.foldRun().*foldRunÄ*,
-"playground/free/Free.foldRun().[F]	*FÄ*,
-"playground/free/Free.foldRun().[G]	*GÄ*,
-"playground/free/Free.foldRun().[A]	*AÄ*2
-%playground/free/Free.foldRun().(free)*freeÄ*,
-"playground/free/Free.foldRun().(f)*fÄ*.
-"playground/free/Free.foldRun().(G)  *GÄ*
-local18*x$1Ä*
-local19 Ä*aÄ*
-local20 Ä	*B$4Ä*
-local21 Ä*fbÄ*
-local22 Ä*kÄ*
-local23*aÄ* 
-playground/free/Run#*RunÄ*1
-playground/free/Run#`<init>`(). Ä@*<init>Ä*
-local24*selfÄ*!
-playground/free/Run#[F]	*FÄ*(
-playground/free/Run#run(). *runÄ*'
-playground/free/Run#run().[A]	*AÄ*/
-!playground/free/Run#run().(layer)*layerÄ*(
-playground/free/Run#step().*stepÄ*(
-playground/free/Run#step().[A]	*AÄ*0
-"playground/free/Run#step().(layer)*layerÄ*
-local25*xÄ*&
-playground/free/Run#`||`().*||Ä*(
-playground/free/Run#`||`().[G]	*GÄ*
-local26 *$anonÄ*
-local27 Ë*given_Run_FÄ*
-local28*runÄ*
-local29	*AÄ*
-local30*layerÄ*"
-playground/free/Run.
- *RunÄ*<
-#playground/free/Run.given_Run_Void.
- (*given_Run_VoidÄ*5
-)playground/free/Run.given_Run_Void.run().*runÄ*6
-,playground/free/Run.given_Run_Void.run().[A]	*AÄ*>
-0playground/free/Run.given_Run_Void.run().(layer)*layerÄ*$
-playground/free/RunOr#*RunOrÄ*3
-!playground/free/RunOr#`<init>`(). Ä@*<init>Ä*#
-playground/free/RunOr#[F]	*FÄ*.
-playground/free/RunOr#runOr(). *runOrÄ*+
-!playground/free/RunOr#runOr().[G]	*GÄ*+
-!playground/free/RunOr#runOr().[A]	*AÄ*3
-%playground/free/RunOr#runOr().(layer)*layerÄ*1
-#playground/free/RunOr#runOr().(x$1)  *x$1Ä*(
-playground/free/RunOr#run().*runÄ*)
-playground/free/RunOr#run().[A]	*AÄ*1
-#playground/free/RunOr#run().(layer)*layerÄ2
- playground/free/2
- playground/2
- cats/2'
- scala/annotation/tailrec#2
- scala/annotation/2
- scala/2#
- 	playground/free/Free#2.
-	 	 playground/free/Free#`<init>`().2&
- playground/free/Free#[F]2&
- playground/free/Free#[A]2-
- playground/free/Free#flatMap().20
- "playground/free/Free#flatMap().[B]20
- "playground/free/Free#flatMap().[G]20
-  "playground/free/Free#flatMap().(k)2&
-" #playground/free/Free#[A]2#
-' +playground/free/Free#20
-, -"playground/free/Free#flatMap().[G]20
-/ 0"playground/free/Free#flatMap().[B]2#
-4 8playground/free/Free#20
-9 :"playground/free/Free#flatMap().[G]20
-< ="playground/free/Free#flatMap().[B]22
-		 $playground/free/Free.Pure.unapply().2(
-		 playground/free/Free.Pure.2#
-			 playground/free/Free.2
-		 local02&
-		 scala/Function1#apply().20
-		 "playground/free/Free#flatMap().(k)2
-		 local022
-
-
- $playground/free/Free.Bind.unapply().2(
-
-
- playground/free/Free.Bind.2#
-
-	
- playground/free/Free.2
-
-
- local12
-
-
- local22
-
-
- local320
-
-'
- '"playground/free/Free.Bind.apply().2(
-
-#
- 'playground/free/Free.Bind.2#
-
-
- "playground/free/Free.2
-
-(
- *local22
-
-,
- -local42-
-
-7
- >playground/free/Free#flatMap().2&
-
-3
- 3scala/Function1#apply().2
-
-1
- 3local32
-
-4
- 5local420
-
-?
- @"playground/free/Free#flatMap().(k)2)
- 	playground/free/Free#map().2,
-
- playground/free/Free#map().[B]2,
- playground/free/Free#map().(f)2&
- playground/free/Free#[A]2,
- playground/free/Free#map().[B]2#
- playground/free/Free#2&
- playground/free/Free#[F]2,
-! "playground/free/Free#map().[B]2-
-& -playground/free/Free#flatMap().2
-. /local520
-< <"playground/free/Free.Pure.apply().2(
-8 <playground/free/Free.Pure.2#
-3 7playground/free/Free.2&
-> >scala/Function1#apply().2,
-= >playground/free/Free#map().(f)2
-? @local521
- #playground/free/Free#semiFlatMap().24
- &playground/free/Free#semiFlatMap().[B]24
- &playground/free/Free#semiFlatMap().[G]24
-# $&playground/free/Free#semiFlatMap().(k)2&
-& 'playground/free/Free#[A]24
-+ ,&playground/free/Free#semiFlatMap().[G]24
-- .&playground/free/Free#semiFlatMap().[B]2#
-2 6playground/free/Free#24
-7 8&playground/free/Free#semiFlatMap().[G]24
-: ;&playground/free/Free#semiFlatMap().[B]2-
-? Fplayground/free/Free#flatMap().2
-G Hlocal62-
-Q Xplayground/free/Free.suspend().2#
-L Pplayground/free/Free.2&
-Z Zscala/Function1#apply().24
-Y Z&playground/free/Free#semiFlatMap().(k)2
-[ \local62#
- playground/free/Free.2(
- playground/free/Free.Pure#23
- %playground/free/Free.Pure#`<init>`().2+
- playground/free/Free.Pure#[A]2.
-* * playground/free/Free#`<init>`().2#
- !playground/free/Free#23
-" &%playground/free/package$package.Void#2+
-( )playground/free/Free.Pure#[A]2+
- playground/free/Free.Pure#[A]2*
- playground/free/Free.Pure#a.2(
- playground/free/Free.Bind#23
- %playground/free/Free.Bind#`<init>`().2+
- playground/free/Free.Bind#[F]2+
-  playground/free/Free.Bind#[B]2+
-& 'playground/free/Free.Bind#[B]2#
-+ /playground/free/Free#2+
-0 1playground/free/Free.Bind#[F]2+
-3 4playground/free/Free.Bind#[A]2.
-I I playground/free/Free#`<init>`().2#
-? Cplayground/free/Free#2+
-D Eplayground/free/Free.Bind#[F]2+
-G Hplayground/free/Free.Bind#[A]2+
- playground/free/Free.Bind#[F]2+
- playground/free/Free.Bind#[B]2+
- playground/free/Free.Bind#[A]2+
- playground/free/Free.Bind#fa.2*
-# $playground/free/Free.Bind#k.2(
- 
-playground/free/Free.unit.2#
- playground/free/Free#23
- %playground/free/package$package.Void#2
- scala/Unit#20
-$ $"playground/free/Free.Pure.apply().2(
-  $playground/free/Free.Pure.2+
- playground/free/Free.apply().2.
-  playground/free/Free.apply().[A]2.
-  playground/free/Free.apply().(a)2.
-  playground/free/Free.apply().[A]2#
- playground/free/Free#2.
-$ % playground/free/Free.apply().[A]2-
-. 5playground/free/Free#flatMap().2(
-) -playground/free/Free.unit.20
-@ @"playground/free/Free.Pure.apply().2(
-< @playground/free/Free.Pure.2.
-A B playground/free/Free.apply().(a)2-
- playground/free/Free.suspend().20
- "playground/free/Free.suspend().[F]20
- "playground/free/Free.suspend().[A]21
- #playground/free/Free.suspend().(fa)20
- "playground/free/Free.suspend().[F]20
- "playground/free/Free.suspend().[A]2#
-" &playground/free/Free#20
-' ("playground/free/Free.suspend().[F]20
-* +"playground/free/Free.suspend().[A]20
-3 3"playground/free/Free.Bind.apply().2(
-/ 3playground/free/Free.Bind.21
-4 6#playground/free/Free.suspend().(fa)2
-8 9local720
-A A"playground/free/Free.Pure.apply().2(
-= Aplayground/free/Free.Pure.2
-B Clocal72(
- 
-playground/free/Free.go().2+
- playground/free/Free.go().[F]2+
- playground/free/Free.go().[A]2.
-  playground/free/Free.go().(free)2#
- !playground/free/Free#2+
-" #playground/free/Free.go().[F]2+
-% &playground/free/Free.go().[A]2+
- playground/free/Free.go().(f)2+
- playground/free/Free.go().[F]2#
- playground/free/Free#2+
- playground/free/Free.go().[F]2+
- playground/free/Free.go().[A]2#
-  $playground/free/Free#2+
-% &playground/free/Free.go().[F]2+
-( )playground/free/Free.go().[A]2+
-3 4playground/free/Free.go().(F)2
-6 =cats/Functor#2+
-> ?playground/free/Free.go().[F]2+
-C Dplayground/free/Free.go().[A]2.
- 	 playground/free/Free.go().(free)22
- $playground/free/Free.Pure.unapply().2(
- playground/free/Free.Pure.2
- local82
- local822
- $playground/free/Free.Bind.unapply().2(
- playground/free/Free.Bind.2
- local92
- local102
- local112(
- playground/free/Free.go().2&
- scala/Function1#apply().2+
- playground/free/Free.go().(f)2!
- "cats/Functor#map().2+
- playground/free/Free.go().(F)2
-# %local102
-' (local112+
-. /playground/free/Free.go().(f)2+
-/ /playground/free/Free.go().(F)20
- "playground/free/Free.runTailRec().23
- %playground/free/Free.runTailRec().[F]23
- %playground/free/Free.runTailRec().[A]26
- (playground/free/Free.runTailRec().(free)23
-" #%playground/free/Free.runTailRec().[F]23
-% &%playground/free/Free.runTailRec().[A]23
- %playground/free/Free.runTailRec().(F)2
- !cats/Monad#23
-" #%playground/free/Free.runTailRec().[F]23
-' (%playground/free/Free.runTailRec().[F]23
-) *%playground/free/Free.runTailRec().[A]2&
- cats/FlatMap#tailRecM().23
- %playground/free/Free.runTailRec().(F)2#
- playground/free/Free#23
- %playground/free/Free.runTailRec().[F]23
- %playground/free/Free.runTailRec().[A]23
- %playground/free/Free.runTailRec().[A]26
-  $(playground/free/Free.runTailRec().(free)2
- local1222
- $playground/free/Free.Pure.unapply().2(
- playground/free/Free.Pure.2
- local132&
- cats/Applicative#pure().23
- %playground/free/Free.runTailRec().(F)2'
-$ $scala/util/Right.apply().2"
- $scala/package.Right.2
-% &local1322
- $playground/free/Free.Bind.unapply().2(
- playground/free/Free.Bind.2
- local142
- local152
- local162
- !cats/Monad#map().23
- %playground/free/Free.runTailRec().(F)2
-" $local152
-& 'local172&
-/ /scala/util/Left.apply().2!
-+ /scala/package.Left.2&
-1 1scala/Function1#apply().2
-0 1local162
-2 3local172-
-## playground/free/Free.foldRun().20
-"" "playground/free/Free.foldRun().[F]20
-"" "playground/free/Free.foldRun().[G]20
-"" "playground/free/Free.foldRun().[A]23
-"" !%playground/free/Free.foldRun().(free)2#
-"#" 'playground/free/Free#20
-"(" )"playground/free/Free.foldRun().[F]20
-"+" ,"playground/free/Free.foldRun().[A]20
-## "playground/free/Free.foldRun().(f)2 
-## cats/package.`~>`#20
-## "playground/free/Free.foldRun().[F]20
-## "playground/free/Free.foldRun().[G]20
-#"# #"playground/free/Free.foldRun().(G)2
-#%# *cats/Monad#20
-#+# ,"playground/free/Free.foldRun().[G]20
-#0# 1"playground/free/Free.foldRun().[G]20
-#2# 3"playground/free/Free.foldRun().[A]2&
-$$ cats/FlatMap#tailRecM().20
-$$ "playground/free/Free.foldRun().(G)23
-$$ %playground/free/Free.foldRun().(free)2
-%% local1822
-%% $playground/free/Free.Pure.unapply().2(
-%% playground/free/Free.Pure.2
-%% local192&
-%% "cats/Applicative#pure().20
-%% "playground/free/Free.foldRun().(G)2'
-%(% (scala/util/Right.apply().2"
-%#% (scala/package.Right.2
-%)% *local1922
-&& $playground/free/Free.Bind.unapply().2(
-&& playground/free/Free.Bind.2
-&& local202
-&& local212
-&& local222
-&& !cats/Monad#map().20
-&& "playground/free/Free.foldRun().(G)2+
-&#& #cats/arrow/FunctionK#apply().20
-&"& #"playground/free/Free.foldRun().(f)2
-&$& &local212
-&)& *local232&
-&2& 2scala/util/Left.apply().2!
-&.& 2scala/package.Left.2&
-&4& 4scala/Function1#apply().2
-&3& 4local222
-&5& 6local232"
-)) 	playground/free/Run#2-
-)	) 	playground/free/Run#`<init>`().2
-** local242%
-)
-) playground/free/Run#[F]2(
-+#+ &playground/free/Run#run().2+
-++ playground/free/Run#run().[A]2/
-++ !playground/free/Run#run().(layer)2%
-++ playground/free/Run#[F]2+
-++ playground/free/Run#run().[A]2#
-+)+ -playground/free/Free#2%
-+.+ /playground/free/Run#[F]2+
-+1+ 2playground/free/Run#run().[A]2)
--+- /playground/free/Run#step().2,
--- playground/free/Run#step().[A]20
--- "playground/free/Run#step().(layer)2%
--- playground/free/Run#[F]2#
--- playground/free/Free#2%
---  playground/free/Run#[F]2,
--"- #playground/free/Run#step().[A]2#
--1- 5playground/free/Free#2%
--6- 7playground/free/Run#[F]2,
--9- :playground/free/Run#step().[A]2-
--H- Oplayground/free/Free#flatMap().2(
-->- >playground/free/Run#run().20
-->- C"playground/free/Run#step().(layer)2&
--P- Xscala/Predef.identity().2
--P- Plocal252)
-// playground/free/Run#`||`().2,
-/	/ 
-playground/free/Run#`||`().[G]2$
-// playground/free/RunOr#2,
-// playground/free/Run#`||`().[G]2"
-// playground/free/Run#23
-// %playground/free/package$package.`||`#2%
-// playground/free/Run#[F]2,
-/ / !playground/free/Run#`||`().[G]2"
-/)/ ,playground/free/Run#23
-/// 1%playground/free/package$package.`||`#2%
-/-/ .playground/free/Run#[F]2,
-/2/ 3playground/free/Run#`||`().[G]2
-0
-0 local272"
-0
-0 playground/free/Run#2%
-00 playground/free/Run#[F]2"
-00 playground/free/Run#2
-1+1 .local282
-11 local292
-11 local302
-11  
-scala/`|`#2%
-11 playground/free/Run#[F]2
-11 local292,
-1!1 "playground/free/Run#`||`().[G]2
-1#1 $local292#
-111 5playground/free/Free#23
-181 :%playground/free/package$package.`||`#2%
-161 7playground/free/Run#[F]2,
-1;1 <playground/free/Run#`||`().[G]2
-1>1 ?local292%
-1O1 Pplayground/free/Run#[F]2
-1R1 Slocal292
-1C1 Hlocal302
-1S1 Slocal272"
-44 
-playground/free/Run.21
-55 #playground/free/Run.given_Run_Void.2"
-55 playground/free/Run#23
-55 %playground/free/package$package.Void#27
-6(6 +)playground/free/Run.given_Run_Void.run().2:
-66 ,playground/free/Run.given_Run_Void.run().[A]2>
-66 0playground/free/Run.given_Run_Void.run().(layer)2
-66 !scala/Nothing#2#
-6-6 1playground/free/Free#23
-626 6%playground/free/package$package.Void#2:
-686 9,playground/free/Run.given_Run_Void.run().[A]2-
-6B6 Iplayground/free/Free.suspend().2#
-6=6 Aplayground/free/Free.2>
-6J6 O0playground/free/Run.given_Run_Void.run().(layer)2$
-88 playground/free/RunOr#2/
-88 !playground/free/RunOr#`<init>`().2"
-88 playground/free/Run#2'
-88 playground/free/RunOr#[F]2'
-88 playground/free/RunOr#[F]2,
-9/9 4playground/free/RunOr#runOr().2/
-99 !playground/free/RunOr#runOr().[G]2/
-99 !playground/free/RunOr#runOr().[A]23
-99 %playground/free/RunOr#runOr().(layer)2
-9#9 $
-scala/`|`#2'
-99 playground/free/RunOr#[F]2/
-9 9 !!playground/free/RunOr#runOr().[A]2/
-9%9 &!playground/free/RunOr#runOr().[G]2/
-9'9 (!playground/free/RunOr#runOr().[A]2#
-9D9 Hplayground/free/Free#23
-9K9 M%playground/free/package$package.`||`#2'
-9I9 Jplayground/free/RunOr#[F]2/
-9N9 O!playground/free/RunOr#runOr().[G]2/
-9Q9 R!playground/free/RunOr#runOr().[A]2*
-;,; /playground/free/RunOr#run().2-
-;; playground/free/RunOr#run().[A]21
-;; #playground/free/RunOr#run().(layer)2'
-;; playground/free/RunOr#[F]2-
-;; playground/free/RunOr#run().[A]2#
-;1; 5playground/free/Free#2'
-;6; 7playground/free/RunOr#[F]2-
-;9; :playground/free/RunOr#run().[A]2,
-;>; >playground/free/RunOr#runOr().23
-;J; N%playground/free/package$package.Void#2-
-;P; Qplayground/free/RunOr#run().[A]21
-;>; C#playground/free/RunOr#run().(layer)21
-;Q; Q#playground/free/Run.given_Run_Void.PZ 00921775E2C1A72AF1055B6A70728474

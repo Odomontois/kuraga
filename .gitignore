@@ -2,3 +2,5 @@ target
 .idea
 .dotty*
 .metals
+.bloop
+.bsp

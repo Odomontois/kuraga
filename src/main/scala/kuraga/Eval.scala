@@ -24,5 +24,5 @@ object Eval:
     extension[A](a: => Eval[A]) def defer: Eval[A] = FlatMap(unit, _ => a) 
     
     given StackSafeMonad[Eval] with
-        extension [A] (a: A) def pure : Eval[A] = Pure(a)
+        def pure[A] (a: A) : Eval[A] = Pure(a)
         extension [A, B] (a: Eval[A]) def flatMap(f: A => Eval[B]): Eval[B] = FlatMap(a, f)

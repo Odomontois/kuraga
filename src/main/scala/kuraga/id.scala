@@ -10,7 +10,7 @@ object Id:
     
 
     given Monad[Id] with
-        extension [A] (a: A) def pure  = a
+        def pure[A] (a: A)  = a
         extension [A, B] (a: Id[A])  def flatMap(f: A => Id[B]) = f(a)
         extension [A, B] (a: A) @tailrec def tailRecM(f: A => Id[Either[A, B]]) : Id[B] = 
             f(a) match

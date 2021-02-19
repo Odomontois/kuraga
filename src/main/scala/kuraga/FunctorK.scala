@@ -18,8 +18,8 @@ trait ApplicativeK[U[f[_]]] extends ApplyK[U] with PureK[U]:
 
   extension [F[_], G[_]] (obj: U[F])
     override def mapK(f: [A] => F[A] => G[A]): U[G] = 
-      obj.map2K[F, [A] =>> Unit, G](
-        pureK([A] => () => ()))(
+      obj.map2K(
+        pureK[[A] =>> Unit]([A] => () => ()))(
           [A] => (x: F[A], y: Unit) => f(x))
 
 trait RepresentableK[U[f[_]]] extends ApplicativeK[U]:

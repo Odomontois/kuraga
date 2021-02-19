@@ -195,7 +195,7 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "/usr/lib/jvm/java-13-oracle",
+                "home": "/usr/lib/jvm/zulu-15-amd64",
                 "options": [
                     "-Duser.dir=/home/odomontois/Prog/projects/scala/kuraga/project/project"
                 ]

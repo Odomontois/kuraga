@@ -22,11 +22,12 @@ trait Monad[F[_]] extends Applicative[F] {
 }
 
 trait Traverse[F[_]] extends Functor[F] {
-    extension [G[_], A, B] (fa: F[A])  def traverse (f: A => G[B]) (using Applicative[G]) : G[F[B]]
+    extension [A] (fa: F[A])  def traverse[G[_], B] (f: A => G[B]) (using Applicative[G]) : G[F[B]]
 
     extension [G[_], A] (fa: F[G[A]]) def sequence (using Applicative[G]) : G[F[A]] = fa.traverse(identity)
 
-    extension [A, B] (fa: F[A]) override def fmap(f: A => B): F[B] = fa.traverse[Identity, A, B](f)
+    extension [A, B] (fa: F[A]) override def fmap(f: A => B): F[B] = 
+        fa.traverse[Identity, B](f)
 }
 
 trait MonadWithTraverse[F[_]] extends Monad[F] with Traverse[F]
@@ -35,14 +36,14 @@ type Identity[A] = A
 given idInstance :  MonadWithTraverse[Identity] with {
     extension [A, B] (fa: A) override def flatMap (f: A => B) = f(fa)
     extension  [A] (a: A) override def pure = a
-    extension [G[_], A, B] (a: A) override def traverse(f: A => G[B]) (using G: Applicative[G]) : G[B] = f(a)
+    extension [A] (a: A) override def traverse[G[_], B](f: A => G[B]) (using G: Applicative[G]) : G[B] = f(a)
 }
 
 
 given optionInstance :  MonadWithTraverse[Option] with {
     extension [A, B] (fa: Option[A]) override def flatMap (f: A => Option[B]) = fa.flatMap(f)
     extension [A] (a: A) override def pure = Some(a)
-    extension [G[_], A, B] (a: Option[A]) override def traverse(f: A => G[B]) (using G: Applicative[G]) : G[Option[B]] = 
+    extension [A] (a: Option[A]) override def traverse[G[_], B](f: A => G[B]) (using G: Applicative[G]) : G[Option[B]] = 
        a.fold(G.pure(None))(a => f(a).fmap(Some(_)))
 }
 

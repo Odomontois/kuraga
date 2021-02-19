@@ -47,7 +47,7 @@ trait Run[F[_]]:
 
   def ||[G[_]: RunOr]: Run[F || G] = new Run[F || G]{
     given Run[F] = self
-    extension [A] (layer: F[A] | G[A]) def run : Free[F || G, A] = layer.runOr[F, A]
+    extension [A] (layer: F[A] | G[A]) def run : Free[F || G, A] = summon[RunOr[G]].runOr(layer)
   }
 
 object Run:
@@ -57,4 +57,4 @@ object Run:
 trait RunOr[F[_]] extends Run[F]:
   extension [G[_], A] (layer: F[A] | G[A]) def runOr(using Run[G]): Free[F || G, A]
   
-  extension [A] (layer: F[A])  override def run: Free[F, A] = layer.runOr[Void, A]
+  extension [A] (layer: F[A])  override def run: Free[F, A] = runOr[Void, A](layer)

@@ -1,7 +1,7 @@
 package playground.chat.kaivessel
 
 trait Has[k <: *, TC[_ <: k], GADT[_ <: k]]:
-  def cts4[A <: k](gadt: GADT[A]): TC[A] = gadt.constraintsFor[A]
+  def cts4[A <: k](gadt: GADT[A]): TC[A] = gadt.constraintsFor
   extension [A <: k](gadt: GADT[A])
     def constraintsFor: TC[A]
 

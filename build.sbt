@@ -1,4 +1,4 @@
-val dottyVersion = "3.0.0-M3"
+val dottyVersion = "3.0.0-RC1"
 
 name := "kuraga"
 version := "0.1.0"
@@ -15,3 +15,4 @@ libraryDependencies += ("com.softwaremill.sttp.client3" %% "core"        % "3.0.
 
 scalacOptions += "-language:implicitConversions"
 scalacOptions += "-Ykind-projector"
+scalacOptions ++= Vector("-source", "3.1-migration", "-rewrite")

@@ -50,15 +50,15 @@ object Layer1:
         go(self)
 
   extension [X](self: Ev[X])
-    def value: X = self.run[EvalF, X](EvalF.EvalInterpreter[EvalF]())
+    def value: X = Layer1.run[EvalF, X](self)(EvalF.EvalInterpreter[EvalF]())
 
   extension [R, X] (self: ReadEv[R][X])
-    def runReader(r: R): X = self.run[ReadEvF[R], X](
+    def runReader(r: R): X = Layer1.run[ReadEvF[R], X](self)(
       new EvalF.EvalInterpreter[ReadEvF[R]] with EvalF.ReaderInterpreter[ReadEvF[R], R](r))   
 
 
   extension [S, E, X] (self: ExecEv[S, E, X])
-    def runStateE(init: S) : (S, Either[E, X]) = self.exec[ExecF[S, E], S, E, X](
+    def runStateE(init: S) : (S, Either[E, X]) = Layer1.exec[ExecF[S, E], S, E, X](self)(
       new EvalF.ExecInterpreter[S, E, ExecF[S, E]](init)
     )    
 
@@ -172,20 +172,22 @@ object Effects:
   type Free[+F[+_], +a] = Layer1[FreeF[F], a]
 
 object EvalTest:
-    extension [A, B, P[-i[+_], +o[+_]] <: EvalF[i, o]] (xs: List[A])  def foldr(f: (A, Layer1[P, B]) => Layer1[P, B])(lb: Layer1[P, B]): Layer1[P, B] = 
+    extension [A, B, P[-i[+_], +o[+_]] <: EvalF[i, o]] (xs: List[A])  
+      def foldr(f: (A, Layer1[P, B]) => Layer1[P, B])(lb: Layer1[P, B]): Layer1[P, B] = 
         xs match 
             case Nil => lb
             case head :: tail => f(head, tail.foldr(f)(lb)).defer
     
 
-    extension (xs: List[Long]) def lsum: Ev[Long] = xs.foldr[Long, Long, EvalF]((x, i) => i.map(_ + x))(EvalF.now(0L))
+    extension (xs: List[Long]) def lsum: Ev[Long] = 
+      foldr[Long, Long, EvalF](xs)((x, i) => i.map(_ + x))(EvalF.now(0L))
     extension (xs: List[Long]) def lsump: ReadEv[Long][Long] = 
-      xs.foldr[Long, Long, ReadEvF[Long]]{(x, i) =>
+      foldr[Long, Long, ReadEvF[Long]](xs){(x, i) =>
         i.flatMap(s => EvalF.read[Long].map( p => s + x * p))
     }(EvalF.now(0L))
 
     extension (xs: List[Long]) def lsumAndCount: StateEv[Long, Long] = 
-      xs.foldr[Long, Long, StateF[Long]]((x, i) => 
+      foldr[Long, Long, StateF[Long]](xs)((x, i) => 
         for{
           s <- i
           q <- EvalF.read[Long]
@@ -197,4 +199,4 @@ object EvalTest:
       val lst =List.range(1L, 1000001L) 
         println(lst.lsum.value)
         println(lst.lsump.runReader(7))
-        println(lst.lsumAndCount.runStateE[Long, Nothing, Long](0))
+        println(lst.lsumAndCount.runStateE(0))

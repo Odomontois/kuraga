@@ -49,8 +49,8 @@ trait Craft[U[f[_]]] extends RepresentableK[U] with TraverseK[U]:
     def traverseK(f: [A] => F[A] => G[H[A]])(using Applicative[G]): G[U[H]] = 
       craft[G, H]([A] => (frep: Rep[U, A]) => f(frep(uf)))
 
-import scala.compiletime._
-import scala.deriving._
+import scala.compiletime.*
+import scala.deriving.*
 package hkd{
   inline def provision[P](using p: Mirror.ProductOf[P]): P = 
       p.fromProduct(summonAll[p.MirroredElemTypes])

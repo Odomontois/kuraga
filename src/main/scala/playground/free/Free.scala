@@ -1,5 +1,5 @@
 package playground.free
-import cats._
+import cats.*
 import scala.annotation.tailrec
 
 enum Free[+F[_], A]:

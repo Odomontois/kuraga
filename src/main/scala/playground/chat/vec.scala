@@ -1,5 +1,5 @@
 package playground.chat.vec
-import scala.compiletime.ops.int._
+import scala.compiletime.ops.int.*
 
 enum Nat:
     case S[N <: Nat]()
@@ -43,7 +43,7 @@ enum Vec1[N <: Int, +A]:
 
 
 object Vec1: 
-    private def getUnsafe[A](v: Vec1[_, A], i: Int): A = v match 
+    private def getUnsafe[A](v: Vec1[?, A], i: Int): A = v match 
         case Nil => throw new NoSuchElementException
         case h %:: t => if i == 0 then h else getUnsafe(t, i - 1)
 

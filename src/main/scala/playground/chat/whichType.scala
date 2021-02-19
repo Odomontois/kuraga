@@ -1,5 +1,5 @@
 package playground.chat
-import scala.quoted._
+import scala.quoted.*
 
 
 object Kek: 

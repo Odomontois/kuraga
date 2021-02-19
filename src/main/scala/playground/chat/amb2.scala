@@ -1,6 +1,6 @@
 package playground.chat
 
-import cats._
+import cats.*
 import cats.implicits.given
 
 extension [F[_]: Monad, A, B] (fa: F[A]) def boom (f: A => List[F[B]]): Alternative[F] ?=> F[Unit] = 

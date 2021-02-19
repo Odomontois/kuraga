@@ -1,5 +1,5 @@
 package kuraga
-import scala.quoted._
+import scala.quoted.*
 import scala.annotation.tailrec
 
 opaque type Id[+A] = A

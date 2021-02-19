@@ -1,7 +1,7 @@
 package playground.data.layer
 
 import scala.annotation.tailrec
-import Effects._
+import Effects.*
 import EvalF.given
 
 type FK1 = [i[+_], o[+_]] =>> Any
@@ -34,7 +34,7 @@ object Layer1:
     def run(step: P[L1[P], L1[P]]): X = 
         @tailrec def go(cur: Layer1[P, X]): X = cur.unpack(step) match
             case Done(res)       => res    
-            case k: K[_, P @unchecked, X]   => go(EvalF.interpret(k)(step))        
+            case k: K[?, P @unchecked, X]   => go(EvalF.interpret(k)(step))        
             case next            => go(next)        
 
         go(self)
@@ -44,7 +44,7 @@ object Layer1:
         @tailrec def go(cur: Layer1[P, X]): (S, Either[E, X]) = cur.unpack(step) match
             case Done(res)       => (step.state, Right(res))
             case Raised(err)     => (step.state, Left(err))  
-            case k: K[_, P, X]   => go(EvalF.interpretErr(k)(step))        
+            case k: K[?, P, X]   => go(EvalF.interpretErr(k)(step))        
             case next            => go(next)
 
         go(self)

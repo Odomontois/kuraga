@@ -1,5 +1,5 @@
 package playground.free
-import cats._
+import cats.*
 import cats.arrow.FunctionK
 import cats.evidence.As
 

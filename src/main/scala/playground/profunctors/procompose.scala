@@ -1,6 +1,6 @@
 package playground.profunctors
 import cats.arrow.Profunctor
-import cats.syntax.profunctor._
+import cats.syntax.profunctor.*
 import scala.language.implicitConversions
 
 enum Procompose[P[_, _], Q[_, _], A, B]{

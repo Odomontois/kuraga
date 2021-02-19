@@ -8,7 +8,7 @@ object Lol extends App{
     case x *: xs => ReverseRecur[xs, x *: XS]
   }
 
-  type ReverseRecur[A, XS <: Tuple] = XS match { case _ => ReverseLoop[A, XS] }
+  type ReverseRecur[A, XS <: Tuple] = XS match { case ? => ReverseLoop[A, XS] }
 
   type Reverse[A] = ReverseLoop[A, EmptyTuple]
 
@@ -43,8 +43,8 @@ object Lol extends App{
       case true => (true *: Unit)
       case false => EmptyTuple
     }
-    case (Unit, _) => IncT[B, O]
-    case (_, Unit) => IncT[A, O]
+    case (Unit, ?) => IncT[B, O]
+    case (?, Unit) => IncT[A, O]
     case (a *: as, b *: bs) => PlusTri[a, b, O] match {
       case (o1, r) => r *: PlusLoop[as, bs, o1]
     }

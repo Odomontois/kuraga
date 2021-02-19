@@ -1,12 +1,12 @@
 package playground.day
 import kuraga.{~>}
 import cats.free.Cofree
-import cats.syntax.apply._
-import cats.syntax.coflatMap._
-import cats.syntax.comonad._
-import cats.syntax.functor._
-import cats.syntax.semigroupal._
-import cats.{~> => _, _}
+import cats.syntax.apply.*
+import cats.syntax.coflatMap.*
+import cats.syntax.comonad.*
+import cats.syntax.functor.*
+import cats.syntax.semigroupal.*
+import cats.{~> as _, *}
 
 type DayF[F[_], G[_]] = [A] =>> Day[F, G, A]
 type CofreeF[F[_]] = [A] =>> Cofree[F, A]

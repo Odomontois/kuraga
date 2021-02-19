@@ -1,7 +1,7 @@
 package playground
 package free
-import cats._
-import cats.effect._
+import cats.*
+import cats.effect.*
 import scala.io.StdIn.readLine
 import scala.annotation.unchecked.uncheckedVariance
 

@@ -4,7 +4,7 @@ object MonoidalDMap:
   opaque type MonoidalDMap[k <: *, K[_ <: k], +V[_ <: k]] <: DGet[k, K, V] with DList[k, K, V] = DMap[k, K, V]  
 
   def empty[k <: *, K[_ <: k], V[_ <: k]]: MonoidalDMap[k, K, V]                         = DMap.empty[k, K, V]
-  def apply[k <: *, K[_ <: k], V[_ <: k]](elems: DPair[k, K, V]*): MonoidalDMap[k, K, V] = DMap(elems: _*)
+  def apply[k <: *, K[_ <: k], V[_ <: k]](elems: DPair[k, K, V]*): MonoidalDMap[k, K, V] = DMap(elems *)
 
   extension [k <: *, K[_ <: k], V[_ <: k]](self: MonoidalDMap[k, K, V])  
     def asList: DList[k, K, V] = self  
@@ -25,7 +25,7 @@ object MonoidalDMap:
         sg = e.key.constraintsFor
       yield e.key -> sg.combine(v1, v2)
       
-      MonoidalDMap(luniq.toList ++ runiq.toList ++ intersection: _*) 
+      MonoidalDMap(luniq.toList ++ runiq.toList ++ intersection *) 
       
 
   extension [K[_[_[_]]], V[_[_[_]]]](self: MonoidalDMap[K2, K, V])

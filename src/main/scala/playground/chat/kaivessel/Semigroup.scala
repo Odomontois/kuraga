@@ -18,7 +18,7 @@ object Semigroup:
   
 
   inline def derived[A] (using m: Mirror.ProductOf[A]): Semigroup[A] =  new:
-    val instances = IArray(summonAll[m.MirroredElemTypes, Semigroup] :_*)
+    val instances = IArray(summonAll[m.MirroredElemTypes, Semigroup] *)
 
     def combine(a: A, b: A) = m fromProduct new:
       val ap = a.asInstanceOf[Product]

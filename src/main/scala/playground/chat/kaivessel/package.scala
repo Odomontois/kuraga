@@ -1,5 +1,5 @@
 package  playground.chat.kaivessel
-import scala.compiletime.ops.int._
+import scala.compiletime.ops.int.*
 
 
 type K0 = Any

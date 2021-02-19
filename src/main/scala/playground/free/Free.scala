@@ -17,14 +17,14 @@ enum Free[+F[_], A]:
 object Free:
   val unit: Free[Void, Unit]  = Pure(())
 
-  def apply[A](a: => A): Free[Void, A] = unit flatMap (_ => Pure(a))
+  def apply[A](a: => A): Free[Void, A] = unit.flatMap(_ => Pure(a))
   def suspend[F[_], A](fa: F[A]): Free[F, A] = Bind(fa, x => Pure(x))
   
   extension [F[_], A] (free: Free[F, A]) 
     def go (f: F[Free[F, A]] => Free[F, A]) (using F: Functor[F]): A = 
      free match
        case Pure(a) => a
-       case Bind(fa, k) => f(F.map(fa)(k)) go f
+       case Bind(fa, k) => f(F.map(fa)(k)).go(f)
     
     def runTailRec(using F: Monad[F]): F[A] = 
       F.tailRecM[Free[F, A], A](free){
@@ -43,7 +43,7 @@ trait Run[F[_]]:
   self =>
   extension [A] (layer: F[A])  def run : Free[F, A]
 
-  extension [A] (layer: F[Free[F, A]]) def step: Free[F, A] = layer.run flatMap identity
+  extension [A] (layer: F[Free[F, A]]) def step: Free[F, A] = layer.run.flatMap(identity)
 
   def ||[G[_]: RunOr]: Run[F || G] = new Run[F || G]{
     given Run[F] = self

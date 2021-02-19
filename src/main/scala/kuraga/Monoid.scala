@@ -4,7 +4,7 @@ import scala.annotation.tailrec
 import kuraga.Apply
 
 trait Semigroup[T]:
-    extension (x: T) def combine(y: T): T
+    extension (x: T) infix def combine(y: T): T
     extension (x: Eval[T]) def combineLz (y: Eval[T]) : Eval[T] = x.map2(y)(_ combine _)
 
 trait Default[T]:

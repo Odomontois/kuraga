@@ -1,7 +1,7 @@
 package playground.chat.kaivessel
 
 object MonoidalDMap:
-  opaque type MonoidalDMap[k <: *, K[_ <: k], +V[_ <: k]] <: DGet[k, K, V] with DList[k, K, V] = DMap[k, K, V]  
+  opaque type MonoidalDMap[k <: *, K[_ <: k], +V[_ <: k]] <: DGet[k, K, V] & DList[k, K, V] = DMap[k, K, V]  
 
   def empty[k <: *, K[_ <: k], V[_ <: k]]: MonoidalDMap[k, K, V]                         = DMap.empty[k, K, V]
   def apply[k <: *, K[_ <: k], V[_ <: k]](elems: DPair[k, K, V]*): MonoidalDMap[k, K, V] = DMap(elems *)

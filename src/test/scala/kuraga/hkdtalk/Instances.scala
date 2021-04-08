@@ -4,7 +4,7 @@ case class Person[R](
     firstName: R,
     lastName: R,
     age: R,
-    tags: R
+    tags: R,
 )
 
 // trait Functor[F[_]]:

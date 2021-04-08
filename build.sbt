@@ -15,4 +15,6 @@ libraryDependencies += ("com.softwaremill.sttp.client3" %% "core"        % "3.0.
 
 scalacOptions += "-language:implicitConversions"
 scalacOptions += "-Ykind-projector"
-scalacOptions ++= Vector("-source", "future-migration", "-rewrite", "-deprecation", "rewrite")
+
+scalacOptions ++= Vector("-Xmax-inlines", "200")
+// scalacOptions ++= Vector("-source", "future-migration", "-rewrite", "-deprecation", "rewrite")

@@ -10,5 +10,6 @@ object Eq:
             case Nil => bs == Nil
             case a :: as1 => bs match 
                 case Nil => false
-                case b :: bs1 => a === b && as1 === bs1            
+                case b :: bs1 => a === b && as1 === bs1  
+                
 

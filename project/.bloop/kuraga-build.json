@@ -18,7 +18,7 @@
         "classpath": [
             "/home/odomontois/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/sbt/1.4.5/sbt-1.4.5.jar",
             "/home/odomontois/.sbt/boot/scala-2.12.12/lib/scala-library.jar",
-            "/home/odomontois/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.6-21-464e4ec4/sbt-bloop-1.4.6-21-464e4ec4.jar",
+            "/home/odomontois/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.8/sbt-bloop-1.4.8.jar",
             "/home/odomontois/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/lamp/sbt-dotty_2.12_1.0/0.5.1/sbt-dotty-0.5.1.jar",
             "/home/odomontois/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/main_2.12/1.4.5/main_2.12-1.4.5.jar",
             "/home/odomontois/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/io_2.12/1.4.0/io_2.12-1.4.0.jar",
@@ -199,7 +199,7 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "/usr/lib/jvm/zulu-15-amd64",
+                "home": "/usr/lib/jvm/zulu-16-amd64",
                 "options": [
                     "-Duser.dir=/home/odomontois/Prog/projects/scala/kuraga/project"
                 ]
@@ -213,12 +213,12 @@
                 {
                     "organization": "ch.epfl.scala",
                     "name": "sbt-bloop",
-                    "version": "1.4.6-21-464e4ec4",
+                    "version": "1.4.8",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "sbt-bloop",
-                            "path": "/home/odomontois/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.6-21-464e4ec4/sbt-bloop-1.4.6-21-464e4ec4.jar"
+                            "path": "/home/odomontois/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.8/sbt-bloop-1.4.8.jar"
                         }
                     ]
                 },

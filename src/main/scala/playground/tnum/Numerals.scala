@@ -23,7 +23,7 @@ object Numerals:
         case _: Zero    => 0
         case _: Succ[x] => toInt[x] + 1
 
-    @tailrec inline def toIntR[X <: Num](acc: Int = 0) : Int = inline erasedValue[X] match 
+    inline def toIntR[X <: Num](acc: Int = 0) : Int = inline erasedValue[X] match 
         case _: Zero    => acc
         case _: Succ[x] => toIntR[x](acc + 1)
 

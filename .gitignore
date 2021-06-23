@@ -4,3 +4,5 @@ target
 .metals
 .bloop
 .bsp
+bloop.settings.json
+metals.sbt

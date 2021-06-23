@@ -1,3 +1,5 @@
+package playground
+
 import sttp.client.quick._
 
 val reg = "\\.*?2\\.(\\d+)".r

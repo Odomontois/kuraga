@@ -1,4 +1,4 @@
-package playground.typeclasses
+// package playground.typeclasses
 
 object Lolk{
   trait Num[N] {
@@ -22,10 +22,10 @@ object Lolk{
     }
   }
 
-  def foo[N: Num](x: N) = -x * x
+//   def foo[N: Num](x: N) = -x * x
 
-  def main(args: Array[String]): Unit = {
-    println(foo(1))
-  }
+//   def main(args: Array[String]): Unit = {
+//     println(foo(1))
+//   }
 
-}
+// }

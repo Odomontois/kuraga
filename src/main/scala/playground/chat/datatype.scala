@@ -6,28 +6,21 @@ case class DataY(v: Int)
 
 case class DataZ(v: Double)
 
-sealed trait DataType {
-  type Data
-  def asVal: DataType.Val[Data]
-}
+sealed trait DataType[Data]
 
 object DataType {
-  abstract class Val[T] extends DataType {
-    type Data = T
-    def asVal = this
-  }
-  case object X extends Val[DataX]
-  case object Y extends Val[DataY]
-  case object Z extends Val[DataZ]
+  case object X extends DataType[DataX]
+  case object Y extends DataType[DataY]
+  case object Z extends DataType[DataZ]
 }
 
-def prepareDataImpl[A](ls: List[String], typ: DataType.Val[A]): List[A] = ???
+def prepareDataImpl[A](ls: List[String], typ: DataType[A]): List[A] = ???
 
-def prepareData(ls: List[String], typ: DataType): List[typ.Data] = typ match {
+def prepareData[A](ls: List[String], typ: DataType[A]): List[A] = typ match 
   case DataType.X => ls.map(DataX(_))
   case DataType.Y => ls.view.flatMap(_.toIntOption).map(DataY(_)).toList
   case DataType.Z => ls.view.flatMap(_.toDoubleOption).map(DataZ(_)).toList
-}
+
 
 val input = List("1", "1.0", "a")
 

@@ -15,7 +15,7 @@
 //     extension (a: A) def measure: R
 
 // object Measured:
-//     def of [A, R](a: A)(using Measured[A, R]): R = a.measure    
+//     def of [A, R](a: A)(using Measured[A, R]): R = a.measure
 
 //     given [A]: Measured[A, A] with
 //         extension (a: A) def measure: A = a
@@ -26,18 +26,18 @@
 //     given [A, R](using Measured[A, R], Monoid[R]): Measured[Option[A], R] with
 //        extension  (a: Option[A]) def measure: R = a.fold(Monoid.empty)(_.measure)
 
-// enum CherryTree[A]:    
+// enum CherryTree[A]:
 //     case Empty()
 //     case One(a: A)
 //     case Branch(left: Option[A], mid: CherryTree[(A, A)], right: Option[A])
 
-//     def :+(a: A): CherryTree[A] = this match 
+//     def :+(a: A): CherryTree[A] = this match
 //         case Empty()               => One(a)
 //         case One(b)                => Branch(None, One((b, a)), None)
 //         case Branch(l, m, None)    => Branch(l, m, Some(a))
 //         case Branch(l, m, Some(b)) => Branch(l, m :+ (b, a), None)
 
-//     def +:(a: A): CherryTree[A] = this match 
+//     def +:(a: A): CherryTree[A] = this match
 //         case Empty()               => One(a)
 //         case One(b)                => Branch(None, One((a, b)), None)
 //         case Branch(None, m, r)    => Branch(Some(a), m, r)
@@ -47,14 +47,13 @@
 //     def apply[A](a: A*): CherryTree[A] = a.foldLeft(CherryTree.Empty())(_ :+ _)
 
 //     given measured[A, R](using Measured[A, R], Monoid[R]) as Measured[CherryTree[A], R]:
-//         def (tree: CherryTree[A]) measure = tree match 
+//         def (tree: CherryTree[A]) measure = tree match
 //             case CherryTree.Empty()          => Monoid.empty
 //             case CherryTree.One(a)           => a.measure
-//             case CherryTree.Branch(l, m, r)  => 
+//             case CherryTree.Branch(l, m, r)  =>
 //                 Measured.of[R = R](l) |+| Measured.of[R = R](m) |+| Measured.of[R = R](r)
 
-// @main def cherryTreeMain() = 
+// @main def cherryTreeMain() =
 //     val tree = CherryTree(1, 2, 3, 4, 5, 6, 7)
 //     println(tree)
 //     println(tree.measure)
-

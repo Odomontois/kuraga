@@ -2,7 +2,6 @@
 // package free.fix
 // import scala.annotation.tailrec
 
-
 // type |@[F[+_], G[+_]] = [a] =>> F[a] | G[a]
 
 // object Fix:
@@ -18,7 +17,7 @@
 
 //     def apply[F[+_]](f: F[Fix[F]]): T[F] = f
 
-//     def unwrap[F[+_]](v: T[F]): F[Fix[F]] = v  
+//     def unwrap[F[+_]](v: T[F]): F[Fix[F]] = v
 
 // type Fix[+F[+_]] = Fix.T[F]
 
@@ -35,33 +34,31 @@
 //     type f[+a] = End.type
 //     def apply() = Fix[f](End)
 
-
 // object DropRed:
-//     @tailrec def dropRedCats[F[+a] >: Cat[a]](cats: Fix[F]): Fix[F] = 
-//         cats.value match 
+//     @tailrec def dropRedCats[F[+a] >: Cat[a]](cats: Fix[F]): Fix[F] =
+//         cats.value match
 //             case Cat(_, "red", rest) => dropRedCats(rest)
 //             case _ => cats
 
 //     type CatDogVector = Vector[Either[Cat[Unit], Dog[Unit]]]
 //     type CatOrDogs[+a] =  Cat[a] | Dog[a] | End.type
 
-//     extension (catDogs: Fix[CatOrDogs]) def toVector : CatDogVector  = 
+//     extension (catDogs: Fix[CatOrDogs]) def toVector : CatDogVector  =
 //         @tailrec def go(acc: CatDogVector, catDogs: Fix[CatOrDogs]) : CatDogVector = catDogs.value match
 //             case Cat(name, fur, rest) =>  go(acc :+ Left(Cat(name, fur, ())), rest)
 //             case Dog(name, size, rest) => go(acc :+ Right(Dog(name, size, ())), rest)
 //             case End => acc
-        
+
 //         go(Vector(), catDogs)
 
-//     val x = 
-//         Cat.of("lilly" , "red"  , 
-//         Cat.of("anya"  , "red"  , 
-//         Cat.of("boris" , "black", 
+//     val x =
+//         Cat.of("lilly" , "red"  ,
+//         Cat.of("anya"  , "red"  ,
+//         Cat.of("boris" , "black",
 //         Dog.of("mashka", 3      ,
-//         Cat.of("manya" , "red"  ,     
+//         Cat.of("manya" , "red"  ,
 //         End())))))
 
-        
-//     def main(args: Array[String]) = 
+//     def main(args: Array[String]) =
 //         println(x.toVector)
 //         println(dropRedCats(x).toVector)

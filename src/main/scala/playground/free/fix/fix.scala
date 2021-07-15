@@ -1,7 +1,6 @@
 // package playground
 // package free.fix
 
-
 // type |@[F[+_], G[+_]] = [a] =>> F[a] | G[a]
 
 // object Fix:
@@ -17,9 +16,6 @@
 
 //     def apply[F[+_]](f: F[Fix[F]]): T[F] = f
 
-//     def unwrap[F[+_]](v: T[F]): F[Fix[F]] = v  
+//     def unwrap[F[+_]](v: T[F]): F[Fix[F]] = v
 
 // type Fix[+F[+_]] = Fix.T[F]
-
-
-

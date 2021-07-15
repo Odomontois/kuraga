@@ -3,8 +3,7 @@
 // import scala.compiletime.{erasedValue, summonInline}
 // import scala.deriving.Mirror
 
-
-// inline def summonAll[T <: Tuple, TC[Any]]: List[TC[Any]] = inline erasedValue[T] match 
+// inline def summonAll[T <: Tuple, TC[Any]]: List[TC[Any]] = inline erasedValue[T] match
 //   case _: Unit => Nil
 //   case _: (t *: ts) => summonInline[TC[t]].asInstanceOf[TC[Any]] :: summonAll[ts, TC]
 
@@ -17,9 +16,8 @@
 //   given Semigroup[String]  = _ + _
 //   given[A] as Semigroup[List[A]] = _ ++ _
 //   given[A] as Semigroup[Option[A]] = _ orElse _
-  
 
-//   inline def derived[A] (using m: Mirror.Of[A]): Semigroup[A] = inline m match 
+//   inline def derived[A] (using m: Mirror.Of[A]): Semigroup[A] = inline m match
 //     case p: Mirror.ProductOf[A] => productOf(p)
 //     case _ => compiletime.error("can derive only products")
 
@@ -33,7 +31,7 @@
 //       def productElement(i: Int) = instances(i).combine(ap.productElement(i), bp.productElement(i))
 //       def canEqual(that: Any) = true
 
-// final case class ExampleValue[c[_[_]]](get: c[Option]) 
+// final case class ExampleValue[c[_[_]]](get: c[Option])
 
 // object ExampleValue:
 //     given [c[_[_]]] :  Semigroup[ExampleValue[c]] = Semigroup.derived

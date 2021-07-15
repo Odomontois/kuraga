@@ -1,7 +1,6 @@
 object Main {
 
-  extension (s : String) def  double: String = s + s
-  
+  extension (s: String) def double: String = s + s
 
   def main(args: Array[String]): Unit = {
     println("Hello world!")
@@ -16,6 +15,6 @@ object Main {
 
   // summon[((x : A) => Int) <:< ((x: B) => Int )]
 
-  def check[A,  B <: A, C] = summon[(A ?=> C) <:< ( B ?=> C)]
+  def check[A, B <: A, C] = summon[(A ?=> C) <:< (B ?=> C)]
 
 }

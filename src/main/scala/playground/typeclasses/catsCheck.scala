@@ -5,4 +5,4 @@ import cats.instances.string.*
 import cats.instances.list.*
 
 object Foo:
-    summon[Parallel[[A] =>> EitherT[List, String, A]]]
+  summon[Parallel[[A] =>> EitherT[List, String, A]]]

@@ -7,4 +7,3 @@ trait TC[A]:
 object TC:
   def derived[A: ClassTag]: TC[A] = new:
     def name = summon[ClassTag[A]].runtimeClass.getName
-

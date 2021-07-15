@@ -96,7 +96,9 @@ object Narrative:
   type Scene1[F[_], G[_], H[_]]       = [A] => F[A]  => G[H[A]]
   type Scene2[F[_, _], G[_], H[_, _]] = [A, B] => F[A, B] => G[H[A, B]]
 
-
+///
+/// EXAMPLE
+///
 case class AuthError(message: String)
 case class Token(token: String)
 trait Authorization[Q[_]] extends Fiction[Q]:
@@ -121,7 +123,7 @@ object Authorization:
             def authenticate(fusername: IP[String], fpass: IP[String]): R[AuthError, Token]       = 
                 augRetell(
                     argScene(fusername).map2(argScene(fpass)) ((username, pass) =>
-                        summon[Applicative[SF]].pure( 
+                        Applicative[SF].pure( 
                             [X[e, a]] => (_: Exposed[P, S1, X]).authenticate(username, pass)
                         )))
                 

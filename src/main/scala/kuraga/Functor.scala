@@ -37,6 +37,8 @@ trait Applicative[F[_]] extends Pure[F] with Apply[F]:
                 case ((a, b), (c, d)) => f(a, b, c, d) 
             }
 
+object Applicative:
+    def apply[F[_]](using F: Applicative[F]) = F
 
 trait FlatMap[F[_]] extends Apply[F]:
     extension [A, B] (fa: F[A]) def flatMap(f: A => F[B]): F[B] 

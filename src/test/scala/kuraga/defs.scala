@@ -6,7 +6,7 @@ package lolcheck {
     inline def tupleValues[A <: Tuple]: A = 
         inline erasedValue[A] match
             case _ : (t *: ts) => 
-                summonInline[t *: ts <:< A](valueOf[t] *: tupleValues[ts])
+                summonInline[(t *: ts) <:< A](valueOf[t] *: tupleValues[ts])
             case _ : EmptyTuple => 
                 summonInline[EmptyTuple <:< A](EmptyTuple)
 

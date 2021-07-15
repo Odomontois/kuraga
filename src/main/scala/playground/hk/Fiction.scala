@@ -10,10 +10,10 @@ trait Fiction[Q[_]]:
 
 
 object Fiction:
-  // tags for type argument combination
-  final class Arg[A]     
-  final class Sub[E, A]
-  final class Ret[E, A]
+    // tags for type argument combination
+    final class Arg[A]     
+    final class Sub[E, A]
+    final class Ret[E, A]
 
 type Exposition[P[_], S[_, _], R[_, _], T] = T match 
     case Fiction.Arg[a]    => P[a]
@@ -22,7 +22,7 @@ type Exposition[P[_], S[_, _], R[_, _], T] = T match
 
 //representation of trait modulo R
 type Fabula[fiction[q[_]], P[_], S[_, _], E, A] = 
-  [R[e, a]] => fiction[Exposition[P, S, R, *]] => R[E, A]
+    [R[e, a]] => fiction[Exposition[P, S, R, *]] => R[E, A]
 
 // natural transformation from representation to target R
 type Retell[fiction[q[_]], P[_], S[_, _], R[_, _], F[_], G[_]] = 

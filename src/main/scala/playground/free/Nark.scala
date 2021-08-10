@@ -2,6 +2,8 @@ package playground.free
 
 import scala.annotation.tailrec
 
+infix type |:|[F[_], G[_]] = [a] =>> F[a] | G[a]
+
 sealed trait Nark[+F[+_]]:
   import Nark._
 
@@ -19,6 +21,19 @@ sealed trait Nark[+F[+_]]:
         case y: Yield[G]           => unpack(y).exec
         case Reset(pack2, unpack2) => Reset(pack2, unpack2.compose(unpack)).exec
 
+  def partialMatch[L[+x] <: Matchable, R[+x]](using F <::< (L |:| R))(f: Embed[L, R] => Nark[R]): Nark[R] =
+    import <::<.given
+    resetIter(e => e.split[L, R, Nark[R]](f, _.asYield))
+
+  def flatMap[A, F1[+x]](using F <::< (PureT[A] |:| F1))(f: A => Nark[F1]): Nark[F1] =
+    partialMatch(e => f(e.pivot.value))
+
+  def handleError[E, F1[+x]](using F <::< (ErrT[E] |:| F1))(f: E => Nark[F1]): Nark[F1] =
+    partialMatch(e => f(e.pivot.err))
+
+  def provide[R, F1[+x]](using F <::< (Read[R, *] |:| F1))(r: R): Nark[F1] = 
+    partialMatch(e => e.cont(e.pivot.run(r)))
+
 object Nark:
 
   trait Delay[+F[+_]] extends Nark[F]:
@@ -34,6 +49,14 @@ object Nark:
 
     def asYield[H[+x] >: F[x] | G[x]]: Yield[H] = new:
       export self._
+
+    final def split[L[+x] <: Matchable, R[+x], V](
+        l: Embed[L, G] => V,
+        r: Embed[R, G] => V
+    )(using F[P] <:< (L[P] | R[P])): V =
+      pivot match
+        case lp: L[P] @unchecked => l(this.asInstanceOf[Embed[L, G]])
+        case rp                  => r(this.asInstanceOf[Embed[R, G]])
 
   trait Yield[+F[+_]]          extends Nark[F] with Embed[F, F]:
     self =>
@@ -53,19 +76,11 @@ object Nark:
   case class Reset[F[+_], +G[+_]](pack: Nark[F], unpack: Unpack[F, G]) extends Nark[G]
 
   final case class Pure[+V](value: V)
-  extension [F[+_], A](nr: Nark[[a] =>> F[a] | Pure[A]])
-    def flatMap[G[+_]](f: A => Nark[G]): Nark[[a] =>> F[a] | G[a]] =
-      nr.reset(e =>
-        e.pivot match
-          case p: Pure[A] => f(p.value)
-          case fp: F[e.P] =>
-            new Yield[[a] =>> F[a] | G[a]]:
-              type P = e.P
-              def pivot      = fp
-              def cont(p: P) = e.cont(p).flatMap(f)
-      )
+  type PureT[+V] = [a] =>> Pure[V]
 
-  case class Err[+E](e: E)
+  case class Err[+E](err: E)
+  type ErrT[+E] = [a] =>> Err[E]
+
   trait Read[-R, +A]:
     def run(r: R): A
 
@@ -79,3 +94,6 @@ abstract sealed class <::<[-F[_], +G[_]]:
 object <::< :
   given ident[F[_]]: (F <::< F) with
     def liftK[H[+f[_]]](hf: H[F]): H[F] = hf
+
+  given [F[_], G[_], A](using sub: F <::< G): (F[A] <:< G[A]) =
+    sub.liftK[[z[_]] =>> F[A] <:< z[A]](<:<.refl)

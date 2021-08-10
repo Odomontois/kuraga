@@ -7,6 +7,8 @@ sealed trait Nark[+F[+_]]:
 
   def reset[G[+_]](up: Unpack[F, G]): Nark[G] = Reset(this, up)
 
+  def resetIter[G[+_]](up: Embed[F, G] => Nark[G]): Nark[G] = Reset(this, _.resetIter(up))
+
   @tailrec final def exec: Yield[F] = this match
     case d: Delay[F]                      => d.step().exec
     case y: Yield[F]                      => y
@@ -30,9 +32,20 @@ object Nark:
     def pivot: F[P]
     def cont(p: P): Nark[G]
 
-  trait Yield[+F[+_]] extends Embed[F, F] with Nark[F]
+    def asYield[H[+x] >: F[x] | G[x]]: Yield[H] = new:
+      export self._
 
-  trait Unpack[-F[+_], +G[+_]] extends (Embed[F, F] => Nark[G]):
+  trait Yield[+F[+_]]          extends Nark[F] with Embed[F, F]:
+    self =>
+    override def resetIter[G[+_]](up: Embed[F, G] => Nark[G]): Nark[G] = up(new:
+      type P = self.P
+      export self.pivot
+      def cont(p: P): Nark[G] = delay(() => self.cont(p).resetIter(up))
+    )
+
+    override def asYield[H[+x] >: F[x]]: Yield[H] = this
+
+  trait Unpack[-F[+_], +G[+_]] extends (Yield[F] => Nark[G]):
     self =>
     def compose[H[+_]](u: Unpack[G, H]): Unpack[F, H] =
       ff => Reset(self(ff), gg => delay(() => u(gg)))

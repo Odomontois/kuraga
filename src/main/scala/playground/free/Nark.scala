@@ -28,18 +28,27 @@ sealed trait Nark[+F[+_]]:
   def flatMap[A, F1[+x]](using F <::< (PureT[A] |:| F1))(f: A => Nark[F1]): Nark[F1] =
     partialMatch(e => f(e.pivot.value))
 
+  def map[A, B, F1[+x]](f: A => B)(using F <::< (PureT[A] |:| F1)): Nark[F1 |:| PureT[B]] = 
+    flatMap(a => Nark.pure(f(a)))
+
   def handleError[E, F1[+x]](using F <::< (ErrT[E] |:| F1))(f: E => Nark[F1]): Nark[F1] =
     partialMatch(e => f(e.pivot.err))
 
-  def provide[R, F1[+x]](using F <::< (Read[R, *] |:| F1))(r: R): Nark[F1] = 
+  def provide[R, F1[+x]](using F <::< (Read[R, *] |:| F1))(r: R): Nark[F1] =
     partialMatch(e => e.cont(e.pivot.run(r)))
 
 object Nark:
 
+  def delay[F[+_]](d: => Nark[F]): Delay[F] = delay(() => d)
+  def delay[F[+_]](d: Delay[F]): Delay[F] = d
+
+  def wrap[F[+_]](f: F[Nark[F]]): Nark[F] = new Yield[F]:
+    type P = Nark[F]
+    def pivot               = f
+    def cont(p: P): Nark[F] = p
+
   trait Delay[+F[+_]] extends Nark[F]:
     def step(): Nark[F]
-
-  def delay[F[+_]](d: Delay[F]): Delay[F] = d
 
   trait Embed[+F[+_], +G[+_]]:
     self =>
@@ -75,8 +84,11 @@ object Nark:
 
   case class Reset[F[+_], +G[+_]](pack: Nark[F], unpack: Unpack[F, G]) extends Nark[G]
 
+  def pure[A](a: A): Nark[PureT[A]] = wrap(Pure(a))
+
   final case class Pure[+V](value: V)
   type PureT[+V] = [a] =>> Pure[V]
+  type Eval[+V]  = Nark[PureT[V]]
 
   case class Err[+E](err: E)
   type ErrT[+E] = [a] =>> Err[E]

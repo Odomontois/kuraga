@@ -5,7 +5,7 @@ object Sums extends App:
 
 
   println(constValueTuple[Plus[(true, true, true), (true, true)]]) // works
-  println(constValueTuple[Plus1[(true, true, true), (true, true)]]) // fails
+  // println(constValueTuple[Plus1[(true, true, true), (true, true)]]) // fails
   println(constValueTuple[
     Reverse[PlusLoop[Reverse[(true, true, true)], Reverse[(true, true)], false]]]
     ) // also works despite it's just an unfold of `Plus1` application

@@ -1,4 +1,4 @@
-package playground
+package playground.measured
 
 import kuraga.Monoid
 import kuraga.Semigroup.Sum

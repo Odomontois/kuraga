@@ -1,6 +1,6 @@
-val dottyVersion = "3.0.1"
+val dottyVersion = "3.0.2"
 
-name := "kuraga"
+name    := "kuraga"
 version := "0.1.0"
 
 scalaVersion := dottyVersion
@@ -15,6 +15,6 @@ libraryDependencies += ("com.softwaremill.sttp.client3" %% "core"        % "3.0.
 
 scalacOptions += "-language:implicitConversions"
 scalacOptions += "-Ykind-projector"
-
-scalacOptions ++= Vector("-Xmax-inlines", "200")
+scalacOptions += "-Yexplicit-nulls"
+scalacOptions ++= Vector("-Xmax-inlines", "1000")
 // scalacOptions ++= Vector("-source", "future-migration", "-rewrite", "-deprecation", "rewrite")

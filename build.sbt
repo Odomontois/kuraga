@@ -17,6 +17,6 @@ libraryDependencies += "org.typelevel" %% "shapeless3-typeable" % "3.0.2"
 
 scalacOptions += "-language:implicitConversions"
 scalacOptions += "-Ykind-projector"
-
-scalacOptions ++= Vector("-Xmax-inlines", "200")
+scalacOptions += "-Yexplicit-nulls"
+scalacOptions ++= Vector("-Xmax-inlines", "1000")
 // scalacOptions ++= Vector("-source", "future-migration", "-rewrite", "-deprecation", "rewrite")

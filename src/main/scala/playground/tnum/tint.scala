@@ -77,14 +77,14 @@ object Lol extends App {
   def valueAll[T <: Tuple](using v: ValueAll[T]): T = v.value
   def printAll[T <: Tuple](using ValueAll[T])       = println(valueAll[T])
 
-  type R  = Plus[(true, true), (false, true)]
-  type R1 = PlusTri[true, false, true]
+  // type R  = Plus[(true, true), (false, true)]
+  // type R1 = PlusTri[true, false, true]
 
   // printAll[PlusLoop[(true, true), (true, true), true]]
 
   // println(valueAll[(1, 2, "kek", 4)])
 
-  type Q = Plus[(true, true, true), (true, true)]
+  // type Q = Plus[(true, true, true), (true, true)]
 
   // summon[Q =:= (true, false, true)]
   // println(valueAll[Q])

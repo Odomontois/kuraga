@@ -1,7 +1,8 @@
 package playground.free
 
 import scala.annotation.tailrec
-
+import shapeless3.typeable.Typeable
+import shapeless3.typeable.Typeable1
 infix type |:|[F[_], G[_]] = [a] =>> F[a] | G[a]
 
 sealed trait Nark[+F[+_]]:
@@ -28,27 +29,32 @@ sealed trait Nark[+F[+_]]:
   def flatMap[A, F1[+x]](using F <::< (PureT[A] |:| F1))(f: A => Nark[F1]): Nark[F1] =
     partialMatch(e => f(e.pivot.value))
 
-  def map[A >: Unpure[F], B, F1[+x]](f: A => B)(using F <::< (PureT[A] |:| F1)): Nark[F1 |:| PureT[B]] =
+  def map[A >: Unpure[F[Any]], B, F1[+x]](f: A => B)(using F <::< (Pure[A, *] |:| F1)): Nark[F1 |:| PureT[B]] =
     flatMap(a => Nark.pure(f(a)))
 
   def handleError[E, F1[+x]](using F <::< (ErrT[E] |:| F1))(f: E => Nark[F1]): Nark[F1] =
     partialMatch(e => f(e.pivot.err))
 
-  def provide[R, F1[+x]](using F <::< (Read[R, *] |:| F1))(r: R): Nark[F1] =
+  def provide[R >: Unread[F[Any]], F1[+x]](using F <::< (Read[R, *] |:| F1))(r: R): Nark[F1] =
     partialMatch(e => e.cont(e.pivot.run(r)))
 
-type Unpure[F[_]] = F[Any] match
-  case Nark.Pure[a] | _ => a
-  case _                => Any
+type Unpure[+T] = Pick[Nark.Pure, T]
+
+type Unread[+T] = Pick[Nark.Read, T]
+
+type Pick[Q[_, _], +T] = T match
+  case Q[a, b] | _ => a
+  case a | b       => Pick[Q, a] | Pick[Q, b]
+  case _           => Any
 
 object Nark:
 
-  def delay[F[+_]](d: Delay[F]): Delay[F]   = d
+  def delay[F[+_]](d: Delay[F]): Delay[F] = d
 
-  def wrap[F[+_]](f: F[Nark[F]]): Nark[F] = new Yield[F]:
-    type P = Nark[F]
+  def wrap[F[+_], G[+_]](f: F[Nark[G]]): Nark[F |:| G] = new Yield[F |:| G]:
+    type P = Nark[G]
     def pivot               = f
-    def cont(p: P): Nark[F] = p
+    def cont(p: P): Nark[G] = p
 
   trait Delay[+F[+_]] extends Nark[F]:
     def step(): Nark[F]
@@ -65,9 +71,9 @@ object Nark:
     final def split[L[+x] <: Matchable, R[+x], V](
         l: Embed[L, G] => V,
         r: Embed[R, G] => V
-    )(using F[P] <:< (L[P] | R[P])): V =
+    )(using F[P] <:< (L[P] | R[P]), Typeable1[L[P]]): V =
       pivot match
-        case lp: L[P] @unchecked => l(this.asInstanceOf[Embed[L, G]])
+        case lp: L[P @unchecked] => l(this.asInstanceOf[Embed[L, G]])
         case rp                  => r(this.asInstanceOf[Embed[R, G]])
 
   trait Yield[+F[+_]]          extends Nark[F] with Embed[F, F]:
@@ -87,14 +93,12 @@ object Nark:
 
   case class Reset[F[+_], +G[+_]](pack: Nark[F], unpack: Unpack[F, G]) extends Nark[G]
 
-
-  extension [F[+_]](d: => Nark[F])
-      def delayed: Nark[F] = delay(() => d)
+  extension [F[+_]](d: => Nark[F]) def delayed: Nark[F] = delay(() => d)
 
   def pure[A](a: A): Nark[PureT[A]] = wrap(Pure(a))
 
-  final case class Pure[+V](value: V)
-  type PureT[+V] = [a] =>> Pure[V]
+  final case class Pure[+V, +A](value: V)
+  type PureT[+V] = [a] =>> Pure[V, a]
   type Eval[+V]  = Nark[PureT[V]]
 
   case class Err[+E](err: E)
@@ -102,6 +106,12 @@ object Nark:
 
   trait Read[-R, +A]:
     def run(r: R): A
+
+  type Reader[-R, +V] = Nark[Read[R, *] |:| Pure[V, *]]
+
+  def read[R, F[+_]](f: Read[R, Nark[F]]): Nark[Read[R, *] |:| F] = Nark.wrap(f)
+
+  def ask[R]: Reader[R, R] = read(r => pure(r))
 
 abstract sealed class <::<[-F[_], +G[_]]:
   def liftK[H[+f[_]]](hf: H[F]): H[G]

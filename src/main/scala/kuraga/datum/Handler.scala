@@ -14,19 +14,26 @@ end Handler
 object Handler:
   object Identity extends Handler[AnyP, AnyP, Nothing](Map.empty)
 
-  def single[I[-_, +_], O[-_, +_], R](
+  opaque type DefaultName[P[-_, +_]] = String
+
+  def DefaultName[P[-_, +_]](s: String): DefaultName[P] = s
+
+  def single[I[-x, +y], O[-_, +_], R](
       name: String,
       handler: Proeff.Handle[O, R]
   ): Handler[I, O, R] = Handler[I, O, R](Map(name -> handler))
+
+  def singleVia[P[-x, +y] <: Proeff[x, y]](using name: DefaultName[P]) = new SingleVia[P](name)
+
+  class SingleVia[P[-x, +y] <: Proeff[x, y]](val name: DefaultName[P]) extends AnyVal:
+    def apply[I[-x, +y], O[-_, +_], R](handler: P[Star[Nothing, Any], Star[O, R]]): Handler[I, O, R] =
+      single(name, handler)
 
   type Of = Handler[AnyP, Nothing, Any]
 end Handler
 
 trait Proeff[-X, +Y]:
-  type Me[-x, +y] <: Proeff[x, y]
-  type This >: this.type <: Me[X, Y]
-
-  def map[Z](f: Y => Z): Me[X, Z]
+  def map[Z](f: Y => Z): Proeff[X, Z]
 end Proeff
 
 object Proeff:

@@ -2,7 +2,6 @@ package playground.free
 
 import scala.annotation.tailrec
 import shapeless3.typeable.Typeable
-import shapeless3.typeable.Typeable1
 infix type |:|[F[_], G[_]] = [a] =>> F[a] | G[a]
 
 sealed trait Nark[+F[+_]]:
@@ -71,7 +70,7 @@ object Nark:
     final def split[L[+x] <: Matchable, R[+x], V](
         l: Embed[L, G] => V,
         r: Embed[R, G] => V
-    )(using F[P] <:< (L[P] | R[P]), Typeable1[L[P]]): V =
+    )(using F[P] <:< (L[P] | R[P])): V =
       pivot match
         case lp: L[P @unchecked] => l(this.asInstanceOf[Embed[L, G]])
         case rp                  => r(this.asInstanceOf[Embed[R, G]])

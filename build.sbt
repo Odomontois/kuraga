@@ -1,4 +1,4 @@
-val dottyVersion = "3.1.0"
+val dottyVersion = "3.1.2"
 
 name    := "kuraga"
 version := "0.1.0"
@@ -13,7 +13,7 @@ libraryDependencies += ("com.softwaremill.sttp.client3" %% "core"        % "3.0.
   .withSources()
   .cross(CrossVersion.for3Use2_13)
 
-libraryDependencies += "org.typelevel" %% "shapeless3-typeable" % "3.0.2"
+libraryDependencies += "org.typelevel" %% "shapeless3-typeable" % "3.1.0"
 
 scalacOptions += "-language:implicitConversions"
 scalacOptions += "-Ykind-projector"

@@ -4,7 +4,7 @@ package hkdtalk
 import cats._
 import cats.data.EitherNel
 import cats.effect.IO
-import cats.effect.concurrent.Ref
+import cats.effect.Ref
 
 type Stream[F[_], A]
 

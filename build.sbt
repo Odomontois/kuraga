@@ -5,13 +5,12 @@ version := "0.1.0"
 
 scalaVersion := dottyVersion
 
-libraryDependencies += ("org.typelevel"                 %% "cats-core"   % "2.3.1").cross(CrossVersion.for3Use2_13)
-libraryDependencies += ("org.typelevel"                 %% "cats-free"   % "2.3.1").cross(CrossVersion.for3Use2_13)
-libraryDependencies += ("org.typelevel"                 %% "cats-effect" % "2.3.1").cross(CrossVersion.for3Use2_13)
-libraryDependencies += ("ru.tinkoff"                    %% "tofu"        % "0.9.0").cross(CrossVersion.for3Use2_13)
-libraryDependencies += ("com.softwaremill.sttp.client3" %% "core"        % "3.0.0-RC13")
-  .withSources()
-  .cross(CrossVersion.for3Use2_13)
+libraryDependencies += ("org.typelevel" %% "cats-core"     % "2.7.0")
+libraryDependencies += ("org.typelevel" %% "cats-free"     % "2.7.0")
+libraryDependencies += ("org.typelevel" %% "cats-effect"   % "3.3.12")
+//libraryDependencies += ("tf.tofu"       %% "tofu-core-ce3" % "0.10.8").cross(CrossVersion.for3Use2_13)
+
+libraryDependencies += "org.scalameta" %% "munit" % "0.7.29" % Test
 
 libraryDependencies += "org.typelevel" %% "shapeless3-typeable" % "3.1.0"
 

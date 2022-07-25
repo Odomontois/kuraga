@@ -12,8 +12,8 @@ case class Person[R](
 //         def map(f: A => B): F[B]
 
 given Functor[Person] with
-    extension [A, B](fa: Person[A])
-        def map(f: A => B): Person[B] = 
+    extension [A](fa: Person[A])
+        def map[B](f: A => B): Person[B] =
             Person(
                 f(fa.firstName),
                 f(fa.lastName),

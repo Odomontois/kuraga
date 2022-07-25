@@ -1,11 +1,11 @@
 package kuraga
 
 trait Functor[F[_]]:
-  extension [A, B](fa: F[A]) def map(f: A => B): F[B]
+  extension [A](fa: F[A]) def map[B](f: A => B): F[B]
 
 object Functor extends instances.FunctorInstances
 
-trait Pure[F[_]]  extends Functor[F]:
+trait Pure[F[_]] extends Functor[F]:
   def pure[A](a: A): F[A]
   val unit: F[Unit] = pure(())
 
@@ -18,10 +18,11 @@ trait Apply[F[_]] extends Functor[F]:
         fae <- fa
         fbr <- fb
       yield fae.map2(fbr)((a, b) => f(a, b).value)
+end Apply
 
 trait Applicative[F[_]] extends Pure[F] with Apply[F]:
-  extension [A, B](fa: F[A])
-    override def map(f: A => B): F[B] =
+  extension [A](fa: F[A])
+    override def map[B](f: A => B): F[B] =
       fa.map2(unit)((a, _) => f(a))
 
   def zip[A, B](fa: F[A], fb: F[B]): F[(A, B)] = fa.map2(fb)((_, _))
@@ -37,6 +38,7 @@ trait Applicative[F[_]] extends Pure[F] with Apply[F]:
       zip(fa, fb).map2(zip(fc, fd)) { case ((a, b), (c, d)) =>
         f(a, b, c, d)
       }
+end Applicative
 
 object Applicative:
   def apply[F[_]](using F: Applicative[F]) = F
@@ -66,8 +68,8 @@ trait Extract[F[_]]:
 trait CoFlatMap[F[_]] extends Functor[F]:
   extension [A, B](fa: F[A]) def coflatMap(f: F[A] => B): F[B]
 
-trait Comonad[F[_]]  extends CoFlatMap[F] with Extract[F]:
-  extension [A, B](fa: F[A]) def map(f: A => B): F[B] = fa.coflatMap(fa1 => f(fa1.extract))
+trait Comonad[F[_]] extends CoFlatMap[F] with Extract[F]:
+  extension [A](fa: F[A]) def map[B](f: A => B): F[B] = fa.coflatMap(fa1 => f(fa1.extract))
 
 trait Traverse[T[_]] extends Functor[T]:
   extension [A, B, F[_]: Applicative](ta: T[A]) def traverse(f: A => F[B]): F[T[B]]

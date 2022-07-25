@@ -17,5 +17,7 @@ def sum2(from: Long): Nark.Reader[(Long, Long), Long] =
     )
 
 @main def check() =
+
+  val x: ((Int, Int)) => Int = _ + _
   println(sum(2, 300).exec.pivot.value)
   println(sum2(2).provide((300, 1)).exec.pivot.value)

@@ -1,0 +1,10 @@
+<expr xmlns:n="scala::days::numbers"
+      xmlns:c="scala::days::comparison">
+    <c:equals>
+        <n:fromInt>4</n:fromInt>
+        <n:plus>
+            <n:fromInt>1</n:fromInt>
+            <n:fromInt>3</n:fromInt>
+        </n:plus>
+    </c:equals>
+</expr>

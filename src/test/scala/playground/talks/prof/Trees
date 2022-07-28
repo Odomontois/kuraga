@@ -1,0 +1,14 @@
+(1 + x) < 4 AND y == 6
+
+AND(
+   LESS(
+     PLUS(
+       LITERAL(1),
+       VARIABLE(x)
+     )
+   ),
+   EQUALS(
+    VARIABLE(Y),
+    LITERAL(6)
+   )
+)

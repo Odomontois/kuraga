@@ -75,3 +75,6 @@ trait Traverse[T[_]] extends Functor[T]:
   extension [A, B, F[_]: Applicative](ta: T[A]) def traverse(f: A => F[B]): F[T[B]]
 
   extension [A, F[_]: Applicative](ta: T[F[A]]) def sequence: F[T[A]] = ta.traverse(fa => fa)
+
+object Traverse:
+  inline def derived[T[+_] <: Product]: Traverse[T] = ???

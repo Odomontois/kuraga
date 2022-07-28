@@ -1,6 +1,7 @@
 package kuraga.datum
 
 import kuraga.datum.Handler.DefaultName
+import kuraga.datum.Repr.Holder
 
 type Delay[-A, +B] = Delay.Delay[A, B]
 
@@ -23,5 +24,5 @@ object Delay:
     Handler.singleVia[Eff](new { def delay = other })
 
   val intro: Star[Delay, Nothing] =
-    Star.Intro([A] => (d: Delay[Nothing, A]) => d.delay.delay)
+    Star.Intro(_ => d => d.delay.delay)
 end Delay

@@ -1,6 +1,7 @@
 package dailytips.serviceExtends
 
 import dailytips.serviceExtends.InvoiceService.{Invoice, InvoiceId}
+import compiletime.summonInline
 
 import java.util.UUID
 
@@ -13,10 +14,10 @@ trait InvoiceService:
 
   // only InvoiceService implementations know that an InvoiceId is an UUID
   // all other things should rely on InvoiceService to work with InvoiceId
-  protected given (InvoiceId <:< UUID) = summon
+  protected val sub: (InvoiceId <:< UUID) = summonInline
 
 object InvoiceService:
-  opaque type InvoiceId = UUID
+  opaque type InvoiceId <: UUID = UUID
 
   case class Invoice(price: BigDecimal, text: String) derives Codec
 

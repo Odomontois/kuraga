@@ -13,7 +13,8 @@ type InitCons[Coll[_], A, H, Rest <: Tuple] = H match
 @tailrec def fillVector[A, T <: Tuple](dims: T)(x: => A): Init[Vector, A, T] =
   dims match
     case _: EmptyTuple                => x
-    case head *: rest: (head *: rest) =>
+    case (p : (head *: rest)) =>
+      val (head *: rest) = p
       head match
         case size: Int => fillVector(rest)(Vector.fill(size)(x))
         case _         => ()

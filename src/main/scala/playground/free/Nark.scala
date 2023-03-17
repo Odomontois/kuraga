@@ -1,7 +1,7 @@
 package playground.free
 
 import scala.annotation.tailrec
-import shapeless3.typeable.Typeable
+import scala.reflect.Typeable
 infix type |:|[F[_], G[_]] = [a] =>> F[a] | G[a]
 
 sealed trait Nark[+F[+_]]:
@@ -12,16 +12,17 @@ sealed trait Nark[+F[+_]]:
   def resetIter[G[+_]](up: Embed[F, G] => Nark[G]): Nark[G] = Reset(this, _.resetIter(up))
 
   @tailrec final def exec: Yield[F] = this match
-    case d: Delay[F]                      => d.step().exec
-    case y: Yield[F]                      => y
-    case Reset(pack, unpack): Reset[g, F] =>
+    case d: Delay[F]    => d.step().exec
+    case y: Yield[F]    => y
+    case p: Reset[g, F] =>
+      val Reset(pack, unpack) = p
       type G[+x] = g[x]
       pack match
         case d: Delay[G]           => Reset(d.step(), unpack).exec
         case y: Yield[G]           => unpack(y).exec
         case Reset(pack2, unpack2) => Reset(pack2, unpack2.compose(unpack)).exec
 
-  def partialMatch[L[+x] <: Matchable, R[+x]](using F <::< (L |:| R))(f: Embed[L, R] => Nark[R]): Nark[R] =
+  def partialMatch[L[+x], R[+x]](using F <::< (L |:| R))(f: Embed[L, R] => Nark[R])(using Typeable[L[Any]]): Nark[R] =
     import <::<.given
     resetIter(e => e.split[L, R, Nark[R]](f, _.asYield))
 
@@ -34,8 +35,9 @@ sealed trait Nark[+F[+_]]:
   def handleError[E, F1[+x]](using F <::< (ErrT[E] |:| F1))(f: E => Nark[F1]): Nark[F1] =
     partialMatch(e => f(e.pivot.err))
 
-  def provide[R >: Unread[F[Any]], F1[+x]](using F <::< (Read[R, *] |:| F1))(r: R): Nark[F1] =
+  def provide[R, F1[+x]](using F <::< (Read[R, *] |:| F1))(r: R): Nark[F1] =
     partialMatch(e => e.cont(e.pivot.run(r)))
+end Nark
 
 type Unpure[+T] = Pick[Nark.Pure, T]
 
@@ -67,15 +69,16 @@ object Nark:
     def asYield[H[+x] >: F[x] | G[x]]: Yield[H] = new:
       export self._
 
-    final def split[L[+x] <: Matchable, R[+x], V](
+    final def split[L[+x], R[+x], V](
         l: Embed[L, G] => V,
         r: Embed[R, G] => V
-    )(using F[P] <:< (L[P] | R[P])): V =
+    )(using F[P] <:< (L[P] | R[P]))(using Typeable[L[Any]]): V =
       pivot match
         case lp: L[P @unchecked] => l(this.asInstanceOf[Embed[L, G]])
-        case rp                  => r(this.asInstanceOf[Embed[R, G]])
+        case rp       => r(this.asInstanceOf[Embed[R, G]])
+  end Embed
 
-  trait Yield[+F[+_]]          extends Nark[F] with Embed[F, F]:
+  trait Yield[+F[+_]] extends Nark[F] with Embed[F, F]:
     self =>
     override def resetIter[G[+_]](up: Embed[F, G] => Nark[G]): Nark[G] = up(new:
       type P = self.P
@@ -84,6 +87,7 @@ object Nark:
     )
 
     override def asYield[H[+x] >: F[x]]: Yield[H] = this
+  end Yield
 
   trait Unpack[-F[+_], +G[+_]] extends (Yield[F] => Nark[G]):
     self =>
@@ -111,6 +115,7 @@ object Nark:
   def read[R, F[+_]](f: Read[R, Nark[F]]): Nark[Read[R, *] |:| F] = Nark.wrap(f)
 
   def ask[R]: Reader[R, R] = read(r => pure(r))
+end Nark
 
 abstract sealed class <::<[-F[_], +G[_]]:
   def liftK[H[+f[_]]](hf: H[F]): H[G]

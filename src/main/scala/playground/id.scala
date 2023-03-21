@@ -22,3 +22,4 @@ object IdTest extends App:
   if (1 < 2) Id(Eit.L("1")) else Id(Eit.R(2))
   if (1 < 2) Id2(Eit.L("1")) else Id2(Eit.R(2))
   if (1 < 2) I(Eit.L("1")) else I(Eit.R(2))
+  

@@ -43,7 +43,7 @@ type Unpure[+T] = Pick[Nark.Pure, T]
 
 type Unread[+T] = Pick[Nark.Read, T]
 
-type Pick[Q[_, _], +T] = T match
+type Pick[Q[_, _], T] = T match
   case Q[a, b] | _ => a
   case a | b       => Pick[Q, a] | Pick[Q, b]
   case _           => Any

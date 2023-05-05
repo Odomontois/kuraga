@@ -1,4 +1,4 @@
-val dottyVersion = "3.2.2"
+val dottyVersion = "3.3.0-  "
 
 name    := "kuraga"
 version := "0.1.0"
@@ -19,3 +19,7 @@ scalacOptions += "-Ykind-projector"
 //scalacOptions += "-Yexplicit-nulls"
 scalacOptions ++= Vector("-Xmax-inlines", "1000")
 // scalacOptions ++= Vector("-source", "future-migration", "-rewrite", "-deprecation", "rewrite")
+
+Compile / doc / scalacOptions ++= Vector("-siteroot", "docs")
+
+Compile / doc / target := file("site")

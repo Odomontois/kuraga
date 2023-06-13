@@ -1,4 +1,4 @@
-val dottyVersion = "3.3.0-  "
+val dottyVersion = "3.3.0"
 
 name    := "kuraga"
 version := "0.1.0"
@@ -16,6 +16,7 @@ libraryDependencies += "org.typelevel" %% "shapeless3-typeable" % "3.1.0"
 
 scalacOptions += "-language:implicitConversions"
 scalacOptions += "-Ykind-projector"
+scalacOptions += "-explain"
 //scalacOptions += "-Yexplicit-nulls"
 scalacOptions ++= Vector("-Xmax-inlines", "1000")
 // scalacOptions ++= Vector("-source", "future-migration", "-rewrite", "-deprecation", "rewrite")

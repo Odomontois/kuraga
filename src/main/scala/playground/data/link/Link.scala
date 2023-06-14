@@ -45,7 +45,6 @@ object Link:
     class OutApp[O]:
         inline def apply[R](x: R)(using Tuple1[R] <:< O): O = Tuple1(x)
 
-    // extension def x
     trait CataGen[-P[_, _], X[_], F[_]]:
         self =>
         def exec[I <: Tuple, O <: Tuple](p: P[I, O], x: Tuple.Map[I, X]): F[Tuple.Map[O, X]]
@@ -76,12 +75,13 @@ end Link
 
 type |/|[P1[_, _], P2[_, _]] = [A, B] =>> P1[A, B] | P2[A, B]
 
-//mixin
+//mixin for language companions
 trait Linking[P[_, _]]:
     type Op0[A]            = P[EmptyTuple, Tuple1[A]]
     type Op1[A, B]         = P[Tuple1[A], Tuple1[B]]
     type Op[T <: Tuple, A] = P[T, Tuple1[A]]
 
+    // DSL for function-like composing AST
     extension [B <: Tuple](p: P[EmptyTuple, B]) def apply(): Link[P, B] = Link.Pass(p, Link.Rock)
     extension [A <: Tuple, B <: Tuple](p: P[A, B])
         def apply[P1[_, _]](args: Link[P1, A]): Link[P |/| P1, B] = Link.Pass(p, args)

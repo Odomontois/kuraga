@@ -186,9 +186,16 @@ def applyToGSemigroup[F[_]](using F: Apply[F]) = new GSemigroup with Algebra.OfZ
 def gsemigroupToApply[F[_]](using s: GSemigroup with Algebra.OfZip[F]) =
     given F: Functor[F] = s.E.requirement
     new Apply[F] {
+        export F.map
         def ap[A, B](ff: F[A => B])(fa: F[A]) = s.gcombine(Day(ff, fa, (f, a) => f(a)))
-        def map[A, B](fa: F[A])(f: A => B)    = s.gcombine(Day(fa, fa, (a, _) => f(a)))
     }
 
 end gsemigroupToApply
 
+/** | Сочетание | Требование | Ассоциативный тайпкласс | Тайпкласс с нейтральным элементом |
+  * |:----------|:-----------|:------------------------|:----------------------------------|
+  * | Tuple2    | ----       | Semigroup               | Monoid                            |
+  * | Tuple2K   | ----       | SemigroupK              | MonoidK                           |
+  * | Nested    | Functor    | FlatMap                 | Monad                             |
+  * | Day       | Functor    | Apply                   | Applicative                       |
+  */

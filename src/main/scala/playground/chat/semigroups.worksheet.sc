@@ -26,11 +26,6 @@ trait Base {
         type T = ET
     }
 
-    object aliases {
-        final type x[A <: K, B <: K]   = Pair[A, B]
-        final type -->[A <: K, B <: K] = Link[A, B]
-        final type I                   = One
-    }
     final type R[A <: K] = Requirement[A]
 }
 
@@ -113,6 +108,11 @@ object ZipBase extends HKFunctionBase {
 trait Algebra {
     val base: Base
     val E: base.Element
+
+    import base.*
+    final type x[A <: K, B <: K]   = Pair[A, B]
+    final type -->[A <: K, B <: K] = Link[A, B]
+    final type I                   = One
 }
 
 object Algebra {
@@ -138,15 +138,11 @@ object Algebra {
     }
 }
 
-trait GSemigroup {
-    val base: Base
-    val E: base.Element
-    import base.aliases.*
+trait GSemigroup extends Algebra {
     def gcombine: (E.T x E.T) --> E.T
 }
 
 trait GMonoid extends GSemigroup {
-    import base.aliases.*
     def gempty: I --> E.T
 }
 

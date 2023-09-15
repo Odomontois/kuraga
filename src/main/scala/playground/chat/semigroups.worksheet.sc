@@ -140,6 +140,8 @@ object Algebra {
 
 trait GSemigroup extends Algebra {
     def gcombine: (E.T x E.T) --> E.T
+
+    // def associativity(a: E.T, b: E.T, c: E.T): E.T = ???
 }
 
 trait GMonoid extends GSemigroup {

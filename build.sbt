@@ -1,4 +1,4 @@
-val dottyVersion = "3.3.1"
+val dottyVersion = "3.4.0"
 
 name    := "kuraga"
 version := "0.1.0"
@@ -24,3 +24,10 @@ scalacOptions ++= Vector("-Xmax-inlines", "1000")
 Compile / doc / scalacOptions ++= Vector("-siteroot", "docs")
 
 Compile / doc / target := file("site")
+
+lazy val cap = project.settings(
+    scalaVersion := "3.4.2-RC1-bin-20240305-beba585-NIGHTLY"
+)
+
+
+lazy val root = project.in(file(".")).aggregate(cap)

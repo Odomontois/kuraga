@@ -2,7 +2,7 @@ package playground.chat.polyfunc
 
 import scala.quoted.*
 
-// class Kenk[-T, +U](f: T => U)
+class Kenk[-T, +U](f: T => U)
 
 // object Kenk:
 //     transparent inline def of(f: Any): Kenk[Nothing, Any] =

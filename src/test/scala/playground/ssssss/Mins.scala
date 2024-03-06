@@ -103,7 +103,7 @@ end ResultEff
 
 object Result:
   type Eff[-A]         = [x, y] =>> ResultEff[A, x, y]
-  type Res[-X, +Y, -A] = Handler.Of { val result: ResultEff[A, X, Y] }
+  opaque type Res[-X, +Y, -A] <: Handler.Of { val result: ResultEff[A, X, Y] } = Handler.Of { val result: ResultEff[A, X, Y] }
   type Result[-A]      = [X, Y] =>> Res[X, Y, A]
 
   given [A]: DefaultName[Eff[A]] = DefaultName("result")

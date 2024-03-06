@@ -1,3 +1,0 @@
-package dailytips.vector
-
-

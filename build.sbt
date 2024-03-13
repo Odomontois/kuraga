@@ -26,8 +26,7 @@ Compile / doc / scalacOptions ++= Vector("-siteroot", "docs")
 Compile / doc / target := file("site")
 
 lazy val cap = project.settings(
-    scalaVersion := "3.4.2-RC1-bin-20240305-beba585-NIGHTLY"
+    scalaVersion := "3.4.2-RC1-bin-20240305-beba585-NIGHTLY",
 )
-
 
 lazy val root = project.in(file(".")).aggregate(cap)

@@ -20,12 +20,12 @@ class Tagged[T[+_]: Type](using q: Quotes):
         Implicits.search(t) match {
             case suc: ImplicitSearchSuccess => build(suc.tree)
             case ambig: AmbiguousImplicits =>
-                val explFld = ambig.getClass().getDeclaredField("expl")
+                val explFld = ambig.getClass().getDeclaredField("expl").nn
                 explFld.setAccessible(true)
                 val fn = explFld.get(ambig).asInstanceOf[() => String]
                 // report.info(fn())
                 val fds = fn.getClass().getDeclaredFields()
-                report.info(fn.getClass().getName())
+                report.info(fn.getClass().getName().nn)
                 report.errorAndAbort(ambig.toString())
             case fail: ImplicitSearchFailure =>
                 report.errorAndAbort(fail.explanation)

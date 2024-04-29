@@ -14,3 +14,9 @@ trait Para[X, A, B]:
             val (x, y) = xy
             self.set(a, x, that.set(self.get(a, x), y, c))
 end Para
+
+
+object Para:
+    def identity[X, A]: Para[X, A, A] = new: 
+        def get(a: A, x: X): A = a
+        def set(a: A, x: X, b: A): A = b

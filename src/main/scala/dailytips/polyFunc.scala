@@ -32,7 +32,7 @@ def commentFromF(f: CommentDep) = Comment(
 )
 
 @main def foo() =
-  val comment = Comment("odo", Vector("hello", "world"), ZonedDateTime.now())
+  val comment = Comment("odo", Vector("hello", "world"), ZonedDateTime.now().nn)
   val f       = commentToF(comment)
 
   summon[TypeTest["yyy", "xxx"]]

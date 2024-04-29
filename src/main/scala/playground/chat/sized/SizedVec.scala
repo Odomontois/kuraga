@@ -14,7 +14,7 @@ object SizedVect extends SizedVectOps:
     def prepend[A1 >: A](a: A1): Vec[N + 1, A1]                                        = a +: v
     infix def :+[A1 >: A](a: A1): Vec[N + 1, A1]                                       = v :+ a
     infix def ++[M <: Int, A1 >: A](v2: Vec[M, A1]): Vec[N + M, A1]                    = v ++ v2
-    def apply[I <: Int with Singleton](i: I)(using I < N =:= true, I >= 0 =:= true): A = v(i)
+    def apply[I <: Int & Singleton](i: I)(using I < N =:= true, I >= 0 =:= true): A = v(i)
     def toVector: Vector[A]                                                            = v
 
 trait SizedVectOps:

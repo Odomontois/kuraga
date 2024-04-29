@@ -6,7 +6,7 @@ case class Dictionary(selectDynamic: Map[String, Any]) extends Selectable:
   type Underlying
   def as[T]: Dictionary & T { type Underlying <: T } = this.asInstanceOf[Dictionary & T & { type Underlying <: T }]
 
-  def merge[Q](other: Dictionary & Q) =
+  infix def merge[Q](other: Dictionary & Q) =
     Dictionary(selectDynamic ++ other.selectDynamic).as[Underlying & Q]
 
 type Person = {

@@ -22,7 +22,7 @@ def coerceContra[
     ev.substituteContra[F1](f)
 end coerceContra
 
-class Foo:
+class Fooza:
     def update(x: Int, y: Int, z: Int): Unit = 
         println(s"update($x, $y, $z)")
 
@@ -31,6 +31,6 @@ class Foo:
     val person: ({val name: String; val age: Int}) = 
         new AnyRef {val name = "tarao"; val age = 3}    
 
-    val foo = Foo()
+    val foo = Fooza()
 
     foo(1, 2) = 3

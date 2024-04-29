@@ -26,12 +26,12 @@ object Files:
     def openFile(name: String)(using files: Files)(using IO): File^{files} = File(using files)
 
 
-def foo: String -> (files: Files^, io: IO) ?-> Int -> (Console, IO) ?->{files} Unit = 
-    name => 
-        val file = Files.openFile(name)
-        def go(n: Int)(using Console, IO): Unit = 
-            if n > 0 then 
-                val line = Console.readLine()
-                file.writeLine(line)
-                go(n - 1)
-        go
+// def foo: String -> (files: Files^, io: IO) ?->{} Int -> (Console, IO) ?->{files} Unit = 
+//     name => 
+//         val file = Files.openFile(name)
+//         def go(n: Int)(using Console, IO): Unit = 
+//             if n > 0 then 
+//                 val line = Console.readLine()
+//                 file.writeLine(line)
+//                 go(n - 1)
+//         i => go(i)

@@ -21,9 +21,9 @@ object UnoDerivation extends DummyDerivation("raz")
 object DuoDerivation extends DummyDerivation("dva")
 
 
-case class Foo(name: String) derives UnoDerivation.TC
+case class Fee(name: String) derives UnoDerivation.TC
 case object Bar derives DuoDerivation.TC
 
 @main def fooMain() = 
-    println(Foo("xx").info)
+    println(Fee("xx").info)
     println(Bar.info)

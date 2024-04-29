@@ -44,9 +44,9 @@ object Show:
         case EmptyTuple => Vector()
 
     inline def derived[A]: Show[A] = summonFrom {
-        case m: Mirror.ProductOf[A with Product] =>
-            val tt = summonInline[A =:= A with Product]
-            tt.substituteContra[Show](productShow[A with Product])
+        case m: Mirror.ProductOf[A & Product] =>
+            val tt = summonInline[A =:= (A & Product)]
+            tt.substituteContra[Show](productShow[A & Product])
 
         case ms: Mirror.SumOf[A] =>
             val shows = coproductShows[A, ms.MirroredElemTypes](0)

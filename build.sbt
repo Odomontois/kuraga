@@ -5,9 +5,9 @@ version := "0.1.0"
 
 scalaVersion := dottyVersion
 
-libraryDependencies += ("org.typelevel" %% "cats-core"     % "2.7.0")
-libraryDependencies += ("org.typelevel" %% "cats-free"     % "2.7.0")
-libraryDependencies += ("org.typelevel" %% "cats-effect"   % "3.3.12")
+libraryDependencies += ("org.typelevel" %% "cats-core"   % "2.7.0")
+libraryDependencies += ("org.typelevel" %% "cats-free"   % "2.7.0")
+libraryDependencies += ("org.typelevel" %% "cats-effect" % "3.3.12")
 //libraryDependencies += ("tf.tofu"       %% "tofu-core-ce3" % "0.10.8").cross(CrossVersion.for3Use2_13)
 
 libraryDependencies += "org.scalameta" %% "munit" % "0.7.29" % Test
@@ -26,7 +26,13 @@ Compile / doc / scalacOptions ++= Vector("-siteroot", "docs")
 Compile / doc / target := file("site")
 
 lazy val cap = project.settings(
-    scalaVersion := "3.4.2-RC1-bin-20240316-9ef24bf-NIGHTLY",
+  scalaVersion := "3.4.2-RC1-bin-20240319-4554131-NIGHTLY",
+  scalacOptions ++= Vector(
+    "-experimental",
+    "-language:experimental.captureChecking",
+    "-explain",
+    "-Ycc-debug",
+  ),
 )
 
 lazy val root = project.in(file(".")).aggregate(cap)

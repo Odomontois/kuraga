@@ -28,18 +28,18 @@ object Get:
     def modify(f: A => A): Unit = state = f(state)
 
 object State:
-    def of[A](using state: State[A]): State[A] = state
+    def of[A](using state: State[A]^): State[A]^ = state
     
 
 trait File
 
 
-def lol1(using Abort^, Get[String]^, State[Int]^): String = 
+def lol1(using Abort, Get[String]^, State[Int]^): String = 
     if State.of.get > 10 then Abort.abort
     State.of.modify(_ + 1)
     s"Name is ${Get.get}"
 
-val lol: (Abort^, Get[String]^, State[Int]^) ?-> String = 
+val lol: (Abort, Get[String]^, State[Int]^) ?-> String = 
     if State.of.get > 10 then Abort.abort
     State.of.modify(_ + 1)
     s"Name is ${Get.get}"
@@ -55,9 +55,9 @@ import AccessMode.READ
 
 type IOExceptions = CanThrow[IOException]
 trait Example:
-    def open(path: Path, mode: AccessMode)(using IO^, IOExceptions^): Handle
+    def open(path: Path, mode: AccessMode)(using IO^, IOExceptions): Handle
     def parseInt(string: String)(using Abort): Int
-    def getLine(handle: Handle)(using IO^, IOExceptions^): String
+    def getLine(handle: Handle)(using IO^, IOExceptions): String
 
     def parseFileLines(path: Path)(using IO, IOExceptions):Int -> (IO, IOExceptions, Abort) ?-> Int = 
         val file = open(path, READ)

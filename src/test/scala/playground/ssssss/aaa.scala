@@ -33,3 +33,44 @@ def assignmentImpl(self: Expr[Var])(using q: Quotes): Expr[Assignment] =
 
 class Var:
     inline def ~(value: Int) = assignment(this) | value
+
+object Lol:
+    import scala.deriving.Mirror
+    import scala.compiletime.*
+    enum Animal {
+        case Cat, Dog, Horse
+    }
+
+    // independent ADT
+    enum Fruit {
+        case Banana, Apple
+    }
+
+    // grouping different entities into few categories
+    enum Goods[+T] {
+        case AnimalCategory[T <: Animal & Singleton](animal: T) extends Goods[T]
+        case FruitCategory[T <: Fruit & Singleton](fruit: T)    extends Goods[T]
+        case Other
+    }
+
+    enum Box[+T](val category: Goods[T]) {
+        case CatBox    extends Box(category = Goods.AnimalCategory(Animal.Cat))
+        case DogBox    extends Box(category = Goods.AnimalCategory(Animal.Dog))
+        case BananaBox extends Box(category = Goods.FruitCategory(Fruit.Banana))
+        case AppleBox  extends Box(category = Goods.FruitCategory(Fruit.Apple))
+    }
+
+    val Animals = summon[Mirror.SumOf[Animal]]
+    val Boxes   = summon[Mirror.SumOf[Box[Any]]]
+
+    type Unbox[T <: Tuple, Q] <: Tuple = T match {
+        case EmptyTuple     => EmptyTuple
+        case Box[t] *: rest =>
+            t match {
+                case Q => t *: Unbox[rest, Q]
+                case _ => Unbox[rest, Q]
+            }
+    }
+
+
+    // val x = constValueTuple[Unbox[Boxes.MirroredElemTypes, Animal]]

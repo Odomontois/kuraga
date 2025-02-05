@@ -18,7 +18,7 @@ class StateMetric(using state: MyState){
 }
 
 object MyState {
-    def count(using state: MyState): Int        = state.count
+    def count(using state: MyState^): Int        = state.count
     def increment()(using state: MyState): Unit = state.count += 1
     def withState[T](actions: MyState^{} ?-> T): T = {
         given MyState(0)
@@ -31,7 +31,7 @@ def reportState(using MyState): String -> String = {
     name => s"$name current value is $count\n"
 }
 
-def reportState1(using state:MyState): String ->{state} String = {
+def reportState1(using state:MyState^): String ->{state} String = {
     name => s"$name current value is ${MyState.count}\n"
 }
 

@@ -1,17 +1,9 @@
 package playground.chat.struc
 
-type Person = {
-  def id: String
-  def name: String
-  def isFriend(p: String): Boolean
+trait Foo{
+    def xx[A: Numeric](implicit O: Ordering[A]): A
 }
 
-val oleg: Person = new {
-  val id                  = "odomontois"
-  val name                = "Oleg"
-  def isFriend(p: String) = false
-
-  override def toString = s"I'm $name"
+object Bar extends Foo{
+    def xx[A](implicit N: Numeric[A], O: Ordering[A]): A = ???
 }
-
-@main def strucGo = println(oleg)

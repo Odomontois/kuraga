@@ -1,7 +1,6 @@
 package kuraga.datum
 
 import scala.annotation.targetName
-import scala.language.experimental.erasedDefinitions
 
 @targetName("Und")
 type &::[A[-_, +_], B[-_, +_]] = [x, y] =>> A[x, y] & B[x, y]

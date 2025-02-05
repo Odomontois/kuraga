@@ -23,7 +23,7 @@ class File(using Files^):
 @capability class Files
 
 object Files:
-    def openFile(name: String)(using files: Files)(using IO): File^{files} = File(using files)
+    def openFile(name: String)(using files: Files^)(using IO): File^{files} = File(using files)
 
 
 // def foo: String -> (files: Files^, io: IO) ?->{} Int -> (Console, IO) ?->{files} Unit = 

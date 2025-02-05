@@ -34,7 +34,7 @@ def rotateLeft(p: Pair { type First <: Pair }): Pair {
   def apply(): String
 
 
-def b(x: A^): B^{} = 
+def b(x: A^): B^{x} = 
     () => s"performed: ${x.actA()}"
 
 

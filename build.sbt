@@ -1,4 +1,4 @@
-val dottyVersion = "3.4.0"
+val dottyVersion = "3.6.3"
 
 name    := "kuraga"
 version := "0.1.0"
@@ -26,12 +26,12 @@ Compile / doc / scalacOptions ++= Vector("-siteroot", "docs")
 Compile / doc / target := file("site")
 
 lazy val cap = project.settings(
-  scalaVersion := "3.4.2-RC1-bin-20240319-4554131-NIGHTLY",
+  scalaVersion := dottyVersion,
   scalacOptions ++= Vector(
     "-experimental",
     "-language:experimental.captureChecking",
     "-explain",
-    "-Ycc-debug",
+    // "-Ycc-debug",
   ),
 )
 

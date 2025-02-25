@@ -22,8 +22,6 @@ class Dog(val name: String) extends Animal with Runnable:
     def speed: Double                           = 10.0
     override protected def canEat(food: String) = food.contains("dog") || super.canEat(food)
 
-trait DescribeBetter extends Animal:
-    override def description: String = s""
 
 type Clazz[A] = (=> A) => A
 
@@ -99,11 +97,6 @@ def dog(dogName: String, parent: Clazz[AnimalCls] = animal): Clazz[DogCls] = sel
           ),
       runnable = () => RunnableIf(() => 10.0)
     )
-
-case class GooseMixin(
-    animal: () => AnimalCls
-)
-
 lazy val dogFood: LazyList[String] =
     val start = LazyList("hot dog", "tasty pizza", "green broccoli", "french fries")
     start #::: dogFood

@@ -1,4 +1,4 @@
-val dottyVersion = "3.6.3"
+val dottyVersion = "3.6.4-RC1"
 
 name    := "kuraga"
 version := "0.1.0"

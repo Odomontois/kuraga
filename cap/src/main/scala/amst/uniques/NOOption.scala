@@ -13,7 +13,7 @@ type Abort = CanThrow[Aborted]
 
 object Abort:
     def abort(using Abort): Nothing                                 = throw Aborted()
-    def getOrElse[T](default: T)(block: => T throws Aborted): T =
+    def getOrElse[T](default: T)(block: DummyImplicit ?=> T throws Aborted): T =
         try block
         catch case _: Aborted => default
 
@@ -86,7 +86,7 @@ object Stream:
         e(using new Stream[A]:
             def emit(a: A) = if p(a) then bs.emit(a))
 
-    def take[A](n: Int)(e: Stream[A]^ ?=> Unit)(using bs: Stream[A]^): Unit = 
+    def take[A](n: Int)(e: Stream[A]^ ?-> Unit)(using bs: Stream[A]^): Unit = 
         var count = 0
         Abort.getOrElse(())(e(using new Stream[A]:
             def emit(a: A) = if count == n then Abort.abort else

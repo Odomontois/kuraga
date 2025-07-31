@@ -1,5 +1,4 @@
-val dottyVersion = "3.7.0-RC1"
-
+val dottyVersion = "3.7.1"
 name    := "kuraga"
 version := "0.1.0"
 
@@ -13,6 +12,8 @@ libraryDependencies += ("org.typelevel" %% "cats-effect" % "3.3.12")
 libraryDependencies += "org.scalameta" %% "munit" % "0.7.29" % Test
 
 libraryDependencies += "org.typelevel" %% "shapeless3-typeable" % "3.1.0"
+
+libraryDependencies += "org.typelevel" %% "spire" % "0.18.0"
 
 scalacOptions += "-language:implicitConversions"
 scalacOptions += "-Ykind-projector"

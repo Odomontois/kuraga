@@ -28,7 +28,7 @@ object Get:
     def modify(f: A => A): Unit = state = f(state)
 
 object State:
-    def of[A](using state: State[A]^): State[A]^ = state
+    def of[A](using state: State[A]^): State[A]^{state} = state
     
 
 trait File

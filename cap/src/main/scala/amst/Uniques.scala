@@ -18,7 +18,7 @@ class StateMetric(using state: MyState){
 }
 
 object MyState {
-    def count(using state: MyState^): Int        = state.count
+    def count(using state: MyState^{cap}): Int        = state.count
     def increment()(using state: MyState): Unit = state.count += 1
     def withState[T](actions: MyState^{} ?-> T): T = {
         given MyState(0)

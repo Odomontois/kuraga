@@ -1,20 +1,6 @@
-trait A:
-    def foo = "A"
+import cats.data.NonEmptyMap
+import cats.syntax.all.*
 
-trait B:
-    def foo = "B"
+val x = NonEmptyMap.of(12 -> 2, 3 -> 7, 1 -> 7)
 
-trait C extends B, A:
-    override def foo = "C"
-
-    def lol = super[B].foo
-    def kek = super[A].foo
-
-val b = new C {}
-
-b.foo
-b.lol
-b.kek
-
-(((-10000 + 5) % 10000 + 10000) % 10000)
-
+x.toNel.mkString_("_")

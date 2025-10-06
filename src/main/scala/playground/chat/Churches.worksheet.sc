@@ -1,4 +1,3 @@
-import com.sourcegraph.semanticdb_javac.Semanticdb.WithType
 trait Nat:
     def apply[A](f: A => A): A => A
     def unary_~[A]: (A => A) => A => A = apply
@@ -39,3 +38,4 @@ val x: List[Int]    = asList(IsInt)
 val y: List[String] = asList(IsString)
 
 f"${123}%h"
+

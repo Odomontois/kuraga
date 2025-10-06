@@ -1,4 +1,4 @@
-import spire.math.Rational
+// import spire.math.Rational
 
 def best(next: Double): Double = {
     val th = next.floor

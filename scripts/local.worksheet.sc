@@ -25,7 +25,7 @@ inline def focusOn[F[_], S, A, R](using loc: Local[F, S])(inline path: Focus.Key
     body: Local[F, A] ?=> R
 ): R =
     inline GenLens[S].apply(path) match
-        case l: Lens[S, A] => body(using localFromLens(l))
+        case l: Lens[S, A] => body(using localFromLens(l)) 
 
 def mumu[F[_]: Loc[String], X]: F[String] = ask.local("Hi, " + (_: String))
 

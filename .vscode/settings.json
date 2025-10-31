@@ -2,5 +2,5 @@
     "files.watcherExclude": {
         "**/target": true
     },
-    "metals.inlayHints.implicitArguments.enable": false
+    "metals.inlayHints.implicitArguments.enable": true
 }

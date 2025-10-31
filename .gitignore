@@ -6,3 +6,4 @@ target
 .bsp
 bloop.settings.json
 metals.sbt
+**/.scala-build/

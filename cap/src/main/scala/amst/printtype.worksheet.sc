@@ -1,4 +1,4 @@
-//> using scala 3.8.0-RC1-bin-20250822-658c8bd-NIGHTLY
+//> using target.scala 3.8.0-RC1-bin-20250822-658c8bd-NIGHTLY
 //> using options "-language:experimental.captureChecking"
 import scala.caps.Capability
 

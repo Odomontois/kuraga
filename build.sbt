@@ -1,5 +1,5 @@
-val dottyVersion  = "3.7.4-RC1"
-val stableVersion = "3.7.3"
+val dottyVersion = "3.9.0"
+val stableVersion = "3.7.4"
 name    := "kuraga"
 version := "0.1.0"
 
@@ -41,6 +41,12 @@ lazy val cap = project.settings(
   libraryDependencies += ("org.typelevel" %% "cats-core" % "2.7.0"),
 )
 
+lazy val chats = project.settings(
+  scalaVersion := stableVersion,
+)
+
 ThisBuild / resolvers += Resolver.scalaNightlyRepository
 
 lazy val root = project.in(file(".")).settings(mijnInstellingen).aggregate(cap)
+
+

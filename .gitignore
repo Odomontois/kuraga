@@ -7,3 +7,4 @@ target
 bloop.settings.json
 metals.sbt
 **/.scala-build/
+site/

@@ -2,32 +2,29 @@
 
 import scala.collection.mutable.Buffer
 import scala.annotation.tailrec
+import Value.Value
 
-trait Lazy(x: () => Value):
-  lazy val value = x()
+abstract class Lazy:
+  def calc(): Value
+  lazy val value = calc()
 
-enum Value:
-  case Num(x: Int)
-  case Func(f: Value => Value)
-  case Lz(f: () => Value) extends Value, Lazy(f)
-
-  @tailrec final def strict: Value = this match
-    case Lz(t) => t().strict
-    case _     => this
-
-  def toInt: Int = this.strict match
-    case Num(x) => x
-    case _      => throw new Exception(s"Cannot convert $this to Int")
-
-  def app(x: Value): Value = this.strict match
-    case Func(f) => f(x)
-    case _       => throw new Exception(s"Cannot apply $this to $x")
-end Value
+abstract class Fun:
+  def apply(x: Value): Value
 
 object Value:
-  extension (inline expr: => Value) inline def lz: Value = Value.Lz(() => expr)
-  given Conversion[Int, Value] = Num(_)
-  given [A: [t] =>> Conversion[t, Value]]: Conversion[Value => A, Value] = f => Func(f(_))
+  opaque type Value >: Int | Fun | Lazy = Int | Fun | Lazy
+
+  extension (v: Value)
+    @tailrec final def strict: Value = v match
+      case l: Lazy => l.value.strict
+      case _       => v
+
+    def toInt: Int           = v.strict.asInstanceOf[Int]
+    def app(x: Value): Value = v.strict.asInstanceOf[Fun](x)
+
+  inline def fun(inline f: Value => Value): Value       = (x => f(x)): Fun
+  extension (inline expr: => Value) inline def lz: Lazy = () => expr
+end Value
 
 enum Lam:
   case Var(idx: Int)
@@ -37,12 +34,12 @@ enum Lam:
   infix def app(l: Lam) = App(this, l)
   def abs               = Abs(this)
 
-  def norm(stack: Value*): Value = this match
+  def eval(stack: Value*): Value = this match
     case Var(idx)  => stack(idx)
-    case App(f, a) => f.norm(stack*).app(a.norm(stack*)).lz
-    case Abs(l)    => Value.Func(x => l.norm((x +: stack)*)).lz
+    case App(f, a) => f.eval(stack*).app(a.eval(stack*)).lz
+    case Abs(l)    => Value.fun(x => l.eval((x +: stack)*)).lz
 
-  def toInt = l"$this 1 0".norm(0, (x: Value) => x.toInt + 1).toInt
+  def toInt = l"$this 1 0".eval(0, Value.fun(x => x.toInt + 1)).toInt
 end Lam
 
 object Lam:

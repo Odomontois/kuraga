@@ -1,6 +1,6 @@
 {
     "files.watcherExclude": {
-        "**/target": true
+        "**/target/**": true
     },
     "metals.inlayHints.implicitArguments.enable": true
 }

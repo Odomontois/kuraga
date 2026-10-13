@@ -1,0 +1,1 @@
+val Tuple1(x) = 1 *: EmptyTuple 

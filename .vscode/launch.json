@@ -1,15 +1,45 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "NonStaticLambda",
-            "request": "launch",
-            "mainClass": "playground.repro.NonStaticLambda",
-            "projectName": "kuraga_300a865e"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "scala",
+      "request": "launch",
+      "name": "nonNulls",
+      "mainClass": "chats.nonNulls",
+      "buildTarget": "file:/Users/odomontois/Prog/projects/scala/kuraga/cap/?id=cap-test",
+      "args": [],
+      "jvmOptions": [],
+      "env": {}
+    },
+    {
+      "type": "scala",
+      "request": "launch",
+      "name": "kek",
+      "mainClass": "chats.kek",
+      "buildTarget": "file:/Users/odomontois/Prog/projects/scala/kuraga/cap/?id=cap-test",
+      "args": [],
+      "jvmOptions": [],
+      "env": {}
+    },
+    {
+      "type": "scala",
+      "request": "launch",
+      "name": "runNon",
+      "mainClass": "chats.runNon",
+      "buildTarget": "file:/Users/odomontois/Prog/projects/scala/kuraga/cap/?id=cap-test",
+      "args": [],
+      "jvmOptions": [],
+      "env": {}
+    },
+    {
+      "type": "scala",
+      "request": "launch",
+      "name": "isItNullYet",
+      "mainClass": "chats.isItNullYet",
+      "buildTarget": "file:/Users/odomontois/Prog/projects/scala/kuraga/cap/?id=cap-test",
+      "args": [],
+      "jvmOptions": [],
+      "env": {}
+    }
+  ]
 }

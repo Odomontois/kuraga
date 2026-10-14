@@ -1,6 +1,7 @@
 package amst
 
 import scala.caps.Mutable
+import scala.annotation.unroll
 
 abstract class Kek[A]
 
@@ -21,3 +22,5 @@ def check() = {
     case 1         =>
     case _: String =>
 }
+
+final def lol(k: String, @unroll u: Int = 0) = 2

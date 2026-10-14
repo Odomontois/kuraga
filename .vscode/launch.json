@@ -40,6 +40,16 @@
       "args": [],
       "jvmOptions": [],
       "env": {}
+    },
+    {
+      "type": "scala",
+      "request": "launch",
+      "name": "hello",
+      "mainClass": "playground.hello",
+      "buildTarget": "file:/Users/odomontois/Prog/projects/scala/kuraga/cap/?id=cap",
+      "args": [],
+      "jvmOptions": [],
+      "env": {}
     }
   ]
 }

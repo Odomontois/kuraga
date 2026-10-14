@@ -2,7 +2,7 @@ package amst
 
 import language.experimental.captureChecking
 import scala.annotation.capability
-import scala.caps.cap
+import scala.caps.any
 import scala.caps.Capability
 import scala.caps.SharedCapability
 

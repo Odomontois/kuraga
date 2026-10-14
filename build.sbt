@@ -1,4 +1,4 @@
-val dottyVersion = "3.9.0"
+val dottyVersion = "3.10.0"
 val stableVersion = "3.7.4"
 name    := "kuraga"
 version := "0.1.0"
@@ -34,7 +34,8 @@ lazy val cap = project.settings(
     "-language:experimental.captureChecking",
     "-explain",
     "-Wunused:imports,privates,locals,implicits",
-    "-language:experimental.saferExceptions"
+    "-language:experimental.saferExceptions",
+    "-preview",
     // "-Ycc-debug",
   ),
   libraryDependencies += "software.amazon.smithy" % "smithy-model" % "1.61.0",

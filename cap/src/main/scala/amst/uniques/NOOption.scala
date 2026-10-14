@@ -5,7 +5,6 @@ import language.experimental.saferExceptions
 import java.nio.file.Path
 import java.nio.file.AccessMode
 import java.io.IOException
-import caps.cap
 
 final class Aborted extends Exception("", null, false, false)
 

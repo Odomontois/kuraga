@@ -1,7 +1,6 @@
 package amst
 package pdt
 import scala.annotation.capability
-import scala.caps.cap
 import scala.caps.SharedCapability
 
 trait Pair {

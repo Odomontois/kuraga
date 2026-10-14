@@ -3,10 +3,8 @@ import scala.collection.mutable
 import java.time.LocalDate
 import language.experimental.captureChecking
 import scala.annotation.capability
-import scala.caps.cap
 import scala.caps.Capability
 import scala.caps.Mutable
-import scala.caps.Read
 import scala.caps.SharedCapability
 import scala.caps.ExclusiveCapability
 
